@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Caculator</h3>
+<input type="number" id="number1">
+<input type="number" id="number2"><br>
+<button type="button" onclick="Addition()">Addition(+)</button>
+<button type="button" onclick="Subtraction()">Subtraction(-)</button>
+<button type="button" onclick="Multiplication()">Multiplication(x)</button>
+<button type="button" onclick="Devision()">devision(/)</button>
+<p id = "result">Result</p>
+<script>
+    function Addition() {
+        let number1 =document.getElementById("number1").value;
+        let number2 =document.getElementById("number2").value;
+        number1=parseInt(number1);
+        number2=parseInt(number2);
+        let sum = number1 + number2;
+        document.getElementById('result').innerText = sum;
+    }
+</script>
+<script>
+    function Subtraction() {
+        let number1 = document.getElementById("number1").value;
+        let number2 = document.getElementById("number2").value;
+        number1 = parseInt(number1);
+        number2 = parseInt(number2);
+        let sum = number1 - number2;
+        document.getElementById('result').innerText = sum;
+    }
+</script>
+<script>
+    function Multiplication() {
+        let number1 = document.getElementById("number1").value;
+        let number2 = document.getElementById("number2").value;
+        number1 = parseInt(number1);
+        number2 = parseInt(number2);
+        let sum = number1 * number2;
+        document.getElementById('result').innerText = sum;
+    }
+</script>
+<script>
+    function Devision() {
+        let number1 = document.getElementById("number1").value;
+        let number2 = document.getElementById("number2").value;
+        number1 = parseInt(number1);
+        number2 = parseInt(number2);
+        let sum = number1 / number2;
+        document.getElementById('result').innerText = sum;
+    }
+</script>
+
+</body>
+</html>
