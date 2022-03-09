@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>BMI</th>
+        <th>interpretation</th>
+    </tr>
+    <tr>
+        <th>BMI<18.5</th>
+        <th>UnderWeight</th>
+    </tr>
+    <tr>
+        <th>18.5<=BMI<25.0</th>
+        <th>Normal</th>
+    </tr>
+    <tr>
+        <th>25.0<=BMI<30.0</th>
+        <th>OverWeight</th>
+    </tr>
+    <tr>
+        <th>30.0=BMI</th>
+        <th>Obese</th>
+    </tr>
+</table>
+<script>
+    let bmi = parseFloat(prompt("Nhập số cân nặng"));
+    if (bmi < 18)
+        document.write("Underweight");
+    else if (bmi < 25.0)
+        document.write("Normal");
+    else if (bmi < 30.0)
+        document.write("Overweight");
+    else
+        document.write("Obese");
+</script>
+</body>
+</html>

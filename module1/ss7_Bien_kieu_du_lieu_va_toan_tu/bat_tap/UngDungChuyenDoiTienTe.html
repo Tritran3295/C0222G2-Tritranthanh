@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label for="số lượng">Amount</label>
+    <input type="number" id="số lượng">
+    <span>From Currency</span>
+    <label>
+        <select>
+            <option name ="a">VNĐ</option>
+            <option name ="b">USD</option>
+        </select>
+    </label>
+    <span>To Currency</span>
+    <label>
+        <select>
+            <option>USD</option>
+            <option>VNĐ</option>
+        </select>
+    </label>
+    <button type="button" onclick="Convert()">Convert</button>
+    <p id="Result">Result:</p>
+</form>
+<script>
+    function Convert() {
+        let a = document.getElementById("số lượng").value;
+        document.getElementById("Result").innerText = a * 23000;
+    }
+
+
+</script>
+
+
+</body>
+</html>

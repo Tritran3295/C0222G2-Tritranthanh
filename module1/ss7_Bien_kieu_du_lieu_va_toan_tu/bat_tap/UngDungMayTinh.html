@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3>Caculator</h3>
+<label for="number1"></label><input type="number" id="number1">
+<label for="number2"></label><input type="number" id="number2"><br>
+<!--<button type="button" onclick="cong()">+</button>-->
+<!--<button type="button" onclick="tru()">-</button>-->
+<!--<button type="button" onclick="nhan()">x</button>-->
+<!--<button type="button" onclick="chia()">/</button>-->
+
+<button type="button" onclick="tinh('+')">cộng</button>
+<button type="button" onclick="tinh('_')">trừ</button>
+<button type="button" onclick="tinh('*')">nhân</button>
+<button type="button" onclick="tinh('/')">chia</button>
+<h2 id = "ketQua">Result</h2>
+<script>
+    function tinh(phepTinh) {
+        let result = 0;
+        let number1=parseFloat(document.getElementById("number1").value);
+        let number2=parseFloat(document.getElementById("number2").value);
+        if (phepTinh='+'){
+            result = number1 + number2;
+        } else if(phepTinh='-'){
+            result = number1 - number2;
+        } else  if(phepTinh='*'){
+            result = number1*number2;
+        }else{
+            result=number1/number2;
+        }
+        document.getElementById("ketQua").innerHTML=result;
+    }
+</script>
+<!--<script>-->
+<!--    function Addition() {-->
+<!--        let number1 =document.getElementById("number1").value;-->
+<!--        let number2 =document.getElementById("number2").value;-->
+<!--        number1=parseInt(number1);-->
+<!--        number2=parseInt(number2);-->
+<!--        let sum = number1 + number2;-->
+<!--        document.getElementById('result').innerText = sum;-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    function Subtraction() {-->
+<!--        let number1 = document.getElementById("number1").value;-->
+<!--        let number2 = document.getElementById("number2").value;-->
+<!--        number1 = parseInt(number1);-->
+<!--        number2 = parseInt(number2);-->
+<!--        let sum = number1 - number2;-->
+<!--        document.getElementById('result').innerText = sum;-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    function Multiplication() {-->
+<!--        let number1 = document.getElementById("number1").value;-->
+<!--        let number2 = document.getElementById("number2").value;-->
+<!--        number1 = parseInt(number1);-->
+<!--        number2 = parseInt(number2);-->
+<!--        let sum = number1 * number2;-->
+<!--        document.getElementById('result').innerText = sum;-->
+<!--    }-->
+<!--</script>-->
+<!--<script>-->
+<!--    function Devision() {-->
+<!--        let number1 = document.getElementById("number1").value;-->
+<!--        let number2 = document.getElementById("number2").value;-->
+<!--        number1 = parseInt(number1);-->
+<!--        number2 = parseInt(number2);-->
+<!--        let sum = number1 / number2;-->
+<!--        document.getElementById('result').innerText = sum;-->
+<!--    }-->
+<!--</script>-->
+
+</body>
+</html>
