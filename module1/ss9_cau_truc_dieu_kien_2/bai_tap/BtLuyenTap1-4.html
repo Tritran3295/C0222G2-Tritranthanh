@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập số bất kì"));
+    let b = parseInt(prompt("Nhập số bất kì"));
+    let c = parseInt(prompt("Nhập số bất kì"));
+    if (a > b && a > c){
+        alert("Số lớn nhất:" + a);
+    }else if(a > b && b === c){
+        alert("Số lớn nhất :" + a);
+    }else  if(a < b && b > c){
+        alert("Số lớn nhất :" + b);
+    }else if( a === c && a < b){
+        alert("Số lớn nhất :" + b);
+    }else if( a < c && b < c ){
+        alert("Số lớn nhất :" + c);
+    }else if( a === b && a < c){
+        alert("Số lớn nhất :" + c);
+    }else {
+        alert("Không có số nào là lớn nhất")
+    }
+
+
+
+
+</script>
+
+</body>
+</html>

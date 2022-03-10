@@ -5,12 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<script>
-    let nhietdoC;
-    let nhietdoF;
-    nhietdoC=prompt("nhập độ C");
-    let doC = parseFloat(nhietdoC);
-    let f = 9/5 * nhietdoC + 32
-    document.write("độ F là " + f)
-</script>
+<p>
+    <label>doC</label>
+    <input id="inputDoC" type="number" placeholder="Celsius">
+</p>
+<p>Fahrenheit :<span id="outputDoF"></span> </p>
+<script
 </body>

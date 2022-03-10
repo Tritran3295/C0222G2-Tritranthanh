@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Điểm kiểm tra"));
+    let b = parseFloat(prompt("Điểm thi giữa kì"));
+    let c= parseFloat(prompt("Điểm thi cuối kì"));
+    let tong = (a + b + c)/3;
+    if (tong >= 9){
+        document.write("Học sinh xuất sắc");
+    }else if(tong >= 8){
+        document.write("Học sinh giỏi");
+    }else if(tong >= 6.5){
+        document.write("Học sinh khá");
+    }else if(tong >= 5){
+        document.write("Học sinh TB");
+    }else{
+        document.write("Học sinh yếu");
+    }
+</script>
+
+</body>
+</html>
