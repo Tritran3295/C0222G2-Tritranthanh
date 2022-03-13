@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let F1 = 0;
+    let F2 = 1;
+    let F3;
+    let tong=0;
+    for(let i = 2;i <20;i++){
+            F3 = F1 + F2;
+            tong += F3;
+            F1 = F2;
+            F2 = F3;
+    }
+    document.write(tong)
+    // let F= 0,F1 = 0,F2 = 0,tong =0;
+    // let fibonacci ="";
+    // for(let i = 1;i < 20;i++){
+    //     if(i === 0){
+    //         F = 1;
+    //         F2 = 1;
+    //         fibonacci += F+ "";
+    //         tong += F;
+    //     }else {
+    //         F= F1 + F2;
+    //         F1 = F2;
+    //         F2 = F;
+    //         fibonacci += F+ "";
+    //         tong +=F;
+    //         // console.log(i + "=" +F)
+    //     }
+    // }
+    // document.write("dãy số fibonacci là "+fibonacci);
+    // document.write("tong = "+tong)
+</script>
+
+</body>
+</html>

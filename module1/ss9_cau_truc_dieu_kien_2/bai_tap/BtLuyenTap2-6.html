@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhập giá trị a"));
+    let b = parseInt(prompt("nhập giá trị b"));
+    if ( a === 0 && b === 0){
+        alert("phương trình có vô số nghiệm");
+    } else if(a !==0 && b ===0){
+        alert("Phương trình có 1 nghiệm");
+    } else if(a === 0 && b !==0){
+        alert("Phương trình vô nghiệm");
+    } else {
+        alert("Phương trình có nghiệm x" + -b/a)
+    }
+</script>
+<!--Nhập số a :<input type="text" id="a" value=""/><br>-->
+<!--Nhập số b :<input type="text" id="b" value=""/>-->
+<!--<span id="Result"></span>-->
+<!--<button type="button" onclick="giaiNghiem()" >Tinh</button>-->
+<!--    <script>-->
+<!--    let a = document.getElementById("a").value;-->
+<!--    let b = document.getElementById("b").value;-->
+<!--    function giaiNghiem() {-->
+<!--        if (a === 0 && b ===0){-->
+<!--            alert("Phương trình vô số nghiệm");-->
+<!--        } else if (a === 0 && b !==0){-->
+<!--            alert("Phương trình có 1 nghiệm");-->
+<!--        } else if (a !== 0 && b ===0){-->
+<!--            alert("Phương trình vô nghiệm");-->
+<!--        }else {-->
+<!--            alert("Phương trình có nghiệm x = " + -b/a)-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+</body>
+</html>

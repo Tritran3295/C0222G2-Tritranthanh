@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+let n1 = 0,n2 = 0, n3 = 0;
+let fibonacci = "bắt đầu";
+for ( i = 0;i < 20 ; i++){
+    if(i ===0 ){
+        n1 = 1;
+        n3 = 1;
+        fibonacci += n1 + '<br>';
+    }else {
+        n1 = n2 + n3;
+        n2 = n3;
+        n3 = n1;
+        fibonacci += n1 +'<br>';
+        console.log(i + "=" + n1);
+    }
+}document.write(fibonacci)
+</script>
+</body>
+</html>
