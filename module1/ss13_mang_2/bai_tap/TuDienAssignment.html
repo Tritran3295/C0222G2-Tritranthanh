@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h2>Từ điển Anh - Việt</h2>
+<form>
+    <input type="text" id="word" placeholder="Nhập từ cần tìm kiếm"><br>
+    <input type="button" onclick="Search()" value="tìm kiếm" >
+</form>
+<script>
+    let arr1 = ["pig","dog","cat","bird","horse"];
+    let arr2 = ["heo","chó","mèo","chim","ngựa"];
+    function Search() {
+        let word = document.getElementById("word").value;
+        let index = arr1.indexOf(word);
+        if (index !== -1){
+            alert("có nghĩa là :" + arr2[index]);
+        }else {
+            alert("không tìm thấy từ")
+        }
+
+    }
+</script>
 </body>
 </html>

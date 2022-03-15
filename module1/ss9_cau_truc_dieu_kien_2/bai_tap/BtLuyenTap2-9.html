@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseFloat(prompt("Nhập số đo cạnh a"));
+    let b = parseFloat(prompt("Nhập số đo cạnh b"));
+    let c = parseFloat(prompt("Nhập số đo cạnh c"));
+
+    if(a+ b >c && b + c >a && a + c >b){
+        alert(" là cạnh của tam giác");
+    }else {
+        alert("không phải là cạnh của tam giác");
+    }
+</script>
 </body>
 </html>
