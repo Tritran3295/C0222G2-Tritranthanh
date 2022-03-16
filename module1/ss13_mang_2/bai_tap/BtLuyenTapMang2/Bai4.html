@@ -7,16 +7,37 @@
 <body>
 <script>
     let arr = Array();
-    let str = prompt("Nhập chuỗi");
+    let str = "dem so tu trong chuoi "
     let count = 0;
-    for (let i = 0; i <arr.length ; i++) {
-        arr.push(str[i]);
-        if(NaN(arr[i])){
+    let flag = true
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] !== " "|| str[i] % 1 !==0) {
+            if(flag){
             count ++;
+            flag = false;
+            }
         }
-
-    }
+        else {
+            flag = true;
+        }
+        }
     console.log(count)
 </script>
+<!--<script>-->
+<!--    let arr="Hello! It's me, i'm Binh";-->
+<!--    let count=0;-->
+<!--    let flag=true;-->
+<!--    for(let i=0; i< arr.length; i++){-->
+<!--        if(arr[i] != ' ' && (arr[i]%1 != 0)){-->
+<!--            if(flag){-->
+<!--                count++;-->
+<!--                flag=false;-->
+<!--            }-->
+<!--        }-->
+<!--        else{-->
+<!--            flag=true;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
 </body>
 </html>
