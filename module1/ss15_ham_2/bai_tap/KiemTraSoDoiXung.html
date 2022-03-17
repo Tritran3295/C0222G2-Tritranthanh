@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhập chuỗi bất kì: ");
+    let array = str.split("");
+    // console.log(array)
+    function isPalindrome(array) {
+        if(array.length < 2){
+            // console.log("đúng");
+            return true;
+        }else {
+            if(array[0]=== array[array.length -1]){
+                array.pop();
+                array.shift();
+                // console.log("mảng sau mỗi lần so sánh :"+ array)
+                return isPalindrome(array);
+            }else {
+                // console.log("test");
+                return false;
+            }
+        }
+    }
+console.log("kết quả :" +isPalindrome(array))
+
+</script>
+<!--<script>-->
+<!--    &lt;!&ndash;    abcdabcd&ndash;&gt;-->
+<!--    let str = prompt("Nhập chuỗi str: ");-->
+<!--    let arr = str.split("");-->
+<!--    console.log(arr);-->
+
+<!--    function isPalindrome(array) {-->
+<!--        // [ a, b, c, a] -> [b , c]-->
+<!--        // Nếu mảng có độ dài < 2 -> return true tức là mảng đối xứng.-->
+<!--        if (array.length < 2) {-->
+<!--            console.log("Đúng")-->
+<!--            return true;-->
+<!--        } else {-->
+<!--            // Nếu phần tử đầu và cuối = nhau thì xóa cả 2 và gọi lại hàm.-->
+<!--            if (array[0] === array[array.length - 1]) {-->
+<!--                array.pop();-->
+<!--                array.shift();-->
+<!--                console.log("Mảng sau mỗi lần so sánh: " + array)-->
+<!--                // Khi gọi lại hàm thì phải có return để dừng hàm cũ.-->
+<!--                return isPalindrome(array);-->
+<!--            } else {-->
+<!--                console.log("Test");-->
+<!--                return false;-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+<!--    console.log("Kết quả:" + isPalindrome(arr));-->
+<!--</script>-->
+</body>
+</html>

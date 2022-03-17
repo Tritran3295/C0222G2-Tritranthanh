@@ -6,31 +6,19 @@
 </head>
 <body>
 <script>
-    let a = prompt("nhập a");
-    let b = prompt("nhập b");
-    let c = prompt("nhập c");
+    let a = parseInt(prompt("nhập số a"))
+    let b = parseInt(prompt("nhập số b"))
+    let c = parseInt(prompt("nhập số c"))
+    console.log(search(a, b, c))
 
-    function compareNumber(a, b, c) {
-        if (a > b && a > c) {
-            if (b > c) {
-                return c;
-            } else {
-                return b;
-            }
-        } else if (b > a && b > c) {
-            if (a > c) {
-                return c;
-            } else (a < c)
-            {
-                return a;
-            }
-        } else (c > b && c > a)
-        {
-            if (b > a) {
-                return a;
-            } else {
-                return b;
-            }
+    function search(a, b, c) {
+        let min = a;
+        if (b < min) {
+            min = b;
+        } else if (c < min) {
+            min = c;
+        } else {
+            return min;
         }
     }
 

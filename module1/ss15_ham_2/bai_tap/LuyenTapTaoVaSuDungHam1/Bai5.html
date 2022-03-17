@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let timKiem = prompt("nhập ngôi sao cần tìm")
+    let ngoiSao = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let chomSao = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function search(timKiem) {
+        for (let i = 0; i < ngoiSao.length; i++) {
+            if (timKiem === ngoiSao[i]) {
+                return chomSao[i];
+            }else {
+                alert("ko thấy");
+            }
+        }
+    }
+    alert(search(timKiem))
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhập số bất kì");
+    function test(a) {
+        if(a > 0 && a%2===0){
+            return true;
+        }else if((a-1) % 2 ===0){
+            return false;
+        }else if(a < 0){
+            return false;
+        }else {
+            return 0;
+        }
+    }
+    let flag = test(a);
+    if(flag === true){
+        alert("là số nguyên dương");
+    }else if(flag === false){
+        alert("là số nguyên âm");
+    }else {
+        alert("trường hợp đặc biệt")
+    }
+</script>
+</body>
+</html>
