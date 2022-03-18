@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Rectangle {
+        constructor(a,b) {
+            this.chieuDai=a;
+            this.chieuRong=b;
+        }
+        getArea(){
+            return this.chieuDai*this.chieuRong;
+
+        }getChuVi(){
+            return 2*(this.chieuRong + this.chieuDai);
+        }
+    }
+    let chuNhat=new Rectangle(8,7);
+    let s =chuNhat.getArea();
+    let chuVi=chuNhat.getChuVi();
+    alert("diện tích là :"+s + "chu vi là :"+chuVi)
+</script>
+</body>
+</html>

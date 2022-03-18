@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(c) {
+            this.doC = c;
+
+        }getDoF(){
+            return this.doC*1.8 + 32;
+        }getDoK(){
+            return this.doC +273.15;
+        }
+    }
+    let nhietDo=new Temperature(25);
+    let fahrenheit=nhietDo.getDoF();
+    let kelvin=nhietDo.getDoK();
+    alert("độ k =" + kelvin + "độ f ="+fahrenheit)
+</script>
+</body>
+</html>
