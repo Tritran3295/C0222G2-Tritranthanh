@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class ElectricLamp{
+        constructor() {
+            this.status = false;
+        }turnOff(){
+            return this.status = false;
+        }turnOn(){
+            return this.status = true;
+        }
+    }
+    class SwitchButton{
+        constructor(electricLamp) {
+            this.status = false;
+            this.electricLamp=null;
+        }connectToLamp(lamp){
+            this.electricLamp=lamp;
+        }switchOn(){
+            this.status=true;
+            this.electricLamp.turnOn;
+            // alert("Bật bóng đèn")
+        }switchOff(){
+            this.status=false;
+            this.electricLamp.turnOff();
+            // alert("Tắt bóng đèn")
+        }
+    }
+    let bongden =new ElectricLamp();
+    let congtac =new SwitchButton();
+    congtac.connectToLamp(bongden)
+    for (let i = 1; i <10 ; i++) {
+        congtac.switchOn()
+        alert("Bật bóng đèn"+this.status);
+        congtac.switchOff()
+        alert("Tắt bóng đèn" +this.status)
+    }
+
+</script>
+</body>
+</html>
