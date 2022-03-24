@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let menu =0;
+    let tinhTien = 0;
+    let soLuong=0 ;
+    while (menu !== 7){
+
+        menu =parseInt(prompt("1:Cafe \n2:Cam vắt \n3:Nước ép cà rốt \n4:Nước ép cà chua \n5:Nước lọc \n6:Nước dừa"));
+        switch (menu) {
+            case 1:
+                soLuong = parseInt(prompt("nhập số lượng"));
+                tinhTien = soLuong * 15000;
+                console.log(tinhTien)
+                break;
+            case 2:
+            case 3:
+            case 4:
+                soLuong = parseInt(prompt("nhập số lượng"));
+                tinhTien = soLuong * 20000;
+                console.log(tinhTien)
+                break;
+            case 5:
+                soLuong = parseInt(prompt("nhập số lượng"));
+                tinhTien = soLuong * 5000;
+                console.log(tinhTien)
+                break;
+            case 6:
+                soLuong = parseInt(prompt("nhập số lượng"));
+                tinhTien = soLuong * 30000;
+                console.log(tinhTien)
+                break;
+        }
+    }
+
+
+
+</script>
+</body>
+</html>
