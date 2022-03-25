@@ -6,23 +6,24 @@
 </head>
 <body>
 <script>
-    let s = "qapoai";
-    let arr = s.split("");
+    let s = prompt("nhập chuỗi"); // abcab
+    let arr = new Array();
     let count = 0;
-
-    function differentSymbolsNaive() {
-        for (let i = 0; i < arr.length; i++) {
-            if (arr[i] !== arr[i + 1]) {
-                count++;
-            } else {
-                arr.splice()
+     arr[0] = s[0];
+    for (let i = 1; i < s.length; i++) {
+        let temp = 0;
+        for (let j = 0; j < arr.length; j++) { //a b
+            if (s[i] === arr[j]) {
+                temp++;
             }
+        }
+        if (temp === 0) {
+            arr[count] = s[i];
+            count++;
 
         }
     }
-
-    console.log(differentSymbolsNaive())
-
+    console.log(count)
 </script>
 </body>
 </html>

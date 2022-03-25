@@ -6,16 +6,52 @@
 </head>
 <body>
 <script>
-    let S = "tRuong    TaN   HAI ";
-    let s = S.toLowerCase();
-    let arr=s.split("")
-    for (let i = 0; i <arr.length ; i++) {
-        
+    let str = ('tRuong    TaN   HAI');
+
+    function chuyenDoiKyTu(str) {
+        let b = [];
+        let a = [];
+        str = str.toLowerCase();
+        a = str.split(" ");
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] !== "") {
+                b.push(a[i])
+            }
+        }
+        for (let i=0;i<b.length;i++){
+            b[i]=b[i][0].toUpperCase() + b[i].substring(1);
+            if(b[i].length>str.length){
+                str=b[i];
+
+            }
+        }
+        return b.join(" ")
+
 
     }
-    // let a = s.charAt(0).toUpperCase()+ s.slice(1)
+    console.log(chuyenDoiKyTu(str))
 
-    console.log()
+    // chuyenDoiKyTu(str)
+    // for (let i = 0; i < s.length; i++) {
+    //     if (s[i] === " ") {
+    //         s.splice(i, 1);
+    //         i--;
+    //     }
+    // }
+    // s[i]=s[i][0].toUpperCase()+s[i].substring(1,s[i].length)
+    // console.log(s)
+
+    //     s[i]=s[i][0].toUpperCase() + s[i].substring(1,s[i].length);
+    //     if(s[i].length>str.length){
+    //         str=s[i];
+    //     }
+    // }
+    // let s2=s.join("")
+
+    //
+    //let a = s.charAt(0).toUpperCase()+ s.slice(1)
+    // console.log(s2)
+    // console.log(str)
 </script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let stringA = "aabcc";
+    let stringB = "adcaa";
+    let arrA=stringA.split("");
+    let arrB=stringB.split("");
+    let count=0;
+    for (let i=0;i<arrA.length;i++){
+        for (let j= 0;j<arrB.length;j++){
+            if(arrB[j]===arrA[i]){
+                count++;
+                arrA.splice(i,1);
+                arrB.splice(j,1);
+                i--;
+
+            }
+        }
+    }console.log(count)
+
+</script>
+</body>
+</html>
