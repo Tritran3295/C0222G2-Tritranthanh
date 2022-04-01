@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = parseInt(prompt("nhập đọ dài chuỗi,n<=50"));
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let i = 0; i < str; i++) {
+        a.push(parseInt(prompt("nhập số bất kì")));
+    }
+    console.log(a);
+
+    function checkPrime(b) {
+
+        if (b < 2) {
+            return false;
+        }
+        for (let i = 2; i < Math.sqrt(b); i++) {
+            if (b % i === 0) {
+                return false
+            }
+        }
+        return true
+    }
+
+    console.log(b);
+
+    soNguyenTo(b);
+
+    function soNguyenTo(b) {
+        for (let i = 0; i < b.length; i++) {
+            if (checkPrime(b[i])) {
+                c.push(b[i]);
+            }
+        }
+        return c;
+    }
+
+    // for (let i =0;i<a.length;i++){
+    //     for (let j=0;j<a[i].length;j++){
+    //         if(checkPrime(a[i][j])){
+    //
+    //         }
+    //     }
+    // }
+    // console.log(" c là :" + c);
+
+    // function soNguyenTo(b) {
+    //
+    //     for (let i = 0; i < b.length; i++) {
+    //         if (checkPrime(b[i])) {
+    //             c.push(b[i]);
+    //         }
+    //     }
+    //     return c;
+    }
+    // for (let i = 0; i <a.length ; i++) {
+    //     for(let j=0;j<b.length;j++){
+    //         if(a[j]===a[i]){
+    //             b.push(a[i][j])
+    //         }
+    //     }
+    //
+    // }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size=parseInt(prompt("nhập độ dài chuỗi,length<=50"));
+    let arr=[]
+    for (let i = 0; i <size ; i++) {
+        arr.push(parseInt(prompt("nhập số")));
+    }
+    console.log(arr);
+    let tong=0;
+    let avg=0;
+    let count=0;
+    for (let i = 0; i <arr.length ; i++) {
+        if(arr[i]%5===0 && i%3===0){
+            tong+=arr[i];
+            count++;
+
+
+        }avg=tong/count;
+
+
+    }console.log("trung bình là :"+avg)
+
+
+
+
+
+
+
+
+
+
+    // // let arr = parseInt(prompt("nhập độ dài chuỗi"));
+    // // arr=arr.split("");
+    // // function nhapMang(arr) {
+    // //     let number=parseInt(prompt("nhập số "));
+    // //     arr.push(number);
+    //
+    //
+    //
+    // let arr=[];
+    // let tong=0;
+    // let avg =0;
+    // for (let i =1;i<=10;i++){
+    //      arr[i]=parseInt(prompt("nhập số"));
+    // }console.log(arr);
+    // for (let i = 0; i < arr.length ; i++) {
+    //     if(arr[i]% 3===0 && i%5===0){
+    //         tong+=
+    //     }
+    // }console.log (avg)
+
+</script>
+</body>
+</html>

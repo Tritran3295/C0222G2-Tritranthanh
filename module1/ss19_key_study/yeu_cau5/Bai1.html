@@ -5,15 +5,27 @@
     <title>Title</title>
 </head>
 <body>
+<caption>
 <script>
-    let m = parseInt(prompt("nhập số bất kì"));
-    let n = parseInt(prompt("nhập số bất kì"));
+    let m = parseInt(prompt("nhập số dòng bất kì"));
+    let n = parseInt(prompt("nhập số cột bất kì"));
     let tong = 0;
-    for (let i =0;i<=m*n;i++){
-        if(i%2===0){
-            tong +=i;
+    let c =[];
+    for (let i =0;i<m;i++){
+        let row =[];
+        for (let j=0;j<n;j++){
+            row[j]=parseInt(prompt("nhập số bất kì"))
+        }c[i]=row;
+    }
+    for (let i =0;i<c.length;i++){
+        for (let j=0;j<c.length;j++){
+           if(c[i][j] %2===0){
+               tong+=c[j][i];
+           }
         }
-    }console.log(tong)
+    }
+    console.table(c)
+    console.log(tong)
 
 
 </script>

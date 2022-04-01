@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="maSo" placeholder="nhập mã số">
+<input type="text" id="loaiTietKiem" placeholder="nhập loại tiết kiệm">
+<input type="text" id="hoTenKhachHang" placeholder="nhập họ tên khách hàng">
+<input type="text" id="chungMinhNhandan" placeholder="nhập chứng minh nhân dân">
+<input type="text" id="ngayMoSo" placeholder="nhập ngày mở sổ">
+<input type="text" id="soTienGui" placeholder="nhập số tiền gửi">
+<input type="button" onclick="themMoi()" value="Thêm Mới">
+<p id="ketQua"></p>
+<script>
+    class SoTietKiem {
+        constructor(maSo, loaiTietKiem, hoTenKhachHang, chungMinhNhanDan, ngayMoSo, soTienGui) {
+            this.maSo = maSo;
+            this.loaiTietKiem = loaiTietKiem;
+            this.hoTenKhachHang = hoTenKhachHang;
+            this.chungMinhNhanDan = chungMinhNhanDan;
+            this.ngayMoSo = ngayMoSo;
+            this.soTienGui = soTienGui;
+        }
+
+        getMaSo() {
+            return this.maSo;
+        }
+
+        getLoaiTietKiem() {
+            return this.loaiTietKiem;
+        }
+
+        getHoTenKhachHang() {
+            return this.hoTenKhachHang;
+        }
+
+        getChungMinhNhanDan() {
+            return this.chungMinhNhanDan;
+        }
+
+        getNgayMoSo() {
+            return this.ngayMoSo;
+        }
+
+        getSoTienGui() {
+            return this.soTienGui
+        }
+
+        setMaSo(maSo) {
+            this.maSo = maSo;
+        }
+
+        setLoaiTietKiem(loaiTietKiem) {
+            this.loaiTietKiem = loaiTietKiem;
+        }
+
+        setHoTenKhachHang(hoTenKhachHang) {
+            this.hoTenKhachHang = hoTenKhachHang;
+        }
+
+        setChungMinhNhanDan(chungMinhNhanDan) {
+            this.chungMinhNhanDan = chungMinhNhanDan;
+        }
+
+        setNgayMoSo(ngayMoSo) {
+            this.ngayMoSo = ngayMoSo;
+        }
+
+        setSoTienGui(soTienGui) {
+            this.soTienGui = soTienGui;
+        }
+    }
+
+    let KH1 = new SoTietKiem("MS1", "6 tháng", "Trần Văn A", "197327720", "20-03-2022", 15000);
+    let KH2 = new SoTietKiem("MS2", "6 tháng", "Trần Văn B", "197327721", "20-03-2022", 25000);
+    let KH3 = new SoTietKiem("MS3", "6 tháng", "Trần Văn C", "197327722", "20-03-2022", 35000);
+    let danhSachKhachHang = [KH1, KH2, KH3];
+    danhSachHienThi(danhSachKhachHang);
+
+    function danhSachHienThi(danhSach) {
+        let tablestring = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>Stt</th>\n' +
+            '        <th>Mã Sổ</th>\n' +
+            '        <th>Loại tiết kiệm</th>\n' +
+            '        <th>Họ Tên Khách Hàng</th>\n' +
+            '        <th>Chung Minh Nhân Dân</th>\n' +
+            '        <th>Ngày Mở Sổ</th>\n' +
+            '        <th>Số Tiền Gửi</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < danhSach.length; i++) {
+            tablestring += ' <tr>\n' +
+                '        <td>' + (i + 1) + '</td>\n' +
+                '        <td>' + danhSach[i].getMaSo() + '</td>\n' +
+                '        <td>' + danhSach[i].getLoaiTietKiem() + '</td>\n' +
+                '        <td>' + danhSach[i].getHoTenKhachHang() + '</td>\n' +
+                '        <td>' + danhSach[i].getChungMinhNhanDan() + '</td>\n' +
+                '        <td>' + danhSach[i].getNgayMoSo() + '</td>\n' +
+                '        <td>' + danhSach[i].getSoTienGui() + '</td>\n' +
+                '<td><input type="button" value="xoá" onclick="xoa(' + i + ')" ></td>'+
+            '    </tr>'
+        }
+        tablestring += '</table>'
+        document.getElementById("ketQua").innerHTML = tablestring
+    }
+
+    function themMoi() {
+        let maSo = document.getElementById("maSo").value;
+        let loaiTietKiem = document.getElementById("loaiTietKiem").value;
+        let hoTenKhachHang = document.getElementById("hoTenKhachHang").value;
+        let chungMinhNhanDan = document.getElementById("chungMinhNhandan").value;
+        let ngayMoSo = document.getElementById("ngayMoSo").value;
+        let soTienGui = document.getElementById("soTienGui").value;
+        let so = new SoTietKiem(maSo, loaiTietKiem, hoTenKhachHang, chungMinhNhanDan, ngayMoSo, soTienGui)
+        danhSachKhachHang.push(so);
+        danhSachHienThi(danhSachKhachHang);
+        document.getElementById("maSo").value = "";
+        document.getElementById("loaiTietKiem").value = "";
+        document.getElementById("hoTenKhachHang").value = "";
+        document.getElementById("chungMinhNhandan").value = "";
+        document.getElementById("ngayMoSo").value = "";
+        document.getElementById("soTienGui").value = "";
+
+    }
+
+    function xoa(index) {
+        let conf = confirm("bạn có muốn xoá sổ này không?");
+        if (conf) {
+            danhSachKhachHang.splice(index, 1);
+        } else {
+            alert("bạn đã không xoá lựa chọng này ")
+        }
+        danhSachHienThi(danhSachKhachHang)
+
+    }
+</script>
+</body>
+</html>

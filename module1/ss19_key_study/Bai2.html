@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = prompt("nhập chuỗi");
+    let arr =[];
+    let arr2=[];
+    function vietTat(str) {
+        arr=str.toLowerCase().split(" ");
+        for (let i = 0; i <arr.length ; i++) {
+            if(arr[i]===""){
+                arr.splice(i,1);
+                i--;
+            }
+        }
+        if(arr.length===1){
+            return arr.join('');
+        }else {
+            for (let i = 0; i <arr.length ; i++) {
+                arr2.push(arr[i][0].toUpperCase())
+            }
+            return arr2.join("");
+        }
+    }
+console.log(vietTat(str));
+
+    // let str = prompt("nhập chuỗi ");
+    //
+    // function chuyenDoiKyTu(str) {
+    //     let a = [];
+    //     let b = [];
+    //     let count=0;
+    //     a = str.toLowerCase().split(" ")
+    //     for (let i = 0; i < a.length; i++) {
+    //         if (a[i] !== "") {
+    //            count++;
+    //         }
+    //
+    //     }if(count ===1 ){
+    //         alert("chuỗi chỉ có một từ nên không cần viết tắt")
+    //     }else {
+    //         for (let i =0;i<a.length;i++){
+    //            if(arr[i]!==""){
+    //                b+=arr[i][0];
+    //            }
+    //         }
+    //     }
+    // }
+    // console.log(chuyenDoiKyTu(str))
+</script>
+</body>
+</html>

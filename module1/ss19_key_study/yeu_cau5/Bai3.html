@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="Id" placeholder="Nhập id">
+<input type="text" id="bienKiemSoat" placeholder="Nhập biển kiểm soát">
+<input type="text" id="chuSoHuu" placeholder="Nhập chủ sở hữu">
+<input type="text" id="dungTichXiLanh" placeholder="Nhập dunh tích xi lanh">
+<input type="button" onclick="themMoi" value="Thêm Mới">
+<p id="ketQua"></p>
+<script>
+    class XeMay {
+        constructor(id, bienKiemSoat, chuSoHuu, dungTichXiLanh) {
+            this.id = id;
+            this.bienKiemSoat = bienKiemSoat;
+            this.chuSoHuu = chuSoHuu;
+            this.dungTichXiLanh = dungTichXiLanh;
+        }
+
+        getId() {
+            return this.id;
+        }
+
+        getBienKiemSoat() {
+            return this.bienKiemSoat;
+        }
+
+        getChuSoHuu() {
+            return this.chuSoHuu;
+        }
+
+        getDungTichXiLanh() {
+            return this.dungTichXiLanh;
+        }
+
+        setId(Id) {
+            this.id = id;
+        }
+
+        setBienKiemSoat(bienKiemSoat) {
+            this.bienKiemSoat = bienKiemSoat;
+        }
+
+        setChuSoHuu(chuSoHuu) {
+            this.chuSoHuu = chuSoHuu;
+        }
+
+        setDungTichXiLanh(dungTichXiLanh) {
+            this.dungTichXiLanh = dungTichXiLanh;
+        }
+    }
+
+    let xeMay1 = new XeMay(1, "74F1-29590", "Tri1", 500);
+    let xeMay2 = new XeMay(2, "74F1-29591", "Tri2", 500);
+    let xeMay3 = new XeMay(3, "74F1-29592", "Tri3", 500);
+    let danhSachXeMay = [xeMay1, xeMay2, xeMay3];
+    danhSachHienThi(danhSachXeMay)
+
+    function danhSachHienThi(danhSach) {
+        let tablestring = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th>Stt</th>\n' +
+            '        <th>ID</th>\n' +
+            '        <th>BKS</th>\n' +
+            '        <th>Chủ Sở Hữu</th>\n' +
+            '        <th>Dung Tích Xi Lanh</th>\n' +
+            '        <th>Sửa</th>\n' +
+            '        <th>Xoá</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < danhSach.length; i++) {
+            tablestring += '<tr>\n' +
+                '        <td>' + (i + 1) + '</td>\n' +
+                '        <td>' + danhSach[i].getId() + '</td>\n' +
+                '        <td>' + danhSach[i].getBienKiemSoat() + '</td>\n' +
+                '        <td>' + danhSach[i].getChuSoHuu() + '</td>\n' +
+                '        <td>' + danhSach[i].getDungTichXiLanh() + '</td>\n' +
+                '        <td><input type="button" value="Edit" onclick="sua(+i+)"></td>\n' +
+                '        <td><input type="button" value="delete" onclick="xoa(+i+)"></td>\n' +
+                '    </tr>'
+        }
+    // <td><input type="button" value="Edit" onclick="sua('+i+')"></td>\n' +
+        tablestring += '</table>';
+        document.getElementById("ketQua").innerHTML = tablestring;
+
+    }
+
+    function themMoi() {
+        let id = document.getElementById("id").value;
+        let bienKiemSoat = document.getElementById("bienKiemSoat").value;
+        let chuSoHuu = document.getElementById("chuSoHuu").value;
+        let dungTichXiLanh = document.getElementById("dungTichXiLanh").value;
+        let xeMay = new XeMay(id, bienKiemSoat, chuSoHuu, dungTichXiLanh)
+        danhSachXeMay.push(xeMay)
+        danhSachHienThi(danhSachXeMay);
+        document.getElementById("id").value = "";
+        document.getElementById("bienKiemSoat").value = "";
+        document.getElementById("chuSoHuu").value = "";
+        document.getElementById("dungTichXiLanh").value = "";
+    }
+
+    function sua(index) {
+        let newid = prompt("nhập id mới");
+        let newBienKiemSoat = prompt("nhập bks mới");
+        danhSachXeMay[index].setId(newid)
+        danhSachXeMay[index].setBienKiemSoat(newBienKiemSoat);
+    }
+
+    function xoa(index) {
+        let conf = confirm("bạn có muốn xoá " + danhSachXeMay[index].getBienKiemSoat());
+    }
+</script>
+</body>
+</html>
