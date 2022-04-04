@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f6b6d04-fdb6-445b-b545-0cf7ee8abadc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../module1/Thi_Thuc_Hanh/bai_tap/Bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module1/Thi_Thuc_Hanh/bai_tap/Bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module1/Thi_Thuc_Hanh/bai_tap/Bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module1/Thi_Thuc_Hanh/bai_tap/b1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module1/Thi_Thuc_Hanh/bai_tap/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module1/ss19_key_study/Bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module1/ss19_key_study/Bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module1/ss19_key_study/Bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module1/ss19_key_study/bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module1/ss19_key_study/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module1/ss19_key_study/yeu_cau5/Bai3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/ss11_cau_truc_lap_2/bai_tap/LuyenTapVongLap1/Bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/ss11_cau_truc_lap_2/bai_tap/LuyenTapVongLap1/Bai3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/ss18_thuat_toan_1/bai_tap/tess1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/ss18_thuat_toan_1/bai_tap/tess1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/ss18_thuat_toan_1/bai_tap/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/ss18_thuat_toan_1/bai_tap/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/ss19_key_study/yeu_cau3/Bai4.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/ss19_key_study/yeu_cau3/Bai4.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/ss19_key_study/yeu_cau5/Bai1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/ss19_key_study/yeu_cau5/Bai1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module1/ss19_key_study/yeu_cau5/Bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/ss19_key_study/yeu_cau5/Bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../out/production/p_module2/Bai1/Bai_tap/UngDungDocSoThanhChu.class" beforeDir="false" afterPath="$PROJECT_DIR$/../out/production/p_module2/Bai1/Bai_tap/UngDungDocSoThanhChu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Bai1/Bai_tap/UngDungDocSoThanhChu.java" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -49,6 +34,8 @@
       <option name="presentableId" value="Default" />
       <updated>1648714719252</updated>
       <workItem from="1648714720606" duration="85000" />
+      <workItem from="1648831029989" duration="28000" />
+      <workItem from="1648881666280" duration="216000" />
     </task>
     <servers />
   </component>
