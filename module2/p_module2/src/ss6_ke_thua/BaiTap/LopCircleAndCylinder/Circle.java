@@ -2,7 +2,7 @@ package ss6_ke_thua.BaiTap.LopCircleAndCylinder;
 
 public class Circle {
     private double radius=5;
-    String color = "red";
+    private String color = "red";
     public Circle(){};
     public Circle(double radius,String color){
         this.radius=radius;

@@ -3,8 +3,8 @@ package ss6_ke_thua.BaiTap.PointAndMoveavlePoint;
 import ss6_ke_thua.BaiTap.LopPoint2DandPoint3D.Point3D;
 
 public class Point {
-    protected float x = 5.0f;
-    protected float y = 6.0f;
+    private float x = 5.0f;
+    private float y = 6.0f;
 
     public Point() {
     }

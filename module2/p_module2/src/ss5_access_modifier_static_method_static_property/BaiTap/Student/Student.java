@@ -24,4 +24,9 @@ public class Student {
                 ", classes='" + classes + '\'' +
                 '}';
     }
+    public static void main(String[] args) {
+        Student student = new Student("Tommy","H2");
+        System.out.println(student + "");
+
+    }
 }

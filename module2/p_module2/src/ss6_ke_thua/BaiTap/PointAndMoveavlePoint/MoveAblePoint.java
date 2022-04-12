@@ -1,8 +1,8 @@
 package ss6_ke_thua.BaiTap.PointAndMoveavlePoint;
 
 public class MoveAblePoint extends Point {
-    protected float xSpeed=15.7f;
-    protected float ySpeed=12.3f;
+    private float xSpeed=15.7f;
+    private float ySpeed=12.3f;
     public MoveAblePoint(){};
 
     public MoveAblePoint(float xSpeed, float ySpeed) {
@@ -40,15 +40,16 @@ public class MoveAblePoint extends Point {
         return arr;
     }
    public MoveAblePoint move(){
-        super.x+=xSpeed;
-        super.y=ySpeed;
+        this.setX(this.getX()+ this.xSpeed);
+        this.setY(this.getY()+ this.ySpeed);
+
         return this;
    }
 
     @Override
     public String toString() {
         return "MoveAblePoint" +
-                "(x,y),speed=(xs,ys)" + " "+(x+" "+y)+","+"speed" +"="+(xSpeed+" "+ySpeed)
+                "(x,y),speed=(xs,ys)" + " "+(getX()+" "+getY())+","+"speed" +"="+(xSpeed+" "+ySpeed)
                 ;
     }
 }

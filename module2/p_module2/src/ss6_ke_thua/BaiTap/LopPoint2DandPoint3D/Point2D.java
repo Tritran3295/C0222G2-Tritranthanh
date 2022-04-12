@@ -1,8 +1,8 @@
 package ss6_ke_thua.BaiTap.LopPoint2DandPoint3D;
 
 public class Point2D {
-    protected float x =5.0f;
-    protected float y = 5.0f;
+    private float x =5.0f;
+    private float y = 5.0f;
     public Point2D(){};
     public Point2D(float x,float b){
         this.x=x;
