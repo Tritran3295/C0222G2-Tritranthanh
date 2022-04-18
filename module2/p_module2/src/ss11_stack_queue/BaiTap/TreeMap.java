@@ -7,7 +7,7 @@ import java.util.Set;
 public class TreeMap {
     public static void main(String[] args) {
         String str = "hello world hello";
-//        str = str.replaceAll(",","");
+
         String[] arr = str.split(" ");
         String key="";
         Integer value;
