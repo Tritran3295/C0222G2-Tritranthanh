@@ -3,12 +3,13 @@ package ss12_java_colection_framworl.BaiTap.Service;
 import ss12_java_colection_framworl.BaiTap.Model.Product;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
 public class ProductManager implements IProduct {
-    private static Scanner scanner = new Scanner(System.in);
-    private static List<Product> products = new ArrayList<>();
+//    private static final Scanner scanner = new Scanner(System.in);
+    private static final List<Product> products = new ArrayList<>();
     static {
     Product product1 = new Product(1,"Iphone",17,5000);
     Product product2 = new Product(2,"SamSung",15,3000);
@@ -46,21 +47,69 @@ public class ProductManager implements IProduct {
 
     @Override
     public void delete() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập id muốn xoá");
+        int id = Integer.parseInt(scanner.nextLine());
+        for (int i = 0; i <products.size() ; i++) {
+            if(id == products.get(i).getId()){
+                products.remove(i);
+            }
+        }
 
     }
 
     @Override
     public void search() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập sản phẩm bạn muốn tìm : ");
+//        boolean flag= true;
+        String tenSanPham = scanner.nextLine();
+        for (Product product : products) {
+            if (product.getTenSanPham().contains(tenSanPham)) {
+                break;
+            }
+        }
+        for (Product product : products) {
+            if (product.getTenSanPham().contains(tenSanPham)) {
+                System.out.println(product);
+                break;
+            } else {
+                System.out.println("Không tìm thấy sản phẩm muốn tìm");
+            }
+        }
 
     }
 
     @Override
     public void edit() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Nhập id bạn cần sửa chửa : ");
+        int id = Integer.parseInt(scanner.nextLine());
+        for (Product product : products) {
+            if (id == product.getId()) {
+                System.out.println("Nhập id mới: ");
+                int newId = Integer.parseInt(scanner.nextLine());
+                product.setId(newId);
+                System.out.println("Nhập tên sản phẩm mới: ");
+                String newTenSanPham = scanner.nextLine();
+                product.setTenSanPham(newTenSanPham);
+                System.out.println("Nhập ngày sản xuất mới:");
+                int newNgaySanXuat = Integer.parseInt(scanner.nextLine());
+                product.setNgaySanXuat(newNgaySanXuat);
+                System.out.println("Nhập giá bán muốn thay đổi: ");
+                int newGiaBan = Integer.parseInt(scanner.nextLine());
+                product.setGiaBan(newGiaBan);
+                break;
+            } else {
+                System.out.println("Không tìm thấy id trong list");
+            }
+        }
 
     }
 
     @Override
     public void sort() {
+
 
     }
 }

@@ -1,54 +1,96 @@
 package ss12_java_colection_framworl.BaiTap.Controller;
 
+import ss12_java_colection_framworl.BaiTap.Model.Product;
+import ss12_java_colection_framworl.BaiTap.Service.ProductManager;
+
 import java.util.Scanner;
 
 public class MenuProduct {
-    private static Scanner scanner = new Scanner(System.in);
-    public void display(){
-        while (true){
-            System.out.println("Chào mừng bạn đến với app quản lý sản phẩm ");
-            System.out.println("Mời bạn chọn chức năng : ");
-            System.out.println("1.Thêm mới sản phẩm  \n " +
+    public void menuProduct() {
+        ProductManager productManager = new ProductManager();
+        Scanner scanner = new Scanner(System.in);
+        do {
+            System.out.println("Chào mừng bạn đến với app quản lý sản phẩm \n "+
+                    "1.Thêm mới sản phẩm \n" +
                     "2.Hiển thị sản phẩm \n" +
                     "3.Xoá sản phẩm \n" +
                     "4.Sửa \n" +
                     "5.Tìm kiếm sản phẩm \n" +
                     "6.Sắp xếp \n" +
-                    "7.Thoát ");
+                    "7.Thoát "
+                    );
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice){
                 case 1:
-                   add();
+                    productManager.add();
                     break;
                 case 2:
-                    display();
+                    productManager.display();
                     break;
                 case 3:
-                    delete();
+                    productManager.delete();
                     break;
                 case 4:
-                    edit();
+                    productManager.edit();
                     break;
                 case 5:
-                    search();
+                    productManager.search();
+                    break;
+                case 6:
+                    productManager.sort();
                     break;
                 case 7:
                     System.exit(0);
-
-
             }
-        }
-    }
 
-    private void search() {
-    }
+        } while (true);
+    }}
+//    private static Scanner scanner = new Scanner(System.in);
+//    public void display(){
+//        while (true){
+//            System.out.println("Chào mừng bạn đến với app quản lý sản phẩm ");
+//            System.out.println("Mời bạn chọn chức năng : ");
+//            System.out.println("1.Thêm mới sản phẩm  \n " +
+//                    "2.Hiển thị sản phẩm \n" +
+//                    "3.Xoá sản phẩm \n" +
+//                    "4.Sửa \n" +
+//                    "5.Tìm kiếm sản phẩm \n" +
+//                    "6.Sắp xếp \n" +
+//                    "7.Thoát ");
+//            int choice = Integer.parseInt(scanner.nextLine());
+//            switch (choice){
+//                case 1:
+//                   add();
+//                    break;
+//                case 2:
+//                    display();
+//                    break;
+//                case 3:
+//                    delete();
+//                    break;
+//                case 4:
+//                    edit();
+//                    break;
+//                case 5:
+//                    search();
+//                    break;
+//                case 7:
+//                    System.exit(0);
+//
+//
+//            }
+//        }
+//    }
+//
+//    private void search() {
+//    }
+//
+//    private void edit() {
+//    }
+//
+//    private void delete() {
+//    }
+//
+//    private void add() {
+//    }
 
-    private void edit() {
-    }
-
-    private void delete() {
-    }
-
-    private void add() {
-    }
-}
