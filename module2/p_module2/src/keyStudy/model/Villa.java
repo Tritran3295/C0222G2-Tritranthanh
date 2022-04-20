@@ -1,6 +1,6 @@
 package keyStudy.model;
 
-public class Villa extends Menu{
+public class Villa extends Facility {
     private String tieuChuanPhong;
     private String dienTichHoBoi;
     private Integer soTang;

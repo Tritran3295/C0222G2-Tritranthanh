@@ -1,14 +1,14 @@
 package keyStudy.model;
 
-public class Menu {
+public abstract class Facility {
     private String tenDichVu;
     private String dienTichSuDung;
     private Double chiPhiThue;
     private Integer soLuongNguoiToiDa;
     private String kieuThue;
-    public Menu(){};
+    public Facility(){};
 
-    public Menu(String tenDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue) {
+    public Facility(String tenDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue) {
         this.tenDichVu = tenDichVu;
         this.dienTichSuDung = dienTichSuDung;
         this.chiPhiThue = chiPhiThue;

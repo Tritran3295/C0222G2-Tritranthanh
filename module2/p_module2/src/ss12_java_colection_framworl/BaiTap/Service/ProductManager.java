@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Scanner;
 
 public class ProductManager implements IProduct {
-//    private static final Scanner scanner = new Scanner(System.in);
     private static final List<Product> products = new ArrayList<>();
     static {
     Product product1 = new Product(1,"Iphone",17,5000);
@@ -62,7 +61,7 @@ public class ProductManager implements IProduct {
     public void search() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập sản phẩm bạn muốn tìm : ");
-//        boolean flag= true;
+
         String tenSanPham = scanner.nextLine();
         for (Product product : products) {
             if (product.getTenSanPham().contains(tenSanPham)) {
