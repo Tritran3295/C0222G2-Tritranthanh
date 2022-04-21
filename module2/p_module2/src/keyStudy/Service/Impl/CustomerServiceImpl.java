@@ -1,13 +1,15 @@
 package keyStudy.Service.Impl;
 
+import keyStudy.Service.ICustomerService;
 import keyStudy.model.Customer;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
 
-public class CustomerServiceImpl {
-    private static final List<Customer> list= new ArrayList<>();
+public class CustomerServiceImpl implements ICustomerService {
+    private static final LinkedList<Customer> list= new LinkedList<>();
     static {
         list.add(new Customer("Trần Thanh Trí",1993,"Nam",1893402,34596,"tranthanhtri@sad112","Ch104","Vip","5*"));
         list.add(new Customer("Trí Thanh Trần",1994,"Nam",1893403,34597,"tranthanhtri@sad1123","Ch105","Normal","3*"));
@@ -49,7 +51,31 @@ public class CustomerServiceImpl {
     public void edit(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Nhập mã khách hàng muốn sửa : ");
-
+        String maKhachhang = scanner.nextLine();
+        for(Customer customer:list){
+            if(maKhachhang.equals(customer.getMaKhachHang())){
+                System.out.println("Nhập họ và tên khách hàng mới : ");
+                customer.setHoVaTen(scanner.nextLine());
+                System.out.println("Nhập ngày sinh mới : ");
+                customer.setNgaySinh(Integer.parseInt(scanner.nextLine()));
+                System.out.println("Thỉnh giới tính mới :");
+                customer.setGioiTinh( scanner.nextLine());
+                System.out.println("Nhập số CMND mới : ");
+                customer.setCMND(Integer.parseInt(scanner.nextLine()));
+                System.out.println("Thỉnh nhập sđt mới : ");
+                customer.setSoDienThoai(Integer.parseInt(scanner.nextLine()));
+                System.out.println("Nhập email mới : ");
+                customer.setEmail(scanner.nextLine());
+                System.out.println("Nhập mã khách hàng mới : ");
+                customer.setMaKhachHang(scanner.nextLine());
+                System.out.println("Nhập loại khách mới : ");
+                customer.setLoaiKhach(scanner.nextLine());
+                System.out.println("Nhập địa chỉ mới : ");
+                customer.setDiaChi(scanner.nextLine());
+            }else {
+                System.out.println("không tìm thấy mã khách hàng phù hợp");
+            }
+        }
 
     }
 }

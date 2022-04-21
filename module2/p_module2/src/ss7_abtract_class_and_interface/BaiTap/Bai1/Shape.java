@@ -3,7 +3,7 @@ package ss7_abtract_class_and_interface.BaiTap.Bai1;
 import ss7_abtract_class_and_interface.BaiTap.Bai1.ResizeAble;
 import ss7_abtract_class_and_interface.BaiTap.Bai2.Colorable;
 
-public class Shape implements ResizeAble, Colorable {
+public class  Shape implements ResizeAble, Colorable {
     private String color = "red";
     private boolean filled = true;
     public Shape(){};
