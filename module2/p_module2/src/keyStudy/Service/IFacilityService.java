@@ -1,4 +1,7 @@
 package keyStudy.Service;
 
-public interface IFacilityService extends IService{
+public interface IFacilityService {
+    void add();
+    void display();
+
 }

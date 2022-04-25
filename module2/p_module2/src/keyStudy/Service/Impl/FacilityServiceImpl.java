@@ -4,10 +4,11 @@ import keyStudy.Service.IFacilityService;
 import keyStudy.model.Facility;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
 
 public class FacilityServiceImpl implements IFacilityService {
-    private static final List<Facility>list= new ArrayList<>();
+
 
 
     @Override
@@ -20,9 +21,9 @@ public class FacilityServiceImpl implements IFacilityService {
 
     }
 
-    @Override
-    public void edit() {
-
-    }
+//    @Override
+//    public void edit() {
+//
+//    }
 
 }
