@@ -1,4 +1,6 @@
-package ss17_binary_file_serialization.BaiTap;
+package ss17_binary_file_serialization.BaiTap.model;
+
+import ss17_binary_file_serialization.BaiTap.Product;
 
 import java.io.*;
 import java.util.ArrayList;

@@ -1,4 +1,6 @@
-package ss17_binary_file_serialization.BaiTap;
+package ss17_binary_file_serialization.BaiTap.controller;
+
+import ss17_binary_file_serialization.BaiTap.service.ProductImpl;
 
 import java.util.Scanner;
 
