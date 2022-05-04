@@ -8,9 +8,12 @@ public class Room extends Facility{
         this.dichVuFreeDiKem = dichVuFreeDiKem;
     }
 
-    public Room(String tenDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String dichVuFreeDiKem) {
-        super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
+    public Room(String tenDichVu, String maDichVu, String dienTichSuDung, int chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String dichVuFreeDiKem) {
+        super(tenDichVu,maDichVu, dienTichSuDung, (double) chiPhiThue, soLuongNguoiToiDa, kieuThue);
         this.dichVuFreeDiKem = dichVuFreeDiKem;
+    }
+
+    public Room(String tenDichVu, String maDichVu, String dienTichSuDung, Double chiPhiThue, int soNguoiToiDa, String kieuThue, String dichVuDiKem) {
     }
 
     public String getDichVuFreeDiKem() {

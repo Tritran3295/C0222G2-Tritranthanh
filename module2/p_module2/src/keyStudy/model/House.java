@@ -3,15 +3,15 @@ package keyStudy.model;
 public class House extends Facility{
     private String tieuChuanPhong;
     private Integer soTang;
-    public House(){};
+    public House(String tenDichVu, String maDichVu, String dienTichSuDung, Integer chiPhiThue, int soNguoiToiDa, String kieuThue, String tieuChuanPhong, int soTang){};
 
     public House(String tieuChuanPhong, Integer soTang) {
         this.tieuChuanPhong = tieuChuanPhong;
         this.soTang = soTang;
     }
 
-    public House(String tenDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, Integer soTang) {
-        super(tenDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
+    public House(String tenDichVu,String maDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue, String tieuChuanPhong, Integer soTang) {
+        super(tenDichVu,maDichVu, dienTichSuDung, chiPhiThue, soLuongNguoiToiDa, kieuThue);
         this.tieuChuanPhong = tieuChuanPhong;
         this.soTang = soTang;
     }

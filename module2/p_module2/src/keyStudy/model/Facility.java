@@ -1,15 +1,19 @@
 package keyStudy.model;
 
+import java.util.Objects;
+
 public abstract class Facility {
     private String tenDichVu;
+    private String maDichVu;
     private String dienTichSuDung;
     private Double chiPhiThue;
     private Integer soLuongNguoiToiDa;
     private String kieuThue;
     public Facility(){};
 
-    public Facility(String tenDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue) {
+    public Facility(String tenDichVu, String maDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue) {
         this.tenDichVu = tenDichVu;
+        this.maDichVu = maDichVu;
         this.dienTichSuDung = dienTichSuDung;
         this.chiPhiThue = chiPhiThue;
         this.soLuongNguoiToiDa = soLuongNguoiToiDa;
@@ -22,6 +26,14 @@ public abstract class Facility {
 
     public void setTenDichVu(String tenDichVu) {
         this.tenDichVu = tenDichVu;
+    }
+
+    public String getMaDichVu() {
+        return maDichVu;
+    }
+
+    public void setMaDichVu(String maDichVu) {
+        this.maDichVu = maDichVu;
     }
 
     public String getDienTichSuDung() {
@@ -57,13 +69,27 @@ public abstract class Facility {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Facility facility = (Facility) o;
+        return Objects.equals(tenDichVu, facility.tenDichVu) && Objects.equals(maDichVu, facility.maDichVu);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(maDichVu);
+    }
+
+    @Override
     public String toString() {
-        return
-                "Tên dịch vụ : " + tenDichVu + '\'' +
-                ", Diện tích sử dụng : " + dienTichSuDung + '\'' +
-                ", Chi phí thuê : " + chiPhiThue +
-                ", Số lượng người tối đa : " + soLuongNguoiToiDa +
-                ", Kiểu thuê : " + kieuThue + '\''
-                ;
+        return "Facility{" +
+                "tenDichVu='" + tenDichVu + '\'' +
+                ", maDichVu='" + maDichVu + '\'' +
+                ", dienTichSuDung='" + dienTichSuDung + '\'' +
+                ", chiPhiThue=" + chiPhiThue +
+                ", soLuongNguoiToiDa=" + soLuongNguoiToiDa +
+                ", kieuThue='" + kieuThue + '\'' +
+                '}';
     }
 }
