@@ -66,7 +66,7 @@ public class DisplayMainMenu {
                     employeeService.edit();
                     break;
                 case 4:
-                   return;
+                    return;
             }
         }
     }
@@ -104,13 +104,16 @@ public class DisplayMainMenu {
             int choice = Integer.parseInt(scanner.nextLine());
             switch (choice) {
                 case 1:
-
+                    facilityService.display();
                     break;
                 case 2:
                     addNewService();
                     break;
+                case 3:
+                    facilityService.displayMaintenance();
+                    break;
                 case 4:
-                   return;
+                    return;
 
             }
         }
@@ -123,15 +126,21 @@ public class DisplayMainMenu {
                     "3.\tAdd New Room\n" +
                     "4.\tBack to menu");
             int choice = Integer.parseInt(scanner.nextLine());
-            switch (choice){
+            switch (choice) {
                 case 1:
+                    facilityService.addNewVilla();
+                    break;
+                case 2:
+                    facilityService.addNewHouse();
+                    break;
+                case 3:
+                    facilityService.addNewRoom();
                     break;
                 case 4:
                     menuFacility();
             }
         }
     }
-
 
     private void menuPromotion() {
         System.out.println("1.\tDisplay list customers use service\n" +
@@ -142,7 +151,7 @@ public class DisplayMainMenu {
     private void menuBooking() {
         System.out.println("1.\tAdd new booking\n" +
                 "2.\tDisplay list booking\n" +
-                "3.\tCreate new constracts\n" +
+                "3.\tCreate new contracts\n" +
                 "4.\tDisplay list contracts\n" +
                 "5.\tEdit contracts\n" +
                 "6.\tReturn main menu\n");

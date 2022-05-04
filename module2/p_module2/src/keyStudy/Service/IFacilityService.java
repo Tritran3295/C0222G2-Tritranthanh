@@ -1,7 +1,12 @@
 package keyStudy.Service;
 
-public interface IFacilityService {
-    void add();
-    void display();
+import keyStudy.model.Facility;
 
+public interface IFacilityService {
+void display();
+void add(Facility facility);
+void addNewHouse();
+void addNewVilla();
+void addNewRoom();
+void displayMaintenance();
 }
