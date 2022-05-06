@@ -1,6 +1,13 @@
-package keyStudy.Utils.validate;
+package keyStudy.Utils.Regex;
 
-public class ValiDateFacality {
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.util.Scanner;
+import java.util.regex.Pattern;
+
+public class Regex {
+    Scanner scanner = new Scanner(System.in);
     public static final String REGEX_VILLA = "^(SVVL)\\-[0-9]{4}$";
     public static final String REGEX_HOUSE = "^(SVHO)\\-[0-9]{4}$";
     public static final String REGEX_RO = "^(SVRO)\\-[0-9]{4}$";

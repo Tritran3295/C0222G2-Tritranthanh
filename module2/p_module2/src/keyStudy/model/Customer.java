@@ -42,4 +42,8 @@ public class Customer extends Person{
     public void setDiaChi(String diaChi) {
         this.diaChi = diaChi;
     }
+    public String convertLine(){
+        return super.convertLine() + "," + this.maKhachHang + "," + this.loaiKhach + "," + this.diaChi;
+
+    }
 }

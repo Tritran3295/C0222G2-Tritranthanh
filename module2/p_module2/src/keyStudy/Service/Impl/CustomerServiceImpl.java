@@ -1,6 +1,7 @@
 package keyStudy.Service.Impl;
 
 import keyStudy.Service.ICustomerService;
+import keyStudy.Utils.File.ReadAndWriteBuffer;
 import keyStudy.model.Customer;
 
 import java.util.ArrayList;
@@ -9,11 +10,15 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CustomerServiceImpl implements ICustomerService {
-    private static final LinkedList<Customer> list= new LinkedList<>();
+    private static List<Customer> list= new LinkedList<>();
+    private static final String PATH_CUSTOMER ="src/keyStudy/data/customer.csv";
     static {
         list.add(new Customer("Trần Thanh Trí",1993,"Nam",1893402,34596,"tranthanhtri@sad112","Ch104","Vip","5*"));
         list.add(new Customer("Trí Thanh Trần",1994,"Nam",1893403,34597,"tranthanhtri@sad1123","Ch105","Normal","3*"));
         list.add(new Customer("Thanh Thanh Trí",1995,"Nam",1893404,34598,"tranthanhtri@sad13213","Ch106","Stadium","2*"));
+        ReadAndWriteBuffer.writeCustomer(PATH_CUSTOMER,list);
+
+
     }
 
 
@@ -24,6 +29,7 @@ public class CustomerServiceImpl implements ICustomerService {
         }
     }
     public void add(){
+        list=ReadAndWriteBuffer.readCustomer();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Thỉnh nhập họ và tên");
         String hoVaTen = scanner.nextLine();
@@ -45,6 +51,7 @@ public class CustomerServiceImpl implements ICustomerService {
         String diaChi = scanner.nextLine();
         Customer customer = new Customer(hoVaTen,ngaySinh,gioiTinh,soCMND,soDienThoai,email,maKhachHang,loaiKhach,diaChi);
         list.add(customer);
+        ReadAndWriteBuffer.writeCustomer(PATH_CUSTOMER,list);
 
 
     }

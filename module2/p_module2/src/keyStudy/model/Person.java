@@ -77,4 +77,13 @@ public abstract class Person {
                 ", Email : " + email + '\''
                 ;
     }
+    public String convertLine() {
+        String line = this.hoVaTen + "," +
+                this.ngaySinh + "," +
+                this.gioiTinh + "," +
+                this.CMND + "," +
+                this.soDienThoai + "," +
+                this.email;
+        return line;
+    }
 }

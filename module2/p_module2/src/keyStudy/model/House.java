@@ -39,4 +39,8 @@ public class House extends Facility{
                 ", Số tầng :" + soTang
                 ;
     }
+    public String convertLine(){
+        String line = super.convertLine()+","+ this.tieuChuanPhong+","+this.soTang;
+        return line;
+    }
 }

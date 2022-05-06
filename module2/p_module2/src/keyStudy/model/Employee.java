@@ -54,6 +54,12 @@ public class Employee extends Person{
         this.luong = luong;
     }
 
+    public String convertLine(){
+        String line = super.convertLine()+ ","+ this.maNhanVien + "," +this.trinhDo + ","+ this.viTri + "," +
+                this.luong;
+        return line;
+    }
+
     @Override
     public String toString() {
         return  super.toString() +

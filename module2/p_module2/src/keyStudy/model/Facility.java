@@ -9,7 +9,9 @@ public abstract class Facility {
     private Double chiPhiThue;
     private Integer soLuongNguoiToiDa;
     private String kieuThue;
-    public Facility(){};
+
+    public Facility() {
+    }
 
     public Facility(String tenDichVu, String maDichVu, String dienTichSuDung, Double chiPhiThue, Integer soLuongNguoiToiDa, String kieuThue) {
         this.tenDichVu = tenDichVu;
@@ -91,5 +93,16 @@ public abstract class Facility {
                 ", soLuongNguoiToiDa=" + soLuongNguoiToiDa +
                 ", kieuThue='" + kieuThue + '\'' +
                 '}';
+    }
+
+    public String convertLine() {
+        String line = this.tenDichVu + "," +
+                this.maDichVu + "," +
+                this.dienTichSuDung + "," +
+                this.chiPhiThue + "," +
+                this.soLuongNguoiToiDa + "," +
+                this.kieuThue;
+        return line;
+
     }
 }

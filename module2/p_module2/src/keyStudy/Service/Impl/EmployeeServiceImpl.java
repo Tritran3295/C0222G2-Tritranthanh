@@ -1,6 +1,7 @@
 package keyStudy.Service.Impl;
 
 import keyStudy.Service.IService;
+import keyStudy.Utils.File.ReadAndWriteBuffer;
 import keyStudy.model.Employee;
 
 import java.util.ArrayList;
@@ -8,7 +9,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeServiceImpl implements IService {
-    private static final List<Employee> list = new ArrayList<>();
+    private static List<Employee> list = new ArrayList<>();
+    private static final String PATH_EMPLOYEE ="src/keyStudy/data/employee.csv";
 
     static {
         Employee employee1 = new Employee("Ngô Thảo Vân", 1993, "Nữ", 197327720, 1233, "thanhtritran3295@gmail.com", "CH101", "Đại Học", "Trưởng phòng", 10.500);
@@ -17,10 +19,12 @@ public class EmployeeServiceImpl implements IService {
         list.add(employee1);
         list.add(employee2);
         list.add(employee3);
+        ReadAndWriteBuffer.writeEmployee(PATH_EMPLOYEE,list);
     }
 
     @Override
     public void add() {
+        list=ReadAndWriteBuffer.readEmployee();
         Scanner scanner = new Scanner(System.in);
         System.out.println("Thỉnh nhập họ và tên");
         String hoVaTen = scanner.nextLine();
@@ -44,11 +48,13 @@ public class EmployeeServiceImpl implements IService {
         Double luong = Double.parseDouble(scanner.nextLine());
         Employee employee = new Employee(hoVaTen, ngaySinh, gioiTinh, soCMND, soDienThoai, email, maNhanVien, trinhDo, viTri, luong);
         list.add(employee);
+        ReadAndWriteBuffer.writeEmployee(PATH_EMPLOYEE,list);
 
     }
 
     @Override
     public void display() {
+        list=ReadAndWriteBuffer.readEmployee();
         System.out.println("Danh sách nhân viên : ");
         for (Employee x : list) {
             System.out.println(x);
@@ -84,7 +90,10 @@ public class EmployeeServiceImpl implements IService {
                 employee.setLuong(scanner.nextDouble());
                 break;
 
-            }else {
+
+            }
+
+            else {
                 System.out.println("Không tìm thấy mã nhân viên muốn sửa : ");
             }
         }
