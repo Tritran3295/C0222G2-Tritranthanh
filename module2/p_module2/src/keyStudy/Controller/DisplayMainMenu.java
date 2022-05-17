@@ -3,6 +3,7 @@ package keyStudy.Controller;
 import keyStudy.Service.Impl.CustomerServiceImpl;
 import keyStudy.Service.Impl.EmployeeServiceImpl;
 import keyStudy.Service.Impl.FacilityServiceImpl;
+import keyStudy.Utils.Regex.Regex;
 
 import java.util.Scanner;
 
@@ -11,8 +12,6 @@ public class DisplayMainMenu {
     EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
     CustomerServiceImpl customerService = new CustomerServiceImpl();
     FacilityServiceImpl facilityService = new FacilityServiceImpl();
-
-
     public void display() {
         while (true) {
             System.out.println("Enter the contend you wanna choose :");
@@ -23,8 +22,10 @@ public class DisplayMainMenu {
                     "4.\tBooking Management\n" +
                     "5.\tPromotion Management\n" +
                     "6.\tExit\n");
-            int choice = Integer.parseInt(scanner.nextLine());
-            switch (choice) {
+
+            int choiceMain = 0;
+            choiceMain= Regex.getChoice(choiceMain);
+            switch (choiceMain) {
                 case 1:
                     menuEmployee();
                     break;
@@ -42,8 +43,6 @@ public class DisplayMainMenu {
                     break;
                 case 6:
                     System.exit(0);
-
-
             }
         }
     }
@@ -54,8 +53,9 @@ public class DisplayMainMenu {
                     "2\tAdd new employee\n" +
                     "3\tEdit employee\n" +
                     "4\tReturn main menu\n");
-            int choice = Integer.parseInt(scanner.nextLine());
-            switch (choice) {
+            int choiceEmployee = 0;
+            choiceEmployee=Regex.getChoice(choiceEmployee);
+            switch (choiceEmployee) {
                 case 1:
                     employeeService.display();
                     break;
@@ -77,8 +77,9 @@ public class DisplayMainMenu {
                     "2.\tAdd new customer\n" +
                     "3.\tEdit customer\n" +
                     "4.\tReturn main menu\n");
-            int choice = Integer.parseInt(scanner.nextLine());
-            switch (choice) {
+            int choiceCustomer = 0;
+            choiceCustomer=Regex.getChoice(choiceCustomer);
+            switch (choiceCustomer) {
                 case 1:
                     customerService.display();
                     break;
@@ -101,8 +102,9 @@ public class DisplayMainMenu {
                     "2\tAdd new facility\n" +
                     "3\tDisplay list facility maintenance\n" +
                     "4\tReturn main menu\n");
-            int choice = Integer.parseInt(scanner.nextLine());
-            switch (choice) {
+            int choiceFaci = 0;
+            choiceFaci=Regex.getChoice(choiceFaci);
+            switch (choiceFaci) {
                 case 1:
                     facilityService.display();
                     break;
@@ -125,8 +127,9 @@ public class DisplayMainMenu {
                     "2.\tAdd New House\n" +
                     "3.\tAdd New Room\n" +
                     "4.\tBack to menu");
-            int choice = Integer.parseInt(scanner.nextLine());
-            switch (choice) {
+            int choiceSever = 0;
+            choiceSever=Regex.getChoice(choiceSever);
+            switch (choiceSever) {
                 case 1:
                     facilityService.addNewVilla();
                     break;

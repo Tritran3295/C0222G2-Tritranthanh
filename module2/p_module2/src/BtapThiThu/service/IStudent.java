@@ -1,2 +1,4 @@
-package BtapThiThu.service;public interface IStudent {
+package BtapThiThu.service;
+
+public interface IStudent extends IPerson {
 }

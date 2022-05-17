@@ -1,2 +1,4 @@
-package ss999_ket_thuc_module.service;public interface IHandPhone {
+package ss999_ket_thuc_module.service;
+
+public interface IHandPhone extends IShopPhone{
 }

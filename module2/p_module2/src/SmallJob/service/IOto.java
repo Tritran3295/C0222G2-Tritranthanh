@@ -1,2 +1,4 @@
-package SmallJob.service;public interface IOto {
+package SmallJob.service;
+
+public interface IOto extends IPhuongTien{
 }

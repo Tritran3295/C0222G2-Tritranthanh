@@ -5,6 +5,7 @@ import keyStudy.model.*;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Currency;
+import java.util.LinkedList;
 import java.util.List;
 
 public class ReadAndWriteBuffer {
@@ -22,7 +23,6 @@ public class ReadAndWriteBuffer {
             for (String string : stringList) {
                 bufferedWriter.write(string);
                 bufferedWriter.newLine();
-                System.err.println(string);
             }
             bufferedWriter.close();
             fileWriter.close();
@@ -103,7 +103,7 @@ public class ReadAndWriteBuffer {
 
     public static List<Customer> readCustomer() {
         List<String> list = readFile(PATH_CUSTOMER);
-        List<Customer> customerList = new ArrayList<>();
+        List<Customer> customerList = new LinkedList<>();
         String[] arr = null;
         for (String customer : list) {
             arr = customer.split(",");

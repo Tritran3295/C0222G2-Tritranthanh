@@ -1,2 +1,4 @@
-package SmallJob.service;public interface IXeTai {
+package SmallJob.service;
+
+public interface IXeTai extends IPhuongTien{
 }
