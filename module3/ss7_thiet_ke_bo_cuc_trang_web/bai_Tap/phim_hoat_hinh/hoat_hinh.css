@@ -1,0 +1,72 @@
+#header{
+    border: 10px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    background-color: orange;
+    justify-content: space-between;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.icon-heap{
+    width: 70px;
+    height: 70px;
+}
+.title{
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    width: 25%;
+    margin:5px;
+}
+#content{
+
+    text-align: center;
+    width: 100%;
+    margin-top: 0.5px;
+    padding: 3px;
+    background-color: orange;
+}
+.log-in{
+   float: right;
+    margin-top: 33px;
+
+    height: 35px;
+}
+#left{
+    margin: 10px;
+    width: 30%;
+    height: 800px;
+
+}
+.image{
+    width: 70%;
+    height: 150px;
+}
+#middle{
+    width: 60%;
+    display: flex;
+    padding: 15px;
+    padding-left: 50px;
+
+}
+.devide{
+    display: flex;
+    background-color: lightgrey;
+}
+.spoil{
+    padding-left: 50px;
+}
+.video1{
+    border: 3px;
+}

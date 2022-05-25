@@ -5,7 +5,12 @@
     <title>Title</title>
     <style>
         .total {
+            image-orientation: from-image;
+            border-style: none;
             display: flex;
+        }
+        .picone{
+            border-style: dot-dot-dash;
         }
 
         img {
@@ -28,24 +33,28 @@
             padding: 25px 25px 25px 25px;
             margin: 25px 25px 25px 25px;
         }
-        .total-two{
+
+        .total-two {
             display: flex;
         }
 
+        .container {
+            border-style: solid ;
+            padding: 10px;
+            background-color: beige;
+        }
+
+        .head {
+            background-color: sandybrown;
+        }
 
 
     </style>
 </head>
 <body>
-<h2>NetTruyen</h2>
 <div class="head">
-    <nav>
-
-    </nav>
-</div>
-<div class="holder">
-
-    <input type="text" placeholder="Tìm truyện..."><br>
+    <h2>NetTruyen</h2>
+    <span><input type="text" placeholder="Tìm kiếm truyện"></span>
 </div>
 <div class="container">
     <div class="menu">
