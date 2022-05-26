@@ -1,95 +1,154 @@
-.total-header{
-    display: flex;
+.father-total {
+
 }
-.header-left{
+
+.total-header {
+    display: flex;
+
+}
+
+.header-left {
     width: 20%;
 }
-.icon-facebook{
+
+.icon-facebook {
     width: 40px;
     height: 40px;
     padding-left: 10px;
     padding-bottom: 30px;
 }
-.header-middle{
+
+.header-middle {
     width: 60%;
     text-align: center;
-    padding:5px;
+    padding: 5px;
     margin: 5px;
     justify-content: space-between;
 
 }
-.icon-home{
+
+.icon-home {
     width: 40px;
     height: 40px;
 
 }
-.icon-video{
-    width: 40px;
-    height: 40px;
-}
-.icon-market{
-    width: 40px;
-    height: 40px;
-}
-.icon-game{
+
+.icon-video {
     width: 40px;
     height: 40px;
 }
 
-.header-right{
+.icon-market {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-game {
+    width: 40px;
+    height: 40px;
+}
+
+.header-right {
     width: 20%;
 
 }
-.picture-avata{
+
+.picture-avata {
     width: 40px;
     height: 40px;
 }
-.float-right{
+
+.float-right {
     display: flex;
 }
-.icon-plus{
+
+.icon-plus {
     width: 40px;
     height: 40px;
     margin-left: 20px;
 }
-.icon-messenger{
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
-}
-.icon-bell{
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
-}
-.icon-triangle{
+
+.icon-messenger {
     width: 40px;
     height: 40px;
     margin-left: 5px;
 }
 
-.border-left{
+.icon-bell {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.icon-triangle {
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+}
+
+.border-left {
     width: 20%;
-    padding:20px;
+    padding: 20px;
+    float: left;
 }
 
-.img-ava{
+.img-ava {
     width: 40px;
     height: 40px;
 }
-.icon-friend{
+
+.icon-friend {
     width: 40px;
     height: 40px;
 }
-.icon-group{
+
+.icon-group {
     width: 40px;
     height: 40px;
 }
-.icon-market2{
+
+.icon-market2 {
     width: 40px;
     height: 40px;
 }
-.icon-memo{
+
+.icon-memo {
+    width: 40px;
+    height: 40px;
+}
+
+.group-img1 {
+    width: 40px;
+    height: 40px;
+}
+
+.group-img2 {
+    width: 40px;
+    height: 40px;
+}
+
+.group-img3 {
+    width: 40px;
+    height: 40px;
+}
+
+.group-img4 {
+    width: 40px;
+    height: 40px;
+}
+
+.middle {
+    width: 60%;
+    float: left;
+}
+
+.middle1 img {
+    width: 12%;
+    height: 200px;
+    text-align: center;
+}
+
+.img-middle {
     width: 40px;
     height: 40px;
 }
