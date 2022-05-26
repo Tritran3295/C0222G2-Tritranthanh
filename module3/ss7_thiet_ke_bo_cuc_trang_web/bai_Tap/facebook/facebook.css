@@ -1,9 +1,11 @@
-.father-total {
+body {
+background-color: lightgrey;
 
 }
 
 .total-header {
     display: flex;
+    background-color: white;
 
 }
 
@@ -20,33 +22,21 @@
 
 .header-middle {
     width: 60%;
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
-    justify-content: space-between;
+
+    padding-left: 5px;
+
+
 
 }
 
 .icon-home {
     width: 40px;
     height: 40px;
+    padding-left: 130px;
+    margin: 20px;
 
 }
 
-.icon-video {
-    width: 40px;
-    height: 40px;
-}
-
-.icon-market {
-    width: 40px;
-    height: 40px;
-}
-
-.icon-game {
-    width: 40px;
-    height: 40px;
-}
 
 .header-right {
     width: 20%;
@@ -56,35 +46,14 @@
 .picture-avata {
     width: 40px;
     height: 40px;
+
+    margin: 20px;
 }
 
 .float-right {
     display: flex;
 }
 
-.icon-plus {
-    width: 40px;
-    height: 40px;
-    margin-left: 20px;
-}
-
-.icon-messenger {
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
-}
-
-.icon-bell {
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
-}
-
-.icon-triangle {
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
-}
 
 .border-left {
     width: 20%;
@@ -146,9 +115,26 @@
     width: 12%;
     height: 200px;
     text-align: center;
+    padding-left: 20px;
 }
-
-.img-middle {
+.img-middle{
     width: 40px;
     height: 40px;
 }
+.icon-birthday{
+    width: 30px;
+    height: 30px;
+}
+.img-friend img{
+    width: 40px;
+    height: 40px;
+}
+.img-NguyenKy{
+    width: 40px;
+    height: 40px;
+}
+.icon-birthday1{
+    width: 70%;
+    height: 300px;
+}
+
