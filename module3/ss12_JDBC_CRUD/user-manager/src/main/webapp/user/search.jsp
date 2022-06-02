@@ -18,6 +18,9 @@
     <h1>Search follow country</h1>
 </div>
 <div align="center">
+    <form method="get">
+        <input type="hidden" value="searchCountry" name="nameUser">
+    </form>
     <table border="1" cellpadding="5">
         <caption><h2>List of Users</h2></caption>
         <tr>

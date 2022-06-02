@@ -18,6 +18,11 @@
     <h2>
         <a href="/users?action=create">Add New User</a>
     </h2>
+    <form action="users">
+        <input type="hidden" name="action" value="search">
+        <input type="text" name="searchCountry">
+        <button type="submit">Search</button>
+    </form>
 </center>
 <div align="center">
     <table border="1" cellpadding="5">
@@ -38,7 +43,6 @@
                 <td>
                     <a href="/users?action=edit&id=${user.id}">Edit</a>
                     <a href="/users?action=delete&id=${user.id}">Delete</a>
-                    <a href="/users?action=search&name=${user.name}">Search</a>
                 </td>
             </tr>
         </c:forEach>

@@ -131,7 +131,7 @@ public class UserDAO implements IUserDAO {
     @Override
     public List<User> searchCountry(String country) throws SQLException {
         List<User> users = new ArrayList<>();
-        Connection connection = getConnection();
+        Connection connection = this.getConnection();
         PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_COUNTRY);
         try{
             preparedStatement.setString(1,country);

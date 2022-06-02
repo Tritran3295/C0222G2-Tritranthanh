@@ -39,6 +39,9 @@ public class UserServlet extends HttpServlet {
                 case "sort":
                     sortUser(request,response);
                     break;
+                case "search":
+                    findUser(request,response);
+                    break;
                 default:
                     listUser(request, response);
                     break;
@@ -86,9 +89,10 @@ public class UserServlet extends HttpServlet {
         dispatcher.forward(request, response);
     }
     private void findUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException {
-        String country = request.getParameter("search");
+        String country = request.getParameter("searchCountry");
         List<User> listUser = userDAO.searchCountry(country);
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("user/search.jsp");
+        request.setAttribute("listUser", listUser);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("user/list.jsp");
         requestDispatcher.forward(request,response);
 
     }
@@ -106,9 +110,6 @@ public class UserServlet extends HttpServlet {
                     break;
                 case "edit":
                     updateUser(request, response);
-                    break;
-                case "find":
-                    findUser(request,response);
                     break;
             }
         } catch (SQLException ex) {
