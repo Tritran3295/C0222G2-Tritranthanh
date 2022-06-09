@@ -1,0 +1,20 @@
+package repository;
+
+import model.Customer;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public interface ICustomerRepository {
+    public void createCustomer(Customer customer) throws SQLException;
+
+    public Customer selectCustomer(int id);
+
+    public List<Customer> selectAllCustomer();
+
+    public boolean deleteCustomer(int id) throws SQLException;
+
+    public boolean updateCustomer(Customer customer) throws SQLException;
+
+    public List<Customer> searchByName(String name);
+}

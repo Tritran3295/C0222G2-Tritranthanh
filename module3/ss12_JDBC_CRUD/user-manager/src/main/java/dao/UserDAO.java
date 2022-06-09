@@ -93,7 +93,7 @@ public class UserDAO implements IUserDAO {
     }
 
     @Override
-    public List<User> selectAllUsers() {
+    public List<User>selectAllUsers() {
         List<User> users = new ArrayList<>();
         // Step 1: Establishing a Connection
         try (Connection connection = getConnection();
@@ -189,6 +189,180 @@ public class UserDAO implements IUserDAO {
         }
         return users;
     }
+
+    @Override
+    public User getUserById(int id) {
+        User user = null;
+        String query = "{CALL get_user_by_id()?}";
+        try(Connection connection = getConnection();
+        CallableStatement callableStatement = connection.prepareCall(query);){
+            callableStatement.setInt(1,id);
+            ResultSet resultSet = callableStatement.executeQuery();
+            while (resultSet.next()){
+                String name = resultSet.getString("name");
+                String email = resultSet.getString("email");
+                String country = resultSet.getString("country");
+                user = new User(id,name,email,country);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+
+        return user;
+    }
+
+    @Override
+    public void insertUserStore(User user) throws SQLException {
+        String query = "{CALL insert_user(?,?,?)}";
+        try(Connection connection = getConnection();
+            CallableStatement callableStatement = connection.prepareCall(query);
+        ){
+            callableStatement.setString(1,user.getName());
+            callableStatement.setString(2,user.getEmail());
+            callableStatement.setString(3,user.getCountry());
+            System.out.println(callableStatement);
+            callableStatement.executeUpdate();
+        }catch (SQLException e){
+            printSQLException(e);
+        }
+
+    }
+
+
+
+
+//    @Override
+//    public void insertCustomer(Customer customer) throws SQLException {
+//
+//        try (Connection connection = baseRepository.getConnection();
+//             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_CUSTOMER_SQL)) {
+//            preparedStatement.setInt(1, customer.getCustomerTypeId().getCustomerTypeId());
+//            preparedStatement.setString(2, customer.getCustomerName());
+//            preparedStatement.setString(3, customer.getCustomerBirthday());
+//            preparedStatement.setInt(4, customer.getCustomerGender());
+//            preparedStatement.setString(5, customer.getCustomerIdCard());
+//            preparedStatement.setString(6, customer.getCustomerPhone());
+//            preparedStatement.setString(7, customer.getCustomerEmail());
+//            preparedStatement.setString(8, customer.getCustomerAddress());
+//            preparedStatement.setString(9, customer.getCustomerCode());
+//            preparedStatement.executeUpdate();
+//
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//    }
+//
+//    @Override
+//    public Customer selectCustomer(int id) {
+//        Customer customer = null;
+//        try (Connection connection = baseRepository.getConnection();
+//             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_CUSTOMER_BY_ID)) {
+//            preparedStatement.setInt(1, id);
+//            ResultSet resultSet = preparedStatement.executeQuery();
+//            while (resultSet.next()){
+//                CustomerType customerTypeId = customerTypeService.selectCustomerType(resultSet.getInt("customer_type_id"));
+//                Integer customerId = resultSet.getInt("customer_id");
+//                String name = resultSet.getString("customer_name");
+//                String dayOfBirth = resultSet.getString("customer_birthday");
+//                Integer gender = Integer.valueOf(resultSet.getString("customer_gender"));
+//                String idCard = resultSet.getString("customer_id_card");
+//                String phone = resultSet.getString("customer_phone");
+//                String email = resultSet.getString("customer_email");
+//                String address = resultSet.getString("customer_address");
+//                String cusCode = resultSet.getString("customer_code");
+//                customer = new Customer(customerId,customerTypeId, name, dayOfBirth, gender, idCard, phone, email, address, cusCode);
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return customer;
+//    }
+//
+//    @Override
+//    public List<Customer> selectAllCustomer() {
+//        List<Customer> customerList = new ArrayList<>();
+//        try (Connection connection = baseRepository.getConnection();
+//             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_CUSTOMER)) {
+//            ResultSet resultSet = preparedStatement.executeQuery();
+//            while (resultSet.next()) {
+//                Integer id = resultSet.getInt("customer_id");
+//                CustomerType customerTypeId = customerTypeService.selectCustomerType(resultSet.getInt("customer_type_id"));
+//                String name = resultSet.getString("customer_name");
+//                String dayOfBirth = resultSet.getString("customer_birthday");
+//                Integer gender = Integer.valueOf(resultSet.getString("customer_gender"));
+//                String idCard = resultSet.getString("customer_id_card");
+//                String phone = resultSet.getString("customer_phone");
+//                String email = resultSet.getString("customer_email");
+//                String address = resultSet.getString("customer_address");
+//                String cusCode = resultSet.getString("customer_code");
+//                customerList.add(new Customer(id, customerTypeId, name, dayOfBirth, gender, idCard, phone, email, address, cusCode));
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return customerList;
+//    }
+//
+//    @Override
+//    public boolean deleteCustomer(int id) throws SQLException {
+//        boolean check = false;
+//        try(Connection connection = baseRepository.getConnection();
+//            PreparedStatement preparedStatement = connection.prepareStatement(DELETE_CUSTOMER);) {
+//            preparedStatement.setInt(1, id);
+//            check = preparedStatement.executeUpdate() > 0;
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return check;
+//    }
+//
+//    @Override
+//    public boolean updateCustomer(Customer customer) throws SQLException {
+//        boolean check = false;
+//        try (Connection connection = baseRepository.getConnection();
+//             PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_CUSTOMER);) {
+//            preparedStatement.setInt(1, customer.getCustomerTypeId().getCustomerTypeId());
+//            preparedStatement.setString(2, customer.getCustomerName());
+//            preparedStatement.setString(3, customer.getCustomerBirthday());
+//            preparedStatement.setInt(4, customer.getCustomerGender());
+//            preparedStatement.setString(5, customer.getCustomerIdCard());
+//            preparedStatement.setString(6, customer.getCustomerPhone());
+//            preparedStatement.setString(7, customer.getCustomerEmail());
+//            preparedStatement.setString(8, customer.getCustomerAddress());
+//            preparedStatement.setString(9, customer.getCustomerCode());
+//            preparedStatement.setInt(10, customer.getCustomerId());
+//            check = preparedStatement.executeUpdate() > 0;
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return check;
+//    }
+//
+//    @Override
+//    public List<Customer> searchByName(String name) {
+//        List<Customer> customerList = new ArrayList<>();
+//        try( Connection connection = baseRepository.getConnection();
+//             PreparedStatement preparedStatement = connection.prepareStatement(SEARCH_BY_NAME_CUSTOMER);) {
+//            preparedStatement.setString(1, "%"+name+"%");
+//            ResultSet resultSet = preparedStatement.executeQuery();
+//            while (resultSet.next()) {
+//                Integer id = resultSet.getInt("customer_id");
+//                CustomerType customerTypeId = customerTypeService.selectCustomerType(resultSet.getInt("customer_type_id"));
+//                String namee = resultSet.getString("customer_name");
+//                String dayOfBirth = resultSet.getString("customer_birthday");
+//                Integer gender = Integer.valueOf(resultSet.getString("customer_gender"));
+//                String idCard = resultSet.getString("customer_id_card");
+//                String phone = resultSet.getString("customer_phone");
+//                String email = resultSet.getString("customer_email");
+//                String address = resultSet.getString("customer_address");
+//                String cusCode = resultSet.getString("customer_code");;
+//                customerList.add(new Customer(id,customerTypeId,namee,dayOfBirth,gender,idCard,phone,email,address,cusCode));
+//            }
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return customerList;
+//    }
 
 
 }
