@@ -11,7 +11,7 @@ public class EducationServiceImpl implements IEducationDegreeService {
     private IEducationDegreeRepository iEducationDegreeRepository = new EducationDegreeImpl();
     @Override
     public List<DegreeEducation> selectAllDegreeEducation() {
-        List<DegreeEducation> degreeEducationList = new ArrayList<>();
+        List<DegreeEducation> degreeEducationList = iEducationDegreeRepository.selectAllDegreeEducation();
         return degreeEducationList;
     }
 }

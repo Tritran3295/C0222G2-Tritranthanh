@@ -1,5 +1,6 @@
 package controller;
 
+import common.Validate;
 import model.Customer.Customer;
 import model.Customer.CustomerType;
 import repository.CustomerImpl.CustomerTypeRepositoryImpl;
@@ -11,7 +12,10 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 
 @WebServlet(name = "CustomerController", value = "/Customers")
 public class CustomerController extends HttpServlet {
@@ -123,6 +127,12 @@ public class CustomerController extends HttpServlet {
 
 
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        Map<String, String> error = new HashMap();
+        Map<String, String> error1;
+        Map<String, String> error2;
+        Map<String, String> error3;
+        Map<String, String> error4;
+        Map<String, String> error5;
 
         String nameCustomer = request.getParameter("nameCustomer");
         String birthday = request.getParameter("birthday");
@@ -132,6 +142,9 @@ public class CustomerController extends HttpServlet {
         String email = request.getParameter("email");
         String address = request.getParameter("address");
         Integer idTypeCustomer = Integer.parseInt(request.getParameter("idTypeCustomer"));
+
+
+
         Customer customer = new Customer(nameCustomer, birthday, gender, idCard, phone, email, address, idTypeCustomer);
         iCustomerService.add(customer);
         response.sendRedirect("/Customers");

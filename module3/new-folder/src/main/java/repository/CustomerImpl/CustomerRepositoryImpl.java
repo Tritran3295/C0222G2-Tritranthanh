@@ -24,7 +24,7 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
 
     @Override
     public void createCustomer(Customer customer) {
-        System.out.printf(INSERT_CUSTOMER_SQL);
+
         try(Connection connection = connectionDB.getConnection();
             PreparedStatement pr = connection.prepareStatement(INSERT_CUSTOMER_SQL)){
             pr.setString(1,customer.getNameCustomer());
@@ -35,12 +35,12 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
             pr.setString(6,customer.getEmail());
             pr.setString(7,customer.getAddress());
             pr.setInt(8,customer.getIdTypeCustomer());
-            System.out.println(customer.getIdTypeCustomer());
             pr.executeUpdate();
         }
         catch (SQLException e){
             e.printStackTrace();
         }
+
     }
 
     @Override

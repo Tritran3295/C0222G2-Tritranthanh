@@ -26,6 +26,13 @@
     </form>
 </center>
 <div>
+    <form action="/Employees" method="get">
+        <input type="hidden" value="search" name="action">
+        <input class="search" id="search-input" type="text" name="nameEmployee"
+               placeholder="Search by employee name" style="width: 200px" value="${nameEmployee}">
+        <input type="submit" value="search"  style="border-radius: 5px; border: 1px solid #0c5460">
+
+    </form>
     <table border="1">
         <tr>
             <th>Id </th>
@@ -76,7 +83,26 @@
                     <a href="/Employees?action=edit&id=${temp.idEmployee}">Edit</a>
                 </td>
                 <td>
-                    <a href="/Employees?action=delete&id=${temp.idEmployee}">Delete</a>
+
+                    <div class="modal" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Modal body text goes here.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class="btn btn-primary" href="/Employees?action=delete&id=${temp.idEmployee}">Delete</a>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </td>
             </tr>
         </c:forEach>

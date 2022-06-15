@@ -21,6 +21,7 @@
                 <th> Name:</th>
                 <td>
                     <input type="text" name="nameEmployee" id="name" size="45"/>
+                    <p style="color: red">${errors.name}</p>
                 </td>
             </tr>
             <tr>
@@ -33,6 +34,7 @@
                 <th>Id Card Customer:</th>
                 <td>
                     <input type="text" name="idCardEmployee" id="idCard" size="45"/>
+                    <p style="color: red">${errors.idCard}</p>
                 </td>
             </tr>
             <tr>
@@ -51,6 +53,7 @@
                 <th>Email:</th>
                 <td>
                     <input type="text" name="email" id="email" size="45"/>
+                    <p style="color: red">${errors.email}</p>
                 </td>
             </tr>
             <tr>

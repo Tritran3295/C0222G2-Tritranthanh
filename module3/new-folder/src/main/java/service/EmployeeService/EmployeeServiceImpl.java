@@ -18,5 +18,27 @@ public class EmployeeServiceImpl implements IEmployeeService {
         iEmployeeRepository.createEmployee(employee);
     }
 
+    @Override
+    public void update(Employee employee) {
+        iEmployeeRepository.update(employee);
+    }
+
+    @Override
+    public Employee getEmployeeById(Integer idEmployee) {
+        return iEmployeeRepository.searchEmployeeById(idEmployee);
+    }
+
+    @Override
+    public List<Employee> searchByName(String nameEmployee) {
+        return iEmployeeRepository.searchByName(nameEmployee);
+    }
+
+    @Override
+    public boolean deleteEmployee(Integer idEmployee) {
+        boolean rowDelete;
+        rowDelete = iEmployeeRepository.deleteEmployee(idEmployee);
+        return rowDelete;
+    }
+
 
 }

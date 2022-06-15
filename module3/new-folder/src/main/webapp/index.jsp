@@ -24,6 +24,9 @@
             font-size: 12px !important;
         }
     </style>
+<%--    <c:redirect url="book">--%>
+
+<%--    </c:redirect>--%>
 </head>
 <body>
 <div class="container">
@@ -45,7 +48,7 @@
                 <a class="navbar-brand" href="/index.jsp">Home</a>
                 <a class="navbar-brand" href="/Employees">Employee</a>
                 <a class="navbar-brand" href="/Customers">Customer</a>
-                <a class="navbar-brand" href="/service">Service</a>
+                <a class="navbar-brand" href="/Services">Service</a>
                 <a class="navbar-brand" href="/contract">Contract</a>
                 <form class="d-flex navbar-brand">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"

@@ -10,4 +10,12 @@ public interface IEmployeeRepository {
     List<Employee> selectAllEmployee();
 
     void createEmployee(Employee employee);
+
+    void update(Employee employee);
+
+    Employee searchEmployeeById(Integer idEmployee);
+
+    List<Employee> searchByName(String nameEmployee);
+
+    boolean deleteEmployee(Integer idEmployee);
 }

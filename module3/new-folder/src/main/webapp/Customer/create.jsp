@@ -27,7 +27,7 @@
             <tr>
                 <th>Day of birthday Customer:</th>
                 <td>
-                    <input type="text" name="birthday" id="birthday" size="45"/>
+                    <input type="date" name="birthday" id="birthday" size="45"/>
                 </td>
             </tr>
             <tr>

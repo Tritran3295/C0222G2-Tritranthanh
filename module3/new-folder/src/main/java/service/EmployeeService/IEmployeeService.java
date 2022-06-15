@@ -9,4 +9,13 @@ public interface IEmployeeService {
 
 
     void add(Employee employee);
+
+    void update(Employee employee);
+
+
+    Employee getEmployeeById(Integer idEmployee);
+
+    List<Employee> searchByName(String nameEmployee);
+
+    boolean deleteEmployee(Integer idEmployee);
 }
