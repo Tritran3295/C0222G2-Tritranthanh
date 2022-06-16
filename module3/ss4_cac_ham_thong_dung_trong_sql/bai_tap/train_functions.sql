@@ -30,7 +30,7 @@ CREATE TABLE mark
 (
     mark_id    INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     sub_id     INT NOT NULL,
-    class INT NOT NULL,
+    student_id INT NOT NULL,
     mark      FLOAT   DEFAULT 0 CHECK ( Mark BETWEEN 0 AND 100),
     exam_times TINYINT DEFAULT 1,
     UNIQUE (sub_id, student_id),
@@ -47,25 +47,32 @@ INSERT INTO student (student_name, address, phone, status, class_id)
 VALUES ('Hung', 'Ha Noi', '0912113113', 1, 1);
 INSERT INTO student (student_name, address, status, class_id)
 VALUES ('Hoa', 'Hai phong', 1, 1);
-INSERT INTO student (student_name, address, phone, status, ClassId)
+INSERT INTO student (student_name, address, phone, status, class_id)
 VALUES ('Manh', 'HCM', '0123123123', 0, 2);
 INSERT INTO subject
 VALUES (1, 'CF', 5, 1),
        (2, 'C', 6, 1),
        (3, 'HDJ', 5, 1),
        (4, 'RDBMS', 10, 1);
-       INSERT INTO mark (sub_id, student_id, mark, exam_times)
+INSERT INTO mark (sub_id, student_id, mark, exam_times)
 VALUES (1, 1, 8, 1),
        (1, 2, 10, 2),
        (2, 1, 12, 1);
+       
+       -- câu 1: Hiển thị tất cả các thông tin môn học (bảng subject) có credit lớn nhất.
+
        select * from subject order by subject.credit desc limit 0,1;
+       
+       -- câu 2:Hiển thị các thông tin môn học có điểm thi lớn nhất.
+
        select subject.sub_name,mark.mark from subject 
        join mark on subject.sub_id = mark.sub_id
        order by mark.mark desc limit 0,1;
        
-       
+       -- câu 3: Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần
+
        select student.*,avg(mark.mark) from student
-       join sark on student.student_id = Mark.student_id
+       join mark on student.student_id = mark.student_id
        group by student.student_id
        order by mark.mark desc;
        
