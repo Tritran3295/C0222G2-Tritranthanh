@@ -1,1 +1,0 @@
-SELECT * FROM quan_ly_benh_an.benh_an;

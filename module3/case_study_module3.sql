@@ -1,4 +1,4 @@
--- drop database case_study_module3;
+ drop database if exists case_study_module3;
 create database case_study_module3;
 use case_study_module3;
 create table vi_tri(
@@ -122,9 +122,7 @@ ma_dich_vu_di_kem int,
 foreign key(ma_hop_dong) references hop_dong(ma_hop_dong),
 foreign key(ma_dich_vu_di_kem) references dich_vu_di_kem(ma_dich_vu_di_kem)
 );
-insert into hop_dong_chi_tiet
-value 
-(1,5,2,4,0),(2,8,2,5,0),(3,15,2,6,0),(4,1,3,1,0),(5,11,3,2,0),(6,1,1,3,0),(7,2,1,2,0),(8,2,12,2,0);
+
 insert into nhan_vien value
 (1,'Nguyễn Văn An','1970-11-07','456231786',10000000,0901234121,'annguyen@gmail.com','295 Nguyễn Tất Thành,Đà Nẵng',1,3,1,0),
 (2,'Lê Văn Bình','1997-04-09','654231234',7000000,0934212314,'binhlv@gmail.com','22 Yên Bái, Đà Nẵng',1,2,2,0),
@@ -152,6 +150,7 @@ insert into khach_hang value (1,'Nguyễn Thị Hào','1970-11-07',0,'643431213'
 	(8,'Nguyễn Thị Hào','1999-04-08',0,'965656433','0763212345','haohao99@gmail.com','55 Nguyễn Văn Linh,Kon Tum',3,0),
 	(9,'Trần Đại Danh','1994-07-01',1,'432341235','0643343433','danhhai99@gmail.com','24 Lý Thường Kiệt Quảng Ngãi',1,0),
 	(10,'Nguyễn Tâm Đắc','1989-07-01',1,'344343432','0987654321','dactam@gmail.com','22 Ngô Quyền, Đà Nẵng',2,0);
+  
 insert into hop_dong value (1,'2020-12-08','2020-12-08',0,3,1,3,0),
 (2,'2020-07-14','2020-07-21',200000,7,3,1,0),
 (3,'2021-03-15','2021-03-17',50000,3,4,2,0),
@@ -164,13 +163,27 @@ insert into hop_dong value (1,'2020-12-08','2020-12-08',0,3,1,3,0),
 (10,'2021-04-12','2021-04-14',0,10,3,5,0),
 (11,'2021-04-25','2021-04-25',0,2,2,1,0),
 (12,'2021-05-25','2021-05-27',0,7,10,1,0);
+  insert into hop_dong_chi_tiet
+value 
+(1,5,2,4,0),(2,8,2,5,0),(3,15,2,6,0),(4,1,3,1,0),(5,11,3,2,0),(6,1,1,3,0),(7,2,1,2,0),(8,2,12,2,0);
 -- câu 2
 select * from nhan_vien
-where ho_ten like 'H%' or ho_ten like 'T%' or ho_ten like 'K%' and length(ho_ten) < 15;
+where ho_ten like 'H%' or ho_ten like 'T%' or ho_ten like 'K%' and length(ho_ten) <= 15;
+ 
+ select ho_ten from nhan_vien
+ where ho_ten like '[HTK]%' and length(ho_ten) <= 15 ;
 -- câu 3
+-- cách 1:
 select * from khach_hang
 where year(curdate())-year(ngay_sinh)>18 and year(curdate())-year(ngay_sinh)<50
 and (dia_chi like "%Đà Nẵng" or dia_chi like "%Quảng Trị");
+
+-- cách 2:
+select * from khach_hang
+where datediff(curdate(),ngay_sinh)/365 > 18 and datediff(curdate(),ngay_sinh)/365 < 50
+and (dia_chi like "%Đà Nẵng" or dia_chi like "%Quảng Trị");
+
+
 -- câu 4:
 -- Đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu
 -- lần. Kết quả hiển thị được sắp xếp tăng dần theo số lần đặt phòng của
@@ -181,9 +194,11 @@ and (dia_chi like "%Đà Nẵng" or dia_chi like "%Quảng Trị");
 select khach_hang.ma_khach_hang,khach_hang.ho_ten,count(hop_dong.ma_khach_hang) as "so_lan_dat_phong"
 from hop_dong
 join khach_hang on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
-left join loai_khach on loai_khach.ma_loai_khach=khach_hang.ma_loai_khach
-where loai_khach.ten_loai_khach = 'Diamond'
-group by ma_khach_hang order by count(hop_dong.ma_khach_hang);
+join loai_khach on loai_khach.ma_loai_khach=khach_hang.ma_loai_khach
+where loai_khach.ma_loai_khach = 1
+group by hop_dong.ma_khach_hang order by count(hop_dong.ma_khach_hang);
+
+
 -- câu 5: 
 -- Hiển thị ma_khach_hang, ho_ten, ten_loai_khach, ma_hop_dong,
 -- ten_dich_vu, ngay_lam_hop_dong, ngay_ket_thuc, tong_tien (Với
@@ -312,11 +327,7 @@ left join dich_vu on dich_vu.ma_dich_vu = hop_dong.ma_dich_vu
 left join hop_dong_chi_tiet on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
 where quarter (hop_dong.ngay_lam_hop_dong) = 4 and year(hop_dong.ngay_lam_hop_dong)= 2020 and hop_dong.ma_hop_dong  not in 
 (select hop_dong.ma_hop_dong 
-from khach_hang as `ten_khach_hang`
-left join nhan_vien on hop_dong.ma_nhan_vien = nhan_vien.ma_nhan_vien
-left join khach_hang on khach_hang.ma_khach_hang = hop_dong.ma_khach_hang
-left join dich_vu on dich_vu.ma_dich_vu = hop_dong.ma_dich_vu
-left join hop_dong_chi_tiet on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
+from hop_dong
 where (quarter(hop_dong.ngay_lam_hop_dong ) = 1 or quarter(hop_dong.ngay_lam_hop_dong ) = 2) and year(hop_dong.ngay_lam_hop_dong) =2021)
 group by hop_dong.ma_hop_dong;
 
@@ -369,16 +380,6 @@ order by ma_nhan_vien;
 -- Xóa những Nhân viên chưa từng lập được hợp đồng nào từ năm 2019
 -- đến năm 2021.
 
--- cách 1:
-select ma_nhan_vien,ho_ten from nhan_vien
-where ma_nhan_vien not in 
-(
-select hop_dong.ma_nhan_vien from hop_dong
-left join nhan_vien on nhan_vien.ma_nhan_vien = hop_dong.ma_nhan_vien
-where year(hop_dong.ngay_lam_hop_dong) between 2019 and 2021
-);
-
--- cách 2:
 set sql_safe_updates = 0;
 update nhan_vien
 set status = 1
@@ -392,13 +393,6 @@ set sql_safe_updates = 1;
 -- Cập nhật thông tin những khách hàng có ten_loai_khach từ Platinum
 -- lên Diamond, chỉ cập nhật những khách hàng đã từng đặt phòng với
 -- Tổng Tiền thanh toán trong năm 2021 là lớn hơn 10.000.000 VNĐ.
-select * from khach_hang;
-select * from loai_khach;
-select * from hop_dong;
-select * from hop_dong_chi_tiet;
-select * from dich_vu;
-select * from dich_vu;
-
 
 set sql_safe_updates = 0;
 
@@ -417,8 +411,8 @@ join dich_vu_di_kem on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_d
 where khach_hang.ma_loai_khach = 2 and year(hop_dong.ngay_lam_hop_dong)=2021 and 
 dich_vu.chi_phi_thue + ifnull((hop_dong_chi_tiet.so_luong * dich_vu_di_kem.gia),0) > 10000000 ) table_tam);
 
-
 set sql_safe_updates = 1;
+select * from khach_hang;
 
 -- câu 18 
 -- Xóa những khách hàng có hợp đồng trước năm 2021 (chú ý ràng buộc
@@ -452,9 +446,9 @@ set sql_safe_updates = 1;
 -- thống, thông tin hiển thị bao gồm id (ma_nhan_vien, ma_khach_hang),
 -- ho_ten, email, so_dien_thoai, ngay_sinh, dia_chi.
 
-select ma_khach_hang,ho_ten,email,so_dien_thoai,ngay_sinh,dia_chi from khach_hang
+select ma_khach_hang,ho_ten,email,so_dien_thoai,ngay_sinh,dia_chi from khach_hang 
 union 
-select ma_nhan_vien,ho_ten,email,so_dien_thoai,ngay_sinh,dia_chi from nhan_vien;
+select ma_nhan_vien,ho_ten,email,so_dien_thoai,ngay_sinh,dia_chi from nhan_vien ;
 
 
 

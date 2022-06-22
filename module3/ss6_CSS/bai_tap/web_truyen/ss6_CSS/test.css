@@ -1,0 +1,141 @@
+body{
+    font-family: Arial, Tahoma;
+    font-size: 12px;
+}
+
+#main{
+    width: 1000px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#head{
+    height: 70px;
+    background-color: antiquewhite;
+    border: 1px solid #CDCDCD;
+    margin-bottom:5px;
+
+}
+
+#head-link{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #CDCDCD;
+    background-color: #F5F5F5;
+    margin-bottom:5px;
+    clear: both;
+}
+
+#left{
+    width: 150px;
+    min-height: 570px;
+    border: 1px solid #CDCDCD;
+    background-color: #CDCDCD;
+    float:left;
+    margin-bottom: 5px;
+}
+.hot{
+    padding: 15px 15px 15px 15px ;
+    color: red;
+}
+
+#content{
+    width: 600px;
+    min-height: 570px;
+    border: 1px solid #CDCDCD;
+    float:left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: darkseagreen;
+}
+
+#right{
+    width: 234px;
+    min-height: 570px;
+    border: 1px solid #CDCDCD;
+    background-color: #CDCDCD;
+    float:right;
+    margin-bottom: 5px;
+}
+
+#footer{
+    height: 50px;
+    clear: both;
+    border: 1px solid #CDCDCD;
+    background-color: #F8F8FF;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+.title{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.image-1{
+    padding: initial;
+    height: 110px;
+    width: 80px;
+}
+.table-right{
+    display: flex;
+    justify-content: space-between;
+}
+.image-2{
+    width: 60px;
+    height: 60px;
+}
+.table-right{
+    display: flex;
+}
+.img-content{
+    height: 150px;
+    width: 120px;
+}
+.aa{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-evenly;
+}
+#pic1{
+    background-color: aliceblue;
+    padding: 10px 10px 10px 10px;
+
+}
+#pic2{
+    background-color: aliceblue;
+    padding: 10px 10px 10px 10px;
+
+}
+#pic3{
+    background-color: aliceblue;
+    padding: 10px 10px 10px 10px;
+
+}
+#pic4{
+    background-color: aliceblue;
+    padding: 10px 10px 10px 10px;
+
+}
+#pic5{
+    background-color: aliceblue;
+    padding: 10px 10px 10px 10px;
+
+}
+#pic6{
+    background-color: aliceblue;
+    padding: 10px 10px 10px 10px;
+
+}
+.img-left{
+    margin-top: 5px;
+}
+#pic-left1{
+    background-color: darkseagreen;
+}
