@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="07fbe144-ceea-4627-b5cf-7755eb713747" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../module1/Thi_Thuc_Hanh/bai_tap/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module1/Thi_Thuc_Hanh/bai_tap/text.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/Utils/Exception.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/data/handPhone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/data/handPhone.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/giai_thuat/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/giai_thuat/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/test/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2Aun4qnMxHQe9nM9usCamjC0piD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/bai_Tap" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07fbe144-ceea-4627-b5cf-7755eb713747" name="Default Changelist" comment="" />
+      <created>1655868149982</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655868149982</updated>
+      <workItem from="1655868151487" duration="12542000" />
+      <workItem from="1655905200691" duration="27196000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1655954398950">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1655954398950" />
+  </component>
+</project>

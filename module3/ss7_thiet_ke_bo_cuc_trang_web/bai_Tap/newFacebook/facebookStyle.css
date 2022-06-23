@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+.col-1 {
+    width: 8.33%;
+}
+.col-2 {
+    width: 16.66%;
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.33%;
+}
+.col-5 {
+    width: 41.66%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7 {
+    width: 58.33%;
+}
+.col-8 {
+    width: 66.66%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10 {
+    width: 83.33%;
+}
+.col-11 {
+    width: 91.66%;
+}
+.col-12 {
+    width: 100%;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.row::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.logo-fa{
+    height: 30px;
+    width: 30px;
+
+
+}
+.col-3{
+    display: flex;
+}
+.search{
+    padding-top: 5px;
+    padding-left: 3px;
+    border-radius: 15px;
+}
+.logo-title{
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+}
+.logo-header{
+    padding: 0px;
+}
+.aa{
+    background-color: ghostwhite;
+    height: 80px;
+}
+.middle-1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.avata{
+    height: 30px;
+    width: 30px;
+}
+.middle-2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bb{
+    float: right;
+    background-color: lightgray;
+}
+.left2{
+    padding: 0px;
+}
+.right-content{
+    padding: 0px;
+}
+.icon-search{
+    height: 10px;
+    width: 10px;
+}
+.girl{
+    height: 170px;
+    width: 18%;
+    text-align: center;
+    padding-left: 10px;
+    border-radius: 20px;
+
+}
+.mid{
+    border-radius: 10px;
+    padding: 0px;
+}
+div.row.mid{
+    margin-right: 0px;
+}
+.input{
+    height: 35px;
+    padding: 5px;
+    width: 90%;
+    border-radius: 15px;
+
+}
+.avata1{
+    height: 40px;
+    width: 40px;
+
+}
+.left3{
+    padding: 0px;
+
+}
+.jisoo{
+    width: 100%;
+    padding: 0px;
+}
+.jisoo1{
+    padding: 0px;
+}
+.total-girl{
+    padding-right: 2px;
+    padding-left: 40px;
+}
+
