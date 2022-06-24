@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1449cf85-9c60-45dc-9701-b02de5f36947" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ss7_thiet_ke_bo_cuc_trang_web/bai_Tap/newFacebook/facebook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss7_thiet_ke_bo_cuc_trang_web/bai_Tap/newFacebook/facebookStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2/p_module2/src/ss3_mang_va_phuong_thuc_trong_java/out/production/ss3_mang_va_phuong_thuc_trong_java/ss3_mang_va_phuong_thuc_trong_java/ss3_mang_va_phuong_thuc_trong_java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../module2/p_module2/src/ss3_mang_va_phuong_thuc_trong_java/ss3_mang_va_phuong_thuc_trong_java.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cyrcle/facebook/facebook.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cyrcle/facebook/facebook.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/.idea/ss8_bootstrap.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/bai_tap/landing_page/LandingPage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/bai_tap/landing_page/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/Thi_Thuc_Hanh/bai_tap/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Thi_Thuc_Hanh/bai_tap/text.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/Utils/Exception.class" beforeDir="false" />
@@ -15,7 +24,8 @@
       <change beforePath="$PROJECT_DIR$/../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/p_module2/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/p_module2/src/test/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_thiet_ke_bo_cuc_trang_web/bai_Tap/facebook/facebook.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_thiet_ke_bo_cuc_trang_web/bai_Tap/facebook/facebook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss7_thiet_ke_bo_cuc_trang_web/bai_Tap/newFacebook/facebook.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_thiet_ke_bo_cuc_trang_web/bai_Tap/newFacebook/facebook.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ss8_bootstrap/bai_tap/landing_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_bootstrap/bai_tap/landing_page.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +71,9 @@
       <workItem from="1655890816743" duration="102000" />
       <workItem from="1655905939362" duration="660000" />
       <workItem from="1655957937891" duration="698000" />
-      <workItem from="1655963951459" duration="4102000" />
+      <workItem from="1655963951459" duration="6321000" />
+      <workItem from="1656042716016" duration="3552000" />
+      <workItem from="1656062913045" duration="263000" />
     </task>
     <servers />
   </component>

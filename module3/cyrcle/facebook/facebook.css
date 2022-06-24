@@ -1,0 +1,140 @@
+body {
+background-color: lightgrey;
+
+}
+
+.total-header {
+    display: flex;
+    background-color: white;
+
+}
+
+.header-left {
+        width: 20%;
+}
+
+.icon-facebook {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+.header-middle {
+    width: 60%;
+
+    padding-left: 5px;
+
+
+
+}
+
+.icon-home {
+    width: 40px;
+    height: 40px;
+    padding-left: 130px;
+    margin: 20px;
+
+}
+
+
+.header-right {
+    width: 20%;
+
+}
+
+.picture-avata {
+    width: 40px;
+    height: 40px;
+
+    margin: 20px;
+}
+
+.float-right {
+    display: flex;
+}
+
+
+.border-left {
+    width: 20%;
+    padding: 20px;
+    float: left;
+}
+
+.img-ava {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-friend {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-group {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-market2 {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-memo {
+    width: 40px;
+    height: 40px;
+}
+
+.group-img1 {
+    width: 40px;
+    height: 40px;
+}
+
+.group-img2 {
+    width: 40px;
+    height: 40px;
+}
+
+.group-img3 {
+    width: 40px;
+    height: 40px;
+}
+
+.group-img4 {
+    width: 40px;
+    height: 40px;
+}
+
+.middle {
+    width: 60%;
+    float: left;
+}
+
+.middle1 img {
+    width: 12%;
+    height: 200px;
+    text-align: center;
+    padding-left: 20px;
+}
+.img-middle{
+    width: 40px;
+    height: 40px;
+}
+.icon-birthday{
+    width: 30px;
+    height: 30px;
+}
+.img-friend img{
+    width: 40px;
+    height: 40px;
+}
+.img-NguyenKy{
+    width: 40px;
+    height: 40px;
+}
+.icon-birthday1{
+    width: 70%;
+    height: 300px;
+}
+
