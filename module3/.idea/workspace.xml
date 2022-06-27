@@ -5,17 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1449cf85-9c60-45dc-9701-b02de5f36947" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../module2/p_module2/src/ss3_mang_va_phuong_thuc_trong_java/out/production/ss3_mang_va_phuong_thuc_trong_java/ss3_mang_va_phuong_thuc_trong_java/ss3_mang_va_phuong_thuc_trong_java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../module2/p_module2/src/ss3_mang_va_phuong_thuc_trong_java/ss3_mang_va_phuong_thuc_trong_java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cyrcle/facebook/facebook.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cyrcle/facebook/facebook.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/.idea/ss8_bootstrap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/bai_tap/landing_page/LandingPage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ss8_bootstrap/bai_tap/landing_page/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module1/Thi_Thuc_Hanh/bai_tap/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/../module1/Thi_Thuc_Hanh/bai_tap/text.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/Utils/Exception.class" beforeDir="false" />
@@ -24,8 +13,8 @@
       <change beforePath="$PROJECT_DIR$/../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../module2/p_module2/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../module2/p_module2/src/test/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss7_thiet_ke_bo_cuc_trang_web/bai_Tap/newFacebook/facebook.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss7_thiet_ke_bo_cuc_trang_web/bai_Tap/newFacebook/facebook.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ss8_bootstrap/bai_tap/landing_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/ss8_bootstrap/bai_tap/landing_page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case_study_SQL_module3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/case_study_SQL_module3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_case_sutydy_module3.sql" beforeDir="false" afterPath="$PROJECT_DIR$/db_case_sutydy_module3.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../module2/p_module2/src/ss3_mang_va_phuong_thuc_trong_java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -74,6 +63,8 @@
       <workItem from="1655963951459" duration="6321000" />
       <workItem from="1656042716016" duration="3552000" />
       <workItem from="1656062913045" duration="263000" />
+      <workItem from="1656063718212" duration="214000" />
+      <workItem from="1656259607525" duration="393000" />
     </task>
     <servers />
   </component>

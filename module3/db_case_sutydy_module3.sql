@@ -1,4 +1,4 @@
--- drop database db_all_case_study_module3;
+ drop database db_all_case_study_module3;
 create database db_all_case_study_module3;
 use db_all_case_study_module3;
 create table position (
@@ -13,20 +13,20 @@ create table division(
 division_id int auto_increment primary key,
 division_name varchar(45)
 );
--- create table `user` (
--- user_name varchar(255) primary key,
--- password varchar(255)
--- );
--- create table `role` (
--- role_id int auto_increment primary key,
--- role_name varchar(255)
--- );
--- create table user_role (
--- role_id int,
--- user_name varchar(255),
--- foreign key(role_id) references `role`(role_id),
--- foreign key(user_name) references `user`(user_name)
--- );
+ create table `user` (
+ user_name varchar(255) primary key,
+password varchar(255)
+ );
+ create table `role` (
+ role_id int auto_increment primary key,
+ role_name varchar(255)
+ );
+ create table user_role (
+ role_id int,
+ user_name varchar(255),
+ foreign key(role_id) references `role`(role_id),
+ foreign key(user_name) references `user`(user_name)
+ );
 create table employee (
 employee_id int auto_increment primary key,
 employee_name varchar(45),
@@ -39,11 +39,11 @@ employee_address varchar(45),
 position_id int,
 education_degree_id int,
 division_id int,
--- user_name varchar(255),
+ user_name varchar(255),
 foreign key(position_id) references position (position_id),
 foreign key(education_degree_id) references education_degree (education_degree_id),
-foreign key(division_id) references division (division_id)
--- foreign key(user_name) references `user` (user_name)
+foreign key(division_id) references division (division_id),
+foreign key(user_name) references `user` (user_name)
 );
 
 create table customer_type(
