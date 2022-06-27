@@ -85,21 +85,18 @@
           <div class="carousel-item active">
             <img src="https://mgvs.vn/wp-content/uploads/2019/12/anh-bia-vinpearl-land-1024x536.jpg" class="d-block" width="100%" height="505px" alt="">
             <div class="carousel-caption d-none d-md-block text-dark">
-              <h3>Mấy Con Gà Này</h3>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="https://reviewvilla.vn/wp-content/uploads/2021/09/vinpearl-nha-trang-11-1-1024x576.jpg" class="d-block" width="100%" height="505px" alt="">
             <div class="carousel-caption d-none d-md-block text-dark">
-              <h3>Mấy Con Gà Này</h3>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div class="carousel-item">
             <img src="https://cuongtruyen.com/wp-content/uploads/2019/09/luffy-funny-face-1024x576.jpg" class="d-block" width="100%" height="505px" alt="">
             <div class="carousel-caption d-none d-md-block text-dark">
-              <h3>Mấy Con Gà Này</h3>
               <p>Some representative placeholder content for the third slide.</p>
             </div>
           </div>
@@ -117,7 +114,7 @@
   </div>
 
   <footer class="container-fluid text-center bg-dark p-2 text-light" style="height: 24px">
-    
+
   </footer>
 
 </div>
