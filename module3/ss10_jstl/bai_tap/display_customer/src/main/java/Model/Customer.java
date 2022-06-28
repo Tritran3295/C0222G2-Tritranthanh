@@ -1,15 +1,17 @@
-package Model;
+package model;
 
 public class Customer {
-    String name;
-    String dateOfBirth;
-    String address;
-    String image;
-    public Customer(){};
+    private String name;
+    private String dayOfBirth;
+    private String address;
+    private String image;
 
-    public Customer(String name, String dateOfBirth, String address, String image) {
+    public Customer() {
+    }
+
+    public Customer(String name, String dayOfBirth, String address, String image) {
         this.name = name;
-        this.dateOfBirth = dateOfBirth;
+        this.dayOfBirth = dayOfBirth;
         this.address = address;
         this.image = image;
     }
@@ -22,12 +24,12 @@ public class Customer {
         this.name = name;
     }
 
-    public String getDateOfBirth() {
-        return dateOfBirth;
+    public String getDayOfBirth() {
+        return dayOfBirth;
     }
 
-    public void setDateOfBirth(String dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setDayOfBirth(String dayOfBirth) {
+        this.dayOfBirth = dayOfBirth;
     }
 
     public String getAddress() {

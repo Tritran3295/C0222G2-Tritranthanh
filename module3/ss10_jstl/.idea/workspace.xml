@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ace865b9-c2a6-47dc-9001-8a269cf4d8ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ss19_tong_quan_ve_ung_dung_web/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss19_tong_quan_ve_ung_dung_web/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss19_tong_quan_ve_ung_dung_web/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss19_tong_quan_ve_ung_dung_web/.idea/ss9_tong_quan_ve_ung_dung_web.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss19_tong_quan_ve_ung_dung_web/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module1/Thi_Thuc_Hanh/bai_tap/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module1/Thi_Thuc_Hanh/bai_tap/text.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/Utils/Exception.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/data/handPhone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/data/handPhone.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/giai_thuat/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/giai_thuat/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/test/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/build/classes/java/main/CalculatorServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/build/classes/java/main/Model/Calculator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/build/libs/Calculator-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/src/main/java/CalculatorServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/src/main/java/Model/Calculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/src/main/webapp/calculator.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/Calculator/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/build/classes/java/main/Controller/CustomerServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/build/classes/java/main/Model/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/build/libs/display_customer-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/src/main/java/Controller/CustomerServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/src/main/java/Model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap/display_customer/src/main/webapp/list.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/convert_money/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/7.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/build/classes/java/main/DictionaryServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/build/libs/dictionary-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/build/tmp/war/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/src/main/java/DictionaryServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc_hanh/dictionary/src/main/webapp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss19_tong_quan_ve_ung_dung_web/bai_tap/product_discuont_calculator/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss19_tong_quan_ve_ung_dung_web/bai_tap/product_discuont_calculator/.idea/gradle.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2B9Ulm5wLtfi4eElmTy9nTur1fH" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/thuc_hanh" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ace865b9-c2a6-47dc-9001-8a269cf4d8ab" name="Changes" comment="" />
+      <created>1656317953452</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656317953452</updated>
+      <workItem from="1656317955796" duration="28000" />
+    </task>
+    <servers />
+  </component>
+</project>

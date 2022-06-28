@@ -1,21 +1,23 @@
-package Model;
+package model;
 
 public class Calculator {
-    public static float calculate(float firstNumber, float secondNumber, char operator) {
-        switch (operator) {
-            case '+':
-                return firstNumber + secondNumber;
+    public static float calculate(float firstOperand, float secondOperand, char operator ){
+        switch (operator){
+            case '+' :
+                return firstOperand + secondOperand ;
             case '-':
-                return firstNumber - secondNumber;
+                return firstOperand - secondOperand ;
             case '*':
-                return firstNumber * secondNumber;
+                return firstOperand * secondOperand ;
             case '/':
-                if (secondNumber != 0)
-                    return firstNumber / secondNumber;
-                else
-                    throw new RuntimeException("Can't divide zero");
+                if(secondOperand != 0){
+                    return firstOperand / secondOperand;
+                }else {
+                    throw new RuntimeException("Can't division by zero");
+                }
             default:
-                throw new RuntimeException("Invalid operator");
+                throw new RuntimeException("invalid operation");
+
         }
     }
 }

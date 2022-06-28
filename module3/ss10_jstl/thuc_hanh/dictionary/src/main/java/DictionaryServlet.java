@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-@WebServlet(name = "DictionaryServlet", value = "/DictionaryServlet")
+@WebServlet(name = "DictionaryServlet", value = "/dictionary")
 public class DictionaryServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -14,25 +14,21 @@ public class DictionaryServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-        Map<String,String> dic = new HashMap<>();
-
+        Map<String, String> dic = new HashMap<>();
         dic.put("hello", "Xin chào");
         dic.put("how", "Thế nào");
         dic.put("book", "Quyển vở");
         dic.put("computer", "Máy tính");
-        String search = request.getParameter("search");
 
+        String search = request.getParameter("search");
         String result = dic.get(search);
         if (result != null) {
-            request.setAttribute("search",search);
+            request.setAttribute("word",search);
             request.setAttribute("result",result);
-
         } else {
-            request.setAttribute("alert","Not Found");
+            request.setAttribute("alert","Not found");
         }
-        request.getRequestDispatcher("index.jsp").forward(request,response);
-
-
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("index.jsp");
+        requestDispatcher.forward(request,response);
     }
 }
