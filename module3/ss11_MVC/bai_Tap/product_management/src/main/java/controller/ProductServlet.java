@@ -29,16 +29,13 @@ public class ProductServlet extends HttpServlet {
             case "edit":
                 showEditForm(request, response);
                 break;
-            case "delete":
-                showDeleteForm(request, response);
-                break;
             default:
                 listProduct(request, response);
                 break;
         }
     }
 
-    private void showDeleteForm(HttpServletRequest request, HttpServletResponse response) {
+    private void deleteProduct(HttpServletRequest request, HttpServletResponse response) {
         int id = Integer.parseInt(request.getParameter("id"));
         productService.delete(id);
         try {
@@ -67,9 +64,7 @@ public class ProductServlet extends HttpServlet {
         request.setAttribute("listProduct", productService.findByName(name));
         try {
             request.getRequestDispatcher("/product/list.jsp").forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
     }
@@ -79,9 +74,7 @@ public class ProductServlet extends HttpServlet {
         RequestDispatcher requestDispatcher = request.getRequestDispatcher("product/create.jsp");
         try {
             requestDispatcher.forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
     }
@@ -91,9 +84,7 @@ public class ProductServlet extends HttpServlet {
         request.setAttribute("listProduct", productList);
         try {
             request.getRequestDispatcher("/product/list.jsp").forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
     }
@@ -110,6 +101,9 @@ public class ProductServlet extends HttpServlet {
                 break;
             case "edit":
                 updateProduct(request, response);
+                break;
+            case "delete":
+                deleteProduct(request, response);
                 break;
 
         }
