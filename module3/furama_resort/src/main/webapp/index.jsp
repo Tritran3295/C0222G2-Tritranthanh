@@ -37,10 +37,9 @@
       </div>
     </div>
   </div>
-
   <div class="col-12 row ">
     <nav class="navbar">
-      <div class="container-fluid bg-warning">
+      <div class="container-fluid text-white-50 bg-dark">
         <a class="navbar-brand" href="/index.jsp">Home</a>
         <a class="navbar-brand" href="/employee">Employee</a>
         <a class="navbar-brand" href="/customer">Customer</a>
