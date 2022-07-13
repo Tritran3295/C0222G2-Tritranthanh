@@ -3,13 +3,15 @@ package model.rentType;
 public class RentType {
     private int idRentType;
     private String nameRentType;
+    private int status;
 
     public RentType() {
     }
 
-    public RentType(int idFacilityType, String nameFacilityType) {
-        this.idRentType = idFacilityType;
-        this.nameRentType = nameFacilityType;
+    public RentType(int idRentType, String nameRentType, int status) {
+        this.idRentType = idRentType;
+        this.nameRentType = nameRentType;
+        this.status = status;
     }
 
     public int getIdRentType() {
@@ -20,11 +22,19 @@ public class RentType {
         this.idRentType = idRentType;
     }
 
-    public String getNameFacilityType() {
+    public String getNameRentType() {
         return nameRentType;
     }
 
-    public void setNameFacilityType(String nameFacilityType) {
-        this.nameRentType = nameFacilityType;
+    public void setNameRentType(String nameRentType) {
+        this.nameRentType = nameRentType;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 }

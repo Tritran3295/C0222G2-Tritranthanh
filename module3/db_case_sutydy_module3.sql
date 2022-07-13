@@ -80,7 +80,6 @@ status bit(1) default 0
 create table rent_type(
 rent_type_id int auto_increment primary key,
 rent_type_name varchar(45),
-rent_type_cost double,
 status bit(1) default 0
 );
 create table service (
@@ -93,6 +92,7 @@ standard_room varchar(45),
 description_other_convenience varchar(45),
 pool_area double,
 number_of_floors int,
+service_free varchar(255),
 rent_type_id int,
 service_type_id int,
 status bit(1) default 0,
@@ -139,6 +139,7 @@ insert into customer_type value
 (5,'Member',0);
 insert into customer(customer_name,customer_birthday,customer_gender,customer_id_card,customer_phone,customer_email,customer_address,customer_type_id) value
 ('Taì','01/01/2011',1,'123213213','21321321321','Taismile9x@gmail.com','Đà Nẵng',2),
+('Taì','01/01/2011',1,'123213213','21321321321','Taismile9x@gmail.com',' Quảng Trị',2),
 ('Phúc','01/01/2011',0,'123213213','21321321321','Taismile9x@gmail.com','Đà Nẵng',3);
 insert into education_degree value
 (1,'Trung Cấp',0),
@@ -163,3 +164,17 @@ insert into user value
 insert into employee(employee_name,employee_birthday,employee_id_card,employee_salary,employee_phone,employee_email,employee_address,position_id,education_degree_id,division_id,user_name) value
 ('Lê Thị Tài','01/01/1997','1212121',12121.21,'2121311','lethitai@gmail.com','Quảng Trị',2,3,4,'1123'),
 ('Lê Thị Tài','01/01/1997','1212121',12121.21,'2121311','lethitai@gmail.com','Quảng Trị',2,3,4,'1124');
+insert into service_type value
+(1,'Villa',0),
+(2,'House',0),
+(3,'Room',0);
+insert into rent_type value
+(1,'year',0),
+(2,'month',0),
+(3,'day',0),
+(4,'hour',0);
+insert into service(service_name,service_area,service_cost,service_max_people,standard_room,description_other_convenience,pool_area,number_of_floors,service_free,rent_type_id,service_type_id) 
+value
+('Villa Beach Front','25000',10000000,10,'Vip','Có hồ bơi',500,4,'Buffe buổi sáng',3,1),
+('House Princess 01 ','1400',5000000,7,'Vip','Có thêm bếp nướng',null,3,'Chạy bộ miễn phí',2,2),
+('Room Twin 01','5000',1000000,2,'normal','Có tivi',null,null,'Uống nước free',4,3);

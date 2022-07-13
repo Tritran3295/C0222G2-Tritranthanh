@@ -450,7 +450,7 @@ select ma_khach_hang,ho_ten,email,so_dien_thoai,ngay_sinh,dia_chi from khach_han
 union 
 select ma_nhan_vien,ho_ten,email,so_dien_thoai,ngay_sinh,dia_chi from nhan_vien ;
 
-
+select * from dich_vu;
 
 
 

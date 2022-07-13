@@ -46,11 +46,15 @@
             <div class="container-fluid text-white-50 bg-dark">
                 <a class="navbar-brand" href="/index.jsp">Home</a>
                 <a class="navbar-brand" href="/customer?action=create">Create New Customer</a>
-                <form class="d-flex navbar-brand" method="get" action="/customer">
-                    <input class="form-control me-2" type="text" name="nameCustomer" placeholder="Search for name" aria-label="Search"
-                           width="100px">
+                <form class="d-block navbar-brand"  method="get" action="/customer">
                     <input type="text" name="action" value="search" hidden>
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <div>
+                        <input class="form-control me-2" type="text" name="nameCustomer" placeholder="Search for name"
+                        value="${customerList}">
+                        <input class="form-control me-2" type="text" name="address" placeholder="Search for Address"
+                        value="${address}">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </div>
                 </form>
             </div>
         </nav>
@@ -59,6 +63,7 @@
 
 <div class="container-fluid">
     <div class="container-fluid mt-3" style="overflow: auto">
+
         <table id="tableCustomer" class="table table-warning table-bordered" style="font-size: 12px; width: 100%">
             <thead>
             <tr>
@@ -105,10 +110,10 @@
                         </c:if>
                     </c:forEach>
                     <c:if test="${temp.status == 0}">
-                        <td>Chưa Xoá</td>
+                        <td class="table-warning text-success">Active</td>
                     </c:if>
                     <c:if test="${temp.status == 1}">
-                        <td>Đã Xoá</td>
+                        <td class="table-warning text-danger">Deleted</td>
                     </c:if>
                     <td>
                         <a href="/customer?action=edit&id=${temp.idCustomer}">

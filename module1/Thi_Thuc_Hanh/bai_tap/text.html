@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Test</title>
+    <link rel="stylesheet" href="test.css">
+    <style>
+        #main {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            display: flex;
+        }
+
+        #main div {
+            flex: 4;
+        }
+    </style>
+
 </head>
 <body>
-$END$
+<h1>The flex Property</h1>
+
+<div id="main">
+    <div style="background-color:coral;">RED</div>
+    <div style="background-color:lightblue;">BLUE
+        <img src="data:image/jpeg;base64,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">
+    </div>
+    <div style="background-color:lightgreen;">Green div with more content.</div>
+    
+</div>
+
+
+<p><b>Note:</b> IE11 and newer versions support the flex property. Internet Explorer 10 supports an alternative, the -ms-flex property.</p>
+
 </body>
 </html>

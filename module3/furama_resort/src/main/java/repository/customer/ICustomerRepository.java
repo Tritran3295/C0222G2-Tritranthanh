@@ -15,5 +15,5 @@ public interface ICustomerRepository {
 
     void deleteCustomer(int idCustomer);
 
-    List<Customer> findByName(String nameCustomer);
+    List<Customer> findByName(String nameCustomer,String address);
 }

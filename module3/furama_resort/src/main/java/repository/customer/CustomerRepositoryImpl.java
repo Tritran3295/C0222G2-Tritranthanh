@@ -21,7 +21,7 @@ public class CustomerRepositoryImpl implements ICustomerRepository{
             "customer_id_card = ?,customer_phone = ?,customer_email = ?,customer_address = ?,customer_type_id = ?, " +
             "status = ? where customer_id = ?";
     private String DELETE_CUSTOMER = " update customer set status = 1 where customer_id = ?";
-    private String SEARCH_BY_NAME = "select * from customer where customer_name like ?";
+    private String SEARCH_BY_NAME = "select * from customer where customer_name like ? and customer_address like ?";
 
     @Override
     public List<Customer> selectAllCustomer() {
@@ -132,12 +132,13 @@ public class CustomerRepositoryImpl implements ICustomerRepository{
     }
 
     @Override
-    public List<Customer> findByName(String nameCustomer) {
+    public List<Customer> findByName(String nameCustomer,String address) {
         List<Customer> customerList = new ArrayList<>();
         Connection connection = connectionDB.getConnection();
         try{
             PreparedStatement pr =connection.prepareStatement(SEARCH_BY_NAME);
             pr.setString(1,"%" + nameCustomer + "%");
+            pr.setString(2,"%" + address + "%");
             ResultSet resultSet = pr.executeQuery();
             while (resultSet.next()){
                 int id = resultSet.getInt("customer_id");
@@ -147,10 +148,10 @@ public class CustomerRepositoryImpl implements ICustomerRepository{
                 String idCard = resultSet.getString("customer_id_card");
                 String phoneNumber = resultSet.getString("customer_phone");
                 String email = resultSet.getString("customer_email");
-                String address = resultSet.getString("customer_address");
+                String address1 = resultSet.getString("customer_address");
                 int idCustomerType = resultSet.getInt("customer_type_id");
                 int status = resultSet.getInt("status");
-                Customer customer = new Customer(id,name,dateOfBirth,gender,idCard,phoneNumber,email,address,idCustomerType,status);
+                Customer customer = new Customer(id,name,dateOfBirth,gender,idCard,phoneNumber,email,address1,idCustomerType,status);
                 customerList.add(customer);
             }
 
