@@ -5,12 +5,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalculatorServiceImpl implements ICalculatorService {
-
     @Override
     public int calculating(int numberOne, int numberTwo,String calculating) {
         switch (calculating){
             case "+":
-                return    numberOne + numberTwo;
+                return numberOne + numberTwo;
             case "-":
                 return numberOne - numberTwo;
             case "*":

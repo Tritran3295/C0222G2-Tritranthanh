@@ -14,12 +14,17 @@ public class CalculatorController {
     private ICalculatorService calculatorService;
 
     @GetMapping("")
-    public String calculator(){
+    public String calculator() {
         return "calculator";
     }
+
     @PostMapping("/calculate")
-    public String calculate(@RequestParam int numberOne, @RequestParam int numberTwo,@RequestParam String calculating, Model model){
-        model.addAttribute("result",calculatorService.calculating(numberOne,numberTwo,calculating));
+    public String calculate(@RequestParam int numberOne, @RequestParam int numberTwo, @RequestParam String calculating, Model model) {
+        if (numberTwo == 0) {
+            model.addAttribute("announcement", "The Numer" + numberOne + "Not divide to 0");
+        } else {
+            model.addAttribute("result", calculatorService.calculating(numberOne, numberTwo, calculating));
+        }
         return "calculator";
     }
 }

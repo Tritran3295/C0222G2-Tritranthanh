@@ -11,6 +11,7 @@
     <title>Title</title>
 </head>
 <body>
+<h1>Calculator</h1>
 <form action="calculate" method="post">
     <div>
         <label>Number One: <input type="text" name="numberOne"></label>
@@ -18,14 +19,13 @@
     <div>
         <label>Number Two: <input type="text" name="numberTwo"></label>
     </div>
-    <select>
-        <option name="calculating" value="+">+</option>
-        <option name="calculating" value="-">-</option>
-        <option name="calculating" value="*">*</option>
-        <option name="calculating" value="/">/</option>
-    </select>
-    <button type="submit">Calculator</button>
+    <button type="submit" name="calculating" value="+">Addition(+)</button>
+    <button type="submit" name="calculating" value="-">Addition(-)</button>
+    <button type="submit" name="calculating" value="*">Addition(*)</button>
+    <button type="submit" name="calculating" value="/">Addition(/)</button>
+
     <h3>Result: ${result}</h3>
+    <h5>Errors: ${announcement}</h5>
 </form>
 </body>
 </html>
