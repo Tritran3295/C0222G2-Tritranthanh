@@ -12,7 +12,7 @@
     <title>Form Binding</title>
 </head>
 <body>
-<form:form method="POST" action="/updateMail" modelAttribute="email">
+<form:form method="POST" action="/createEmail" modelAttribute="email">
     <table>
         <tr>
             <td><form:label path="language">Languages: </form:label></td>
@@ -34,7 +34,7 @@
                     <form:option value="50">50</form:option>
                     <form:option value="100">100</form:option>
                 </form:select>
-                <span>email persize</span>
+                <span>email per size</span>
             </td>
         </tr>
         <tr>
