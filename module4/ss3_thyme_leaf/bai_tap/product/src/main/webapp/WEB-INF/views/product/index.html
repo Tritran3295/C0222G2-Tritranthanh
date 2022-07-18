@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <title>Product</title>
+</head>
+<body>
+<form th:action="@{/product/searchByName}" method="get">
+    <input type="text" name="searchValue">
+    <button type="submit">Tìm kiếm</button>
+</form>
+<table th:border="1" id="products">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Tên sản phẩm</th>
+        <th>Giá</th>
+        <th>Mô tả</th>
+        <th>Nhà sản xuất</th>
+        <th>Option</th>
+        <th>Option</th>
+        <th>Option</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr th:each="product : ${products}">
+        <td th:text="${product.getId()}"></td>
+        <td th:text="${product.getNameProduct()}"></td>
+        <td th:text="${product.getPrice()}"></td>
+        <td th:text="${product.describe}"></td>
+        <td th:text="${product.getHostProduct()}"></td>
+        <td><a th:href="@{/product/{id}/edit(id=${product.getId()})}">Edit</a></td>
+        <td><a th:href="@{/product/{id}/delete(id=${product.getId()})}">Delete</a></td>
+        <td><a th:href="@{/product/{id}/view(id=${product.getId()})}">View</a></td>
+    </tr>
+    </tbody>
+</table>
+<a th:href="@{/product/create}">create new one</a>
+</body>
+</html>

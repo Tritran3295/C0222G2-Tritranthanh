@@ -4,17 +4,17 @@ public class Product {
     private int id;
     private String nameProduct;
     private double price;
-    private String decribe;
+    private String describe;
     private String hostProduct;
 
     public Product() {
     }
 
-    public Product(int id, String nameProduct, double price, String decribe, String hostProduct) {
+    public Product(int id, String nameProduct, double price, String describe, String hostProduct) {
         this.id = id;
         this.nameProduct = nameProduct;
         this.price = price;
-        this.decribe = decribe;
+        this.describe = describe;
         this.hostProduct = hostProduct;
     }
 
@@ -42,12 +42,12 @@ public class Product {
         this.price = price;
     }
 
-    public String getDecribe() {
-        return decribe;
+    public String getDescribe() {
+        return describe;
     }
 
-    public void setDecribe(String decribe) {
-        this.decribe = decribe;
+    public void setDescribe(String describe) {
+        this.describe = describe;
     }
 
     public String getHostProduct() {
