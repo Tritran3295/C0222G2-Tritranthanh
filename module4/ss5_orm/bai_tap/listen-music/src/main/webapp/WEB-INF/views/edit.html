@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form action="/songs/edit-song" method="post" th:object="${song}">
+        <div class="mb-3 mt-3">
+            <input type="hidden" class="form-control" id="id" placeholder="Enter song id" name="id" th:field="*{id}">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="songName" class="form-label">Song Name:</label>
+            <input type="text" class="form-control" id="songName" placeholder="Enter song name" name="songName" th:field="*{name}">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="singer" class="form-label">Singer:</label>
+            <input type="text" class="form-control" id="singer" placeholder="Enter singer" name="singer" th:field="*{singer}">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="typeMusic" class="form-label">Song category:</label>
+            <input type="text" class="form-control" id="typeMusic" placeholder="Enter category" name="typeMusic" th:field="*{kindOfMusic}">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="link" class="form-label">Song Path:</label>
+            <input type="text" class="form-control" id="link" placeholder="Enter song path" name="link" th:field="*{link}">
+        </div>
+        <button type="submit" class="btn btn-outline-success">Submit</button>
+        <a href="/songs/" class="btn btn-outline-secondary">Back home</a>
+    </form>
+</div>
+</div>
+</body>
+</html>

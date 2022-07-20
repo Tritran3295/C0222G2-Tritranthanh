@@ -44,4 +44,5 @@ public class MedicineController {
         medicineService.update(medicineClare);
         return "redirect:/";
     }
+
 }
