@@ -5,59 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7fcede62-8522-43af-ab33-df44ae7a310f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product2/src/main/java/com/product/config/CharsetFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product2/src/main/java/com/product/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product2/src/main/java/com/product/configuration/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product2/src/main/java/com/product/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product2/src/main/java/com/product/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product2/src/main/java/com/product/repository/IProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product2/src/main/java/com/product/repository/Impl/ProductRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product2/src/main/java/com/product/service/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product2/src/main/java/com/product/service/Impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product2/src/main/webapp/WEB-INF/views/product/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/java/com/music/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/java/com/music/configuration/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/java/com/music/controller/MusicController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/java/com/music/model/Music.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/java/com/music/repository/IMusicRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/java/com/music/repository/Impl/MusicRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/java/com/music/repository/connection/ConnectionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/java/com/music/service/IMusicService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/java/com/music/service/Impl/MusicServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/resources/hibernate.conf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../listen-music/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/configuration/AppConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/configuration/AppInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/controller/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/repository/IProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/repository/Impl/ProductRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/repository/connection/ConnectionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/service/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/product/service/Impl/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.conf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../ss6_jpa/src/main/resources/templates/list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../module3/furama_resort/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/furama_resort/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../module3/furama_resort/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/furama_resort/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../module3/furama_resort/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/furama_resort/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../../module3/furama_resort/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/furama_resort/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1_tong_quan_spring_mvc/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_tong_quan_spring_mvc/thuc_hanh/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss2_spring_controller/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss2_spring_controller/thuc_hanh/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss3_thyme_leaf/bai_tap/product/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/build/classes/java/main/com/medicine/controller/MedicineController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/build/classes/java/main/com/medicine/controller/MedicineController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/build/classes/java/main/com/medicine/repository/Impl/MedicineRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/build/classes/java/main/com/medicine/repository/Impl/MedicineRepositoryImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/build/libs/medicine2-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/build/libs/medicine2-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/src/main/java/com/medicine/controller/MedicineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss4_binding/bai_tap/medicine2/src/main/java/com/medicine/controller/MedicineController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/product-management.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/product-management.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/product/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/product/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/product/repository/IProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/product/repository/IProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/product/repository/Impl/ProductRepositoryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/product/repository/Impl/ProductRepositoryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/product/service/IProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/product/service/IProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/product/service/Impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/com/product/service/Impl/ProductServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/product-management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/product-management-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/repository/Impl/ProductRepositoryImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/repository/Impl/ProductRepositoryImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/product/service/Impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/product/service/Impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,12 +47,29 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="product-management" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -233,7 +228,8 @@
       <updated>1658299899527</updated>
       <workItem from="1658299903445" duration="2801000" />
       <workItem from="1658308415359" duration="838000" />
-      <workItem from="1658326580279" duration="1215000" />
+      <workItem from="1658326580279" duration="5630000" />
+      <workItem from="1658366634427" duration="2326000" />
     </task>
     <servers />
   </component>

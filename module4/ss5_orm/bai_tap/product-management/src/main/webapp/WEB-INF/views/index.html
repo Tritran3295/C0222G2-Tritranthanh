@@ -25,11 +25,11 @@
 
     <tbody>
     <tr th:each="product : ${products}">
-        <td th:text="${product.getId()}"></td>
-        <td th:text="${product.getNameProduct()}"></td>
-        <td th:text="${product.getPrice()}"></td>
-        <td th:text="${product.describe}"></td>
-        <td th:text="${product.getHostProduct()}"></td>
+        <td th:text="${product.id()}"></td>
+        <td th:text="${product.nameProduct()}"></td>
+        <td th:text="${product.price()}"></td>
+        <td th:text="${product.describeProduct()}"></td>
+        <td th:text="${product.hostProduct()}"></td>
         <td><a th:href="@{/product/{id}/edit(id=${product.getId()})}">Edit</a></td>
         <td><a th:href="@{/product/{id}/delete(id=${product.getId()})}">Delete</a></td>
         <td><a th:href="@{/product/{id}/view(id=${product.getId()})}">View</a></td>
