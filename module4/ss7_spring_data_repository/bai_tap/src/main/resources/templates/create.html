@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{html-css :: bootstrapCss}"></th:block>
+</head>
+<body>
+<div class="p-3 text-center bg-image"
+     style="height: 50px;">
+    <div class="mask">
+        <div class="d-flex justify-content-center align-items-center h-100">
+            <div class="text-success">
+                <h1 class="mb-3">Create My Blog</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <form action="/bloggers/create" method="post" th:object="${blogDTO}">
+        <div class="mb-3 mt-3">
+            <label class="form-label h6">Name:</label>
+            <input class="form-control" placeholder="Enter name" th:field="*{nameBlog}">
+        </div>
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasErrors('nameBlog')}" th:errors="*{nameBlog}"></div>
+
+        <div class="mb-3 mt-3">
+            <label class="form-label h6">Title:</label>
+            <input type="text" class="form-control" placeholder="Enter title"  th:field="*{titleBlog}">
+        </div>
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasErrors('titleBlog')}" th:errors="*{titleBlog}"></div>
+
+
+        <div class="mb-3 mt-3">
+            <label class="form-label h6">Select list (select one):</label>
+            <select class="form-select" th:field="*{category}">
+                <option th:each="item : ${categoryList}"  th:value="${item.id}" th:text="${item.nameCategory}"></option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-outline-success">Submit</button>
+        <a href="/bloggers" class="btn btn-outline-secondary">Back home</a>
+    </form>
+</div>
+</div>
+<th:block th:replace="~{html-css :: boostrapScript}"></th:block>
+</body>
+</html>
