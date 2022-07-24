@@ -54,4 +54,9 @@ public class BlogController {
         model.addAttribute("blogs", blogService.findById(id));
         return "/bloggers";
     }
+    @GetMapping("/searchName")
+    public String searchByName(@ModelAttribute Blog blog ){
+        blogService.searchByName(blog);
+        return "/bloggers";
+    }
 }

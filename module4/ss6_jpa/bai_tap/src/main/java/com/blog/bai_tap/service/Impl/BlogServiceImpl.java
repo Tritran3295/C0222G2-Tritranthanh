@@ -32,4 +32,9 @@ public class BlogServiceImpl implements IBlogService {
     public Blog findById(int id) {
         return blogRepository.findById(id).orElse(null);
     }
+
+    @Override
+    public List<Blog> searchByName(Blog blog) {
+        return blogRepository.findAll();
+    }
 }

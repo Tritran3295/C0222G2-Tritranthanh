@@ -12,4 +12,6 @@ public interface IBlogService {
     void delete(int id);
 
     Blog findById(int id);
+
+    List<Blog> searchByName(Blog blog);
 }
