@@ -15,7 +15,7 @@ public class ProductServiceImpl implements IProductService {
 
     @Override
     public Page<Product> selectAll(String searchName, Pageable pageable) {
-       return productRepository.findAll("%" + searchName + "%",pageable);
+        return productRepository.findAll("%" + searchName + "%", pageable);
     }
 
     @Override

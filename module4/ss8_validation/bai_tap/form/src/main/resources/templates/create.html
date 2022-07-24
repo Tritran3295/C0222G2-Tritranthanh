@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{html-css :: bootstrapCss}"></th:block>
+</head>
+<body>
+<div class="container  h-100 ">
+    <div class="text-center"><h1>Register</h1></div>
+    <form action="/users/validateUser" method="post" th:object="${userDTO}">
+        <div class="mb-3 mt-3">
+            <label for="firstName" class="form-label">First Name:</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter firstName" name="firstName" th:field="*{firstName}">
+        </div>
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></div>
+
+        <div class="mb-3 mt-3">
+            <label for="lastName" class="form-label">Last Name:</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter lastName" name="lastName" th:field="*{lastName}">
+        </div>
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></div>
+
+        <div class="mb-3 mt-3">
+            <label for="phone" class="form-label">Phone Number:</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter phone" name="phone" th:field="*{phone}">
+        </div>
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasErrors('phone')}" th:errors="*{phone}"></div>
+
+        <div class="mb-3 mt-3">
+            <label for="age" class="form-label">Age:</label>
+            <input type="text" class="form-control" id="age" placeholder="Enter age" name="age" th:field="*{age}">
+        </div>
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></div>
+
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" th:field="*{email}">
+        </div>
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">
+        </div>
+
+        <button type="submit" class="btn btn-outline-success">Register</button>
+        <a href="/users/" class="btn btn-outline-secondary">Reset</a>
+    </form>
+    <div class="alert alert-success" role="alert" th:if="${success}">
+        <div th:text="${success}"></div>
+    </div>
+</div>
+</body>
+<th:block th:replace="~{html-css :: boostrapScript}"></th:block>
+</html>
