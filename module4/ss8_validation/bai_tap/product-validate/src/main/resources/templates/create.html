@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{html-css :: bootstrapCss}"></th:block>
+</head>
+<body>
+<div class="container  h-100 ">
+    <div class="text-center"><h1>Register</h1></div>
+    <form action="/products/create" method="post" th:object="${productDTO}">
+        <div class="mb-3 mt-3">
+            <label for="nameProduct" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="nameProduct" placeholder="Enter firstName" name="nameProduct" th:field="*{nameProduct}">
+        </div>
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasErrors('nameProduct')}" th:errors="*{nameProduct}"></div>
+
+        <div class="mb-3 mt-3">
+            <label for="price" class="form-label">Price:</label>
+            <input type="text" class="form-control" id="price" placeholder="Enter Price " name="price" th:field="*{price}">
+        </div>
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></div>
+        <div class="mb-3 mt-3">
+            <label for="describeProduct" class="form-label">Price:</label>
+            <input type="text" class="form-control" id="describeProduct" placeholder="Enter Price " name="describeProduct" th:field="*{describeProduct}">
+        </div>
+        <div class="alert alert-danger" role="alert" th:if="${#fields.hasErrors('describeProduct')}" th:errors="*{describeProduct}"></div>
+        <div class="mb-3 mt-3">
+            <label class="form-label h6">Select list (select one):</label>
+            <select class="form-select" th:field="*{hostProduct}">
+                <option th:each="item : ${hostProductList}"  th:value="${item.id}" th:text="${item.nameHostProduct}"></option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-outline-success">Register</button>
+        <a href="/products/" class="btn btn-outline-secondary">Reset</a>
+    </form>
+</div>
+</body>
+<th:block th:replace="~{html-css :: boostrapScript}"></th:block>
+</html>
