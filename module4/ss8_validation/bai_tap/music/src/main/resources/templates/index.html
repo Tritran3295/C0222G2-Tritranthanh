@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:replace="~{html-css :: bootstrapCss}"></th:block>
+</head>
+<body>
+<header>
+    <div class="p-3 text-center bg-image"
+         style="height: 150px;">
+        <div class="mask">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-success">
+                    <h1 class="mb-3">My User</h1>
+                    <a href="" th:href="@{/musics/create}" class="btn btn-outline-success btn-lg" role="button">Create
+                        User</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-light bg-info">
+            <div class="container-fluid">
+                <h5 class="navbar-brand">List User : </h5>
+                <form class="d-flex" action="/musics" >
+                    <input class="form-control me-2" type="search" name="nameSearch"
+                           placeholder="Search By Name">
+                    <button class="btn btn-outline-success" type="submit" >Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container mt-3">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Singer</th>
+            <th>Category</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="music : ${musicList}">
+            <td th:text="${music.id}"></td>
+            <td th:text="${music.name}"></td>
+            <td th:text="${music.singer}"></td>
+            <td th:text="${music.category.nameCategory}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <th:block th:replace="~{html-css :: boostrapScript}"></th:block>
+</div>
+</body>
+</html>
