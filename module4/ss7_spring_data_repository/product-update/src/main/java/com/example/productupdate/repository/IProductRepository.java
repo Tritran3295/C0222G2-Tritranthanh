@@ -14,3 +14,4 @@ public interface IProductRepository extends JpaRepository<Product, Integer> {
 
 
 }
+

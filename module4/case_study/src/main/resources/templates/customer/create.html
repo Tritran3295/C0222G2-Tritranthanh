@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{html-css :: bootstrapCss}">
+</head>
+<body>
+
+<section class="get-in-touch">
+    <h1 class="title">Create Customer</h1>
+    <form class="contact-form row" action="/customers/create" method="post" th:object="${customerDTO}">
+
+        <div class="form-field col-lg-6 ">
+            <input id="name"  type="text" th:field="*{nameCustomer}" >
+            <label class="label" for="name">Name</label>
+        </div>
+        <div class="error text-danger col-6" role="alert" th:if="${#fields.hasErrors('nameCustomer')}" th:errors="*{nameCustomer}"></div>
+
+        <div class="form-field col-lg-6 ">
+            <input id="dateOfBirth"  type="date" th:field="*{dateOfBirth}" >
+            <label class="label" for="dateOfBirth">DateOfBird</label>
+        </div>
+        <div class="error text-danger col-6" role="alert" th:if="${#fields.hasErrors('dateOfBirth')}" th:errors="*{dateOfBirth}"></div>
+        <div class="form-field col-lg-6 ">
+            <select id="gender"  type="text" th:field="*{gender}" >
+                <option value="1">Male</option>
+                <option value="0">FeMale</option>
+                <option value="2">Other</option>
+            </select>
+        </div>
+        <div class="error text-danger col-6" role="alert" th:if="${#fields.hasErrors('gender')}" th:errors="*{gender}"></div>
+        <div class="form-field col-lg-6 ">
+            <input id="idCard" type="text" th:field="*{idCard}" >
+            <label class="label" for="idCard">IdCard</label>
+        </div>
+        <div class="error text-danger col-6" role="alert" th:if="${#fields.hasErrors('idCard')}" th:errors="*{idCard}"></div>
+        <div class="form-field col-lg-6 ">
+            <input id="phoneNumber" type="text" th:field="*{phoneNumber}" >
+            <label class="label" for="phoneNumber">phone</label>
+        </div>
+        <div class="error text-danger col-6" role="alert" th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></div>
+
+        <div class="form-field col-lg-6 ">
+            <input id="email"  type="email" th:field="*{email}" >
+            <label class="label" for="email">Email</label>
+        </div>
+        <div class="error text-danger col-6" role="alert" th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></div>
+
+        <div class="form-field col-lg-6 ">
+            <input id="address"  type="text" th:field="*{address}" >
+            <label class="label" for="address">Address</label>
+        </div>
+        <div class="error text-danger col-6" role="alert" th:if="${#fields.hasErrors('address')}" th:errors="*{address}"></div>
+        <div class="form-field col-lg-6">
+            <select class="form-select" th:field="*{customerType}">
+                <option value="" >Customer Type List</option>
+                <option th:each="item: ${customerTypeList}" th:text="${item.nameCustomerType}" th:value="${item.id}"></option>
+            </select>
+        </div>
+        <div class="form-field col-lg-12">
+            <input class="submit-btn" type="submit" value="Submit">
+        </div>
+        <a href="/customers" class="btn btn-outline-secondary">Back home</a>
+    </form>
+</section>
+<th:block th:replace="~{html-css :: boostrapScript}"></th:block>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+</head>
+<body>
+
+<section class="get-in-touch">
+    <h1 class="title">Create Book</h1>
+    <form class="contact-form row" action="/books/create" method="post" th:object="${bookList}">
+        <div class="form-field col-lg-6 ">
+            <input id="nameBook"  type="text" th:field="*{nameBook}" >
+            <label class="label" for="nameBook">Name</label>
+        </div>
+        <div class="form-field col-lg-6 ">
+            <input id="author" type="text" th:field="*{author}" >
+            <label class="label" for="author">Author</label>
+        </div>
+        <div class="form-field col-lg-6 ">
+            <input id="amount" type="text" th:field="*{amount}" >
+            <label class="label" for="amount">Amount</label>
+        </div>
+        <div class="form-field col-lg-12">
+            <input class="submit-btn" type="submit" value="Submit">
+        </div>
+        <a href="/books" class="btn btn-outline-secondary">Back home</a>
+    </form>
+</section>
+
+</body>
+</html>

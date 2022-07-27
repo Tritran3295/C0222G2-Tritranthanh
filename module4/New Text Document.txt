@@ -3,3 +3,7 @@ th:border
 vong lap th:each="product : ${products}
 th: text
 th:href=${/product/{id}/edit(id=${product.getId()})}
+
+"   " => empty = true  blank = true
+"" => empty = true blank = false
+server "abc" client"abcd" =>is null

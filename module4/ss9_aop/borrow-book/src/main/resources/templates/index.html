@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head th:replace="~{html-css :: bootstrapCss}">
+
+</head>
+<body>
+<header>
+    <div class="p-3 text-center bg-image"
+         style="height: 150px;">
+        <div class="mask">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-success">
+                    <h1 class="mb-3">My User</h1>
+                    <a href="" th:href="@{/books/create}" class="btn btn-outline-success btn-lg" role="button">Create
+                        User</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-light bg-info">
+            <div class="container-fluid">
+                <h5 class="navbar-brand">List User : </h5>
+                <form class="d-flex" action="/books" >
+                    <input class="form-control me-2" type="search" name="nameSearch"
+                           placeholder="Search By Name">
+                    <button class="btn btn-outline-success" type="submit" >Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container mt-3">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name Book</th>
+            <th>Author</th>
+            <th>Amount</th>
+            <th>Status</th>
+            <th>Edit</th>
+            <th>Detail</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="book : ${bookList}">
+            <td th:text="${book.id}"></td>
+            <td th:text="${book.nameBook}"></td>
+            <td th:text="${book.author}"></td>
+            <td th:text="${book.amount}"></td>
+            <div th:if="${book.status == 0}">
+                <td class="table-warning text-success">Active</td>
+            </div>
+            <div th:if="${book.status == 1}">
+                <td class="table-warning text-danger">Deleted</td>
+            </div>
+            <td>
+                <a href="" th:href="@{/books/edit/{id}(id=${book.id})}" class="btn btn-outline-warning">Edit</a>
+            </td>
+            <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" th:data-bs-target="'#staticBackdrop' + ${book.id}">
+                    Detail
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" th:id="staticBackdrop + ${book.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Borrow Book</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="card" style="width: 100%;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" th:text="'ID: ' + ${book.id}"></li>
+                                        <li class="list-group-item" th:text="'Name: ' + ${book.nameBook}"></li>
+                                        <li class="list-group-item" th:text="'Author: ' + ${book.author}"></li>
+                                        <li class="list-group-item" th:text="'Amount: ' + ${book.amount}"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a th:href="@{/books/borrow}" class="btn btn-primary">Borrow</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-2 ">
+            <ul class="pagination" th:if="${bookList.totalPages > 0}">
+                <li class="page-item">
+                    <a class="page-link" th:if="${bookList.hasPrevious()}"
+                       th:href="@{'/books'(page=${bookList.number - 1})}">
+                        Previous
+                    </a>
+                </li>
+                <div th:each="item : ${#numbers.sequence(1, bookList.totalPages )}">
+                    <div th:if="${(bookList.number + 1) == item}">
+                        <li class="page-item active">
+                            <a class="page-link" href="#" th:text="${item}" th:href="@{/books(page=(${item}-1))}"></a>
+                        </li>
+                    </div>
+                    <div th:unless="${((bookList.number + 1) == item)}">
+                        <li class="page-item">
+                            <a class="page-link" href="#" th:text="${item}" th:href="@{/books(page=(${item}-1)
+                              )}"></a>
+                        </li>
+                    </div>
+                </div>
+                <li class="page-item">
+                    <a class="page-link" th:if="${bookList.hasNext()}"
+                       th:href="@{'/books'(page=${bookList.number + 1}, search=${searchName})}">
+                        Next
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <th:block th:replace="~{html-css :: boostrapScript}"></th:block>
+</div>
+</body>
+</html>
