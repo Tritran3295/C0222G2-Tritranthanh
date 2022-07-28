@@ -46,6 +46,7 @@
         <tr th:each="borrow : ${borrowList}">
             <td th:text="${borrow.id}"></td>
             <td th:text="${borrow.codeBook}"></td>
+            <td th:text="${borrow.book.id}"></td>
 
             <!--            <div th:if="${book.status == 0}">-->
             <!--                <td class="table-warning text-success">Active</td>-->

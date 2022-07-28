@@ -17,4 +17,9 @@ public class BorrowRepositoryImpl implements IBorrowService {
     public List<Borrow> selectAll() {
         return borrowRepository.findAll();
     }
+
+    @Override
+    public void saveBorrow(int code, Integer id) {
+        borrowRepository.saveBorrow(code,id);
+    }
 }

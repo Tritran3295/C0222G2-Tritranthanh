@@ -27,4 +27,9 @@ public class BookRepositoryImpl implements IBookService {
     public void save(Book book) {
         bookRepository.save(book);
     }
+
+    @Override
+    public void borrow(Book book) {
+        bookRepository.update(book.getId(),(book.getCount() -1));
+    }
 }

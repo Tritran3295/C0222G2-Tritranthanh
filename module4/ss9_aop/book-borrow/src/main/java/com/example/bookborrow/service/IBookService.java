@@ -10,4 +10,6 @@ public interface IBookService {
     Book findById(int id);
 
     void save(Book book);
+
+    void borrow(Book book);
 }

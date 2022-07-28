@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface IBorrowService {
     List<Borrow> selectAll();
+
+    void saveBorrow(int code, Integer id);
 }
