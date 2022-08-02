@@ -48,84 +48,84 @@
             <td th:text="${borrow.codeBook}"></td>
             <td th:text="${borrow.book.id}"></td>
 
-            <!--            <div th:if="${book.status == 0}">-->
-            <!--                <td class="table-warning text-success">Active</td>-->
-            <!--            </div>-->
-            <!--            <div th:if="${book.status == 1}">-->
-            <!--                <td class="table-warning text-danger">Deleted</td>-->
-            <!--            </div>-->
-<!--            <td>-->
-<!--                <a href="" th:href="@{/books/edit/{id}(id=${book.id})}" class="btn btn-outline-warning">Edit</a>-->
-<!--            </td>-->
-<!--            <td>-->
-<!--                <a href="" th:href="@{/books/borrow/{id}(id=${book.id})}" class="btn btn-outline-warning">Borrow</a>-->
-<!--            </td>-->
-<!--            <td>-->
-<!--                &lt;!&ndash; Button trigger modal &ndash;&gt;-->
-<!--                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" th:data-bs-target="'#staticBackdrop' + ${book.id}">-->
-<!--                    Detail-->
-<!--                </button>-->
+                        <div th:if="${book.status == 0}">
+                            <td class="table-warning text-success">Active</td>
+                        </div>
+                        <div th:if="${book.status == 1}">
+                            <td class="table-warning text-danger">Deleted</td>
+                        </div>
+            <td>
+                <a href="" th:href="@{/books/edit/{id}(id=${book.id})}" class="btn btn-outline-warning">Edit</a>
+            </td>
+            <td>
+                <a href="" th:href="@{/books/borrow/{id}(id=${book.id})}" class="btn btn-outline-warning">Borrow</a>
+            </td>
+            <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" th:data-bs-target="'#staticBackdrop' + ${book.id}">
+                    Detail
+                </button>
 
-<!--                &lt;!&ndash; Modal &ndash;&gt;-->
-<!--                <div class="modal fade" th:id="staticBackdrop + ${book.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">-->
-<!--                    <div class="modal-dialog">-->
-<!--                        <div class="modal-content">-->
-<!--                            <div class="modal-header">-->
-<!--                                <h5 class="modal-title" id="staticBackdropLabel">Borrow Book</h5>-->
-<!--                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
-<!--                            </div>-->
-<!--                            <div class="modal-body">-->
-<!--                                <div class="card" style="width: 100%;">-->
-<!--                                    <ul class="list-group list-group-flush">-->
-<!--                                        <li class="list-group-item" th:text="'ID: ' + ${book.id}"></li>-->
-<!--                                        <li class="list-group-item" th:text="'Name: ' + ${book.nameBook}"></li>-->
+                <!-- Modal -->
+                <div class="modal fade" th:id="staticBackdrop + ${book.id}" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel">Borrow Book</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="card" style="width: 100%;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" th:text="'ID: ' + ${book.id}"></li>
+                                        <li class="list-group-item" th:text="'Name: ' + ${book.nameBook}"></li>
 
-<!--                                        <li class="list-group-item" th:text="'Amount: ' + ${book.count}"></li>-->
-<!--                                    </ul>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                            <div class="modal-footer">-->
-<!--                                <a th:href="@{/books/borrow}" class="btn btn-primary">Borrow</a>-->
-<!--                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </td>-->
+                                        <li class="list-group-item" th:text="'Amount: ' + ${book.count}"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a th:href="@{/books/borrow}" class="btn btn-primary">Borrow</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
         </tr>
         </tbody>
     </table>
-    <!--    <div class="row">-->
-    <!--        <div class="col-2 ">-->
-    <!--            <ul class="pagination" th:if="${bookList.totalPages > 0}">-->
-    <!--                <li class="page-item">-->
-    <!--                    <a class="page-link" th:if="${bookList.hasPrevious()}"-->
-    <!--                       th:href="@{'/books'(page=${bookList.number - 1})}">-->
-    <!--                        Previous-->
-    <!--                    </a>-->
-    <!--                </li>-->
-    <!--                <div th:each="item : ${#numbers.sequence(1, bookList.totalPages )}">-->
-    <!--                    <div th:if="${(bookList.number + 1) == item}">-->
-    <!--                        <li class="page-item active">-->
-    <!--                            <a class="page-link" href="#" th:text="${item}" th:href="@{/books(page=(${item}-1))}"></a>-->
-    <!--                        </li>-->
-    <!--                    </div>-->
-    <!--                    <div th:unless="${((bookList.number + 1) == item)}">-->
-    <!--                        <li class="page-item">-->
-    <!--                            <a class="page-link" href="#" th:text="${item}" th:href="@{/books(page=(${item}-1)-->
-    <!--                              )}"></a>-->
-    <!--                        </li>-->
-    <!--                    </div>-->
-    <!--                </div>-->
-    <!--                <li class="page-item">-->
-    <!--                    <a class="page-link" th:if="${bookList.hasNext()}"-->
-    <!--                       th:href="@{'/books'(page=${bookList.number + 1}, search=${searchName})}">-->
-    <!--                        Next-->
-    <!--                    </a>-->
-    <!--                </li>-->
-    <!--            </ul>-->
-    <!--        </div>-->
-    <!--    </div>-->
+        <div class="row">
+            <div class="col-2 ">
+                <ul class="pagination" th:if="${bookList.totalPages > 0}">
+                    <li class="page-item">
+                        <a class="page-link" th:if="${bookList.hasPrevious()}"
+                           th:href="@{'/books'(page=${bookList.number - 1})}">
+                            Previous
+                        </a>
+                    </li>
+                    <div th:each="item : ${#numbers.sequence(1, bookList.totalPages )}">
+                        <div th:if="${(bookList.number + 1) == item}">
+                            <li class="page-item active">
+                                <a class="page-link" href="#" th:text="${item}" th:href="@{/books(page=(${item}-1))}"></a>
+                            </li>
+                        </div>
+                        <div th:unless="${((bookList.number + 1) == item)}">
+                            <li class="page-item">
+                                <a class="page-link" href="#" th:text="${item}" th:href="@{/books(page=(${item}-1)
+                                  )}"></a>
+                            </li>
+                        </div>
+                    </div>
+                    <li class="page-item">
+                        <a class="page-link" th:if="${bookList.hasNext()}"
+                           th:href="@{'/books'(page=${bookList.number + 1}, search=${searchName})}">
+                            Next
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     <th:block th:replace="~{html-css :: boostrapScript}"></th:block>
 </div>
 </body>

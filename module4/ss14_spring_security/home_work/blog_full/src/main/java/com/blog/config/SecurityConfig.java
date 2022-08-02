@@ -9,6 +9,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.web.authentication.rememberme.InMemoryTokenRepositoryImpl;
+import org.springframework.security.web.authentication.rememberme.PersistentTokenRepository;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
@@ -31,8 +33,21 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
        http.csrf().disable()
                .formLogin()
-               .defaultSuccessUrl("/bloggers").permitAll()
+//               .loginPage("/C0322G1")
+               .defaultSuccessUrl("/").permitAll()
                .and()
-               .authorizeRequests().anyRequest().authenticated();
+               .authorizeRequests()
+               .antMatchers("/").permitAll()
+//               .antMatchers("/index").hasAnyRole("user")
+               .antMatchers("/bloggers/**").hasAnyRole("admin")
+               .anyRequest().authenticated();
+       http.authorizeRequests().and().rememberMe()
+               .tokenRepository(persistentTokenRepository())
+               .tokenValiditySeconds(24*60*60);
+    }
+    @Bean
+    public PersistentTokenRepository persistentTokenRepository(){
+        InMemoryTokenRepositoryImpl inMemoryTokenRepository = new InMemoryTokenRepositoryImpl();
+        return inMemoryTokenRepository;
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<html  lang="en" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -34,16 +34,16 @@
 </header>
 <a th:href="@{/logout}">Logout</a>
 <div class="container mt-3">
-    <table class="table table-hover">
+    <table sec:authorize="hasAnyRole('admin')" class="table table-hover">
         <thead>
         <tr>
             <th>ID</th>
             <th>Name</th>
             <th>Title</th>
             <th>Category</th>
-            <th>Edit</th>
-            <th>Delete</th>
-            <th>Show Detail</th>
+            <th sec:authorize="hasAnyRole('admin')">Edit</th>
+            <th sec:authorize="hasAnyRole('admin')">Delete</th>
+            <th sec:authorize="hasAnyRole('admin')">Show Detail</th>
         </tr>
         </thead>
         <tbody>
@@ -53,10 +53,10 @@
             <td th:text="${blog.titleBlog}"></td>
             <td th:text="${blog.category.nameCategory}">
             </td>
-            <td>
+            <td sec:authorize="hasAnyRole('admin')">
                 <a th:href="@{/bloggers/edit/{id}(id=${blog.id})}" class="btn btn-outline-success">Edit</a>
             </td>
-            <td>
+            <td sec:authorize="hasAnyRole('admin')">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
                         th:data-bs-target="'#staticBackdrop' + ${blog.id}">

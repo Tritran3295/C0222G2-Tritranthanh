@@ -26,6 +26,7 @@ public class BookController {
         model.addAttribute("borrowList",borrowService.selectAll());
         return "list";
     }
+    // cách 1: ManyToMany
 //    @GetMapping("/borrow/{id}")
 //    public String borrow(@PathVariable int id, Model model){
 //        Book book = bookService.findById(id);
@@ -57,4 +58,16 @@ public class BookController {
         redirectAttributes.addFlashAttribute("msg","Borrow" + book.getNameBook() + "success and your'code Book is " + code);
         return "redirect:/books";
     }
+    @GetMapping("return/{id}")
+    public String showReturn(@PathVariable int id,Model model){
+        Book book = bookService.findById(id);
+        model.addAttribute("borrow",new Borrow());
+        model.addAttribute("book",book);
+        return "return";
+    }
+//    @PostMapping("/return")
+//    public String return(@RequestParam("code") Integer code,@ModelAttribute Book book){
+//        List<Borrow> borrowList = borrowService.findByCode(code);
+//
+//    }
 }
