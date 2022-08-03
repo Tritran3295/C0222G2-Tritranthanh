@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head th:replace="~{html-css :: bootstrapCss}">
+
+</head>
+<body>
+<header>
+    <div class="p-3 text-center bg-image"
+         style="height: 150px;">
+        <div class="mask">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-success">
+                    <h1 class="mb-3">Facility</h1>
+                    <a href="" th:href="@{/facility/create}" class="btn btn-outline-success btn-lg" role="button">Create
+                        User</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-light bg-info">
+            <div class="container-fluid">
+                <h5 class="navbar-brand">List Facility : </h5>
+                <form class="d-flex" action="/facility" >
+                    <input class="form-control me-2" type="search" name="nameSearch"
+                           placeholder="Search By Name">
+                    <button class="btn btn-outline-success" type="submit" >Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container mt-3">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>STT</th>
+            <th>Name</th>
+            <th>Area</th>
+            <th>Cost</th>
+            <th>Max Person</th>
+            <th>Facility Type</th>
+            <th>Rent Type</th>
+            <th>Status</th>
+            <th colspan="2">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="fa: ${facilityList}">
+            <td th:text="${fa.id}"></td>
+            <td th:text="${fa.nameFacility}"></td>
+            <td th:text="${fa.area}"></td>
+            <td th:text="${fa.cost}"></td>
+            <td th:text="${fa.maxPeople}"></td>
+            <td th:text="${fa.facilityType.nameFacilityType}"></td>
+            <td th:text="${fa.rentType.nameRentType}"></td>
+            <div th:if="${fa.status == 0}">
+                <td class="table-warning text-success">Active</td>
+            </div>
+            <div th:if="${fa.status == 1}">
+                <td class="table-warning text-danger">Deleted</td>
+            </div>
+            <td>
+                <a th:href="@{/facility/edit/{id}(id=${fa.id})}" class="btn btn-outline-warning">Edit</a>
+            </td>
+            <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                        th:data-bs-target="'#staticBackdrop' + ${fa.id}">
+                    Delete
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" th:id="staticBackdrop + ${fa.id}" data-bs-backdrop="static"
+                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-danger" id="staticBackdropLabel">Warning!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Do you want delete product <span th:text="${fa.nameFacility}" class="text-warning"></span>
+                                with id = <span th:text="${fa.id}" class="text-warning"></span> ?
+                            </div>
+                            <div class="modal-footer">
+                                <a href="" th:href="@{/facility/delete/{id}(id=${fa.id})}"
+                                   class="btn btn-outline-success">Delete</a>
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-2 ">
+            <ul class="pagination" th:if="${facilityList.totalPages > 0}">
+                <li class="page-item">
+                    <a class="page-link" th:if="${facilityList.hasPrevious()}"
+                       th:href="@{'/facility'(page=${facilityList.number - 1})}">
+                        Previous
+                    </a>
+                </li>
+                <div th:each="item : ${#numbers.sequence(1, facilityList.totalPages )}">
+                    <div th:if="${(facilityList.number + 1) == item}">
+                        <li class="page-item active">
+                            <a class="page-link" href="#" th:text="${item}" th:href="@{/facility(page=(${item}-1))}"></a>
+                        </li>
+                    </div>
+                    <div th:unless="${((facilityList.number + 1) == item)}">
+                        <li class="page-item">
+                            <a class="page-link" href="#" th:text="${item}" th:href="@{/facility(page=(${item}-1)
+                              )}"></a>
+                        </li>
+                    </div>
+                </div>
+                <li class="page-item">
+                    <a class="page-link" th:if="${facilityList.hasNext()}"
+                       th:href="@{'/facility'(page=${facilityList.number + 1}, search=${searchName})}">
+                        Next
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <th:block th:replace="~{html-css :: boostrapScript}"></th:block>
+</div>
+</body>
+</html>

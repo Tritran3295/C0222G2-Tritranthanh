@@ -1,7 +1,7 @@
 package com.case_study.controller;
 
 import com.case_study.dto.CustomerDTO;
-import com.case_study.model.Customer;
+import com.case_study.model.customer.Customer;
 import com.case_study.service.customer.ICustomerService;
 import com.case_study.service.customer.ICustomerTypeService;
 import org.springframework.beans.BeanUtils;

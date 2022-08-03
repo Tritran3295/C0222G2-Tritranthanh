@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head th:replace="~{html-css :: bootstrapCss}">
+
+</head>
+<body>
+<header>
+    <div class="p-3 text-center bg-image"
+         style="height: 150px;">
+        <div class="mask">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-success">
+                    <h1 class="mb-3">My Employee List</h1>
+                    <a href="" th:href="@{/employees/create}" class="btn btn-outline-success btn-lg" role="button">Create
+                        User</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-light bg-info">
+            <div class="container-fluid">
+                <h5 class="navbar-brand">List Employee : </h5>
+                <form class="d-flex" action="/employees" >
+                    <input class="form-control me-2" type="search" name="nameSearch"
+                           placeholder="Search By Name">
+                    <button class="btn btn-outline-success" type="submit" >Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container mt-3">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name Employee</th>
+            <th>Date of birth</th>
+            <th>Id Card</th>
+            <th>Salary</th>
+            <th>Phone Number</th>
+            <th>Address</th>
+            <th>Position</th>
+            <th>Division</th>
+            <th>Education Degree</th>
+            <th>Status</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="employee : ${employeeList}">
+            <td th:text="${employee.id}"></td>
+            <td th:text="${employee.namEmployee}"></td>
+            <td th:text="${employee.dateOfBirth}"></td>
+            <td th:text="${employee.idCard}"></td>
+            <td th:text="${employee.salary}"></td>
+            <td th:text="${employee.phoneNumber}"></td>
+            <td th:text="${employee.address}"></td>
+            <td th:text="${employee.position.namePosition}"></td>
+            <td th:text="${employee.division.nameDivision}"></td>
+            <td th:text="${employee.educationDegree.nameEducationDegree}"></td>
+            <div th:if="${employee.status == 0}">
+                <td class="table-warning text-success">Active</td>
+            </div>
+            <div th:if="${employee.status == 1}">
+                <td class="table-warning text-danger">Deleted</td>
+            </div>
+            <td>
+                <a href="" th:href="@{/employees/edit/{id}(id=${employee.id})}" class="btn btn-outline-warning">Edit</a>
+            </td>
+            <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                        th:data-bs-target="'#staticBackdrop' + ${employee.id}">
+                    Delete
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" th:id="staticBackdrop + ${employee.id}" data-bs-backdrop="static"
+                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-danger" id="staticBackdropLabel">Warning!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Do you want delete product <span th:text="${employee.namEmployee}" class="text-warning"></span>
+                                with id = <span th:text="${employee.id}" class="text-warning"></span> ?
+                            </div>
+                            <div class="modal-footer">
+                                <a href="" th:href="@{/employees/delete/{id}(id=${employee.id})}"
+                                   class="btn btn-outline-success">Delete</a>
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="row">
+        <div class="col-2 ">
+            <ul class="pagination" th:if="${employeeList.totalPages > 0}">
+                <li class="page-item">
+                    <a class="page-link" th:if="${employeeList.hasPrevious()}"
+                       th:href="@{'/employees'(page=${employeeList.number - 1})}">
+                        Previous
+                    </a>
+                </li>
+                <div th:each="item : ${#numbers.sequence(1, employeeList.totalPages )}">
+                    <div th:if="${(employeeList.number + 1) == item}">
+                        <li class="page-item active">
+                            <a class="page-link" href="#" th:text="${item}" th:href="@{/employees(page=(${item}-1))}"></a>
+                        </li>
+                    </div>
+                    <div th:unless="${((employeeList.number + 1) == item)}">
+                        <li class="page-item">
+                            <a class="page-link" href="#" th:text="${item}" th:href="@{/employees(page=(${item}-1)
+                              )}"></a>
+                        </li>
+                    </div>
+                </div>
+                <li class="page-item">
+                    <a class="page-link" th:if="${employeeList.hasNext()}"
+                       th:href="@{'/employees'(page=${employeeList.number + 1}, search=${searchName})}">
+                        Next
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <th:block th:replace="~{html-css :: boostrapScript}"></th:block>
+</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 package com.case_study.dto;
 
-import com.case_study.model.CustomerType;
+import com.case_study.model.customer.CustomerType;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

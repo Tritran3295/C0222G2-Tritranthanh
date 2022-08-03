@@ -1,6 +1,6 @@
 package com.case_study.service.customer;
 
-import com.case_study.model.CustomerType;
+import com.case_study.model.customer.CustomerType;
 
 import java.util.List;
 
