@@ -10,13 +10,13 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 @Repository
-public interface IFacilityRepository extends JpaRepository<Facility,Integer> {
-    @Query(value = "select * from facility where name_facility like :searchName",nativeQuery = true,
-    countQuery = "select count(*) from (select * from facility where name_facility like :searchName) temp_table")
+public interface IFacilityRepository extends JpaRepository<Facility, Integer> {
+    @Query(value = "select * from facility where name_facility like :searchName", nativeQuery = true,
+            countQuery = "select count(*) from (select * from facility where name_facility like :searchName) temp_table")
     Page<Facility> selectALl(String searchName, Pageable pageable);
 
     @Modifying
     @Transactional
-    @Query(value = "update facility set status = 1 where facility.id = :id",nativeQuery = true)
+    @Query(value = "update facility set status = 1 where facility.id = :id", nativeQuery = true)
     void deleteFacility(int id);
 }

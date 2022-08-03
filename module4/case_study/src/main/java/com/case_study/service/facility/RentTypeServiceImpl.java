@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class RentTypeServiceImpl implements IRentTypeService{
+public class RentTypeServiceImpl implements IRentTypeService {
     @Autowired
     private IRentTypeRepository rentTypeRepository;
 

@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<!--<head th:replace="~{style-css :: bootstrapCss}"></head>-->
-<!--<header th:replace="~{style :: bootstrapHeaderBody}"></header>-->
 
 <body>
-
 
 <section class="get-in-touch">
     <h1 class="title">Create Service</h1>
@@ -26,7 +23,6 @@
             <input id="maxPerson" class="input-text js-input" type="text" th:field="*{maxPeople}" required>
             <label class="label" for="maxPerson">Max Person</label>
         </div>
-        <!--        xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
 
         <div class="form-field col-lg-6">
             <select class="form-select" th:field="*{rentType}">
@@ -72,11 +68,9 @@
     </form>
 </section>
 
-<!--<footer id="footer" th:replace="~{style :: bootstrapBodyDiv}"></footer>-->
 <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
 
-<!--<th:block th:replace="~{style :: bootstrapFooter}"></th:block>-->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
@@ -107,5 +101,4 @@
         }
     }
 </script>
-<!--<div th:replace=""> </div>-->
 </html>

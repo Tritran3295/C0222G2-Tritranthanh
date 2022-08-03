@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class DivisionServiceImpl implements IDivisionService{
+public class DivisionServiceImpl implements IDivisionService {
     @Autowired
     private IDivisionRepository divisionRepository;
 

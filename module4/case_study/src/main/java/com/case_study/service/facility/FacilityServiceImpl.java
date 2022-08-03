@@ -8,13 +8,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 @Service
-public class FacilityServiceImpl implements IFacilityService{
+public class FacilityServiceImpl implements IFacilityService {
     @Autowired
     private IFacilityRepository facilityRepository;
 
     @Override
     public Page<Facility> selectAll(String searchName, Pageable pageable) {
-        return facilityRepository.selectALl("%" + searchName + "%",pageable);
+        return facilityRepository.selectALl("%" + searchName + "%", pageable);
     }
 
     @Override

@@ -10,7 +10,7 @@ import javax.validation.constraints.Pattern;
 public class CustomerDTO {
     private int id;
     @NotBlank
-    @Pattern(regexp = "^([A-Z][^A-Z0-9\\s]+)(\\s[A-Z][^A-Z0-9\\s]+)*$",message = "viết hoa chữ cái đầu")
+    @Pattern(regexp = "^([A-Z][^A-Z0-9\\s]+)(\\s[A-Z][^A-Z0-9\\s]+)*$", message = "viết hoa chữ cái đầu")
     private String nameCustomer;
 
     @NotEmpty
@@ -19,7 +19,7 @@ public class CustomerDTO {
     private int gender;
 
     @NotBlank(message = "Nhập vào đi bạn ơi")
-    @Pattern(regexp = "[0-9]{9}|[0-9]{12}",message = "id card valid(9 or 12 number)")
+    @Pattern(regexp = "[0-9]{9}|[0-9]{12}", message = "id card valid(9 or 12 number)")
     private String idCard;
 
     @NotBlank

@@ -8,13 +8,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CustomerServiceImpl implements ICustomerService{
+public class CustomerServiceImpl implements ICustomerService {
     @Autowired
     private ICustomerRepository customerRepository;
 
     @Override
     public Page<Customer> selectAll(String searchName, Pageable pageable) {
-        return customerRepository.findAll("%" +searchName + "%",pageable);
+        return customerRepository.findAll("%" + searchName + "%", pageable);
     }
 
     @Override

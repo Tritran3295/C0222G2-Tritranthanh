@@ -30,43 +30,48 @@ public class EmployeeController {
     private IEducationDegreeService educationDegreeService;
 
     @GetMapping("")
-    public String showListEmployee(Model model, @PageableDefault(value = 5)Pageable pageable, Optional<String> nameSearch){
+    public String showListEmployee(Model model, @PageableDefault(value = 5) Pageable pageable, Optional<String> nameSearch) {
         String searchName = nameSearch.orElse("");
-        model.addAttribute("searchName",searchName);
-        model.addAttribute("employeeList",employeeService.selectAll(searchName,pageable));
-        model.addAttribute("positionList",positionService.selectAll());
-        model.addAttribute("divisionList",divisionService.selectAll());
-        model.addAttribute("educationDegreeList",educationDegreeService.selectAll());
+        model.addAttribute("searchName", searchName);
+        model.addAttribute("employeeList", employeeService.selectAll(searchName, pageable));
+        model.addAttribute("positionList", positionService.selectAll());
+        model.addAttribute("divisionList", divisionService.selectAll());
+        model.addAttribute("educationDegreeList", educationDegreeService.selectAll());
         return "employee/list";
     }
+
     @GetMapping("/create")
-    public String showFormCreate(Model model){
-        model.addAttribute("employeeList",new Employee());
-        model.addAttribute("positionList",positionService.selectAll());
-        model.addAttribute("divisionList",divisionService.selectAll());
-        model.addAttribute("educationDegreeList",educationDegreeService.selectAll());
+    public String showFormCreate(Model model) {
+        model.addAttribute("employeeList", new Employee());
+        model.addAttribute("positionList", positionService.selectAll());
+        model.addAttribute("divisionList", divisionService.selectAll());
+        model.addAttribute("educationDegreeList", educationDegreeService.selectAll());
         return "employee/create";
     }
+
     @PostMapping("/create")
-    public String create(@ModelAttribute Employee employee){
+    public String create(@ModelAttribute Employee employee) {
         employeeService.save(employee);
         return "redirect:/employees";
     }
+
     @GetMapping("/edit/{id}")
-    public String showFormEdit(@PathVariable int id,Model model){
-        model.addAttribute("employeeList",employeeService.findById(id));
-        model.addAttribute("positionList",positionService.selectAll());
-        model.addAttribute("divisionList",divisionService.selectAll());
-        model.addAttribute("educationDegreeList",educationDegreeService.selectAll());
+    public String showFormEdit(@PathVariable int id, Model model) {
+        model.addAttribute("employeeList", employeeService.findById(id));
+        model.addAttribute("positionList", positionService.selectAll());
+        model.addAttribute("divisionList", divisionService.selectAll());
+        model.addAttribute("educationDegreeList", educationDegreeService.selectAll());
         return "employee/edit";
     }
+
     @PostMapping("/edit")
-    public String edit(@ModelAttribute Employee employee){
+    public String edit(@ModelAttribute Employee employee) {
         employeeService.update(employee);
         return "redirect:/employees";
     }
+
     @GetMapping("/delete/{id}")
-    public String deleteEmployee(@PathVariable int id){
+    public String deleteEmployee(@PathVariable int id) {
         employeeService.delete(id);
         return "redirect:/employees";
     }

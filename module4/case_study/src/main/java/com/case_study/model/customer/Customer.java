@@ -16,7 +16,7 @@ public class Customer {
     private String address;
 
     @ManyToOne
-    @JoinColumn(name = "customer_type_id",referencedColumnName = "id")
+    @JoinColumn(name = "customer_type_id", referencedColumnName = "id")
     private CustomerType customerType;
 
     @Column(columnDefinition = "bit(1) default 0")

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class FacilityTypeServiceImpl implements IFacilityTypeService{
+public class FacilityTypeServiceImpl implements IFacilityTypeService {
     @Autowired
     private IFacilityTypeRepository facilityTypeRepository;
 
