@@ -7,67 +7,88 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
-<div class="container-fuild mt-3">
-    <div class="row">
+<h1 class="title">Create Service</h1>
+<form action="/facility/create" method="post" th:object="${facilityList}">
+    <div class="form-group">
+        <label for="nameFacility">Name Facility</label>
+        <input type="text" class="form-control" id="nameFacility" th:field = "*{nameFacility}" required>
     </div>
-    <br>
-    <br>
-    <div class="row">
-        <h2 class="text-center my-5">Create customer</h2>
-        <form th:action="@{/facility/create}" method="post" th:object="${facilityList}">
-            <div class="container">
-                <table class="table table-striped">
-                    <tr>
-                        <td><label>Name</label></td>
-                        <td><input class="form-control" type="text" th:field="*{nameFacility}"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Area</label></td>
-                        <td><input class="form-control" type="text" th:field="*{area}"></td>
-                    </tr>
-
-                    <tr>
-                        <td><label>Cost</label></td>
-                        <td><input class="form-control" type="text" th:field="*{cost}"></td>
-                    </tr>
-
-                    <tr>
-                        <td><label>Max People</label></td>
-                        <td><input class="form-control" type="text" th:field="*{maxPeople}"></td>
-                    </tr>
-                    <tr>
-                        <td><label>Rent Type</label></td>
-                        <td><select class="form-select" th:field="*{rentType}">
-                            <option th:each="item: ${rentTypeList}" th:value="${item.id}"
-                                    th:text="${item.nameRentType}">
-                            </option>
-                        </select></td>
-                    </tr>
-                    <tr>
-                        <td><label>Facility Type</label></td>
-                        <td><select class="form-select" th:field="*{facilityType}">
-                            <option th:each="item: ${facilityTypeList}" th:value="${item.id}"
-                                    th:text="${item.nameFacilityType}">
-                            </option>
-                        </select></td>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <input class="btn btn-success" type="submit" value="Save">
-                            <a class="btn btn-secondary" th:href="@{/customers}">Back</a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </form>
+    <div class="form-group">
+        <label for="area">Area</label>
+        <input type="text" class="form-control" id="area" th:field = "*{area}" required>
     </div>
-    <br>
-    <br>
-    <div class="row">
+    <div class="form-group">
+        <label for="cost">Cost</label>
+        <input type="text" class="form-control" id="cost" th:field = "*{cost}" required>
     </div>
-</div>
+    <div class="form-group">
+        <label for="maxPeople">Max People</label>
+        <input type="text" class="form-control" id="maxPeople" th:field = "*{maxPeople}" required>
+    </div>
+    <div class="form-group">
+        <select class="form-select" th:field="*{rentType}">
+            <option value="">Ren Type List</option>
+            <option th:each="item : ${rentTypeList}" th:text="${item.nameRentType}" th:value="${item.id}"></option>
+        </select>
+    </div>
+    <div class="form-field col-lg-6">
+        <select id="choiceFacilityType" class="form-select" th:field="*{facilityType}" onchange="selectFacility()">
+            <option value="">Facility List</option>
+            <option th:each="item : ${facilityTypeList}" th:text="${item.nameFacilityType}" th:value="${item.id}"></option>
+        </select>
+    </div>
+    <div class="form-group" id="standardRoom" style="display: none">
+        <input  class="input-text js-input" type="text" th:field="*{standardRoom}" >
+        <label class="label" for="standardRoom">Standard Room</label>
+    </div>
+    <div class="form-field col-lg-6 "  id="poolArea" style="display: none">
+        <input class="input-text js-input" type="text" th:field="*{poolArea}" >
+        <label class="label" for="poolArea">Pool Area</label>
+    </div>
+    <div class="form-field col-lg-6 " id="descriptionConvenience" style="display: none">
+        <input  class="input-text js-input" type="text" th:field="*{descriptionConvenience}" >
+        <label class="label" for="descriptionConvenience">Description Other</label>
+    </div>
+    <div class="form-field col-lg-6" id="numberOfFloor" style="display: none">
+        <input  class="input-text js-input" type="text" th:field="*{numberOfFloor}" >
+        <label class="label" for="numberOfFloor">Number Of Floors</label>
+    </div>
+    <div class="form-field col-lg-6" id="facilityFree" style="display: none">
+        <input  class="input-text js-input" type="text" th:field="*{facilityFree}" >
+        <label class="label" for="facilityFree">Facility Free</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    function selectFacility() {
+        let getValue = $('#choiceFacilityType').val()
+        switch (getValue) {
+            case '1':
+                $('#standardRoom').show()
+                $('#descriptionConvenience').show()
+                $('#poolArea').show()
+                $('#numberOfFloor').show()
+                $('#facilityFree').hide()
+                break;
+            case '2':
+                $('#standardRoom').show()
+                $('#descriptionConvenience').show()
+                $('#poolArea').hide()
+                $('#numberOfFloor').show()
+                $('#facilityFree').hide()
+                break;
+            case '3':
+                $('#standardRoom').hide()
+                $('#descriptionConvenience').hide()
+                $('#poolArea').hide()
+                $('#numberOfFloor').hide()
+                $('#facilityFree').show()
+                break;
+        }
+    }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>

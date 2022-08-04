@@ -39,7 +39,7 @@ public class FacilityController {
         model.addAttribute("facilityList",new Facility());
         model.addAttribute("facilityTypeList",facilityTypeService.selectAll());
         model.addAttribute("rentTypeList",rentTypeService.selectAll());
-        return "facility/create";
+        return "facility/create1";
     }
     @PostMapping("/create")
     public String createFacility(@ModelAttribute Facility facility ){
@@ -48,9 +48,11 @@ public class FacilityController {
     }
     @GetMapping("/edit/{id}")
     public String showFormEdit(@PathVariable int id,Model model){
-        model.addAttribute("facilityList",facilityService.findById(id));
+        Facility facilityEdit = facilityService.findById(id);
+        model.addAttribute("facilityList",facilityEdit);
         model.addAttribute("facilityTypeList",facilityTypeService.selectAll());
         model.addAttribute("rentTypeList",rentTypeService.selectAll());
+        model.addAttribute("facilityTypeId",facilityEdit.getFacilityType().getId());
         return "facility/edit";
     }
     @PostMapping("/edit")
