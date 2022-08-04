@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head th:replace="~{html-css :: bootstrapCss}">
+
+</head>
+<body>
+<header>
+    <div class="p-3 text-center bg-image"
+         style="height: 150px;">
+        <div class="mask">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-success">
+                    <h1 class="mb-3">Customer Using Service</h1>
+                    <a href="" th:href="@{/contracts/create}" class="btn btn-outline-success btn-lg" role="button">Create
+                        Contract</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-light bg-info">
+            <div class="container-fluid">
+                <h5 class="navbar-brand">List Customer : </h5>
+                <form class="d-flex" action="/contracts" >
+                    <input class="form-control me-2" type="search" name="nameSearch"
+                           placeholder="Search By Name">
+                    <button class="btn btn-outline-success" type="submit" >Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container mt-3">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>STT</th>
+            <th>Customer Name</th>
+            <th>Phone</th>
+            <th>Address</th>
+            <th>Service Name</th>
+            <th>Attach Service</th>
+            <th>Edit Service</th>
+            <th>Delete Service</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="contract,loop : ${customerUsingService}">
+            <td th:text="${loop.count}"></td>
+            <td th:text="${contract.customer.nameCustomer}"></td>
+            <td th:text="${contract.customer.phoneNumber}"></td>
+            <td th:text="${contract.customer.address}"></td>
+            <td th:text="${contract.facility.nameFacility}" th:value="${contract.facility.id}"></td>
+
+            <div th:if="${contract.status == 0}">
+                <td class="table-warning text-success">Active</td>
+            </div>
+            <div th:if="${contract.status == 1}">
+                <td class="table-warning text-danger">Deleted</td>
+            </div>
+        </tr>
+        </tbody>
+    </table>
+<!--    <div class="row">-->
+<!--        <div class="col-2 ">-->
+<!--            <ul class="pagination" th:if="${contractList.totalPages > 0}">-->
+<!--                <li class="page-item">-->
+<!--                    <a class="page-link" th:if="${contractList.hasPrevious()}"-->
+<!--                       th:href="@{'/contracts'(page=${contractList.number - 1})}">-->
+<!--                        Previous-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--                <div th:each="item : ${#numbers.sequence(1, contractList.totalPages )}">-->
+<!--                    <div th:if="${(contractList.number + 1) == item}">-->
+<!--                        <li class="page-item active">-->
+<!--                            <a class="page-link" href="#" th:text="${item}" th:href="@{/contracts(page=(${item}-1))}"></a>-->
+<!--                        </li>-->
+<!--                    </div>-->
+<!--                    <div th:unless="${((contractList.number + 1) == item)}">-->
+<!--                        <li class="page-item">-->
+<!--                            <a class="page-link" href="#" th:text="${item}" th:href="@{/contracts(page=(${item}-1)-->
+<!--                              )}"></a>-->
+<!--                        </li>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <li class="page-item">-->
+<!--                    <a class="page-link" th:if="${contractList.hasNext()}"-->
+<!--                       th:href="@{'/contracts'(page=${contractList.number + 1})}">-->
+<!--                        Next-->
+<!--                    </a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!--    </div>-->
+    <th:block th:replace="~{html-css :: boostrapScript}"></th:block>
+</div>
+</body>
+</html>

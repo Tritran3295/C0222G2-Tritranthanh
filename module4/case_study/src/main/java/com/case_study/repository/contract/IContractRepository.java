@@ -24,6 +24,6 @@ public interface IContractRepository extends JpaRepository<Contact,Integer> {
             "            \" join attach_facility afa on dct.attach_detail_id = afa.id             \n" +
             "            \" where c.name_customer like :searchName \n" +
             "            \" group by c.id , fa.id)"
-    )       
+    )
     Page<Contact> selectAllCustomerUsing(@Param("searchName") String searchName, Pageable pageable);
 }
