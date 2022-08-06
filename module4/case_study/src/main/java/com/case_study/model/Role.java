@@ -1,4 +1,6 @@
-package com.case_study.model.employee;
+package com.case_study.model;
+
+import com.case_study.model.User;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -10,7 +12,12 @@ public class Role {
     private int id;
     private String name;
 
-    @ManyToMany(mappedBy = "roles")
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "user_role",
+            joinColumns = @JoinColumn(name = "role_id"),
+            inverseJoinColumns = @JoinColumn(name = "user_name")
+    )
     private Set<User> users;
 
     public Role() {

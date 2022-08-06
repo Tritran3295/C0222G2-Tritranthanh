@@ -8,6 +8,7 @@
 </head>
 <body>
 <h1 class="title">Edit Service</h1>
+<div class=" container-fluid">
 <form action="/facility/edit" method="post" th:object="${facilityList}">
     <div class="form-group">
         <label for="nameFacility">Id</label>
@@ -67,6 +68,7 @@
 <form action="">
     <input type="text" id="facilityTypeId" hidden th:value="${facilityTypeId}">
 </form>
+</div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>

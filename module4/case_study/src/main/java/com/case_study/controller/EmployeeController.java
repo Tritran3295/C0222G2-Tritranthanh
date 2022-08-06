@@ -1,17 +1,21 @@
 package com.case_study.controller;
 
+import com.case_study.dto.EmployeeDTO;
 import com.case_study.model.employee.Employee;
 import com.case_study.service.employee.IDivisionService;
 import com.case_study.service.employee.IEducationDegreeService;
 import com.case_study.service.employee.IEmployeeService;
 import com.case_study.service.employee.IPositionService;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Optional;
 
 @Controller
@@ -42,7 +46,7 @@ public class EmployeeController {
 
     @GetMapping("/create")
     public String showFormCreate(Model model) {
-        model.addAttribute("employeeList", new Employee());
+        model.addAttribute("employeeListDTO", new EmployeeDTO());
         model.addAttribute("positionList", positionService.selectAll());
         model.addAttribute("divisionList", divisionService.selectAll());
         model.addAttribute("educationDegreeList", educationDegreeService.selectAll());
@@ -50,7 +54,15 @@ public class EmployeeController {
     }
 
     @PostMapping("/create")
-    public String create(@ModelAttribute Employee employee) {
+    public String create(@Valid @ModelAttribute("employeeListDTO") EmployeeDTO employeeDTO, BindingResult bindingResult,Model model) {
+        if(bindingResult.hasErrors()){
+            model.addAttribute("positionList", positionService.selectAll());
+            model.addAttribute("divisionList", divisionService.selectAll());
+            model.addAttribute("educationDegreeList", educationDegreeService.selectAll());
+           return "employee/create";
+        }
+        Employee employee = new Employee();
+        BeanUtils.copyProperties(employeeDTO,employee);
         employeeService.save(employee);
         return "redirect:/employees";
     }

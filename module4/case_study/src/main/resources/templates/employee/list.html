@@ -50,8 +50,8 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="employee : ${employeeList}">
-            <td th:text="${employee.id}"></td>
+        <tr th:each="employee,loop : ${employeeList}">
+            <td th:text="${loop.count}"></td>
             <td th:text="${employee.namEmployee}"></td>
             <td th:text="${employee.dateOfBirth}"></td>
             <td th:text="${employee.idCard}"></td>

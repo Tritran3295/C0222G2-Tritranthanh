@@ -1,5 +1,7 @@
 package com.case_study.model.employee;
 
+import com.case_study.model.User;
+
 import javax.persistence.*;
 
 @Entity
@@ -27,8 +29,20 @@ public class Employee {
     @JoinColumn(name = "position_id",referencedColumnName = "id")
     private Position position;
 
+//    @ManyToOne
+//    @JoinColumn(name = "username",referencedColumnName = "username")
+//    private User username;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
+    @JoinColumn(name = "username",referencedColumnName = "")
     @Column(columnDefinition = "bit(1) default 0")
     private int status;
+
+    public User getUser() {
+        return user;
+    }
 
     public Employee() {
     }

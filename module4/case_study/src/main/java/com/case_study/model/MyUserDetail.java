@@ -1,5 +1,6 @@
-package com.blog.model;
+package com.case_study.model;
 
+import com.case_study.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -17,6 +18,8 @@ public class MyUserDetail implements UserDetails {
         return null;
     }
 
+
+
     @Override
     public String getPassword() {
         return user.getPassword();
@@ -24,7 +27,7 @@ public class MyUserDetail implements UserDetails {
 
     @Override
     public String getUsername() {
-        return user.getUsername();
+        return user.getName();
     }
 
     @Override
@@ -44,6 +47,8 @@ public class MyUserDetail implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return user.isEnabled();
+        return true;
     }
+
+
 }

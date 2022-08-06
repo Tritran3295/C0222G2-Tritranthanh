@@ -8,7 +8,7 @@
 </head>
 <body>
 <h1 class="title">Create Service</h1>
-<form action="/facility/create" method="post" th:object="${facilityList}">
+<form action="/facility/create" method="post" th:object="${facilityListDTO}">
     <div class="form-group">
         <label for="nameFacility">Name Facility</label>
         <input type="text" class="form-control" id="nameFacility" th:field = "*{nameFacility}" required>

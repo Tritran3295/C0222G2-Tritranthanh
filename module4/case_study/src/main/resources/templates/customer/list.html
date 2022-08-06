@@ -46,8 +46,8 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="customer : ${customerList}">
-            <td th:text="${customer.id}"></td>
+        <tr th:each="customer,loop : ${customerList}">
+            <td th:text="${loop.count}"></td>
             <td th:text="${customer.nameCustomer}"></td>
             <td th:text="${customer.dateOfBirth}"></td>
             <td th:text="${customer.idCard}"></td>

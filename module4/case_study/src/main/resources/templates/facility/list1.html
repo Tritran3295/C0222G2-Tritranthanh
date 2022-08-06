@@ -46,8 +46,8 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="fa: ${facilityList}">
-            <td th:text="${fa.id}"></td>
+        <tr th:each="fa,loop : ${facilityList}">
+            <td th:text="${loop.count}"></td>
             <td th:text="${fa.nameFacility}"></td>
             <td th:text="${fa.area}"></td>
             <td th:text="${fa.cost}"></td>

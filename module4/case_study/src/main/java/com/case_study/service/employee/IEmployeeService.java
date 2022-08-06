@@ -4,6 +4,8 @@ import com.case_study.model.employee.Employee;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 public interface IEmployeeService {
 
     Page<Employee> selectAll(String searchName, Pageable pageable);
@@ -15,4 +17,6 @@ public interface IEmployeeService {
     void update(Employee employee);
 
     void delete(int id);
+
+    List<Employee> getAllEmployee();
 }

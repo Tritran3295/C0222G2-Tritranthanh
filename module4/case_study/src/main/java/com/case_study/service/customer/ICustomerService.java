@@ -4,6 +4,8 @@ import com.case_study.model.customer.Customer;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 public interface ICustomerService {
     Page<Customer> selectAll(String searchName,Pageable pageable);
 
@@ -14,4 +16,6 @@ public interface ICustomerService {
     void update(Customer customer);
 
     void delete(int id);
+
+    List<Customer> getAllCustomer();
 }
