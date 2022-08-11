@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+<div class="container-fluid text-white">
+    <div class="col-12 row">
+        <div class="col-1 "><img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" style="width:75px;"
+                                 class="rounded-pill"></div>
+        <div class="col-11 ">
+            <div class="col-lg-12 row">
+                <div class="col-lg-10 text-center"><h1 style="color: sandybrown">Furama Management</h1></div>
+                <div class="col-lg-2 ">
+                    <p>Welcome to ...<br><strong>...Furama Resort!!!</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark "
+     style="background-color: #046056;position: sticky;top: 0;z-index: 1;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </div>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Customer Management</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    </div>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">Create Customer</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+<h1 class="title">Create Service</h1>
+<form action="/facility/create" method="post" th:object="${facilityListDTO}">
+    <div class="form-group">
+        <label for="nameFacility">Name Facility</label>
+        <input type="text" class="form-control" id="nameFacility" th:field = "*{nameFacility}" required>
+    </div>
+    <div class="form-group">
+        <label for="area">Area</label>
+        <input type="text" class="form-control" id="area" th:field = "*{area}" required>
+    </div>
+    <div class="form-group">
+        <label for="cost">Cost</label>
+        <input type="text" class="form-control" id="cost" th:field = "*{cost}" required>
+    </div>
+    <div class="form-group">
+        <label for="maxPeople">Max People</label>
+        <input type="text" class="form-control" id="maxPeople" th:field = "*{maxPeople}" required>
+    </div>
+    <div class="form-group">
+        <select class="form-select" th:field="*{rentType}">
+            <option value="">Ren Type List</option>
+            <option th:each="item : ${rentTypeList}" th:text="${item.nameRentType}" th:value="${item.id}"></option>
+        </select>
+    </div>
+    <div class="form-field col-lg-6">
+        <select id="choiceFacilityType" class="form-select" th:field="*{facilityType}" onchange="selectFacility()">
+            <option value="">Facility List</option>
+            <option th:each="item : ${facilityTypeList}" th:text="${item.nameFacilityType}" th:value="${item.id}"></option>
+        </select>
+    </div>
+    <div class="form-group" id="standardRoom" style="display: none">
+        <input  class="input-text js-input" type="text" th:field="*{standardRoom}" >
+        <label class="label" for="standardRoom">Standard Room</label>
+    </div>
+    <div class="form-field col-lg-6 "  id="poolArea" style="display: none">
+        <input class="input-text js-input" type="text" th:field="*{poolArea}" >
+        <label class="label" for="poolArea">Pool Area</label>
+    </div>
+    <div class="form-field col-lg-6 " id="descriptionConvenience" style="display: none">
+        <input  class="input-text js-input" type="text" th:field="*{descriptionConvenience}" >
+        <label class="label" for="descriptionConvenience">Description Other</label>
+    </div>
+    <div class="form-field col-lg-6" id="numberOfFloor" style="display: none">
+        <input  class="input-text js-input" type="text" th:field="*{numberOfFloor}" >
+        <label class="label" for="numberOfFloor">Number Of Floors</label>
+    </div>
+    <div class="form-field col-lg-6" id="facilityFree" style="display: none">
+        <input  class="input-text js-input" type="text" th:field="*{facilityFree}" >
+        <label class="label" for="facilityFree">Facility Free</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-secondary" href="home.html">Back</a>
+</form>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    function selectFacility() {
+        let getValue = $('#choiceFacilityType').val()
+        switch (getValue) {
+            case '1':
+                $('#standardRoom').show()
+                $('#descriptionConvenience').show()
+                $('#poolArea').show()
+                $('#numberOfFloor').show()
+                $('#facilityFree').hide()
+                break;
+            case '2':
+                $('#standardRoom').show()
+                $('#descriptionConvenience').show()
+                $('#poolArea').hide()
+                $('#numberOfFloor').show()
+                $('#facilityFree').hide()
+                break;
+            case '3':
+                $('#standardRoom').hide()
+                $('#descriptionConvenience').hide()
+                $('#poolArea').hide()
+                $('#numberOfFloor').hide()
+                $('#facilityFree').show()
+                break;
+        }
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</html>

@@ -1,58 +1,239 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f08953f6-0ebc-410e-a514-60cea52361a2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../furama_resort/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/config/CharsetFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/controller/customer/CustomerServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/model/customer/customer/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/model/customer/customerType/CustomerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/model/facility/Facility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/model/facilityType/FacilityType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/model/rentType/RentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/repository/connectDB/ConnectionDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/repository/customer/CustomerRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/repository/customer/ICustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/repository/customerType/CustomerTypeRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/repository/customerType/ICustomerTypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/service/customer/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/service/customer/ICustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/service/customerType/CustomerTypeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/java/service/customerType/ICustomerTypeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/webapp/customer/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/webapp/customer/list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss10_jstl/bai_tap/Calculator/adsa/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss10_jstl/bai_tap/Calculator/adsa/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss10_jstl/bai_tap/Calculator/adsa/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss10_jstl/bai_tap/Calculator/adsa/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss10_jstl/bai_tap/Calculator/adsa/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss10_jstl/bai_tap/Calculator/adsa/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss10_jstl/bai_tap/Calculator/adsa/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ss10_jstl/bai_tap/Calculator/adsa/src/main/java/sadsaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap/.idea/bai_tap.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module1/Thi_Thuc_Hanh/bai_tap/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module1/Thi_Thuc_Hanh/bai_tap/text.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/Utils/Exception.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/data/handPhone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/data/handPhone.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/giai_thuat/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/giai_thuat/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/test/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/build/libs/furama_resort-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/build/libs/furama_resort-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/src/main/webapp/image/hinh-anh-dep-con-trau-lang-que-viet-nam_110523599-3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai_tap/demo-user/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap/demo-user/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/bai_Tap/lay_out_rwd/.idea/lay_out_rwd.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_bootstrap/bai_tap/landing_page/.idea/landing_page.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss8_bootstrap/thuc_hanh/.idea/thuc_hanh.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/.idea/case-study-module-5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/contract/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/customer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/facility/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/facility/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/_elements.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/_footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/_testimonial.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/_variables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/style (Mohammad Rocky's conflicted copy 2018-05-08).css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/style.css (Mohammad Rocky's conflicted copy 2018-05-08).map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/Logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/about_banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/about_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/banner/banner-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/banner/banner-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/banner/banner-2_tmp18321" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/banner_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/add.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/author.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/blog-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/blog-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/blog-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/c1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/c2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/c3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/c4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/c5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/c6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/cat-post/cat-post-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/cat-post/cat-post-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/cat-post/cat-post-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/feature-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/main-blog/m-blog-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/main-blog/m-blog-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/main-blog/m-blog-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/main-blog/m-blog-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/main-blog/m-blog-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/next.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/post-img1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/post-img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/post1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/post2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/post3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/post4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/prev.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/blog/s-img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/a.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/a2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/d.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/disabled-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/disabled-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/f4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/f5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/f6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/f7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/f8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/g1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/g2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/g3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/g4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/g5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/g6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/g7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/g8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/primary-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/primary-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/success-check.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/success-radio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/user1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/elements/user2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/facilites_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/favicon_tmp18091" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/gallery/01-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/gallery/01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/gallery/02-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/gallery/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/gallery/03-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/gallery/03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/gallery/04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/gallery/05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/gallery/06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/instagram/Image-01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/instagram/Image-02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/instagram/Image-03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/instagram/Image-04.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/instagram/Image-05.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/instagram/Image-06.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/instagram/Image-07.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/instagram/Image-08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/logo-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/room1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/room2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/room3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/room4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/testtimonial-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/image/testtimonial-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/contact.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/gmaps.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/jquery-3.2.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/jquery.ajaxchimp.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/jquery.form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/mail-script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/popper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/js/stellar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/css/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/css/normalize.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/fonts/FontAwesome.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/fonts/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/img/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/js/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/js/custom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/js/jquery-1.11.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/js/jquery.nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/_DS_Store" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shAutoloader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushAS3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushAppleScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushBash.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushCSharp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushColdFusion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushCpp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushCss.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushDelphi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushDiff.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushErlang.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushGroovy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushJScript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushJava.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushJavaFX.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushPerl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushPhp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushPlain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushPowerShell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushPython.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushRuby.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushSass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushScala.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushSql.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushVb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shBrushXml.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shCore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/scripts/shLegacy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shCore.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shCoreDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shCoreDjango.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shCoreEclipse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shCoreEmacs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shCoreFadeToGrey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shCoreMDUltra.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shCoreMidnight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shCoreRDark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shThemeDefault.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shThemeDjango.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shThemeEclipse.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shThemeEmacs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shThemeFadeToGrey.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shThemeMDUltra.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shThemeMidnight.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/royal-Doc/syntax-highlighter/styles/shThemeRDark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_accomodation.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_banner.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_blog.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_button.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_contact.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_elements.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_predefine.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_testimonial.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/scss/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/bootstrap-datepicker/bootstrap-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/bootstrap-datepicker/bootstrap-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/imagesloaded/imagesloaded.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/isotope/isotope-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/lightbox/simpleLightbox.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/lightbox/simpleLightbox.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/linericon/fonts/Linearicons-Free.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/linericon/fonts/Linearicons-Free.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/linericon/fonts/Linearicons-Free.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/linericon/fonts/Linearicons-Free.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/linericon/fonts/Linearicons-Free.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/linericon/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/nice-select/css/nice-select.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/nice-select/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/nice-select/js/jquery.nice-select.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/nice-select/js/jquery.nice-select.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/owl-carousel/assets/ajax-loader.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/owl-carousel/assets/animated.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/owl-carousel/assets/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/owl-carousel/owl.carousel.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/static.assets/vendors/owl-carousel/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module5/case-study-module-5/templates/html-css.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss1_tong_quan_spring_mvc/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss1_tong_quan_spring_mvc/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss2_spring_controller/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss2_spring_controller/practice/customer-management" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +253,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bai_tap/demo-user" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../module4/case_study" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -83,6 +268,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656857164516</updated>
       <workItem from="1656857165937" duration="54000" />
+      <workItem from="1660208224171" duration="654000" />
     </task>
     <servers />
   </component>

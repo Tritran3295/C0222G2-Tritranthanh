@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a0056efc-d2e5-4db6-a17e-5925d9ed981b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../module5/case-study-module-5/customer/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module5/case-study-module-5/facility/list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module5/case-study-module-5/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module5/case-study-module-5/image/du-lich-ben-nghe-tour-da-nang-resort.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/ss1_tong_quan_spring_mvc/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/ss1_tong_quan_spring_mvc/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/ss2_spring_controller/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/ss2_spring_controller/practice/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2DC0bpOhGnm8aUox5efNgp6FDVz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../thuc_hanh" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a0056efc-d2e5-4db6-a17e-5925d9ed981b" name="Changes" comment="" />
+      <created>1660187833762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660187833762</updated>
+      <workItem from="1660187835301" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
