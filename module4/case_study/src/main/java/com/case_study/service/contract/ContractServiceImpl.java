@@ -33,7 +33,7 @@ public class ContractServiceImpl implements IContractService{
 
     @Override
     public void saveDetailContract(ContractDetail contractDetail) {
-        contractRepository.save(contractDetail);
+
     }
 
 

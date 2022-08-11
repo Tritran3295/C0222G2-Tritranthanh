@@ -77,7 +77,7 @@
                     Delete
                 </button>
 
-                <!-- Modal -->
+                <!-- Modal Delete-->
                 <div class="modal fade" th:id="staticBackdrop + ${employee.id}" data-bs-backdrop="static"
                      data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -104,6 +104,7 @@
         </tr>
         </tbody>
     </table>
+    <!-- Phân Trang -->
     <div class="row">
         <div class="col-2 ">
             <ul class="pagination" th:if="${employeeList.totalPages > 0}">
@@ -133,6 +134,114 @@
                     </a>
                 </li>
             </ul>
+        </div>
+    </div>
+    <!--        Modal Create-->
+    <div class="modal fade modal-create " id="modalCreate" tabindex="-1" aria-labelledby="modalCreateLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>New Employee</h5>
+                </div>
+                <div class="modal-body">
+                    <form th:action="@{employees/create}" method="post">
+
+                        <table border="none" class="table-modal-create-container">
+                            <tr>
+                                <td>
+                                    <table border="none" class="table-modal-create">
+                                        <tr>
+                                            <td class="w-25"><label>Employee Name</label></td>
+                                            <td class="w-75"><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>ID Card</label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Salary</label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Phone Number</label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Email</label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Address</label></td>
+                                            <td><input type="text"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <table class="table-modal-create">
+                                        <tr>
+                                            <td class="w-25"><label>Date Of Birth</label></td>
+                                            <td class="w-75"><input type="date"></td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Position</label></td>
+                                            <td>
+                                                <select>
+                                                    <option hidden selected>--Select Position--</option>
+                                                    <option value="">Giám đốc</option>
+                                                    <option value="">Quản Lý</option>
+                                                    <option value="">Giám sát</option>
+                                                    <option value="">Chuyên viên</option>
+                                                    <option value="">Phục vụ</option>
+                                                    <option value="">Lễ tân</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Education Degree</label></td>
+                                            <td>
+                                                <select>
+                                                    <option hidden selected>--Select Education Degree--
+                                                    </option>
+                                                    <option value="">Sau đại học</option>
+                                                    <option value="">Đại Học</option>
+                                                    <option value="">Cao đẳng</option>
+                                                    <option value="">Trung Cấp</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td><label>Division</label></td>
+                                            <td>
+                                                <select>
+                                                    <option hidden selected>--Select Division--</option>
+                                                    <option value="">Sale – Marketing</option>
+                                                    <option value="">Hành Chính</option>
+                                                    <option value="">Phục vụ</option>
+                                                    <option value="">Quản lý</option>
+                                                </select>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn btn-secondary"
+                                                        data-bs-dismiss="modal">Close
+                                                </button>
+                                                <button type="submit" value="Submit" class="btn-modal-delete">
+                                                    Submit
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
     <th:block th:replace="~{html-css :: boostrapScript}"></th:block>

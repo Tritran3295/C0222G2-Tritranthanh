@@ -2,21 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="30fc7afd-4586-4371-bd5d-0fed1b1a5241" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../furama_resort/src/main/webapp/image/hinh-anh-dep-con-trau-lang-que-viet-nam_110523599-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module1/Thi_Thuc_Hanh/bai_tap/text.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module1/Thi_Thuc_Hanh/bai_tap/text.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/Utils/Exception.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/data/handPhone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/out/production/p_module2/ss999_ket_thuc_module/data/handPhone.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/giai_thuat/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/giai_thuat/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/ss999_ket_thuc_module/data/realPhone.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/test/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/test/test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/p_module2/src/ss1_introduction_to_java/Bai_tap/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/p_module2/src/ss1_introduction_to_java/Bai_tap/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../furama_resort/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/build/libs/furama_resort-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/build/libs/furama_resort-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../furama_resort/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../furama_resort/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../furama_resort/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/build/classes/java/main/controller/UserServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/build/classes/java/main/controller/UserServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/build/libs/demo-user-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/build/libs/demo-user-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/src/main/webapp/user/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_JDBC_CRUD/bai_tap/demo-user/src/main/webapp/user/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss14_spring_security/home_work/blog_full/src/main/java/com/blog/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss14_spring_security/home_work/blog_full/src/main/java/com/blog/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss14_spring_security/home_work/blog_full/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss14_spring_security/home_work/blog_full/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss1_tong_quan_spring_mvc/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss1_tong_quan_spring_mvc/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss2_spring_controller/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss2_spring_controller/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss9_aop/book-borrow/src/main/java/com/example/bookborrow/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss9_aop/book-borrow/src/main/java/com/example/bookborrow/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/ss9_aop/book-borrow/src/main/resources/templates/borrow.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss9_aop/book-borrow/src/main/resources/templates/borrow.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +44,90 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/bai_Tap/manage-products" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bai_Tap/product_management" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.63" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.63" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="d0f4a758-5b2d-4fdb-81eb-7b083e907686" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="57404" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -47,6 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1656472654158</updated>
       <workItem from="1656472655532" duration="39000" />
+      <workItem from="1659434691840" duration="64000" />
     </task>
     <servers />
   </component>

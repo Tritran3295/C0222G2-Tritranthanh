@@ -11,7 +11,7 @@ public class User {
     @Id
     private String name;
     private String password;
-    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "user",cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Set<Employee> employees;
 
     @ManyToMany(mappedBy = "users")

@@ -33,10 +33,10 @@
             <div class="container-fluid text-white-50 bg-dark">
                 <a class="navbar-brand" href="/index.jsp">Home</a>
                 <a sec:authorize="isAuthenticated()" class="navbar-brand" href="/employees">Employee</a>
-                <a sec:authorize="hasRole('ADMIN')" class="navbar-brand" href="/customers">Customer</a>
-                <a sec:authorize="hasRole('ADMIN')" class="navbar-brand" href="/facility">Facility</a>
-                <a sec:authorize="hasRole('ADMIN')" class="navbar-brand" href="/contracts">Contract</a>
-                <a sec:authorize="hasRole('ADMIN')" href="/contracts/customer-using-service">Customer-using-service</a>
+                <a sec:authorize="hasRole('ROLE_ADMIN')" class="navbar-brand" href="/customers">Customer</a>
+                <a sec:authorize="hasRole('ROLE_ADMIN')" class="navbar-brand" href="/facility">Facility</a>
+                <a sec:authorize="hasRole('ROLE_ADMIN')" class="navbar-brand" href="/contracts">Contract</a>
+                <a sec:authorize="hasRole('ROLE_ADMIN')" href="/contracts/customer-using-service">Customer-using-service</a>
                 <form class="d-flex navbar-brand">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" width="100px">
                     <button class="btn btn-outline-success" type="submit">Search</button>

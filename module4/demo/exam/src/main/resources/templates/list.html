@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns: lang="en">
+<head th:replace="~{html-css :: bootstrapCss}">
+
+</head>
+<body>
+<header>
+    <div class="p-3 text-center bg-image"
+         style="height: 150px;">
+        <div class="mask">
+            <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="text-success">
+                    <h1 class="mb-3">List News</h1>
+                    <a href="" th:href="@{/news/create}" class="btn btn-outline-success btn-lg" role="button">Create
+                        News</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-light bg-info">
+            <div class="container-fluid">
+                <h5 class="navbar-brand">List News : </h5>
+                <form class="d-flex" action="/news" >
+                    <input class="form-control me-2" type="search" name="searchName"
+                           placeholder="Search By Name" th:value="${searchByname}">
+                    <button class="btn btn-outline-success" type="submit" >Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+</header>
+<div class="container mt-3">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>STT</th>
+            <th>Tiêu đề</th>
+            <th>Danh mục</th>
+            <th>Ngày đăng tin</th>
+            <th>Phóng viên</th>
+            <th>Chú thích</th>
+            <th>Chi tiết</th>
+            <th>Chức năng</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="loop : ${newsList}">
+            <td th:text="${loop.id}"></td>
+            <td th:text="${loop.title}"></td>
+            <td th:text="${loop.optionNews.nameOptionNews}"></td>
+            <td th:text="${loop.dateUpdate}"></td>
+            <td th:text="${loop.author}"></td>
+            <div th:if="${loop.status == 0}">
+                <td class="table-warning text-success">Active</td>
+            </div>
+            <div th:if="${loop.status == 1}">
+                <td class="table-warning text-danger">Deleted</td>
+            </div>
+
+            <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                        th:data-bs-target="'#staticBackdrop1' + ${loop.id}">
+                    Detail
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" th:id="staticBackdrop1 + ${loop.id}" data-bs-backdrop="static"
+                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="staticBackdropLabel2">Borrow Book</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="card" style="width: 100%;">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item" th:text="'ID: ' + ${loop.id}"></li>
+                                        <li class="list-group-item" th:text="'Name: ' + ${loop.title}"></li>
+                                        <li class="list-group-item" th:text="'Title: ' + ${loop.optionNews.nameOptionNews}"></li>
+                                        <li class="list-group-item" th:text="'Ngày cập nhật: ' + ${loop.dateUpdate}"></li>
+                                        <li class="list-group-item" th:text="'Tác giả: ' + ${loop.author}"></li>
+                                        <li class="list-group-item" th:text="'Status: ' + ${loop.status}"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a th:href="@{/bloggers/show-detail(id=${loop.id})}" class="btn btn-primary">Borrow</a>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+
+
+
+
+            <td>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal"
+                        th:data-bs-target="'#staticBackdrop' + ${loop.id}">
+                    Delete
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" th:id="staticBackdrop + ${loop.id}" data-bs-backdrop="static"
+                     data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title text-danger" id="staticBackdropLabel">Warning!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Do you want delete Title <span th:text="${loop.title}" class="text-warning"></span>
+                                 ?
+                            </div>
+                            <div class="modal-footer">
+                                <a href="" th:href="@{/news/delete/{id}(id=${loop.id})}"
+                                   class="btn btn-outline-success">Delete</a>
+                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <th:block th:replace="~{html-css :: boostrapScript}"></th:block>
+</div>
+</body>
+</html>
