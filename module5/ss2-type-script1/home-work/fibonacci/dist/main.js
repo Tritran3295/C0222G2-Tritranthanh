@@ -1,19 +1,17 @@
 function fibonnacci(n) {
-    if (n == 0 || n == 1) {
+    if (n == 0) {
+        return 0;
+    }
+    if (n == 1) {
         return 1;
     }
-    else {
-        return fibonnacci(n - 2) + fibonnacci(n - 1);
-    }
+    return fibonnacci(n - 1) + fibonnacci(n - 2);
 }
-function display() {
-    let m = 10;
-    let sum = 0;
-    for (let i = 0; i < m; i++) {
-        console.log("Số thứ " + (i + 1) + " là: " + fibonnacci(i));
-        sum += fibonnacci(i);
-    }
-    console.log(`tổng số fibo là ` + sum);
+let m = 20;
+let sum = 0;
+for (let i = 0; i < m; i++) {
+    sum += fibonnacci(i);
+    console.log(`số fibo thứ  ` + i + `là  ` + fibonnacci(i));
 }
-console.log(display());
+console.log(`tổng` + sum);
 //# sourceMappingURL=main.js.map

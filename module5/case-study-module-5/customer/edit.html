@@ -61,24 +61,24 @@
     <br>
     <div class="row">
         <h2 class="text-center my-5">Edit customer</h2>
-        <form th:action="@{/customers/edit}" method="post" th:object="${customer}">
+        <form th:action="@{/customers/edit}" method="post" >
             <div class="container">
                 <table class="table table-striped">
                     <tr>
                         <td><label>Id</label></td>
-                        <td><input class="form-control" type="text" th:field="*{id}" readonly></td>
+                        <td><input class="form-control" type="text" readonly></td>
                     </tr>
                     <tr>
                         <td><label>Name</label></td>
-                        <td><input class="form-control" type="text" th:field="*{nameCustomer}"></td>
+                        <td><input class="form-control" type="text" ></td>
                     </tr>
                     <tr>
                         <td><label>Day of birth</label></td>
-                        <td><input class="form-control" type="date" th:field="*{dateOfBirth}"></td>
+                        <td><input class="form-control" type="date" ></td>
                     </tr>
                     <tr>
                         <td><label>Gender</label></td>
-                        <td><select class="form-select" th:field="*{gender}">
+                        <td><select class="form-select" >
                             <option value="1">Nam</option>
                             <option value="0">Nữ</option>
                             <option value="2">Other</option>
@@ -86,34 +86,31 @@
                     </tr>
                     <tr>
                         <td><label>Id card</label></td>
-                        <td><input class="form-control" type="text" th:field="*{idCard}"></td>
+                        <td><input class="form-control" type="text" ></td>
                     </tr>
 
                     <tr>
                         <td><label>Number phone</label></td>
-                        <td><input class="form-control" type="text" th:field="*{phoneNumber}"></td>
+                        <td><input class="form-control" type="text" ></td>
                         <td>
-                            <div class="error text-danger col-6" role="alert"
-                                 th:if="${#fields.hasErrors('phoneNumber')}" th:errors="*{phoneNumber}"></div>
+                            <div class="error text-danger col-6" role="alert"></div>
                         </td>
 
                     </tr>
 
                     <tr>
                         <td><label>Email</label></td>
-                        <td><input class="form-control" type="text" th:field="*{email}"></td>
+                        <td><input class="form-control" type="text"></td>
                     </tr>
 
                     <tr>
                         <td><label>Address</label></td>
-                        <td><input class="form-control" type="text" th:field="*{address}"></td>
+                        <td><input class="form-control" type="text"></td>
                     </tr>
                     <tr>
                         <td><label>Customer type</label></td>
                         <td><select class="form-select" th:field="*{customerType}">
-                            <option th:each="item: ${customerTypeList}" th:value="${item.id}"
-                                    th:text="${item.nameCustomerType}">
-                            </option>
+                            <option></option>
                         </select></td>
                     </tr>
                     <tr>

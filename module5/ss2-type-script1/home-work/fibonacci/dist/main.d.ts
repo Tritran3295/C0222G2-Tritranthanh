@@ -1,2 +1,3 @@
 declare function fibonnacci(n: number): number;
-declare function display(): void;
+declare let m: number;
+declare let sum: number;
