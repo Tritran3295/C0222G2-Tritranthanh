@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e31f02ec-fee9-4e18-b279-744c8fb9386d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss1_tong_quan_spring_mvc/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss1_tong_quan_spring_mvc/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss2_spring_controller/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss2_spring_controller/practice/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case-study-module-5/contract/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../case-study-module-5/contract/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case-study-module-5/customer/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../case-study-module-5/customer/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case-study-module-5/customer/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../case-study-module-5/customer/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case-study-module-5/customer/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../case-study-module-5/customer/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case-study-module-5/facility/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../case-study-module-5/facility/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case-study-module-5/facility/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../case-study-module-5/facility/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../case-study-module-5/facility/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../case-study-module-5/facility/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2-type-script1/home-work/fibonacci/dist/main.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2-type-script1/home-work/fibonacci/dist/main.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2-type-script1/home-work/fibonacci/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2-type-script1/home-work/fibonacci/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2-type-script1/home-work/fibonacci/dist/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2-type-script1/home-work/fibonacci/dist/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2-type-script1/home-work/fibonacci/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2-type-script1/home-work/fibonacci/src/main.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2DLvEY8e6oCud2IYFNj1jQCOHXA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e31f02ec-fee9-4e18-b279-744c8fb9386d" name="Default Changelist" comment="" />
+      <created>1660491067482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660491067482</updated>
+      <workItem from="1660491068693" duration="914000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="579" y="172" key="FileChooserDialogImpl" timestamp="1660491965530">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="579" y="172" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1660491965530" />
+  </component>
+</project>

@@ -1,0 +1,71 @@
+
+<div class="container-fluid">
+  <div class="container-fluid mt-3" style="overflow: auto">
+    <table id="tableCustomer" class="table table-warning table-bordered" style="font-size: 12px; width: 100%">
+      <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name Customer</th>
+        <th>Day of birth</th>
+        <th>Gender</th>
+        <th>Id Card</th>
+        <th>Number Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Customer Type</th>
+        <th>Status</th>
+        <th>Option</th>
+        <th>Option</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1</td>
+        <td>Tài smile</td>
+        <td>19/9/1998</td>
+        <td>Other</td>
+        <td>190348853</td>
+        <td>0943739564</td>
+        <td>taismile9x@gmail</td>
+        <td>Đà Nẵng</td>
+        <td>Nhân viên quèn</td>
+        <td>Active</td>
+        <td>
+          <a href="edit.html">
+            <button type="submit" class="btn btn-warning">Edit</button>
+          </a>
+        </td>
+        <td>
+          <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdropDelete${temp.idCustomer}">Delete
+          </button>
+        </td>
+        <!-- Modal Delete -->
+        <div class="modal fade" id="staticBackdropDelete${temp.idCustomer}" data-bs-backdrop="static"
+             data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabelAddNew">Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="alert alert-warning">
+                  Do you want delete users
+                </div>
+                <a href="/customer?action=delete&id=${temp.idCustomer}" class="btn btn-success">Submit</a>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                </button>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+

@@ -1,0 +1,23 @@
+
+
+<div>
+  <form>
+    <fieldset>
+      <legend><h1>Calculator::</h1></legend>
+      <label>Number One:</label>
+      <input type="number" name="numberOne" [(ngModel)]="numberOne">
+      <br><br>
+      <label>Number Two:</label>
+      <input type="number" name="numberTwo" [(ngModel)]="numberTwo">
+      <br/>
+      <br/>
+      <button (click)="calculator($event.target.value)" value="+">Add (+)</button>
+      <button (click)="calculator($event.target.value)" value="-">Subtraction (-)</button>
+      <button (click)="calculator($event.target.value)" value="*">Multiply (x)</button>
+      <button (click)="calculator($event.target.value)" value="/">Divide (%)</button>
+      <br/>
+    </fieldset>
+    <br/>
+    <h2>Result : {{result}}</h2>
+  </form>
+</div>
