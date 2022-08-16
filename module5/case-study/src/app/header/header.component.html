@@ -1,7 +1,6 @@
-<div class="container-fluid text-white">
+<div class="container-fluid bg-success text-white" >
   <div class="col-12 row">
-    <div class="col-1 "><img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" style="width:75px;"
-                             class="rounded-pill"></div>
+    <div class="col-1 "><img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" style="width:75px;" class="rounded-pill"></div>
     <div class="col-11 ">
       <div class="col-lg-12 row">
         <div class="col-lg-10 text-center"><h1 style="color: sandybrown">Furama Management</h1></div>
@@ -11,28 +10,18 @@
       </div>
     </div>
   </div>
+  <div class="col-12 row " style="padding: 0px;width: 100%">
+    <nav class="navbar">
+      <div class="container-fluid text-white-50" style="background: #aaaaff">
+        <a routerLink="" class="navbar-brand" >Home</a>
+        <a routerLink="/list/customer" class="navbar-brand" >Customer</a>
+        <a routerLink="/list/facility" class="navbar-brand" >Service</a>
+        <a routerLink="/list/contract" class="navbar-brand" >Contract</a>
+        <form class="d-flex navbar-brand">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" width="100px">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
 </div>
-<nav class="navbar navbar-expand-lg navbar-dark "
-     style="background-color: #046056;position: sticky;top: 0;z-index: 1;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-  </div>
-  <div class="container-fluid">
-    <a class="navbar-brand" href="">Create Customer</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
-    </form>
-  </div>
-</nav>
