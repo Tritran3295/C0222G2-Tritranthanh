@@ -1,129 +1,128 @@
 
 <div class="container" id="card">
   <div class="row row-cols-1 row-cols-md-3 g-4" >
-    <div class="col">
+    <div class="col-4" *ngFor="let temp of facilityList">
       <div class="card">
         <img style=" border-radius:10px"
-             src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg"
+             [src]="temp.image"
              class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title">PHÒNG SUITE HƯỚNG BIỂN</h5>
+          <h5 class="card-title">{{temp.name}}</h5>
           <p class="card-text">
-            Diện Tích Phòng: 43.7m<sup>2</sup>
+            Diện Tích Phòng: {{temp.area}}<sup>2</sup>
           </p>
+        </div>
+        <div style="margin-bottom: 15px">
+          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>
+          <a>
+            <button routerLink="/edit/facility" style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>
+          </a>
+          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </div>
+<!--    <div class="col">-->
+<!--      <div class="card">-->
+<!--        <img style=" border-radius:10px"-->
+<!--             [src]=""-->
+<!--             class="card-img-top" alt="...">-->
+<!--        <div class="card-body">-->
+<!--          <h5 class="card-title">PHÒNG STUDIO HƯỚNG BIỂN</h5>-->
+<!--          <p class="card-text">-->
+<!--            Diện Tích Phòng: 43.7m<sup>2</sup>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div style="margin-bottom: 15px">-->
+<!--          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>-->
+<!--          <a>-->
+<!--            <button routerLink="/edit/facility"  style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>-->
+<!--          </a>-->
+<!--          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col">-->
+<!--      <div class="card">-->
+<!--        <img style=" border-radius:10px"-->
+<!--             src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Deluxe-double-bed-F-370x239.jpg"-->
+<!--             class="card-img-top" alt="...">-->
+<!--        <div class="card-body">-->
+<!--          <h5 class="card-title">Card title</h5>-->
+<!--          <p class="card-text">-->
+<!--            Diện Tích Phòng: 43.7m<sup>2</sup>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div style="margin-bottom: 15px">-->
+<!--          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>-->
+<!--          <a>-->
+<!--            <button routerLink="/edit/facility" style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>-->
+<!--          </a>-->
+<!--          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    <div class="col">-->
+<!--      <div class="card">-->
+<!--        <img style=" border-radius:10px"-->
+<!--             src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-F-370x239.jpg"-->
+<!--             class="card-img-top" alt="...">-->
+<!--        <div class="card-body">-->
+<!--          <h5 class="card-title">PHÒNG DELUXE HƯỚNG BIỂN</h5>-->
+<!--          <p class="card-text">-->
+<!--            Diện Tích Phòng: 43.7m<sup>2</sup>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div style="margin-bottom: 15px">-->
+<!--          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>-->
+<!--          <a>-->
+<!--            <button routerLink="/edit/facility" style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>-->
+<!--          </a>-->
+<!--          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
-        </div>
-        <div style="margin-bottom: 15px">
-          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>
-          <a>
-            <button routerLink="/edit/facility" style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>
-          </a>
-          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img style=" border-radius:10px"
-             src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Deluxe-double-bed-F-370x239.jpg"
-             class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">PHÒNG STUDIO HƯỚNG BIỂN</h5>
-          <p class="card-text">
-            Diện Tích Phòng: 43.7m<sup>2</sup>
-          </p>
-        </div>
-        <div style="margin-bottom: 15px">
-          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>
-          <a>
-            <button routerLink="/edit/facility"  style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>
-          </a>
-          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img style=" border-radius:10px"
-             src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Deluxe-double-bed-F-370x239.jpg"
-             class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">
-            Diện Tích Phòng: 43.7m<sup>2</sup>
-          </p>
-        </div>
-        <div style="margin-bottom: 15px">
-          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>
-          <a>
-            <button routerLink="/edit/facility" style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>
-          </a>
-          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img style=" border-radius:10px"
-             src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Lagoon-Superior-twin-bed-F-370x239.jpg"
-             class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">PHÒNG DELUXE HƯỚNG BIỂN</h5>
-          <p class="card-text">
-            Diện Tích Phòng: 43.7m<sup>2</sup>
-          </p>
-        </div>
-        <div style="margin-bottom: 15px">
-          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>
-          <a>
-            <button routerLink="/edit/facility" style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>
-          </a>
-          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>
-        </div>
-      </div>
-    </div>
+<!--    <div class="col">-->
+<!--      <div class="card">-->
+<!--        <img style=" border-radius:10px"-->
+<!--             src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Garden-Superior-TwinBed-1-F-370x239.jpg"-->
+<!--             class="card-img-top" alt="...">-->
+<!--        <div class="card-body">-->
+<!--          <h5 class="card-title">PHÒNG DELUXE HƯỚNG BIỂN</h5>-->
+<!--          <p class="card-text">-->
+<!--            Diện Tích Phòng: 43.7m<sup>2</sup>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div style="margin-bottom: 15px">-->
+<!--          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>-->
+<!--          <a>-->
+<!--            <button routerLink="/edit/facility" style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>-->
+<!--          </a>-->
+<!--          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
 
-    <div class="col">
-      <div class="card">
-        <img style=" border-radius:10px"
-             src="https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Garden-Superior-TwinBed-1-F-370x239.jpg"
-             class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">PHÒNG DELUXE HƯỚNG BIỂN</h5>
-          <p class="card-text">
-            Diện Tích Phòng: 43.7m<sup>2</sup>
-          </p>
-        </div>
-        <div style="margin-bottom: 15px">
-          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>
-          <a>
-            <button routerLink="/edit/facility" style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>
-          </a>
-          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="card">
-        <img style=" border-radius:10px"
-             src="https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Garden-Deluxe-twin-bed-F-370x239.jpg"
-             class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">PHÒNG DELUXE HƯỚNG VƯỜN</h5>
-          <p class="card-text">
-            Diện Tích Phòng: 43.7m<sup>2</sup>
-          </p>
-        </div>
-        <div style="margin-bottom: 15px">
-          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>
-          <a>
-            <button routerLink="/edit/facility" style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>
-          </a>
-          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>
-        </div>
-      </div>
-    </div>
+<!--    <div class="col">-->
+<!--      <div class="card">-->
+<!--        <img style=" border-radius:10px"-->
+<!--             src="https://furamavietnam.com/wp-content/uploads/2018/08/Vietnam_Danang_Furama_Garden-Deluxe-twin-bed-F-370x239.jpg"-->
+<!--             class="card-img-top" alt="...">-->
+<!--        <div class="card-body">-->
+<!--          <h5 class="card-title">PHÒNG DELUXE HƯỚNG VƯỜN</h5>-->
+<!--          <p class="card-text">-->
+<!--            Diện Tích Phòng: 43.7m<sup>2</sup>-->
+<!--          </p>-->
+<!--        </div>-->
+<!--        <div style="margin-bottom: 15px">-->
+<!--          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning">Detail</button>-->
+<!--          <a>-->
+<!--            <button routerLink="/edit/facility" style="border-radius: 10px ;margin-left: 90px" class="btn btn-warning"> Edit</button>-->
+<!--          </a>-->
+<!--          <button  style="border-radius: 10px ;margin-left: 90px" class="btn btn-danger">Delete</button>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
   </div>
 </div>
 <div class="vc_empty_space" style="height: 64px"><span class="vc_empty_space_inner"></span></div>
