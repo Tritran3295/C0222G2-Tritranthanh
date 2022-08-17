@@ -10,20 +10,19 @@
         <th>Customer</th>
         <th>Employee</th>
         <th>Facility</th>
-        <th>Status</th>
-        <th>Edit</th>
+        <th>Option</th>
       </tr>
       </thead>
       <tbody>
-      <tr>
-        <td>1</td>
-        <td>10/10/2022</td>
-        <td>10/11/2022</td>
-        <td>Nhà hàng</td>
-        <td>Phúc tóc dài</td>
-        <td>Đảm Biên Hoà</td>
-        <td>Villa 2 Front Beach</td>
-        <td>Active</td>
+      <tr *ngFor="let temp of contractList">
+        <td>{{temp.id}}</td>
+        <td>{{temp.startDate}}</td>
+        <td>{{temp.endDate}}</td>
+        <td>{{temp.deposit}}</td>
+        <td>{{temp.employee.nameEmloyee}}</td>
+        <td>{{temp.customer.nameCustomer}}</td>
+        <td>{{temp.facility.nameFacility}}</td>
+
         <td>
           <!-- Button trigger modal -->
           <button type="button" class="btn btn-primary" data-bs-toggle="modal"
@@ -140,6 +139,8 @@
 <script src="../datatables/js/jquery.dataTables.min.js"></script>
 <script src="../datatables/js/dataTables.bootstrap4.min.js"></script>
 <script>
+  import {$} from "protractor";
+
   $(document).ready(function () {
     $('#tableCustomer').dataTable({
       "dom": 'lrtip',

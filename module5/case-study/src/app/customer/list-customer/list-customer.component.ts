@@ -7,6 +7,7 @@ import {Customer} from '../../model/customer';
   styleUrls: ['./list-customer.component.css']
 })
 export class ListCustomerComponent implements OnInit {
+    delete = [] ;
     customerList: Customer[] = [];
   constructor() {
     this.customerList.push({
@@ -24,4 +25,13 @@ export class ListCustomerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  elementDelete(id: number, name: string) {
+    this.delete.push(id);
+    this.delete.push(name);
+    return this.delete;
+  }
+
+  deleteC(id) {
+    console.log(id);
+  }
 }
