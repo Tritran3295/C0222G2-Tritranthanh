@@ -1,0 +1,78 @@
+<h1 class="text-center">Register</h1>
+
+<form [formGroup]="registerFormReactive" (ngSubmit)="registerWithReactive()" class="container" novalidate>
+
+  <div>
+    <label class="form-label">Email</label>
+    <input type="text" class="form-control" formControlName="email" name="email" >
+  </div>
+  <div *ngIf="!email.valid && (email.dirty || email.touched)">
+    <div class="text-danger" [hidden]="!email.errors.required" > Email not required</div>
+    <div class="text-danger" [hidden]="!email.errors.minlength"> Email min length = 6</div>
+  </div>
+
+
+  <div formGroupName="pass">
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" formControlName="password"  id="password" name="password" >
+    </div>
+    <div *ngIf="!password.valid && (password.dirty || password.touched)">
+      <div class="text-danger" [hidden]="!password.errors.required">password not require</div>
+      <div class="text-danger" [hidden]="!password.errors.minlength">password length >6</div>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmPassword">confirm password</label>
+      <input type="password" class="form-control" formControlName="confirmPassword" id="confirmPassword" name="confirmPassword">
+    </div>
+    <div *ngIf="!confirmPassword.valid && (confirmPassword.dirty || confirmPassword.touched)">
+      <div class="text-danger" [hidden]="!confirmPassword.errors.required">password not require</div>
+      <div class="text-danger" [hidden]="!confirmPassword.errors.minlength">password length >6</div>
+    </div>
+  </div>
+
+
+  <div>
+    <label for="country"> Country</label>
+    <select formControlName="country" name="country" id="country" class="form-label">
+      <option  *ngFor="let c of countryList">
+        {{c.name}}
+      </option>
+    </select>
+  </div>
+  <div *ngIf="!country.valid && (country.dirty || country.touched)">
+    <div class="text-danger" [hidden]="!country.errors.require"> country not require</div>
+  </div>
+
+  <div>
+    <label class="form-label">Age</label>
+    <input type="text" class="form-control" formControlName="age" name="age">
+  </div>
+  <div *ngIf="!age.valid && (age.dirty || age.touched)">
+    <div class="text-danger" [hidden]="!age.errors.min"> age > 18 </div>
+  </div>
+
+  <p>
+    <label >Gender </label>
+    <input type="radio" value="male"  name="gender" formControlName="gender"> Male
+    <input type="radio" value="female"  name="gender" formControlName="gender"> Female
+  </p>
+  <div *ngIf="!gender.valid && (gender.dirty ||gender.touched)">
+    <div class="text-danger" [hidden]="!gender.errors.required">
+      gender is required
+    </div>
+  </div>
+
+  <div>
+    <label class="form-label">Phone</label>
+    <input type="text" class="form-control" formControlName="phone" name="phone">
+  </div>
+  <div *ngIf="!phone.valid && (phone.dirty || phone.touched)">
+    <div class="text-danger" [hidden]="!phone.errors.pattern">+84 + 9-10 số</div>
+  </div>
+
+  <button type="submit" [disabled]="!registerFormReactive.valid">Save</button>
+  <h3>{{message}}</h3>
+
+</form>

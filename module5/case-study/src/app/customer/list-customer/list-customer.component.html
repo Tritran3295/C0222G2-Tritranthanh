@@ -28,8 +28,8 @@
         <td>{{temp.address}}</td>
         <td>{{temp.customerType.nameCustomerType}}</td>
         <td>
-          <a routerLink="/edit/customer">
-            <button type="submit" class="btn btn-warning">Edit</button>
+          <a [routerLink]="['/edit/customer', temp.id]">
+            <button class="btn btn-warning">Edit</button>
           </a>
         </td>
         <td>
@@ -58,7 +58,7 @@
           </div>
           <div class="modal-body">
             <div>
-              Do you want delete users {{delete[1]}}
+              Do you want delete users <strong>{{delete[1]}}</strong>
             </div>
             <a class="btn btn-success">Submit</a>
             <button type="button" (click)="deleteC(delete[0])" class="btn btn-secondary" data-bs-dismiss="modal">Close

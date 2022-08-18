@@ -15,6 +15,7 @@ import {EditFacilityComponent} from './ficility/edit-facility/edit-facility.comp
 import {ListContractComponent} from './contract/list-contract/list-contract.component';
 import {EditContractComponent} from './contract/edit-contract/edit-contract.component';
 import {CreateContractComponent} from './contract/create-contract/create-contract.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 const routes: Routes = [{
   path: '',
@@ -26,7 +27,7 @@ const routes: Routes = [{
   path: 'create/customer',
   component: CreateCustomerComponent
 }, {
-  path: 'edit/customer',
+  path: 'edit/customer/:id',
   component: EditCustomerComponent
 }, {
   path: 'list/facility',
@@ -60,7 +61,9 @@ const routes: Routes = [{
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

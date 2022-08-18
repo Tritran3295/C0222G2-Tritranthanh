@@ -24,4 +24,7 @@ export class ListContractComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addContractDetail() {
+  }
+
 }
