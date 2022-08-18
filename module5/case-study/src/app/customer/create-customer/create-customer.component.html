@@ -5,7 +5,7 @@
   <br>
   <div class="row">
     <h2 class="text-center my-5">Create customer</h2>
-    <form>
+    <form [formGroup]="createCustomer" *ngFor="createCustomer" (ngSubmit)="createCustomer()">
       <div class="container">
         <table class="table table-striped">
           <thead>
