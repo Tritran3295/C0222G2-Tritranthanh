@@ -6,7 +6,7 @@
       <label>Email</label>
       <input name="email" type="email" class="form-control" formControlName="email">
       <small style="color: red" *ngIf="loginForm.controls.email.hasError('required') && loginForm.controls.email.touched">
-        Nhập vô đi đừng có nhác.
+        Please enter the email!
       </small>
       <small style="color: red" *ngIf="loginForm.controls.email.hasError('email') && loginForm.controls.email.touched">
         Email ko đúng định dạng

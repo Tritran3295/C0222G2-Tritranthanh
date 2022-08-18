@@ -24,9 +24,9 @@ export class LoginComponent implements OnInit {
 
   checkLogin() {
     if(this.loginForm.valid) {
-      this.message = "Success";
+      this.message = "Login Success";
     }else {
-      this.message = "Fail";
+      this.message = "Login Fail";
     }
   }
 
