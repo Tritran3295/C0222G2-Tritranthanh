@@ -12,7 +12,7 @@ export class RegisterComponent implements OnInit {
 
   constructor() {
     this.registerFormReactive = new FormGroup({
-      email: new FormControl('', [Validators.required, Validators.minLength(6)]),
+      email: new FormControl('', [Validators.email,Validators.required, Validators.minLength(6)]),
       pass: new FormGroup({
         password: new FormControl('', [Validators.required, Validators.minLength(6)]),
         confirmPassword: new FormControl('', [Validators.required, Validators.minLength(6)]),

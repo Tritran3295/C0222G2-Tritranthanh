@@ -8,6 +8,7 @@
   </div>
   <div *ngIf="!email.valid && (email.dirty || email.touched)">
     <div class="text-danger" [hidden]="!email.errors.required" > Email not required</div>
+    <div class="text-danger" [hidden]="!email.errors.email" > Email not valid</div>
     <div class="text-danger" [hidden]="!email.errors.minlength"> Email min length = 6</div>
   </div>
 
