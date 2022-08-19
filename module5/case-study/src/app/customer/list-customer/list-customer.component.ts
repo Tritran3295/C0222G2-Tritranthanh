@@ -23,6 +23,6 @@ export class ListCustomerComponent implements OnInit {
   }
 
   deleteC(id) {
-    console.log(id);
+    this.customer.delete(id);
   }
 }

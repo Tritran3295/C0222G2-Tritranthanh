@@ -58,4 +58,8 @@ export class CustomerService {
     }
     console.log(this.customerList);
   }
+  delete(id) {
+    const index = this.customerList.findIndex(customer => customer.id === id);
+    this.customerList.splice(index, 1);
+  }
 }

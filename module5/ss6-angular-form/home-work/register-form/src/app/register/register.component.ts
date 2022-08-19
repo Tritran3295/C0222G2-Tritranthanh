@@ -1,5 +1,5 @@
 import {Component, EventEmitter, OnInit, Output} from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {AbstractControl, FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   selector: 'app-register',
@@ -12,11 +12,11 @@ export class RegisterComponent implements OnInit {
 
   constructor() {
     this.registerFormReactive = new FormGroup({
-      email: new FormControl('', [Validators.email,Validators.required, Validators.minLength(6)]),
+      email: new FormControl('', [Validators.email, Validators.required, Validators.minLength(6)]),
       pass: new FormGroup({
         password: new FormControl('', [Validators.required, Validators.minLength(6)]),
         confirmPassword: new FormControl('', [Validators.required, Validators.minLength(6)]),
-      }),
+      },this.checkPasswords),
       country: new FormControl('', [Validators.required]),
       age: new FormControl('', [Validators.min(18)]),
       gender: new FormControl(),
@@ -67,12 +67,23 @@ export class RegisterComponent implements OnInit {
 
   message: string = '';
 
+  get pass() {
+    return this.registerFormReactive.get('pass');
+  }
   registerWithReactive() {
     if (this.registerFormReactive.valid) {
       this.message = 'Success';
     } else {
       this.message = 'Fail';
     }
+  }
+  checkPasswords(check: AbstractControl) {
+    const confirmPassword = check.value.confirmPassword;
+    const password = check.value.password;
+    if (confirmPassword !== password) {
+      return {checkPass: true};
+    }
+    return null;
   }
 }
 
@@ -85,3 +96,4 @@ export class country {
     this.name = name;
   }
 }
+
