@@ -30,4 +30,28 @@ export class ProductService {
   getAll() {
     return this.productList;
   }
+
+  save(product) {
+    this.productList.push(product);
+  }
+
+  update(product) {
+    for (let i = 0; i < this.productList.length; i++) {
+      if (this.productList[i].id === product.id) {
+        this.productList[i] = product;
+      }
+    }
+  }
+
+  findById(id) {
+    for (const item of this.productList) {
+      if (item.id === id) {
+        return item;
+      }
+    }
+  }
+  delete(id) {
+    const index = this.productList.findIndex(product => product.id === id);
+    this.productList.splice(index, 1);
+  }
 }
