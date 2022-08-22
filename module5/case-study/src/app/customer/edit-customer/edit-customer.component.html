@@ -17,6 +17,9 @@
             <td><label>Name</label></td>
             <td><input class="form-control" type="text" formControlName="name"></td>
           </tr>
+          <td *ngIf="customerForm.controls.name.hasError('required' ) && customerForm.controls.name.touched" class="text-danger">Tên Không được để trống</td>
+          <td *ngIf="customerForm.controls.name.hasError('pattern' )
+          && customerForm.controls.name.touched" class="text-danger">Viết hoa chữ cái đầu và không chứa số</td>
           <tr>
             <td><label>Day of birth</label></td>
             <td><input class="form-control" type="date" formControlName="dateOfBirth"></td>
@@ -33,21 +36,30 @@
             <td><label>Id card</label></td>
             <td><input class="form-control" type="text" formControlName="idCard"></td>
           </tr>
-
+          <div *ngIf="customerForm.controls.idCard.hasError('required') &&
+          customerForm.controls.idCard.touched" class="text-danger">Id Card không được để trống</div>
+          <div *ngIf="customerForm.controls.idCard.hasError('pattern') &&
+          customerForm.controls.idCard.touched" class="text-danger">9 HOặc 11 số</div>
           <tr>
             <td><label>Number phone</label></td>
             <td><input class="form-control" type="text" formControlName="phoneNumber"></td>
             <td>
               <div class="error text-danger col-6" role="alert"></div>
             </td>
-
           </tr>
+          <div *ngIf="customerForm.controls.phoneNumber.hasError('required') &&
+          customerForm.controls.phoneNumber.touched" class="text-danger">Số điện thoại không được để trống</div>
+          <div *ngIf="customerForm.controls.phoneNumber.hasError('pattern') &&
+          customerForm.controls.phoneNumber.touched" class="text-danger">SĐT bắt đầu bằng +84</div>
 
           <tr>
             <td><label>Email</label></td>
             <td><input class="form-control" type="text" formControlName="email"></td>
           </tr>
-
+          <div *ngIf="customerForm.controls.email.hasError('required') &&
+          customerForm.controls.email.touched" class="text-danger">Email không được để trống</div>
+          <div *ngIf="customerForm.controls.email.hasError('email') &&
+          customerForm.controls.email.touched" class="text-danger">Phải đúng định dạng Email</div>
           <tr>
             <td><label>Address</label></td>
             <td><input class="form-control" type="text" formControlName="address"></td>

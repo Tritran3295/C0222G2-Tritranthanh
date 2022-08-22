@@ -33,16 +33,23 @@
             <th><label>Id card</label></th>
             <td><input class="form-control" type="text" formControlName="idCard"></td>
           </tr>
-
+          <div *ngIf="customerForm.controls.idCard.hasError('required') &&
+          customerForm.controls.idCard.touched" class="text-danger">Id Card không được để trống</div>
+          <div *ngIf="customerForm.controls.idCard.hasError('pattern') &&
+          customerForm.controls.idCard.touched" class="text-danger">9 HOặc 11 số</div>
           <tr>
             <th><label>Number phone</label></th>
             <td><input class="form-control" type="number" formControlName="phoneNumber"></td>
           </tr>
-          <div *ngIf="customerForm.controls.phoneNumber.hasError('required') && customerForm.controls.phoneNumber.touched">ádsa</div>
+          <div *ngIf="customerForm.controls.phoneNumber.hasError('required') &&
+          customerForm.controls.phoneNumber.touched" class="text-danger">Số điện thoại không được để trống</div>
+          <div *ngIf="customerForm.controls.phoneNumber.hasError('pattern') &&
+          customerForm.controls.phoneNumber.touched" class="text-danger">SĐT bắt đầu bằng +84</div>
           <tr>
             <th><label>Email</label></th>
             <td><input class="form-control" type="text" formControlName="email"></td>
           </tr>
+
           <tr>
             <th><label>Address</label></th>
             <td><input class="form-control" type="text" formControlName="address"></td>

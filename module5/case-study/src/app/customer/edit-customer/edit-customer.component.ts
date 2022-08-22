@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {CustomerType} from '../../model/customer-type';
 import {Customer} from '../../model/customer';
 import {ParamMap, Route, Router} from '@angular/router';
@@ -25,14 +25,14 @@ export class EditCustomerComponent implements OnInit {
     this.customerTypeList = this.customerTypeService.customerTypeList;
     this.customerForm = new FormGroup({
       id: new FormControl(),
-      name: new FormControl(),
-      dateOfBirth: new FormControl(),
-      gender: new FormControl(),
-      idCard: new FormControl(),
-      phoneNumber: new FormControl(),
-      email: new FormControl(),
-      address: new FormControl(),
-      customerType: new FormControl(),
+      name: new FormControl('', [Validators.required, Validators.pattern('^([A-Z][^A-Z0-9\\\\s]+)(\\\\s[A-Z][^A-Z0-9\\\\s]+)*$')]),
+      dateOfBirth: new FormControl('', [Validators.required]),
+      gender: new FormControl('', [Validators.required]),
+      idCard: new FormControl('', [Validators.required,Validators.pattern('[0-9]{9,11}')]),
+      phoneNumber: new FormControl('', [Validators.required, Validators.pattern(/^([\+84]|[\+091]|[\+090])[0-9]{9,11}$/)]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      address: new FormControl('', [Validators.required]),
+      customerType: new FormControl(1)
     });
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
     const id = +paramMap.get('id');
