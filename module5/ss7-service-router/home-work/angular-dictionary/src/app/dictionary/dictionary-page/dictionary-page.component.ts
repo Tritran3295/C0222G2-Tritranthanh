@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Dictionary} from '../../model/dictionary';
 import {DictionaryService} from '../../service/dictionary.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-dictionary-page',
@@ -8,23 +9,13 @@ import {DictionaryService} from '../../service/dictionary.service';
   styleUrls: ['./dictionary-page.component.css']
 })
 export class DictionaryPageComponent implements OnInit {
-  dictionary: Dictionary = {
-    vietnamese: '',
-    english: ''
-  };
-  dictionaries: Dictionary [] = [];
-  constructor(private dictionaryService: DictionaryService) {
-    this.dictionaries = this.dictionaryService.findAll();
+  dictionaryList: Dictionary[] = [];
+
+  constructor(private dictionaryService: DictionaryService, private router: Router) {
+    this.dictionaryList = this.dictionaryService.findAll();
+    console.log("home");
   }
 
   ngOnInit(): void {
-  }
-  translate(value: string) {
-    value = value.toLowerCase();
-    if (this.dictionaries.filter((data) => data.vietnamese.toLowerCase() === value)[0] !== undefined) {
-      this.dictionary = this.dictionaries.filter((data) => data.vietnamese.toLowerCase() === value)[0];
-    }else {
-      this.dictionary.english = 'Not found';
-    }
   }
 }

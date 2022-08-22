@@ -13,12 +13,15 @@ export class DictionaryService {
       {vietnamese: 'mèo', english: 'Cat'},
       {vietnamese: 'chuột', english: 'mouse'},
       {vietnamese: 'gà', english: 'chicken'},
-      {vietnamese: 'horse', english: 'ngựa'},
+      {vietnamese: 'ngựa', english: 'horse'},
       {vietnamese: 'Tài', english: 'Biên Hoà'}
     );
   }
 
   findAll() {
     return this.dictionaries;
+  }
+  getDetail(english: string) {
+    return this.dictionaries.find(dictionary =>dictionary.english === english)
   }
 }

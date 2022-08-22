@@ -1,8 +1,24 @@
-<div class="container text-center">
-  <h1>Dictionary</h1>
-</div>
-<div class="container">
-  <label for="word" class="form-label"></label>
-  <input type="text" id="word" class="form-control" (input)="translate($event.target.value)">
-  result: {{dictionary.english}}
-</div>
+<!--<div class="container text-center">-->
+<!--  <h1>Dictionary</h1>-->
+<!--</div>-->
+<!--<div class="container">-->
+<!--  <label for="word" class="form-label"></label>-->
+<!--  <input type="text" id="word" class="form-control" (input)="translate($event.target.value)">-->
+<!--  result: {{dictionary.english}}-->
+<!--</div>-->
+<!--<button>Detail</button>-->
+<h1>List word english</h1>
+<table border="1">
+  <tr>
+    <th>English</th>
+    <th>VietNam</th>
+    <th>Option</th>
+  </tr>
+  <tr *ngFor="let temp of dictionaryList">
+    <td>{{temp.english}}</td>
+    <td>{{temp.vietnamese}}</td>
+    <td>
+      <a href="" [routerLink]="['/detail',temp.english]">Detail</a>
+    </td>
+  </tr>
+</table>
