@@ -1,4 +1,4 @@
-<div class="container-fluid" style="height: 500px;">
+<div class="container-fluid">
   <div class="container-fluid mt-3" style="overflow: auto">
     <a routerLink="/create/customer">Create</a>
     <table id="tableCustomer" class="table table-warning table-bordered" style="font-size: 12px; width: 100%">
@@ -56,11 +56,11 @@
           </div>
           <div class="modal-body">
             <div>
-              Do you want delete users <strong>{{delete[1]}}</strong>
+              Do you want delete customer <strong>{{delete[1]}}</strong>
             </div>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
             </button>
-            <buttuon (click)="deleteC(delete[0])" class="btn btn-danger" data-bs-dismiss="modal">delete</buttuon>
+            <button (click)="deleteC(delete[0])" class="btn btn-danger" data-bs-dismiss="modal">delete</button>
           </div>
           <div class="modal-footer"></div>
         </div>

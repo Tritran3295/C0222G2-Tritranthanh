@@ -1,83 +1,59 @@
-
 <h1 class="title">Create Service</h1>
-<div action="/facility/create" method="post" >
-  <div class="form-group">
-    <label for="nameFacility">Name Facility</label>
-    <input type="text" class="form-control" id="nameFacility" required>
+<form [formGroup]="facilityForm" (ngSubmit)="createFacility()" *ngIf="facilityForm">
+  <div>
+    <div class="form-group">
+      <label for="nameFacility">Name Facility</label>
+      <input type="text" class="form-control" id="nameFacility" formControlName="name" required>
+    </div>
+    <div class="form-group">
+      <label for="area">Area</label>
+      <input type="text" class="form-control" id="area" formControlName="area" required>
+    </div>
+    <div class="form-group">
+      <label for="cost">Cost</label>
+      <input type="text" class="form-control" id="cost" formControlName="cost" required>
+    </div>
+    <div class="form-group">
+      <label for="maxPeople">Max People</label>
+      <input type="text" class="form-control" id="maxPeople" formControlName="maxPeople" required>
+    </div>
+    <div class="form-group">
+      <label for="maxPeople">Image</label>
+      <input type="text" class="form-control" id="image" formControlName="image" required>
+    </div>
+    <div class="form-group">
+      <label>Rent Type</label>
+      <select class="form-select" formControlName="rentType">
+        <option *ngFor="let temp of rentTypeList" [ngValue]="temp">{{temp.name}}</option>
+      </select>
+    </div>
+    <div class="form-field col-lg-6">
+      <label>Facility Type</label>
+      <select id="choiceFacilityType" class="form-select" (change)="selectFacility()" formControlName="facilityType">
+        <option *ngFor="let fac of facilityType" value="{{fac.id}}">{{fac.name}}</option>
+      </select>
+    </div>
+    <div class="form-group" id="standardRoom"  style="display: none">
+      <input class="input-text js-input" formControlName="standardRoom" type="text">
+      <label class="label" for="standardRoom">Standard Room</label>
+    </div>
+    <div class="form-field col-lg-6 " id="poolArea"  style="display: none">
+      <input class="input-text js-input" type="text" formControlName="poolArea">
+      <label class="label" for="poolArea">Pool Area</label>
+    </div>
+    <div class="form-field col-lg-6 " id="descriptionConvenience"  style="display: none">
+      <input class="input-text js-input" type="text" formControlName="descriptionOther">
+      <label class="label" for="descriptionConvenience">Description Other</label>
+    </div>
+    <div class="form-field col-lg-6" id="numberOfFloor"  style="display: none">
+      <input class="input-text js-input" type="text" formControlName="numberFloor">
+      <label class="label" for="numberOfFloor">Number Of Floors</label>
+    </div>
+    <div class="form-field col-lg-6" id="facilityFree"  style="display: none">
+      <input class="input-text js-input" type="text" formControlName="facilityFree">
+      <label class="label" for="facilityFree" >Facility Free</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-secondary" href="" routerLink="/list/facility">Back</a>
   </div>
-  <div class="form-group">
-    <label for="area">Area</label>
-    <input type="text" class="form-control" id="area"  required>
-  </div>
-  <div class="form-group">
-    <label for="cost">Cost</label>
-    <input type="text" class="form-control" id="cost"  required>
-  </div>
-  <div class="form-group">
-    <label for="maxPeople">Max People</label>
-    <input type="text" class="form-control" id="maxPeople"  required>
-  </div>
-  <div class="form-group">
-    <select class="form-select" >
-      <option value="">Ren Type List</option>
-      <option></option>
-    </select>
-  </div>
-  <div class="form-field col-lg-6">
-    <select id="choiceFacilityType" class="form-select" onchange="selectFacility()">
-      <option value="">Facility List</option>
-      <option></option>
-    </select>
-  </div>
-  <div class="form-group" id="standardRoom" style="display: none">
-    <input  class="input-text js-input" type="text"  >
-    <label class="label" for="standardRoom">Standard Room</label>
-  </div>
-  <div class="form-field col-lg-6 "  id="poolArea" style="display: none">
-    <input class="input-text js-input" type="text"  >
-    <label class="label" for="poolArea">Pool Area</label>
-  </div>
-  <div class="form-field col-lg-6 " id="descriptionConvenience" style="display: none">
-    <input  class="input-text js-input" type="text"  >
-    <label class="label" for="descriptionConvenience">Description Other</label>
-  </div>
-  <div class="form-field col-lg-6" id="numberOfFloor" style="display: none">
-    <input  class="input-text js-input" type="text"  >
-    <label class="label" for="numberOfFloor">Number Of Floors</label>
-  </div>
-  <div class="form-field col-lg-6" id="facilityFree" style="display: none">
-    <input  class="input-text js-input" type="text" >
-    <label class="label" for="facilityFree">Facility Free</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-  <a class="btn btn-secondary" href="home.html">Back</a>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-  function selectFacility() {
-    let getValue = $('#choiceFacilityType').val()
-    switch (getValue) {
-      case '1':
-        $('#standardRoom').show()
-        $('#descriptionConvenience').show()
-        $('#poolArea').show()
-        $('#numberOfFloor').show()
-        $('#facilityFree').hide()
-        break;
-      case '2':
-        $('#standardRoom').show()
-        $('#descriptionConvenience').show()
-        $('#poolArea').hide()
-        $('#numberOfFloor').show()
-        $('#facilityFree').hide()
-        break;
-      case '3':
-        $('#standardRoom').hide()
-        $('#descriptionConvenience').hide()
-        $('#poolArea').hide()
-        $('#numberOfFloor').hide()
-        $('#facilityFree').show()
-        break;
-    }
-  }
-</script>
+</form>

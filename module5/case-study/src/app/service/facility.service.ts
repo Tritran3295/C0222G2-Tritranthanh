@@ -58,4 +58,21 @@ export class FacilityService {
   getAllFacility() {
     return this.facilityList;
   }
+
+  findById(id: number) {
+    for (let item of this.facilityList) {
+      if (item.id === id) {
+        return item;
+      }
+    }
+  }
+
+  save(facility: Facility) {
+    this.facilityList.push(facility);
+  }
+
+  delete(id) {
+    const index = this.facilityList.findIndex(facility => facility.id === id);
+    this.facilityList.splice(index, 1);
+  }
 }

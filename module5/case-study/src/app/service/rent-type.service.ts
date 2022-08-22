@@ -1,14 +1,13 @@
 import {Injectable} from '@angular/core';
 import {RentType} from '../model/rent-type';
+import {Observable, of} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RentTypeService {
-  rentTypeList: RentType[] = [];
-
-  constructor() {
-    this.rentTypeList.push({
+  rentTypeList: RentType[] = [
+    {
       id: 1,
       name: 'Year'
     }, {
@@ -20,6 +19,13 @@ export class RentTypeService {
     }, {
       id: 2,
       name: 'Hour'
-    });
+    }
+  ];
+
+  constructor() {
+  }
+
+  getAllRentType(): Observable<RentType[]> {
+    return of(this.rentTypeList);
   }
 }

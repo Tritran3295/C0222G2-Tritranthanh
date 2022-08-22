@@ -13,6 +13,7 @@ import {CustomerTypeService} from '../../service/customer-type.service';
 export class CreateCustomerComponent implements OnInit {
   customerForm: FormGroup;
   customerTypeList: CustomerType[] = [];
+
   constructor(private customer: CustomerService,
               private router: Router,
               private customerType: CustomerTypeService) {
@@ -22,17 +23,16 @@ export class CreateCustomerComponent implements OnInit {
     this.customerTypeList = this.customerType.customerTypeList;
     this.customerForm = new FormGroup({
       id: new FormControl(),
-      name: new FormControl(),
-      dateOfBirth: new FormControl(),
-      gender: new FormControl(),
-      idCard: new FormControl(),
-      phoneNumber: new FormControl(),
-      email: new FormControl(),
-      address: new FormControl(),
+      name: new FormControl('', [Validators.required, Validators.pattern('^([A-Z][^A-Z0-9\\\\s]+)(\\\\s[A-Z][^A-Z0-9\\\\s]+)*$')]),
+      dateOfBirth: new FormControl('', [Validators.required]),
+      gender: new FormControl('', [Validators.required]),
+      idCard: new FormControl('', [Validators.required,Validators.pattern('[0-9]{9,11}')]),
+      phoneNumber: new FormControl('', [Validators.required, Validators.pattern(/^([\+84]|[\+091]|[\+090])[0-9]{9,11}$/)]),
+      email: new FormControl('', [Validators.required, Validators.email]),
+      address: new FormControl('', [Validators.required]),
       customerType: new FormControl(1)
     });
   }
-
   createCustomer() {
     const customer = this.customerForm.value;
     console.log(customer);
@@ -40,3 +40,4 @@ export class CreateCustomerComponent implements OnInit {
     this.router.navigateByUrl('/list/customer');
   }
 }
+

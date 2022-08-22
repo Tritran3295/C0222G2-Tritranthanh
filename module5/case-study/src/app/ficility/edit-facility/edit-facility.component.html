@@ -1,66 +1,59 @@
-<h1 class="title">Edit Service</h1>
-<div class=" container-fluid">
+<h1 class="title">Edit  Service</h1>
+<form [formGroup]="facilityForm" (ngSubmit)="editFacility()" *ngIf="facilityForm">
   <div>
     <div class="form-group">
-      <label for="nameFacility">Id</label>
-      <input type="text" class="form-control" id="id" readonly>
-    </div>
-    <div class="form-group">
       <label for="nameFacility">Name Facility</label>
-      <input type="text" class="form-control" id="nameFacility" required>
+      <input type="text" class="form-control" id="nameFacility" formControlName="name" required>
     </div>
     <div class="form-group">
       <label for="area">Area</label>
-      <input type="text" class="form-control" id="area"  required>
+      <input type="text" class="form-control" id="area" formControlName="area" required>
     </div>
     <div class="form-group">
       <label for="cost">Cost</label>
-      <input type="text" class="form-control" id="cost" required>
+      <input type="text" class="form-control" id="cost" formControlName="cost" required>
     </div>
     <div class="form-group">
       <label for="maxPeople">Max People</label>
-      <input type="text" class="form-control" id="maxPeople" required>
+      <input type="text" class="form-control" id="maxPeople" formControlName="maxPeople" required>
     </div>
     <div class="form-group">
-      <select class="form-select">
-        <option value="">Rent Type List</option>
-        <option value="">Ngày</option>
-        <option value="">Giờ</option>
-        <option value="">Phút</option>
-      </select>
+      <label for="maxPeople">Image</label>
+      <input type="text" class="form-control" id="image" formControlName="image" required>
     </div>
     <div class="form-group">
-      <select id="choiceFacilityType" class="form-select" onchange="selectFacility()">
-        <option value="">Facility List</option>
-        <option value="1">Villa</option>
-        <option value="2">Room</option>
-        <option value="3">House</option>
+      <label>Rent Type</label>
+      <select class="form-select" formControlName="rentType">
+        <option *ngFor="let temp of rentTypeList" [ngValue]="temp">{{temp.name}}</option>
       </select>
     </div>
-    <div class="form-group" id="standardRoom" style="display: none">
-      <input class="input-text js-input" type="text" >
+    <div class="form-field col-lg-6">
+      <label>Facility Type</label>
+      <select id="choiceFacilityType" class="form-select" (change)="selectFacility()" formControlName="facilityType">
+        <option *ngFor="let fac of facilityType" value="{{fac.id}}">{{fac.name}}</option>
+      </select>
+    </div>
+    <div class="form-group" id="standardRoom" formControlName="standardRoom" style="display: none">
+      <input class="input-text js-input" type="text">
       <label class="label" for="standardRoom">Standard Room</label>
     </div>
-    <div class="form-field col-lg-6 " id="poolArea" style="display: none">
-      <input class="input-text js-input" type="text" >
+    <div class="form-field col-lg-6 " id="poolArea" formControlName="poolArea" style="display: none">
+      <input class="input-text js-input" type="text">
       <label class="label" for="poolArea">Pool Area</label>
     </div>
-    <div class="form-field col-lg-6 " id="descriptionConvenience" style="display: none">
+    <div class="form-field col-lg-6 " id="descriptionConvenience" formControlName="descriptionOther" style="display: none">
       <input class="input-text js-input" type="text">
       <label class="label" for="descriptionConvenience">Description Other</label>
     </div>
-    <div class="form-field col-lg-6" id="numberOfFloor" style="display: none">
-      <input class="input-text js-input" type="text" >
+    <div class="form-field col-lg-6" id="numberOfFloor" formControlName="numberFloor" style="display: none">
+      <input class="input-text js-input" type="text">
       <label class="label" for="numberOfFloor">Number Of Floors</label>
     </div>
-    <div class="form-field col-lg-6" id="facilityFree" style="display: none">
+    <div class="form-field col-lg-6" id="facilityFree"  style="display: none">
       <input class="input-text js-input" type="text">
-      <label class="label" for="facilityFree">Facility Free</label>
+      <label class="label" for="facilityFree" formControlName="facilityFree">Facility Free</label>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
-    <a class="btn btn-secondary" routerLink="/list/facility">Back</a>
+    <a class="btn btn-secondary" href="" routerLink="/list/facility">Back</a>
   </div>
-</div>
-
-
-
+</form>

@@ -13,26 +13,32 @@
             <th><label>Name</label></th>
             <td><input class="form-control" type="text" formControlName="name"></td>
           </tr>
+          <td *ngIf="customerForm.controls.name.hasError('required' ) && customerForm.controls.name.touched" class="text-danger">Tên Không được để trống</td>
+          <td *ngIf="customerForm.controls.name.hasError('pattern' )
+          && customerForm.controls.name.touched" class="text-danger">Viết hoa chữ cái đầu và không chứa số</td>
           <tr>
             <th><label>Day of birth</label></th>
             <td><input class="form-control" type="date" formControlName="dateOfBirth"></td>
           </tr>
           <tr>
             <th><label>Gender</label></th>
-            <td><select class="form-select">
-              <option value="1">Nam</option>
-              <option value="0">Nữ</option>
-              <option value="2">Other</option>
+            <td><select class="form-select" formControlName="gender" name="gender">
+              <option [value]="1">Nam</option>
+              <option [value]="0">Nữ</option>
+              <option [value]="2">Other</option>
             </select></td>
           </tr>
+
           <tr>
             <th><label>Id card</label></th>
             <td><input class="form-control" type="text" formControlName="idCard"></td>
           </tr>
+
           <tr>
             <th><label>Number phone</label></th>
-            <td><input class="form-control" type="text" formControlName="phoneNumber"></td>
+            <td><input class="form-control" type="number" formControlName="phoneNumber"></td>
           </tr>
+          <div *ngIf="customerForm.controls.phoneNumber.hasError('required') && customerForm.controls.phoneNumber.touched">ádsa</div>
           <tr>
             <th><label>Email</label></th>
             <td><input class="form-control" type="text" formControlName="email"></td>

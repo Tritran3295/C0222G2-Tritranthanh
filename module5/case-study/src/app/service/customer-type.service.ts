@@ -9,13 +9,13 @@ export class CustomerTypeService {
   constructor() {
     this.customerTypeList.push({
       id: 1,
-      nameCustomerType: 'Nhân viên quèn',
+      nameCustomerType: 'Diamond',
     }, {
       id: 2,
-      nameCustomerType: 'Kế Toán tính nhầm'
+      nameCustomerType: 'Gold'
     }, {
       id: 2,
-      nameCustomerType: 'Trưởng phòng hay quên'
+      nameCustomerType: 'Silver'
     });
   }
 }
