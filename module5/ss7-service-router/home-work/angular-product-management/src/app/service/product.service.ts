@@ -31,11 +31,11 @@ export class ProductService {
     return this.productList;
   }
 
-  save(product) {
+  save(product: Product) {
     this.productList.push(product);
   }
 
-  update(product) {
+  update(product: Product) {
     for (let i = 0; i < this.productList.length; i++) {
       if (this.productList[i].id === product.id) {
         this.productList[i] = product;
@@ -43,14 +43,14 @@ export class ProductService {
     }
   }
 
-  findById(id) {
+  findById(id: number) {
     for (const item of this.productList) {
       if (item.id === id) {
         return item;
       }
     }
   }
-  delete(id) {
+  delete(id: number) {
     const index = this.productList.findIndex(product => product.id === id);
     this.productList.splice(index, 1);
   }

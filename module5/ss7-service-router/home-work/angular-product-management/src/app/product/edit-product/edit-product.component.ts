@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 import {Product} from '../../model/product';
 import {ProductService} from '../../service/product.service';
@@ -13,9 +13,11 @@ import {ActivatedRoute} from '@angular/router';
 export class EditProductComponent implements OnInit {
   productForm: FormGroup;
   product: Product;
+
   constructor(private productService: ProductService,
               private router: Router,
-              private activatedRoute: ActivatedRoute) { }
+              private activatedRoute: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
     this.productForm = new FormGroup({

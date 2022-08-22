@@ -21,10 +21,13 @@
       <div class="text-danger" [hidden]="!password.errors.required">password not require</div>
       <div class="text-danger" [hidden]="!password.errors.minlength">password length >6</div>
     </div>
-
     <div class="form-group">
       <label for="confirmPassword">confirm password</label>
       <input type="password" class="form-control" formControlName="confirmPassword" id="confirmPassword" name="confirmPassword">
+    </div>
+    <div *ngIf="!confirmPassword.valid && (confirmPassword.dirty || confirmPassword.touched)">
+      <div class="text-danger" [hidden]="!confirmPassword.errors.required">password not require</div>
+      <div class="text-danger" [hidden]="!confirmPassword.errors.minlength">password length >6</div>
     </div>
     <div *ngIf="!pass.valid && (confirmPassword.dirty || confirmPassword.touched)">
       <p class="text-danger">Not match with password</p>
