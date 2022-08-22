@@ -4,6 +4,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {CustomerType} from '../../model/customer-type';
 import {Router} from '@angular/router';
 import {CustomerTypeService} from '../../service/customer-type.service';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-create-customer',
@@ -16,7 +17,8 @@ export class CreateCustomerComponent implements OnInit {
 
   constructor(private customer: CustomerService,
               private router: Router,
-              private customerType: CustomerTypeService) {
+              private customerType: CustomerTypeService,
+              ) {
   }
 
   ngOnInit(): void {
@@ -38,6 +40,7 @@ export class CreateCustomerComponent implements OnInit {
     console.log(customer);
     this.customer.save(customer);
     this.router.navigateByUrl('/list/customer');
+
   }
 }
 

@@ -1,9 +1,10 @@
 import {Component, OnInit} from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
+import {ProductService} from 'src/app/service/product.service';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
+import {CategoryService} from '../../service/category.service';
+import {Category} from '../../model/category';
 import {Product} from '../../model/product';
-import {ProductService} from '../../service/product.service';
-import {ParamMap, Router} from '@angular/router';
-import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-edit-product',
@@ -11,32 +12,47 @@ import {ActivatedRoute} from '@angular/router';
   styleUrls: ['./edit-product.component.css']
 })
 export class EditProductComponent implements OnInit {
+  categores: Category[] = [];
   productForm: FormGroup;
-  product: Product;
+  id: number;
 
   constructor(private productService: ProductService,
-              private router: Router,
-              private activatedRoute: ActivatedRoute) {
+              private activatedRoute: ActivatedRoute,
+              private categoryService: CategoryService,
+              private router: Router) {
   }
 
-  ngOnInit(): void {
-    this.productForm = new FormGroup({
-      id: new FormControl(),
-      name: new FormControl(),
-      price: new FormControl(),
-      description: new FormControl(),
+  ngOnInit() {
+    this.categoryService.getAll().subscribe(next => {
+      this.categores = next;
     });
     this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
-      const id = +paramMap.get('id');
-      this.product = this.productService.findById(id);
-      this.productForm.patchValue(this.product);
+      this.id = +paramMap.get('id');
+      this.getProduct(this.id);
     });
   }
 
-  editProduct() {
+  getProduct(id: number) {
+    this.productService.findById(id).subscribe(product => {
+      this.productForm = new FormGroup({
+        id: new FormControl(product.id),
+        name: new FormControl(product.name),
+        price: new FormControl(product.price),
+        description: new FormControl(product.description),
+      });
+    });
+  }
+
+  updateProduct(id: number) {
     const product = this.productForm.value;
-    this.productService.update(product);
-    this.router.navigateByUrl('/list/product');
+    // tslint:disable-next-line:radix
+    this.categoryService.findById(parseInt(this.productForm.value.name)).subscribe(next => {
+      product.name = next;
+      this.productService.updateProduct(id, product).subscribe(() => {
+        this.productForm.reset();
+        alert(' Create success');
+        this.router.navigateByUrl('/product/list');
+      });
+    });
   }
 }
-

@@ -16,6 +16,7 @@ import {ListContractComponent} from './contract/list-contract/list-contract.comp
 import {EditContractComponent} from './contract/edit-contract/edit-contract.component';
 import {CreateContractComponent} from './contract/create-contract/create-contract.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {ToastrModule} from 'ngx-toastr';
 
 const routes: Routes = [{
   path: '',
@@ -63,7 +64,8 @@ const routes: Routes = [{
     BrowserModule,
     RouterModule.forRoot(routes),
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -1,0 +1,73 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": {
+        "id": 2,
+        "name": "Samsung"
+      },
+      "price": 123,
+      "description": "123"
+    },
+    {
+      "id": 2,
+      "name": {
+        "id": 3,
+        "name": "LG"
+      },
+      "price": 123567657,
+      "description": "676575767"
+    },
+    {
+      "id": 3,
+      "name": {
+        "id": 2,
+        "name": "Samsung"
+      },
+      "price": 123,
+      "description": "123"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Iphone"
+    },
+    {
+      "id": 2,
+      "name": "Samsung"
+    },
+    {
+      "id": 3,
+      "name": "LG"
+    },
+    {
+      "id": 4,
+      "name": "Xiaomi"
+    },
+    {
+      "id": 5,
+      "name": "Oppo"
+    },
+    {
+      "id": 7,
+      "name": "Rog Phone"
+    },
+    {
+      "id": 8,
+      "name": "213"
+    },
+    {
+      "id": 9,
+      "name": "FFFF"
+    },
+    {
+      "id": 10,
+      "name": "RRRRR"
+    },
+    {
+      "id": 11,
+      "name": "13213"
+    }
+  ]
+}

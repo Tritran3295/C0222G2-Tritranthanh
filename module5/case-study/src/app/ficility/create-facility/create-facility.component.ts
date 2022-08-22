@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {RentType} from '../../model/rent-type';
 import {FacilityType} from '../../model/facility-type';
 import {Router} from '@angular/router';
@@ -37,16 +37,16 @@ export class CreateFacilityComponent implements OnInit {
   createForm() {
     this.facilityForm = new FormGroup({
       id: new FormControl(),
-      name: new FormControl(),
-      area: new FormControl(),
-      cost: new FormControl(),
-      maxPeople: new FormControl(),
-      image: new FormControl(),
-      standardRoom: new FormControl(),
-      descriptionOther: new FormControl(),
-      poolArea: new FormControl(),
-      numberFloor: new FormControl(),
-      facilityFree: new FormControl(),
+      name: new FormControl('', [Validators.required]),
+      area: new FormControl('', [Validators.required, Validators.min(15)]),
+      cost: new FormControl('', [Validators.required]),
+      maxPeople: new FormControl('', [Validators.required]),
+      image: new FormControl('',[Validators.required]),
+      standardRoom: new FormControl('', [Validators.required]),
+      descriptionOther: new FormControl('', [Validators.required]),
+      poolArea: new FormControl('', [Validators.required, Validators.min(1)]),
+      numberFloor: new FormControl('', [Validators.required, Validators.min(1)]),
+      facilityFree: new FormControl('', [Validators.required]),
       rentType: new FormControl(1),
       facilityType: new FormControl(1),
     });
