@@ -31,7 +31,7 @@ export class ProductComponent implements OnInit {
     this.valueDelete.push(name);
   }
 
-  private getALl() {
+  getALl() {
     this.productService.getAll().subscribe(products => {
       this.productList = products;
     });
