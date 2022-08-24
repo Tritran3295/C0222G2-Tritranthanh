@@ -1,0 +1,106 @@
+<h1 class="title">Create Service</h1>
+<form [formGroup]="facilityForm" (ngSubmit)="createFacility()" *ngIf="facilityForm">
+  <div>
+    <!--    <div class="form-group">-->
+    <!--      <label for="nameFacility">Id</label>-->
+    <!--      <input type="text" class="form-control" id="id" formControlName="id" required>-->
+    <!--    </div>-->
+    <div class="form-group">
+      <label for="nameFacility">Name Facility</label>
+      <input type="text" class="form-control" id="nameFacility" formControlName="name" required>
+    </div>
+    <td *ngIf="facilityForm.controls.name.hasError('required' ) && facilityForm.controls.name.touched"
+        class="text-danger">Tên Không được để trống
+    </td>
+    <div class="form-group">
+      <label for="area">Area</label>
+      <input type="text" class="form-control" id="area" formControlName="area" required>
+    </div>
+    <td *ngIf="facilityForm.controls.area.hasError('required' ) && facilityForm.controls.area.touched"
+        class="text-danger">Area Không được để trống
+    </td>
+    <td *ngIf="facilityForm.controls.area.hasError('min' ) && facilityForm.controls.area.touched" class="text-danger">
+      Area diện tích không được nhỏ hơn 15
+    </td>
+    <div class="form-group">
+      <label for="cost">Cost</label>
+      <input type="text" class="form-control" id="cost" formControlName="cost" required>
+    </div>
+    <td *ngIf="facilityForm.controls.cost.hasError('required' ) && facilityForm.controls.cost.touched"
+        class="text-danger">Cost Không được để trống
+    </td>
+    <div class="form-group">
+      <label for="maxPeople">Max People</label>
+      <input type="text" class="form-control" id="maxPeople" formControlName="maxPeople" required>
+    </div>
+    <td *ngIf="facilityForm.controls.maxPeople.hasError('required' ) && facilityForm.controls.maxPeople.touched"
+        class="text-danger">Max People Không được để trống
+    </td>
+    <div class="form-group">
+      <label for="maxPeople">Image</label>
+      <input type="text" class="form-control" id="image" formControlName="image" required>
+    </div>
+    <td *ngIf="facilityForm.controls.image.hasError('required' ) && facilityForm.controls.image.touched"
+        class="text-danger">Image Không được để trống
+    </td>
+    <div class="form-group">
+      <label>Rent Type</label>
+      <select class="form-select" formControlName="rentType">
+        <option *ngFor="let temp of rentTypeList" [ngValue]="temp">{{temp.name}}</option>
+      </select>
+    </div>
+    <td *ngIf="facilityForm.controls.rentType.hasError('required' ) && facilityForm.controls.rentType.touched"
+        class="text-danger">Rent Type Không được để trống
+    </td>
+    <div class="form-field col-lg-6">
+      <label>Facility Type</label>
+      <select id="choiceFacilityType" class="form-select" (change)="selectFacility()" formControlName="facilityType">
+        <option *ngFor="let fac of facilityType" [ngValue]="fac">{{fac.name}}</option>
+      </select>
+    </div>
+    <td *ngIf="facilityForm.controls.facilityType.hasError('required' ) && facilityForm.controls.facilityType.touched"
+        class="text-danger">Facility Type Không được để trống
+    </td>
+    <div class="form-group" id="standardRoom" style="display: none">
+      <input class="input-text js-input" formControlName="standardRoom" type="text">
+      <label class="label" for="standardRoom">Standard Room</label>
+    </div>
+    <td *ngIf="facilityForm.controls.standardRoom.hasError('required' ) && facilityForm.controls.standardRoom.touched"
+        class="text-danger">Standard Room Không được để trống
+    </td>
+    <div class="form-field col-lg-6 " id="poolArea" style="display: none">
+      <input class="input-text js-input" type="text" formControlName="poolArea">
+      <label class="label" for="poolArea">Pool Area</label>
+    </div>
+    <td *ngIf="facilityForm.controls.poolArea.hasError('required' ) && facilityForm.controls.poolArea.touched"
+        class="text-danger">Pool Area Không được để trống
+    </td>
+    <td *ngIf="facilityForm.controls.poolArea.hasError('min' ) && facilityForm.controls.poolArea.touched"
+        class="text-danger">Pool Area Không được bé hơn 1
+    </td>
+    <div class="form-field col-lg-6 " id="descriptionConvenience" style="display: none">
+      <input class="input-text js-input" type="text" formControlName="descriptionOther">
+      <label class="label" for="descriptionConvenience">Description Other</label>
+    </div>
+    <td
+      *ngIf="facilityForm.controls.descriptionOther.hasError('required' ) && facilityForm.controls.descriptionOther.touched"
+      class="text-danger">Decription Other Không được để trống
+    </td>
+    <div class="form-field col-lg-6" id="numberOfFloor" style="display: none">
+      <input class="input-text js-input" type="text" formControlName="numberFloor">
+      <label class="label" for="numberOfFloor">Number Of Floors</label>
+    </div>
+    <td *ngIf="facilityForm.controls.numberFloor.hasError('required' ) && facilityForm.controls.numberFloor.touched"
+        class="text-danger">Number Floor Không được để trống
+    </td>
+    <td *ngIf="facilityForm.controls.numberFloor.hasError('min' ) && facilityForm.controls.numberFloor.touched"
+        class="text-danger">Number Floor Không được bé hơn 1
+    </td>
+    <div class="form-field col-lg-6" id="facilityFree" style="display: none">
+      <input class="input-text js-input" type="text" formControlName="facilityFree">
+      <label class="label" for="facilityFree">Facility Free</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-secondary" href="" routerLink="/list/facility">Back</a>
+  </div>
+</form>

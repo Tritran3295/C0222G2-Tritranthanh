@@ -1,22 +1,26 @@
 <h1>Danh sách sản phẩm</h1>
-<a routerLink="/product/create">Tạo mới sản phẩm</a>
+<a routerLink="/create/product">Tạo mới sản phẩm</a>
 <table>
   <tr>
     <td>STT</td>
     <td>Tên</td>
-    <td>Giá</td>
+    <td>Category</td>
+    <td>Price</td>
     <td>Mô tả</td>
     <td colspan="2"></td>
   </tr>
   <tr *ngFor="let product of productList; index as i">
     <td>{{i + 1}}</td>
     <td>{{product.name}}</td>
+<!--    <td>{{category[product.category -1].name}}</td>-->
+    <td>{{product.category.name}}</td>
+
     <td>{{product.price}}</td>
     <td>{{product.description}}</td>
-    <td><a [routerLink]="['/product/edit',product.id]">Edit</a></td>
+    <td><a [routerLink]="['/edit/product',product.id]">Edit</a></td>
     <td>
       <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
-              (click)="selDelete(product.id, product.name)">
+              (click)="selDelete(product.id, product.category.name)">
         Delete
       </button>
     </td>
@@ -35,7 +39,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-danger" (click)="deleteProduct(valueDelete[0])">Delete</button>
+        <button type="button" class="btn btn-danger"  data-bs-dismiss="modal" (click)="deleteProduct(valueDelete[0])">Delete</button>
       </div>
     </div>
   </div>

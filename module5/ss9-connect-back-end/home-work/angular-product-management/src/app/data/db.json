@@ -1,31 +1,52 @@
 {
   "products": [
     {
-      "id": 1,
-      "name": {
-        "id": 2,
-        "name": "Samsung"
-      },
+      "name": "hhh",
       "price": 123,
-      "description": "123"
+      "description": "123",
+      "category": 1,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": {
-        "id": 3,
-        "name": "LG"
-      },
-      "price": 123567657,
-      "description": "676575767"
+      "name": "asdsa",
+      "price": 123,
+      "description": "123",
+      "category": 2,
+      "id": 2
     },
     {
-      "id": 3,
-      "name": {
-        "id": 2,
-        "name": "Samsung"
+      "name": "asd",
+      "price": 12,
+      "description": "12",
+      "category": 3,
+      "id": 3
+    },
+    {
+      "name": "wewq",
+      "price": 121,
+      "description": "ewqewq",
+      "category": {
+        "id": "1"
       },
-      "price": 123,
-      "description": "123"
+      "id": 4
+    },
+    {
+      "name": "121",
+      "price": 121,
+      "description": "121",
+      "category": {
+        "id": "2"
+      },
+      "id": 5
+    },
+    {
+      "name": "wqre",
+      "price": 12312,
+      "description": "qwe",
+      "category": {
+        "id": "2"
+      },
+      "id": 6
     }
   ],
   "categories": [
@@ -48,26 +69,6 @@
     {
       "id": 5,
       "name": "Oppo"
-    },
-    {
-      "id": 7,
-      "name": "Rog Phone"
-    },
-    {
-      "id": 8,
-      "name": "213"
-    },
-    {
-      "id": 9,
-      "name": "FFFF"
-    },
-    {
-      "id": 10,
-      "name": "RRRRR"
-    },
-    {
-      "id": 11,
-      "name": "13213"
     }
   ]
 }

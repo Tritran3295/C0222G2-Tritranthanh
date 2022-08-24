@@ -1,27 +1,17 @@
 import {Injectable} from '@angular/core';
 import {FacilityType} from '../model/facility-type';
 import {Observable, of} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FacilityTypeService {
-  facilityTypeList: FacilityType[] = [
-    {
-      id: 1,
-      name: 'Villa'
-    }, {
-      id: 2,
-      name: 'House'
-    }, {
-      id: 3,
-      name: 'Room'
-    }
-  ];
-  constructor() {
-  }
+  private URL_FACILITY_TYPE = 'http://localhost:3000/facilityType';
 
+  constructor(private http: HttpClient) {
+  }
   getAllFacilityType(): Observable<FacilityType[]> {
-    return of(this.facilityTypeList);
+    return this.http.get<FacilityType[]>(this.URL_FACILITY_TYPE)
   }
 }

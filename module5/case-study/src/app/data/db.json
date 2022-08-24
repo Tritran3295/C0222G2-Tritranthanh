@@ -1,0 +1,301 @@
+{
+  "customerType": [
+    {
+      "id": 1,
+      "nameCustomerType": "Diamond"
+    },
+    {
+      "id": 2,
+      "nameCustomerType": "Gold"
+    },
+    {
+      "id": 3,
+      "nameCustomerType": "Silver"
+    },
+    {
+      "id": 4,
+      "nameCustomerType": "Member"
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "Phúc",
+      "dateOfBirth": "2022-08-08",
+      "gender": "Nam",
+      "idCard": "2272727277",
+      "phoneNumber": 84171772122,
+      "email": "wewq@d.com",
+      "address": "ABC",
+      "customerType": 1
+    },
+    {
+      "id": 2,
+      "name": "Phuc",
+      "dateOfBirth": "2022-08-02",
+      "gender": "Nữ",
+      "idCard": "123456789",
+      "phoneNumber": 84940843834,
+      "email": "dsad@asds",
+      "address": "asdas",
+      "customerType": {
+        "id": 2,
+        "nameCustomerType": "Gold"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Tài",
+      "dateOfBirth": "2022-08-03",
+      "gender": "Nam",
+      "idCard": "123456789",
+      "phoneNumber": 84912333849,
+      "email": "ád@ámdsa",
+      "address": "ád",
+      "customerType": {
+        "id": 4,
+        "nameCustomerType": "Member"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Hoàn",
+      "dateOfBirth": "2022-08-02",
+      "gender": "Nam",
+      "idCard": "1982883212",
+      "phoneNumber": 84123123123,
+      "email": "hoanpro@gmail.com",
+      "address": "Biên Hoà",
+      "customerType": {
+        "id": 3,
+        "nameCustomerType": "Silver"
+      }
+    }
+  ],
+  "facilityType": [
+    {
+      "id": 1,
+      "name": "Villa"
+    },
+    {
+      "id": 2,
+      "name": "House"
+    },
+    {
+      "id": 3,
+      "name": "Room"
+    }
+  ],
+  "rentType": [
+    {
+      "id": 1,
+      "name": "Year"
+    },
+    {
+      "id": 2,
+      "name": "Month"
+    },
+    {
+      "id": 3,
+      "name": "Days"
+    },
+    {
+      "id": 4,
+      "name": "Hour"
+    }
+  ],
+  "facility": [
+    {
+      "id": 1,
+      "name": "PHÒNG SUITE HƯỚNG",
+      "area": 50.7,
+      "cost": 5000000,
+      "maxPeople": 20,
+      "standardRoom": "Vip",
+      "descriptionOther": "Chạy bộ buổi sáng",
+      "poolArea": 50,
+      "numberFloor": 3,
+      "facilityFree": "Ăn sáng miễn phí",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "rentType": {
+        "id": 3,
+        "name": "Days"
+      },
+      "facilityType": {
+        "id": 2,
+        "name": "House"
+      }
+    },
+    {
+      "id": 2,
+      "name": "hoan",
+      "area": "12321",
+      "cost": "12321",
+      "maxPeople": "12",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "",
+      "descriptionOther": "",
+      "poolArea": "",
+      "numberFloor": "",
+      "facilityFree": "12",
+      "rentType": {
+        "id": 1,
+        "name": "Year"
+      },
+      "facilityType": "3"
+    },
+    {
+      "id": 3,
+      "name": "asdsa",
+      "area": "121",
+      "cost": "12321",
+      "maxPeople": "12",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "asd",
+      "descriptionOther": "asd",
+      "poolArea": "",
+      "numberFloor": "asd",
+      "facilityFree": "",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": "2"
+    },
+    {
+      "id": 4,
+      "name": "hoan",
+      "area": "12321",
+      "cost": "12",
+      "maxPeople": "12",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "",
+      "descriptionOther": "",
+      "poolArea": "",
+      "numberFloor": "",
+      "facilityFree": "12",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": "3"
+    },
+    {
+      "id": 5,
+      "name": "Tri",
+      "area": "12321",
+      "cost": "12",
+      "maxPeople": "12",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "",
+      "descriptionOther": "",
+      "poolArea": "",
+      "numberFloor": "",
+      "facilityFree": "",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": "[object Object]"
+    },
+    {
+      "id": 6,
+      "name": "hoan",
+      "area": "12321",
+      "cost": "12",
+      "maxPeople": "12",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "",
+      "descriptionOther": "",
+      "poolArea": "",
+      "numberFloor": "",
+      "facilityFree": "",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": {
+        "id": 1,
+        "name": "Villa"
+      }
+    },
+    {
+      "id": 7,
+      "name": "",
+      "area": "",
+      "cost": "",
+      "maxPeople": "",
+      "image": "",
+      "standardRoom": "",
+      "descriptionOther": "",
+      "poolArea": "",
+      "numberFloor": "",
+      "facilityFree": "",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": {
+        "id": 2,
+        "name": "House"
+      }
+    },
+    {
+      "id": 8,
+      "name": "hoan",
+      "area": "12321",
+      "cost": "12",
+      "maxPeople": "12",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "12",
+      "descriptionOther": "12",
+      "poolArea": "",
+      "numberFloor": "12",
+      "facilityFree": "",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": "2"
+    },
+    {
+      "id": 9,
+      "name": "Tri",
+      "area": "12321",
+      "cost": "12",
+      "maxPeople": "12",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "",
+      "descriptionOther": "",
+      "poolArea": "",
+      "numberFloor": "",
+      "facilityFree": "12",
+      "rentType": {
+        "id": 3,
+        "name": "Days"
+      },
+      "facilityType": "3"
+    },
+    {
+      "id": 10,
+      "name": "hoan",
+      "area": "121",
+      "cost": "121",
+      "maxPeople": "12",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "",
+      "descriptionOther": "",
+      "poolArea": "",
+      "numberFloor": "",
+      "facilityFree": "12",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": {
+        "id": 3,
+        "name": "Room"
+      }
+    }
+  ]
+}

@@ -4,7 +4,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {CustomerType} from '../../model/customer-type';
 import {Router} from '@angular/router';
 import {CustomerTypeService} from '../../service/customer-type.service';
-import {ToastrService} from 'ngx-toastr';
+import {ToastrModule, ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-create-customer',
@@ -18,11 +18,14 @@ export class CreateCustomerComponent implements OnInit {
   constructor(private customer: CustomerService,
               private router: Router,
               private customerType: CustomerTypeService,
+              private toastr: ToastrService
               ) {
+    this.customerType.getAll().subscribe(data=>{
+      this.customerTypeList=data;
+    })
   }
 
   ngOnInit(): void {
-    this.customerTypeList = this.customerType.customerTypeList;
     this.customerForm = new FormGroup({
       id: new FormControl(),
       name: new FormControl('', [Validators.required, Validators.pattern('^([A-Z][^A-Z0-9\\\\s]+)(\\\\s[A-Z][^A-Z0-9\\\\s]+)*$')]),
@@ -34,12 +37,17 @@ export class CreateCustomerComponent implements OnInit {
       address: new FormControl('', [Validators.required]),
       customerType: new FormControl(1)
     });
+
   }
+
   createCustomer() {
     const customer = this.customerForm.value;
     console.log(customer);
-    this.customer.save(customer);
+    this.customer.saveCustomer(customer).subscribe();
     this.router.navigateByUrl('/list/customer');
+    this.toastr.success('Create success', 'tittle', {
+      timeOut: 1500, progressBar: false
+    });
 
   }
 }

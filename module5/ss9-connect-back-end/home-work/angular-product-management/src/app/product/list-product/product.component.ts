@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {Product} from '../../model/product';
 import {ProductService} from '../../service/product.service';
 import {Router} from '@angular/router';
+import {CategoryService} from '../../service/category.service';
+import {Category} from '../../model/category';
 
 @Component({
   selector: 'app-product',
@@ -11,9 +13,14 @@ import {Router} from '@angular/router';
 export class ProductComponent implements OnInit {
   productList: Product[] = [];
   valueDelete = [];
+  category: Category[] = [];
 
   constructor(private productService: ProductService,
+              private categoryService: CategoryService,
               private router: Router) {
+    this.categoryService.getAll().subscribe(date => {
+      this.category = date;
+    });
   }
 
   ngOnInit(): void {
@@ -22,7 +29,8 @@ export class ProductComponent implements OnInit {
 
   deleteProduct(id) {
     this.productService.deleteProduct(id).subscribe(() => {
-      this.router.navigateByUrl('list/category');
+      this.router.navigateByUrl('list/product');
+      this.getALl();
     });
   }
 
@@ -32,8 +40,9 @@ export class ProductComponent implements OnInit {
   }
 
   getALl() {
-    this.productService.getAll().subscribe(products => {
-      this.productList = products;
+    this.productService.getAll().subscribe(data => {
+      console.log(data);
+      this.productList = data;
     });
   }
 }

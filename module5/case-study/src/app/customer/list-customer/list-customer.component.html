@@ -16,7 +16,7 @@
         <th>Option</th>
         <th>Option</th>
       </tr>
-      <tr *ngFor="let temp of customerList">
+      <tr *ngFor="let temp of customerList | paginate: { itemsPerPage: 3, currentPage: p }">
         <td>{{temp.id}}</td>
         <td>{{temp.name}}</td>
         <td>{{temp.dateOfBirth}}</td>
@@ -44,6 +44,7 @@
       </tr>
       </thead>
     </table>
+
     <div class="modal fade" id="modelId" data-bs-backdrop="static"
          data-bs-keyboard="false" tabindex="-1"
          aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -56,16 +57,18 @@
           </div>
           <div class="modal-body">
             <div>
-              Do you want delete customer <strong>{{delete[1]}}</strong>
+              Do you want delete customer <strong>{{nameModal}}</strong> ?
             </div>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
             </button>
-            <button (click)="deleteC(delete[0])" class="btn btn-danger" data-bs-dismiss="modal">delete</button>
+            <button (click)="deleteCustomer()" class="btn btn-danger" data-bs-dismiss="modal">delete</button>
           </div>
           <div class="modal-footer"></div>
         </div>
       </div>
     </div>
+    <pagination-controls (pageChange)="p = $event"></pagination-controls>
+
   </div>
 </div>
 

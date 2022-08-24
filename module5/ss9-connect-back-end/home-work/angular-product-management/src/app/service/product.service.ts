@@ -13,8 +13,8 @@ export class ProductService {
   constructor(private http: HttpClient) {
   }
 
-  getAll(): Observable<Product[]> {
-    return this.http.get<Product[]>(this.URL_PRODUCT );
+    getAll(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.URL_PRODUCT);
   }
 
   saveProduct(product): Observable<Product> {
@@ -30,6 +30,6 @@ export class ProductService {
   }
 
   deleteProduct(id: number): Observable<Product> {
-    return this.http.delete<Product>(this.URL_PRODUCT + '/' + id);
+    return this.http.delete<Product>(this.URL_PRODUCT + `/${id}`);
   }
 }

@@ -1,0 +1,52 @@
+<script src="../../../assets/jquery/jquery.min.js"></script><h1 class="title">Edit Service</h1>
+<form [formGroup]="facilityForm" (ngSubmit)="editFacility()" *ngIf="facilityForm">
+  <div>
+    <div class="form-group">
+      <label for="nameFacility">Name Facility</label>
+      <input type="text" class="form-control" id="nameFacility" formControlName="name" required>
+    </div>
+    <div class="form-group">
+      <label for="area">Area</label>
+      <input type="text" class="form-control" id="area" formControlName="area" required>
+    </div>
+    <div class="form-group">
+      <label for="cost">Cost</label>
+      <input type="text" class="form-control" id="cost" formControlName="cost" required>
+    </div>
+    <div class="form-group">
+      <label for="maxPeople">Max People</label>
+      <input type="text" class="form-control" id="maxPeople" formControlName="maxPeople" required>
+    </div>
+    <div class="form-group">
+      <label for="maxPeople">Image</label>
+      <input type="text" class="form-control" id="image" formControlName="image" required>
+    </div>
+    <div class="form-group">
+      <label for="rentType" class="form-label title-input">Rent Type<span
+        style="color: red">(*)</span><span> :</span></label>
+      <select formControlName="rentType" name="rentType" class="form-control"
+              [compareWith]="compareRentType" [(ngModel)]="facility.rentType" id="rentType">
+        <option *ngFor="let item of rentTypeList" [ngValue]="item">{{item.name}}</option>
+      </select>
+    </div>
+    <div class="form-field col-lg-6">
+      <label for="facilityType" class="form-label title-input">Facility Type<span
+        style="color: red">(*)</span><span> :</span></label>
+      <select formControlName="facilityType" name="facilityType" class="form-control"
+              [compareWith]="compareFacilityType" [(ngModel)]="facility.facilityType" id="facilityType">
+        <option *ngFor="let item of facilityType " [ngValue]="item">{{item.name}}</option>
+      </select>
+    </div>
+    <div *ngIf="facility.facilityType.name == 'Villa'">
+      <app-villa-input [facility]="facility" (villaValue)="getVillaValue($event)"></app-villa-input>
+    </div>
+    <div *ngIf="facility.facilityType.name == 'House'">
+      <app-house-input [facility]="facility" (houseValue)="getHouseValue($event)"></app-house-input>
+    </div>
+    <div *ngIf="facility.facilityType.name == 'Room'">
+      <app-room-input [facility]="facility" (roomValue)="getRoomValue($event)"></app-room-input>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a class="btn btn-secondary" href="" routerLink="/list/facility">Back</a>
+  </div>
+</form>

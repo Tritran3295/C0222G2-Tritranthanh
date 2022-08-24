@@ -1,0 +1,127 @@
+<a routerLink="/create/facility">Create</a>
+<div class="container" id="card">
+  <div class="row row-cols-1 row-cols-md-3 g-4" >
+    <div class="col-4" *ngFor="let temp of facilityList  | paginate: { itemsPerPage: 3, currentPage: p }">
+      <div class="card">
+        <img style=" border-radius:10px"
+             [src]="temp.image"
+             class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{temp.name}}</h5>
+          <p class="card-text">
+            Diện Tích Phòng: {{temp.area}}<sup>2</sup>
+          </p>
+        </div>
+        <div style="margin-bottom: 15px">
+
+<!--         --- Detail-->
+          <button  style="border-radius: 10px ;margin-left:15px" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal"
+          (click)="detailService(temp.id)">Detail</button>
+
+<!--         --- Edit-->
+            <button [routerLink]="['/edit/facility',temp.id]" style="border-radius: 10px ;margin-left: 90px"
+                    class="btn btn-warning"> Edit</button>
+
+<!--         --- Delete-->
+            <button type="button" class="btn btn-outline-danger btn-sm" data-bs-toggle="modal"
+                    style="border-radius: 10px ;margin-left:100px" data-bs-target="#modelId" (click)="facilityDelete(temp.id, temp.name)">
+              Delete
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                   class="bi bi-trash3" viewBox="0 0 16 16">
+              </svg>
+            </button>
+        </div>
+        <div class="modal fade" id="modelId" data-bs-backdrop="static"
+             data-bs-keyboard="false" tabindex="-1"
+             aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title text-danger" id="staticBackdropLabelAddNew" >Delete</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div>
+                  Do you want delete customer <strong>{{delete[1]}}</strong>
+                </div>
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                </button>
+                <button (click)="deleteFacility(delete[0])" class="btn btn-danger text-white" data-bs-dismiss="modal" >Delete</button>
+              </div>
+              <div class="modal-footer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="vc_empty_space" style="height: 64px"><span class="vc_empty_space_inner"></span></div>
+
+<pagination-controls (pageChange)="p = $event"></pagination-controls>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" *ngIf="facilityDetail">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Danh sach dich vu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row mb-3">
+          <label  class="col-sm-3 col-form-label">Name: </label>
+          <div class="col-sm-9">
+              {{facilityDetail.name}}
+          </div>
+          <label  class="col-sm-3 col-form-label">Area: </label>
+          <div class="col-sm-9">
+            {{facilityDetail.area}}
+          </div>
+          <label  class="col-sm-3 col-form-label">Cost: </label>
+          <div class="col-sm-9">
+            {{facilityDetail.cost}}
+          </div>
+          <label  class="col-sm-3 col-form-label">Max People: </label>
+          <div class="col-sm-9">
+            {{facilityDetail.maxPeople}}
+          </div>
+          <label  class="col-sm-3 col-form-label">Standard Room: </label>
+          <div class="col-sm-9">
+            {{facilityDetail.standardRoom}}
+          </div>
+          <label  class="col-sm-3 col-form-label">Desciption Other: </label>
+          <div class="col-sm-9">
+            {{facilityDetail.descriptionOther}}
+          </div>
+          <label  class="col-sm-3 col-form-label">Pool Area: </label>
+          <div class="col-sm-9">
+            {{facilityDetail.poolArea}}
+          </div>
+          <label  class="col-sm-3 col-form-label">NumberFloor: </label>
+          <div class="col-sm-9">
+            {{facilityDetail.numberFloor}}
+          </div>
+          <label  class="col-sm-3 col-form-label">Facility Free: </label>
+          <div class="col-sm-9">
+            {{facilityDetail.facilityFree}}
+          </div>
+          <label  class="col-sm-3 col-form-label">Rent Type: </label>
+          <div class="col-sm-9">
+            {{facilityDetail.rentType.name}}
+          </div>
+          <label  class="col-sm-3 col-form-label">Facility Type: </label>
+          <div class="col-sm-9">
+            {{facilityDetail.facilityType.name}}
+          </div>
+
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+

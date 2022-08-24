@@ -13,9 +13,9 @@
             <th><label>Name</label></th>
             <td><input class="form-control" type="text" formControlName="name"></td>
           </tr>
-          <td *ngIf="customerForm.controls.name.hasError('required' ) && customerForm.controls.name.touched" class="text-danger">Tên Không được để trống</td>
-          <td *ngIf="customerForm.controls.name.hasError('pattern' )
-          && customerForm.controls.name.touched" class="text-danger">Viết hoa chữ cái đầu và không chứa số</td>
+          <div *ngIf="customerForm.controls.name.hasError('required' ) && customerForm.controls.name.touched" class="text-danger">Tên Không được để trống</div>
+          <div *ngIf="customerForm.controls.name.hasError('pattern' )
+          && customerForm.controls.name.touched" class="text-danger">Viết hoa chữ cái đầu và không chứa số</div>
           <tr>
             <th><label>Day of birth</label></th>
             <td><input class="form-control" type="date" formControlName="dateOfBirth"></td>
@@ -23,9 +23,9 @@
           <tr>
             <th><label>Gender</label></th>
             <td><select class="form-select" formControlName="gender" name="gender">
-              <option [value]="1">Nam</option>
-              <option [value]="0">Nữ</option>
-              <option [value]="2">Other</option>
+              <option [value]="'Nam'">Nam</option>
+              <option [value]="'Nữ'">Nữ</option>
+              <option [value]="'Other'">Other</option>
             </select></td>
           </tr>
 
@@ -57,7 +57,7 @@
           <tr>
             <th><label>Customer type</label></th>
             <td><select class="form-select" formControlName="customerType">
-              <option *ngFor="let item of customerTypeList" [ngValue]="item.id">{{item.nameCustomerType}}</option>
+              <option *ngFor="let item of customerTypeList" [ngValue]="item">{{item.nameCustomerType}}</option>
             </select></td>
           </tr>
           <tr>
