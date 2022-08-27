@@ -25,8 +25,8 @@ export class EditCustomerComponent implements OnInit {
               private customerTypeService: CustomerTypeService,
               private toastr: ToastrService) {
 
-    this.customerTypeService.getAll().subscribe(data=>{
-      this.customerTypeList=data;
+    this.customerTypeService.getAll().subscribe(data => {
+      this.customerTypeList = data;
     });
 
     this.ngOnInit();
@@ -39,11 +39,9 @@ export class EditCustomerComponent implements OnInit {
     this.customerService.findById(this.id).subscribe(data => {
       console.log(data);
       this.customer = data;
-
-      console.log(this.customer);
       this.customerForm.patchValue(this.customer);
       this.customerForm.patchValue({customerType: this.customer.customerType.id});
-    })
+    });
   }
 
   ngOnInit(): void {
@@ -62,7 +60,7 @@ export class EditCustomerComponent implements OnInit {
 
   editCustomer() {
     const customer = this.customerForm.value;
-    this.customerService.editCustomer(this.id,customer).subscribe();
+    this.customerService.editCustomer(this.id, customer).subscribe();
     this.router.navigateByUrl('/list/customer');
     this.toastr.success('Edit success', 'tittle', {
       timeOut: 1500, progressBar: false

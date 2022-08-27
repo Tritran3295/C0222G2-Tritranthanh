@@ -1,0 +1,81 @@
+<div class="container-fuild mt-3">
+  <div class="row">
+  </div>
+  <br>
+  <br>
+  <div class="row">
+    <h2 class="text-center my-5">Create Bệnh Án</h2>
+    <form [formGroup]="benhAnForm" (ngSubmit)="createBenhAn()">
+      <div class="container">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th><label>Mã bệnh Án</label></th>
+            <td><select class="form-select" formControlName="maBenhAn">
+              <option *ngFor="let item of maBenhAnList" [ngValue]="item">{{item.name}}</option>
+            </select></td>
+          </tr>
+          <tr>
+            <th><label>Mã bệnh nhân</label></th>
+            <td><select class="form-select" formControlName="maBenhNhan">
+              <option *ngFor="let item of maBenhNhanList" [ngValue]="item">{{item.name}}</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td><label>Tên bệnh nhân</label></td>
+            <td><input class="form-control" type="text" formControlName="name"></td>
+          </tr>
+          <div *ngIf="benhAnForm.controls.name.hasError('required') &&
+          benhAnForm.controls.name.touched" class="text-danger">Not Empty
+          </div>
+          <tr>
+            <td><label>Ngày Nhập Viện</label></td>
+            <td><input class="form-control" type="date" formControlName="dateIn"></td>
+          </tr>
+          <div *ngIf="benhAnForm.controls.dateIn.hasError('required') &&
+          benhAnForm.controls.dateIn.touched" class="text-danger">Not Empty
+          </div>
+          <tr>
+            <td><label>Ngày ra viện</label></td>
+            <td><input class="form-control" type="date" formControlName="dateOut"></td>
+          </tr>
+          <div *ngIf="benhAnForm.controls.dateOut.hasError('required') &&
+          benhAnForm.controls.dateOut.touched" class="text-danger">Not Empty
+          </div>
+          <tr>
+            <td><label>Lý do nhập viện</label></td>
+            <td><input class="form-control" type="text" formControlName="reason"></td>
+          </tr>
+          <div *ngIf="benhAnForm.controls.reason.hasError('required') &&
+          benhAnForm.controls.reason.touched" class="text-danger">Not Empty
+          </div>
+          <tr>
+            <td><label>Phương pháp điều trị</label></td>
+            <td><input class="form-control" type="text" formControlName="treatments"></td>
+          </tr>
+          <div *ngIf="benhAnForm.controls.treatments.hasError('required') &&
+          benhAnForm.controls.treatments.touched" class="text-danger">Not Empty
+          </div>
+          <tr>
+            <td><label>Bác sĩ điều trị</label></td>
+            <td><input class="form-control" type="text" formControlName="doctorTreatments"></td>
+          </tr>
+          <div *ngIf="benhAnForm.controls.doctorTreatments.hasError('required') &&
+          benhAnForm.controls.doctorTreatments.touched" class="text-danger">Not Empty
+          </div>
+          <tr>
+            <td>
+              <button class="btn btn-success">Save</button>
+              <a class="btn btn-secondary" routerLink="/benh-an/list">Back</a>
+            </td>
+          </tr>
+          </thead>
+        </table>
+      </div>
+    </form>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+  </div>
+</div>

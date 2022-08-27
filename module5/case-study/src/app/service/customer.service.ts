@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {Customer} from '../model/customer';
 import {CustomerTypeService} from './customer-type.service';
 import {HttpClient} from '@angular/common/http';
@@ -8,14 +8,16 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class CustomerService {
-  private URL_CUSTOMER = 'http://localhost:3000/customer'
+  private URL_CUSTOMER = 'http://localhost:3000/customer';
 
   constructor(private customerTypeService: CustomerTypeService,
               private http: HttpClient) {
   }
+
   getAll(): Observable<Customer[]> {
-   return this.http.get<Customer[]>(this.URL_CUSTOMER)
+    return this.http.get<Customer[]>(this.URL_CUSTOMER);
   }
+
   saveCustomer(customer: Customer): Observable<Customer> {
     return this.http.post<Customer>(this.URL_CUSTOMER, customer);
   }
@@ -30,5 +32,14 @@ export class CustomerService {
 
   deleteC(id: number): Observable<Customer> {
     return this.http.delete<Customer>(this.URL_CUSTOMER + '/' + id);
+  }
+
+  // searchByName(nameSearch: string): Observable<Customer[]> {
+  //   return  this.http.get<Customer[]>(this.URL_CUSTOMER + '?name.nameSearch=')
+  // }
+  // return this.httpClient.get<Consignment[]>(this.URL_CONNECT + '/consignment?page=' + page + '&searchName=' + productName +
+  // '&searchDateCheckOut=' + dateCheckOut + '&searchStartDate=' + startDate + '&searchEndDate=' + endDate);
+  searchCustomer(name): Observable<Customer[]> {
+    return this.http.get<Customer[]>(this.URL_CUSTOMER + '?name_like=' + name);
   }
 }

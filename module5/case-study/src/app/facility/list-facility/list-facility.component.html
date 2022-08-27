@@ -38,14 +38,11 @@
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title text-danger" id="staticBackdropLabelAddNew" >Delete</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-              </div>
               <div class="modal-body">
                 <div>
                   Do you want delete customer <strong>{{delete[1]}}</strong>
                 </div>
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="resetDelete()">Close
                 </button>
                 <button (click)="deleteFacility(delete[0])" class="btn btn-danger text-white" data-bs-dismiss="modal" >Delete</button>
               </div>
@@ -123,5 +120,4 @@
     </div>
   </div>
 </div>
-
-
+</div>

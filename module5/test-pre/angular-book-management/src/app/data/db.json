@@ -1,0 +1,25 @@
+{
+  "category": [
+    {
+     "id": 1,
+      "name": "Tự nhiên"
+    }, {
+      "id": 2,
+      "name": "Xã hội"
+    }, {
+      "id": 3,
+      "name": "Thiên không"
+    }
+  ],
+  "book": [{
+    "id": 1,
+    "name": "Văn hoá - gia đình",
+    "category": {
+      "id": 1,
+      "name": "Tự nhiên"
+    },
+    "dateBorrow": "19/08/2022",
+    "dateBack": "29/08/2022",
+    "amount": 10
+  }]
+}

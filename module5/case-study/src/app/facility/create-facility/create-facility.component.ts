@@ -43,6 +43,7 @@ export class CreateFacilityComponent implements OnInit {
     }, () => {
       this.facilityTypeService.getAllFacilityType().subscribe(value => {
         this.facilityType = value;
+        console.log(this.facilityType);
       }, error => {
       }, () => {
         this.createForm();
@@ -109,7 +110,7 @@ export class CreateFacilityComponent implements OnInit {
         //@ts-ignore
         $('#facilityFree').hide();
         break;
-      case '4: Object ':
+      case '4: Object':
         //@ts-ignore
         $('#standardRoom').show();
         //@ts-ignore

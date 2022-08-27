@@ -4,6 +4,7 @@ import {CustomerService} from '../../service/customer.service';
 import {ToastrService} from 'ngx-toastr';
 import {CustomerTypeService} from '../../service/customer-type.service';
 import {CustomerType} from '../../model/customer-type';
+import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
   selector: 'app-list-customer',
@@ -16,6 +17,7 @@ export class ListCustomerComponent implements OnInit {
   nameModal: string;
   p: number = 1;
   customerList: Customer[] = [];
+  searchForm: FormGroup;
   constructor(private customer: CustomerService,
               private toastr: ToastrService,
               private customerTypeService: CustomerTypeService) {
@@ -26,6 +28,9 @@ export class ListCustomerComponent implements OnInit {
     this.customer.getAll().subscribe(date => {
       this.customerList = date;
     });
+    this.searchForm = new FormGroup({
+      nameSearch: new FormControl()
+    })
   }
 
   elementDelete(id: number, name: string) {
@@ -43,4 +48,13 @@ export class ListCustomerComponent implements OnInit {
     });
   }
 
+  nameSearch() {
+    const name = this.searchForm.value.nameSearch;
+    console.log(name);
+    this.customer.searchCustomer(name).subscribe(value => {
+      console.log(value);
+      this.customerList = value;
+    });
+  }
 }
+

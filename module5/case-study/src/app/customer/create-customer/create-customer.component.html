@@ -62,7 +62,7 @@
           </tr>
           <tr>
             <td>
-              <button class="btn btn-success">Save</button>
+              <button class="btn btn-success" [disabled]="customerForm.invalid">Save</button>
               <a class="btn btn-secondary" routerLink="/list/customer">Back</a>
             </td>
           </tr>

@@ -39,6 +39,7 @@ export class ListFacilityComponent implements OnInit {
 
   deleteFacility(id) {
     this.facilityService.deleteFacility(id).subscribe(() => {
+      this.delete = []
       this.toastr.success('Delete success', 'tittle', {
         timeOut: 1500, progressBar: false
       },);
@@ -53,7 +54,10 @@ export class ListFacilityComponent implements OnInit {
   detailService(id: number) {
     this.facilityService.findById(id).subscribe(data => {
       this.facilityDetail = data;
-      console.log(data);
     });
+  }
+
+  resetDelete() {
+    this.delete = [];
   }
 }

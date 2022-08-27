@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ImageGalleryComponent } from './image-gallery.component';
 import { ImageCardComponent } from './image-card/image-card.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 
@@ -11,7 +12,8 @@ import { ImageCardComponent } from './image-card/image-card.component';
     ImageGalleryComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NgxPaginationModule
   ]
 })
 export class ImageGalleryModule {

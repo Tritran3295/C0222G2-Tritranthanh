@@ -39,6 +39,9 @@ export class CreateCustomerComponent implements OnInit {
     });
 
   }
+  checkAge() {
+
+  }
 
   createCustomer() {
     const customer = this.customerForm.value;

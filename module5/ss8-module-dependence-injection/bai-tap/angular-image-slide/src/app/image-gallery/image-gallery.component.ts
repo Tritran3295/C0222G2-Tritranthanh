@@ -15,11 +15,10 @@ export class ImageGalleryComponent implements OnInit {
   ];
   itemWidth: number;
   config = 4;
-  p: number;
+  p: number = 1;
 
   constructor(@Inject(GalleryConfig)
-              @Optional()
-                config: number) {
+              @Optional() config: number) {
   }
 
   ngOnInit(): void {
