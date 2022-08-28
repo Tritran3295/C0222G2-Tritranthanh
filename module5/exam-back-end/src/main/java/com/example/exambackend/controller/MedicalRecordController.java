@@ -75,7 +75,8 @@ public class MedicalRecordController {
         MedicalRecord medicalRecord = new MedicalRecord();
         BeanUtils.copyProperties(medicalRecordDTO,medicalRecord);
         medicalRecord.setId(medicalRecordOptional.get().getId());
-        return new ResponseEntity<>(medicalRecordService.save(medicalRecord),HttpStatus.OK);
+        medicalRecordService.editMedicalRecord(medicalRecord);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
     @DeleteMapping("/delete/{id}")
     private ResponseEntity<Void> deleteMedicalRecord(@PathVariable Integer id){

@@ -15,4 +15,5 @@ public interface IMedicalRecordService {
 
     void delete(Integer id);
 
+    void editMedicalRecord(MedicalRecord medicalRecord);
 }

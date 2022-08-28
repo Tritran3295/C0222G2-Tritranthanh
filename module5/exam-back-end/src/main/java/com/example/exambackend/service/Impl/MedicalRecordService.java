@@ -33,11 +33,16 @@ public class MedicalRecordService implements IMedicalRecordService {
 
     @Override
     public MedicalRecord findById(Integer id) {
-        return medicalRecordRepository.findById(id).orElse(null);
+        return medicalRecordRepository.findByIdMedicalRecord(id);
     }
 
     @Override
     public void delete(Integer id) {
         medicalRecordRepository.deleteById(id);
+    }
+
+    @Override
+    public void editMedicalRecord(MedicalRecord medicalRecord) {
+        medicalRecordRepository.editMedicalRecord(medicalRecord);
     }
 }
