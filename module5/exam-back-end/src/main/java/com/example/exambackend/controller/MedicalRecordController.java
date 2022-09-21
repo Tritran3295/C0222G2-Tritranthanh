@@ -34,52 +34,57 @@ public class MedicalRecordController {
 
 
     @GetMapping("/code-patient/list")
-    public ResponseEntity<List<CodePatient>> getAllCodePatient(){
-        List<CodePatient>codePatientList = this.codePatientService.findAll();
-        return new ResponseEntity<>(codePatientList,HttpStatus.OK);
+    public ResponseEntity<List<CodePatient>> getAllCodePatient() {
+        List<CodePatient> codePatientList = this.codePatientService.findAll();
+        return new ResponseEntity<>(codePatientList, HttpStatus.OK);
     }
+
     @GetMapping("/code-medical_record/list")
-    public ResponseEntity<List<MedicalRecord>> getAllMedicalRecord(){
-        List<MedicalRecord>medicalRecordList = this.codeMedicalRecordService.findAll();
-        return new ResponseEntity<>(medicalRecordList,HttpStatus.OK);
+    public ResponseEntity<List<MedicalRecord>> getAllMedicalRecord() {
+        List<MedicalRecord> medicalRecordList = this.codeMedicalRecordService.findAll();
+        return new ResponseEntity<>(medicalRecordList, HttpStatus.OK);
     }
 
     @GetMapping("/benh-an")
-    public ResponseEntity<Page<MedicalRecord>> getAllMedicalRecord(@PageableDefault(3)Pageable pageable,
-                                                                   Optional<String> nameSearch){
+    public ResponseEntity<Page<MedicalRecord>> findAllMedicalRecord(@PageableDefault(3) Pageable pageable,
+                                                                   Optional<String> nameSearch) {
         String searchName = nameSearch.orElse("");
-        Page<MedicalRecord> medicalRecordPage = medicalRecordService.findAllMedicalRecord(pageable,searchName);
-        if (medicalRecordPage.isEmpty()){
-            return  new ResponseEntity<>(HttpStatus.NO_CONTENT);
-        }else {
-            return new ResponseEntity<>(medicalRecordPage,HttpStatus.OK);
+        Page<MedicalRecord> medicalRecordPage = medicalRecordService.findAllMedicalRecord(pageable, searchName);
+        if (medicalRecordPage.isEmpty()) {
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        } else {
+            return new ResponseEntity<>(medicalRecordPage, HttpStatus.OK);
         }
     }
+
     @PostMapping("/create")
-    public ResponseEntity<MedicalRecord> createMedicalRecord(@Valid @RequestBody MedicalRecordDTO medicalRecordDTO){
+    public ResponseEntity<MedicalRecord> createMedicalRecord(@Valid @RequestBody MedicalRecordDTO medicalRecordDTO) {
         MedicalRecord medicalRecord = new MedicalRecord();
-        BeanUtils.copyProperties(medicalRecordDTO,medicalRecord);
+        BeanUtils.copyProperties(medicalRecordDTO, medicalRecord);
         return new ResponseEntity<>(medicalRecordService.save(medicalRecord), HttpStatus.CREATED);
     }
+
     @GetMapping("/findId/{id}")
-    public ResponseEntity<MedicalRecord> findById(@PathVariable Integer id){
-        if (id == null){
+    public ResponseEntity<MedicalRecord> findById(@PathVariable Integer id) {
+        if (id == null) {
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
         }
         Optional<MedicalRecord> medicalRecordOptional = Optional.ofNullable(medicalRecordService.findById(id));
-        return new ResponseEntity<>(medicalRecordOptional.get(),HttpStatus.OK);
+        return new ResponseEntity<>(medicalRecordOptional.get(), HttpStatus.OK);
     }
+
     @PatchMapping("/update/{id}")
-    public ResponseEntity<MedicalRecord> updateMedicalRecord(@Valid @RequestBody MedicalRecordDTO medicalRecordDTO,@PathVariable Integer id){
+    public ResponseEntity<MedicalRecord> updateMedicalRecord(@Valid @RequestBody MedicalRecordDTO medicalRecordDTO, @PathVariable Integer id) {
         Optional<MedicalRecord> medicalRecordOptional = Optional.ofNullable(medicalRecordService.findById(id));
         MedicalRecord medicalRecord = new MedicalRecord();
-        BeanUtils.copyProperties(medicalRecordDTO,medicalRecord);
+        BeanUtils.copyProperties(medicalRecordDTO, medicalRecord);
         medicalRecord.setId(medicalRecordOptional.get().getId());
         medicalRecordService.editMedicalRecord(medicalRecord);
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
     @DeleteMapping("/delete/{id}")
-    private ResponseEntity<Void> deleteMedicalRecord(@PathVariable Integer id){
+    private ResponseEntity<Void> deleteMedicalRecord(@PathVariable Integer id) {
         medicalRecordService.delete(id);
         return new ResponseEntity<>(HttpStatus.OK);
     }

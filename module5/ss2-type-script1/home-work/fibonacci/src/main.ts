@@ -11,6 +11,6 @@ for (let i = 0;i < m;i++){
     sum += fibonnacci(i);
     console.log(`số fibo thứ  ` + i + ` là  ` + fibonnacci(i));
 }
-console.log(`tổng ` + sum )
+console.log(`tổng các số fibo là : ` + sum )
 
 
