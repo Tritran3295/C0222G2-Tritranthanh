@@ -1,126 +1,3 @@
-<!--<!DOCTYPE html>-->
-<!--<html lang="en" xmlns:th="http://www.thymeleaf.org">-->
-<!--<head>-->
-<!--    <meta charset="UTF-8">-->
-<!--    <title>Title</title>-->
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"-->
-<!--          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
-<!--</head>-->
-<!--<body>-->
-<!--<div class="container-fluid text-white">-->
-<!--    <div class="col-12 row">-->
-<!--        <div class="col-1 "><img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" style="width:75px;"-->
-<!--                                 class="rounded-pill"></div>-->
-<!--        <div class="col-11 ">-->
-<!--            <div class="col-lg-12 row">-->
-<!--                <div class="col-lg-10 text-center"><h1 style="color: sandybrown">Furama Management</h1></div>-->
-<!--                <div class="col-lg-2 ">-->
-<!--                    <p>Welcome to ...<br><strong>...Furama Resort!!!</strong></p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
-<!--<nav class="navbar navbar-expand-lg navbar-dark "-->
-<!--     style="background-color: #046056;position: sticky;top: 0;z-index: 1;">-->
-<!--    <div class="container-fluid">-->
-<!--        <a class="navbar-brand" href="">Home</a>-->
-<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"-->
-<!--                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"-->
-<!--                aria-expanded="false" aria-label="Toggle navigation">-->
-<!--            <span class="navbar-toggler-icon"></span>-->
-<!--        </button>-->
-
-<!--    </div>-->
-<!--</nav>-->
-<!--<h1 class="title">Create Service</h1>-->
-<!--<form action="/facility/create" method="post" >-->
-<!--    <div class="form-group">-->
-<!--        <label for="nameFacility">Name Facility</label>-->
-<!--        <input type="text" class="form-control" id="nameFacility" required>-->
-<!--    </div>-->
-<!--    <div class="form-group">-->
-<!--        <label for="area">Area</label>-->
-<!--        <input type="text" class="form-control" id="area"  required>-->
-<!--    </div>-->
-<!--    <div class="form-group">-->
-<!--        <label for="cost">Cost</label>-->
-<!--        <input type="text" class="form-control" id="cost"  required>-->
-<!--    </div>-->
-<!--    <div class="form-group">-->
-<!--        <label for="maxPeople">Max People</label>-->
-<!--        <input type="text" class="form-control" id="maxPeople"  required>-->
-<!--    </div>-->
-<!--    <div class="form-group">-->
-<!--        <select class="form-select" >-->
-<!--            <option value="">Ren Type List</option>-->
-<!--            <option></option>-->
-<!--        </select>-->
-<!--    </div>-->
-<!--    <div class="form-field col-lg-6">-->
-<!--        <select id="choiceFacilityType" class="form-select" onchange="selectFacility()">-->
-<!--            <option value="">Facility List</option>-->
-<!--            <option></option>-->
-<!--        </select>-->
-<!--    </div>-->
-<!--    <div class="form-group" id="standardRoom" style="display: none">-->
-<!--        <input  class="input-text js-input" type="text"  >-->
-<!--        <label class="label" for="standardRoom">Standard Room</label>-->
-<!--    </div>-->
-<!--    <div class="form-field col-lg-6 "  id="poolArea" style="display: none">-->
-<!--        <input class="input-text js-input" type="text"  >-->
-<!--        <label class="label" for="poolArea">Pool Area</label>-->
-<!--    </div>-->
-<!--    <div class="form-field col-lg-6 " id="descriptionConvenience" style="display: none">-->
-<!--        <input  class="input-text js-input" type="text"  >-->
-<!--        <label class="label" for="descriptionConvenience">Description Other</label>-->
-<!--    </div>-->
-<!--    <div class="form-field col-lg-6" id="numberOfFloor" style="display: none">-->
-<!--        <input  class="input-text js-input" type="text"  >-->
-<!--        <label class="label" for="numberOfFloor">Number Of Floors</label>-->
-<!--    </div>-->
-<!--    <div class="form-field col-lg-6" id="facilityFree" style="display: none">-->
-<!--        <input  class="input-text js-input" type="text" >-->
-<!--        <label class="label" for="facilityFree">Facility Free</label>-->
-<!--    </div>-->
-<!--    <button type="submit" class="btn btn-primary">Submit</button>-->
-<!--    <a class="btn btn-secondary" href="home.html">Back</a>-->
-<!--</form>-->
-
-<!--</body>-->
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
-<!--<script>-->
-<!--    function selectFacility() {-->
-<!--        let getValue = $('#choiceFacilityType').val()-->
-<!--        switch (getValue) {-->
-<!--            case '1':-->
-<!--                $('#standardRoom').show()-->
-<!--                $('#descriptionConvenience').show()-->
-<!--                $('#poolArea').show()-->
-<!--                $('#numberOfFloor').show()-->
-<!--                $('#facilityFree').hide()-->
-<!--                break;-->
-<!--            case '2':-->
-<!--                $('#standardRoom').show()-->
-<!--                $('#descriptionConvenience').show()-->
-<!--                $('#poolArea').hide()-->
-<!--                $('#numberOfFloor').show()-->
-<!--                $('#facilityFree').hide()-->
-<!--                break;-->
-<!--            case '3':-->
-<!--                $('#standardRoom').hide()-->
-<!--                $('#descriptionConvenience').hide()-->
-<!--                $('#poolArea').hide()-->
-<!--                $('#numberOfFloor').hide()-->
-<!--                $('#facilityFree').show()-->
-<!--                break;-->
-<!--        }-->
-<!--    }-->
-<!--</script>-->
-<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"-->
-<!--        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"-->
-<!--        crossorigin="anonymous"></script>-->
-<!--</html>-->
 <!doctype html>
 <html>
 <head>
@@ -328,10 +205,6 @@
             outline: none;
         }
 
-        #back {
-            display: flex;
-        }
-
         button {
             background-color: rgb(255, 255, 0, 0.6);
             display: block;
@@ -353,15 +226,16 @@
             font-size: 20px;
             border: 2px solid #ffffff;
         }
-
-        back-home:hover {
+        #back{
+            display: flex;
+        }
+        back-home:hover{
             background-color: #102393;
             color: white;
             font-size: 20px;
             border: 2px solid #ffffff;
         }
-
-        .back-home {
+        .back-home{
             background-color: rgb(255, 255, 0, 0.6);
             display: block;
             margin: 0px 0px 0px 11px;
@@ -375,7 +249,6 @@
             cursor: pointer;
             transition: 0.25px;
         }
-
 
     </style>
 </head>
@@ -407,7 +280,7 @@
 
     </div>
 </nav>
-<div class="regform"><h1>Create Facility</h1></div>
+<div class="regform"><h1>Edit Facility</h1></div>
 <div class="main">
     <form>
         <h2 class="name">Name Facility</h2>
@@ -444,7 +317,7 @@
             <h2 class="name">Standard Room</h2>
             <input class="company" type="text" name="standardRoom"><br>
         </div>
-        <div style="display: none" id="poolArea">
+        <div style="display: none"id="poolArea">
             <h2 class="name">Pool Area</h2>
             <input class="company" type="text" name="poolArea"><br>
         </div>
@@ -473,8 +346,8 @@
         <!--            No-->
         <!--        </label>-->
         <div id="back">
-            <button type="submit">Save</button>
-            <a class="back-home" href="home.html">Back</a>
+        <button type="submit">Save</button>
+        <a class="back-home" href="home.html">Back</a>
         </div>
     </form>
 
@@ -486,9 +359,7 @@
             <div class="col-lg-3  col-md-6 col-sm-6">
                 <div class="single-footer-widget">
                     <h6 class="footer_title">About Agency</h6>
-                    <p>The world has become so fast paced that people don’t want to stand by reading a page of
-                        information, they would much rather look at a presentation and understand the message. It has
-                        come to a point </p>
+                    <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-6">
@@ -517,15 +388,11 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
                 <div class="single-footer-widget">
                     <h6 class="footer_title">Newsletter</h6>
-                    <p>For business professionals caught between high OEM price and mediocre print and graphic
-                        output, </p>
+                    <p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>
                     <div id="mc_embed_signup">
-                        <div target="_blank"
-                             action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                             method="get" class="subscribe_form relative">
+                        <div target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
                             <div class="input-group d-flex flex-row">
-                                <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''"
-                                       onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
                                 <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>
                             </div>
                             <div class="mt-10 info"></div>
@@ -537,11 +404,8 @@
         </div>
         <div class="border_line"></div>
         <div class="row footer-bottom d-flex justify-content-between align-items-center">
-            <p class="col-lg-8 col-sm-12 footer-text m-0">
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                    href="https://colorlib.com" target="_blank">Colorlib</a>
+            <p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
             <div class="col-lg-4 col-sm-12 footer-social">
                 <a href="#"><i class="fa fa-facebook"></i></a>

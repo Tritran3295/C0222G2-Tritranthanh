@@ -1,13 +1,393 @@
-<!DOCTYPE html>
-<html lang="en">
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"-->
+<!--          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container-fluid text-white">-->
+<!--    <div class="col-12 row">-->
+<!--        <div class="col-1 "><img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" style="width:75px;"-->
+<!--                                 class="rounded-pill"></div>-->
+<!--        <div class="col-11 ">-->
+<!--            <div class="col-lg-12 row">-->
+<!--                <div class="col-lg-10 text-center"><h1 style="color: sandybrown">Furama Management</h1></div>-->
+<!--                <div class="col-lg-2 ">-->
+<!--                    <p>Welcome to ...<br><strong>...Furama Resort!!!</strong></p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!--<nav class="navbar navbar-expand-lg navbar-dark "-->
+<!--     style="background-color: #046056;position: sticky;top: 0;z-index: 1;">-->
+<!--    <div class="container-fluid">-->
+<!--        <a class="navbar-brand" href="">Home</a>-->
+<!--        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"-->
+<!--                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"-->
+<!--                aria-expanded="false" aria-label="Toggle navigation">-->
+<!--            <span class="navbar-toggler-icon"></span>-->
+<!--        </button>-->
+
+<!--    </div>-->
+<!--</nav>-->
+<!--<h1 class="title">Edit Service</h1>-->
+<!--<div class=" container-fluid">-->
+<!--    <form action="/facility/edit" method="post" >-->
+<!--        <div class="form-group">-->
+<!--            <label for="nameFacility">Id</label>-->
+<!--            <input type="text" class="form-control" id="id" readonly>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--            <label for="nameFacility">Name Facility</label>-->
+<!--            <input type="text" class="form-control" id="nameFacility" required>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--            <label for="area">Area</label>-->
+<!--            <input type="text" class="form-control" id="area"  required>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--            <label for="cost">Cost</label>-->
+<!--            <input type="text" class="form-control" id="cost" required>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--            <label for="maxPeople">Max People</label>-->
+<!--            <input type="text" class="form-control" id="maxPeople" required>-->
+<!--        </div>-->
+<!--        <div class="form-group">-->
+<!--            <select class="form-select">-->
+<!--                <option value="">Rent Type List</option>-->
+<!--                <option value="">Villa</option>-->
+<!--                <option value="">Room</option>-->
+<!--                <option value="">House</option>-->
+<!--            </select>-->
+<!--        </div>-->
+<!--        <div class="form-field col-lg-6">-->
+<!--            <select id="choiceFacilityType" class="form-select" onchange="selectFacility()">-->
+<!--                <option value="">Facility List</option>-->
+<!--                <option></option>-->
+<!--            </select>-->
+<!--        </div>-->
+<!--        <div class="form-group" id="standardRoom" style="display: none">-->
+<!--            <input class="input-text js-input" type="text" >-->
+<!--            <label class="label" for="standardRoom">Standard Room</label>-->
+<!--        </div>-->
+<!--        <div class="form-field col-lg-6 " id="poolArea" style="display: none">-->
+<!--            <input class="input-text js-input" type="text" >-->
+<!--            <label class="label" for="poolArea">Pool Area</label>-->
+<!--        </div>-->
+<!--        <div class="form-field col-lg-6 " id="descriptionConvenience" style="display: none">-->
+<!--            <input class="input-text js-input" type="text">-->
+<!--            <label class="label" for="descriptionConvenience">Description Other</label>-->
+<!--        </div>-->
+<!--        <div class="form-field col-lg-6" id="numberOfFloor" style="display: none">-->
+<!--            <input class="input-text js-input" type="text" >-->
+<!--            <label class="label" for="numberOfFloor">Number Of Floors</label>-->
+<!--        </div>-->
+<!--        <div class="form-field col-lg-6" id="facilityFree" style="display: none">-->
+<!--            <input class="input-text js-input" type="text">-->
+<!--            <label class="label" for="facilityFree">Facility Free</label>-->
+<!--        </div>-->
+<!--        <button type="submit" class="btn btn-primary">Submit</button>-->
+<!--        <a class="btn btn-secondary" href="home.html">Back</a>-->
+<!--    </form>-->
+<!--    <form action="">-->
+<!--        <input type="text" id="facilityTypeId" hidden>-->
+<!--    </form>-->
+<!--</div>-->
+<!--</body>-->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+<!--<script>-->
+<!--    function selectFacility() {-->
+<!--        let getValue = $('#choiceFacilityType').val()-->
+<!--        switch (getValue) {-->
+<!--            case '1':-->
+<!--                $('#standardRoom').show()-->
+<!--                $('#descriptionConvenience').show()-->
+<!--                $('#poolArea').show()-->
+<!--                $('#numberOfFloor').show()-->
+<!--                $('#facilityFree').hide()-->
+<!--                break;-->
+<!--            case '2':-->
+<!--                $('#standardRoom').show()-->
+<!--                $('#descriptionConvenience').show()-->
+<!--                $('#poolArea').hide()-->
+<!--                $('#numberOfFloor').show()-->
+<!--                $('#facilityFree').hide()-->
+<!--                break;-->
+<!--            case '3':-->
+<!--                $('#standardRoom').hide()-->
+<!--                $('#descriptionConvenience').hide()-->
+<!--                $('#poolArea').hide()-->
+<!--                $('#numberOfFloor').hide()-->
+<!--                $('#facilityFree').show()-->
+<!--                break;-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"-->
+<!--        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"-->
+<!--        crossorigin="anonymous"></script>-->
+<!--</html>-->
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Styled Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style type="text/css">
+        footer {
+            background: #aaaaff;
+            margin-bottom: -40px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url("https://cdn.alongwalker.co/vn/wp-content/uploads/2022/02/16050019/image-chao-dao-ngay-voi-top-8-resort-nha-trang-chup-anh-cuoi-cuc-xin-164493721978491.jpg");
+            background-position: center;
+            background-size: cover;
+            font-family: sans-serif;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .regform {
+            width: 800px;
+            background-color: rgb(255, 255, 0, 0.6);
+            margin: auto;
+            color: #000000;
+            padding: 10px 0px 0px 10px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgb(0, 0, 0, 0.6);
+            width: 810px;
+            margin: auto;
+        }
+
+        form {
+            padding: 22px;
+        }
+
+        #name {
+            width: 100%;
+            height: 100px;
+        }
+
+        .name {
+            margin-left: 25px;
+            margin-top: -2px;
+            width: 125px;
+            color: white;
+            font-size: 18px;
+            font-width: 700;
+        }
+
+        .firstname {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+        }
+
+        .lastname {
+            position: relative;
+            left: 417px;
+            top: -80px;
+            line-height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .firstlabel {
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capiltalize;
+            font-size: 14px;
+            left: 203px;
+            top: -45px;
+        }
+
+        .lastlabel {
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capiltalize;
+            font-size: 14px;
+            left: 500px;
+            top: -75px;
+        }
+
+        .company {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 485px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .email {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 200px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .code {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 50px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .phonenumber {
+            position: relative;
+            left: 200px;
+            top: -37px;
+            line-height: 40px;
+            width: 302px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .area-code {
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capiltalize;
+            font-size: 16px;
+            left: 100px;
+            top: -2px;
+        }
+
+        .phone-number {
+            position: relative;
+            color: #E5E5E5;
+            text-transform: capiltalize;
+            font-size: 16px;
+            left: -150px;
+            top: -2px;
+        }
+
+        .option {
+            position: relative;
+            left: 200px;
+            top: -27px;
+            line-height: 40px;
+            width: 485px;
+            height: 40px;
+            border-radius: 6px;
+            padding: 0 22px;
+            font-size: 16px;
+            color: #555;
+            outline: none;
+            overflow: hidden;
+        }
+
+        .option option {
+            font-size: 20px
+        }
+
+        #beginner {
+            margin-left: 25px;
+            color: white;
+            font-size: 18px;
+        }
+
+        .radio {
+            display: inline-block;
+            padding-right: 70px;
+            font-size: 25px;
+            margin-left: 25px;
+            margin-top: 15px;
+            color: white
+        }
+
+        .radio input {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            cursor: pointer;
+            outline: none;
+        }
+        #back{
+            display: flex;
+        }
+        button {
+            background-color: rgb(255, 255, 0, 0.6);
+            display: block;
+            margin: 0px 0px 0px 11px;
+            text-align: center;
+            border-radius: 12px;
+            border: 2px solid #000000;
+            padding: 14px 54px;
+            outline: none;
+            color: black;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.25px;
+        }
+
+        button:hover {
+            background-color: #102393;
+            color: white;
+            font-size: 20px;
+            border: 2px solid #ffffff;
+        }
+        back-home:hover{
+            background-color: #102393;
+            color: white;
+            font-size: 20px;
+            border: 2px solid #ffffff;
+        }
+        .back-home{
+            background-color: rgb(255, 255, 0, 0.6);
+            display: block;
+            margin: 0px 0px 0px 11px;
+            text-align: center;
+            border-radius: 12px;
+            border: 2px solid #000000;
+            padding: 14px 54px;
+            outline: none;
+            color: black;
+            font-size: 15px;
+            cursor: pointer;
+            transition: 0.25px;
+        }
+
+
+    </style>
 </head>
+
 <body>
-<div class="container-fluid text-white">
+<div class="container-fluid text-white" style="background-color: #2BBD64;margin-top: -40px">
     <div class="col-12 row">
         <div class="col-1 "><img src="https://furamavietnam.com/wp-content/uploads/2018/08/logo.png" style="width:75px;"
                                  class="rounded-pill"></div>
@@ -33,101 +413,175 @@
 
     </div>
 </nav>
-<h1 class="title">Edit Service</h1>
-<div class=" container-fluid">
-    <form action="/facility/edit" method="post" >
-        <div class="form-group">
-            <label for="nameFacility">Id</label>
-            <input type="text" class="form-control" id="id" readonly>
+<div class="regform"><h1>Edit Facility</h1></div>
+<div class="main">
+    <form>
+        <h2 class="name">Name Facility</h2>
+        <input class="company" type="text" name="Company"><br>
+
+        <h2 class="name">Area</h2>
+        <input class="company" type="text" name="Company"><br>
+
+        <h2 class="name">Cost</h2>
+        <input class="company" type="text" name="Company"><br>
+
+        <h2 class="name">Max People</h2>
+        <input class="company" type="text" name="Company"><br>
+
+        <h2 class="name">Company</h2>
+        <input class="company" type="text" name="Company"><br>
+
+        <h2 class="name">Ren Type</h2>
+        <select class="option" name="subject">
+            <option disabled="disabled" selected="selected">--Choose option</option>
+            <option>Year</option>
+            <option>Month</option>
+            <option>Days</option>
+            <option>Hour</option>
+        </select>
+        <h2 class="name">Facility Type</h2>
+        <select class="option" name="facility" id="choiceFacilityType" onchange="selectFacilityType()">
+            <option disabled="disabled" selected="selected">--Choose option</option>
+            <option>Villa</option>
+            <option>Room</option>
+            <option>House</option>
+        </select>
+        <div style="display: none" id="standardRoom">
+            <h2 class="name">Standard Room</h2>
+            <input class="company" type="text" name="standardRoom"><br>
         </div>
-        <div class="form-group">
-            <label for="nameFacility">Name Facility</label>
-            <input type="text" class="form-control" id="nameFacility" required>
+        <div style="display: none"id="poolArea">
+            <h2 class="name">Pool Area</h2>
+            <input class="company" type="text" name="poolArea"><br>
         </div>
-        <div class="form-group">
-            <label for="area">Area</label>
-            <input type="text" class="form-control" id="area"  required>
+        <div style="display: none" id="descriptionConvenience">
+            <h2 class="name">Description Other</h2>
+            <input class="company" type="text" name="descriptionConvenience"><br>
         </div>
-        <div class="form-group">
-            <label for="cost">Cost</label>
-            <input type="text" class="form-control" id="cost" required>
+        <div style="display: none" id="numberOfFloor">
+            <h2 class="name">Number Of Floors</h2>
+            <input class="company" type="text" name="numberOfFloor"><br>
         </div>
-        <div class="form-group">
-            <label for="maxPeople">Max People</label>
-            <input type="text" class="form-control" id="maxPeople" required>
+        <div style="display: none" id="facilityFree">
+            <h2 class="name">Facility Free</h2>
+            <input class="company" type="text" name="facilityFree"><br>
         </div>
-        <div class="form-group">
-            <select class="form-select">
-                <option value="">Rent Type List</option>
-                <option value="">Villa</option>
-                <option value="">Room</option>
-                <option value="">House</option>
-            </select>
+
+        <!--        <h2 id="beginner">Are you a beginner?</h2>-->
+        <!--        <label class="radio">-->
+        <!--            <input class="radio-one" type="radio" checked="checked" name="">-->
+        <!--            <span class="checkmark"></span>-->
+        <!--            Yes-->
+        <!--        </label>-->
+        <!--        <label class="radio">-->
+        <!--            <input class="radio-two" type="radio" name="">-->
+        <!--            <span class="checkmark"></span>-->
+        <!--            No-->
+        <!--        </label>-->
+        <div id="back">
+            <button type="submit">Save</button>
+            <a class="back-home" href="home.html">Back</a>
         </div>
-        <div class="form-field col-lg-6">
-            <select id="choiceFacilityType" class="form-select" onchange="selectFacility()">
-                <option value="">Facility List</option>
-                <option></option>
-            </select>
-        </div>
-        <div class="form-group" id="standardRoom" style="display: none">
-            <input class="input-text js-input" type="text" >
-            <label class="label" for="standardRoom">Standard Room</label>
-        </div>
-        <div class="form-field col-lg-6 " id="poolArea" style="display: none">
-            <input class="input-text js-input" type="text" >
-            <label class="label" for="poolArea">Pool Area</label>
-        </div>
-        <div class="form-field col-lg-6 " id="descriptionConvenience" style="display: none">
-            <input class="input-text js-input" type="text">
-            <label class="label" for="descriptionConvenience">Description Other</label>
-        </div>
-        <div class="form-field col-lg-6" id="numberOfFloor" style="display: none">
-            <input class="input-text js-input" type="text" >
-            <label class="label" for="numberOfFloor">Number Of Floors</label>
-        </div>
-        <div class="form-field col-lg-6" id="facilityFree" style="display: none">
-            <input class="input-text js-input" type="text">
-            <label class="label" for="facilityFree">Facility Free</label>
-        </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <a class="btn btn-secondary" href="home.html">Back</a>
     </form>
-    <form action="">
-        <input type="text" id="facilityTypeId" hidden>
-    </form>
+
+
 </div>
+<footer class="footer-area section_gap" style="background: #04091e">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3  col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6 class="footer_title">About Agency</h6>
+                    <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6 class="footer_title">Navigation Links</h6>
+                    <div class="row">
+                        <div class="col-4">
+                            <ul class="list_style">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Feature</a></li>
+                                <li><a href="#">Services</a></li>
+                                <li><a href="#">Portfolio</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4">
+                            <ul class="list_style">
+                                <li><a href="#">Team</a></li>
+                                <li><a href="#">Pricing</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+                <div class="single-footer-widget">
+                    <h6 class="footer_title">Newsletter</h6>
+                    <p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>
+                    <div id="mc_embed_signup">
+                        <div target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                            <div class="input-group d-flex flex-row">
+                                <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>
+                            </div>
+                            <div class="mt-10 info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="border_line"></div>
+        <div class="row footer-bottom d-flex justify-content-between align-items-center">
+            <p class="col-lg-8 col-sm-12 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+            <div class="col-lg-4 col-sm-12 footer-social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-behance"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
-    function selectFacility() {
+    function selectFacilityType() {
         let getValue = $('#choiceFacilityType').val()
         switch (getValue) {
-            case '1':
+            case 'Villa':
                 $('#standardRoom').show()
                 $('#descriptionConvenience').show()
                 $('#poolArea').show()
                 $('#numberOfFloor').show()
                 $('#facilityFree').hide()
                 break;
-            case '2':
+            case 'House':
                 $('#standardRoom').show()
                 $('#descriptionConvenience').show()
                 $('#poolArea').hide()
                 $('#numberOfFloor').show()
                 $('#facilityFree').hide()
                 break;
-            case '3':
+            case 'Room':
                 $('#standardRoom').hide()
                 $('#descriptionConvenience').hide()
                 $('#poolArea').hide()
                 $('#numberOfFloor').hide()
                 $('#facilityFree').show()
                 break;
+
         }
+
     }
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </html>
