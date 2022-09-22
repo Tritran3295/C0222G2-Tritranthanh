@@ -1,0 +1,23 @@
+<div >
+  <form [ngStyle]="{background: colorChange}">
+    <fieldset>
+      <legend><h2>Calculator</h2></legend>
+      <div>
+        <label>Number One</label>
+        <input type="number" name="numberOne" [(ngModel)]="numberOne">
+      </div>
+      <br>
+      <div>
+        <label>Number Two</label>
+        <input type="number" name="numberTwo" [(ngModel)]="numberTwo">
+      </div>
+      <br>
+      <button (click)="calculate($event.target.value)" value="+">Add(+)</button>
+      <button (click)="calculate($event.target.value)" value="-">Subtraction(-)</button>
+      <button (click)="calculate($event.target.value)" value="*">Multiply(X)</button>
+      <button (click)="calculate($event.target.value)" value="/">Divide(/)</button>
+    </fieldset>
+  </form>
+  Result : {{result}}
+</div>
+<input type="color" [(ngModel)]="colorChange">
