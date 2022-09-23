@@ -1,0 +1,99 @@
+{
+  "facilityType": [
+    {
+      "id": 1,
+      "name": "Villa"
+    },
+    {
+      "id": 2,
+      "name": "House"
+    },
+    {
+      "id": 3,
+      "name": "Room"
+    }
+  ],
+  "rentType": [
+    {
+      "id": 1,
+      "name": "Year"
+    },
+    {
+      "id": 2,
+      "name": "Month"
+    },
+    {
+      "id": 3,
+      "name": "Days"
+    },
+    {
+      "id": 4,
+      "name": "Hour"
+    }
+  ],
+  "facility": [
+    {
+      "id": 1,
+      "name": "PHÒNG SUITE HƯỚNG",
+      "area": 50.7,
+      "cost": 5000000,
+      "maxPeople": 20,
+      "standardRoom": "Vip",
+      "descriptionOther": "Chạy bộ buổi sáng",
+      "poolArea": 50,
+      "numberFloor": 3,
+      "facilityFree": "Ăn sáng miễn phí",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "rentType": {
+        "id": 3,
+        "name": "Days"
+      },
+      "facilityType": {
+        "id": 2,
+        "name": "House"
+      }
+    },
+    {
+      "id": 2,
+      "name": "PHÒNG SUITE HƯỚNG",
+      "area": 70.7,
+      "cost": 8000000,
+      "maxPeople": 15,
+      "standardRoom": "Vip",
+      "descriptionOther": "Chạy bộ buổi sáng",
+      "poolArea": 50,
+      "numberFloor": 5,
+      "facilityFree": "Nghe nhạc miễn phí",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "rentType": {
+        "id": 3,
+        "name": "Days"
+      },
+      "facilityType": {
+        "id": 3,
+        "name": "Room"
+      }
+    },
+    {
+      "id": 3,
+      "name": "OCEAN LUXURY",
+      "area": 60.7,
+      "cost": 9000000,
+      "maxPeople": 9,
+      "standardRoom": "Vip",
+      "descriptionOther": "Hồ bơi miễn phí",
+      "poolArea": 50,
+      "numberFloor": 5,
+      "facilityFree": "Ban công thoáng mát",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "rentType": {
+        "id": 3,
+        "name": "Hour"
+      },
+      "facilityType": {
+        "id": 2,
+        "name": "Villa"
+      }
+    }
+  ]
+}

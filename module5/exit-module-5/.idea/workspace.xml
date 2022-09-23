@@ -20,122 +20,58 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d311a76b-c3a1-4364-b044-d6aea75c05c2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../New Text Document.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case-study/src/app/customer/customer-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../case-study/src/app/customer/customer.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/exit-module-5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/benh-an/benh-an-create/benh-an-create.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/benh-an/benh-an-create/benh-an-create.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/benh-an/benh-an-create/benh-an-create.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/benh-an/benh-an-edit/benh-an-edit.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/benh-an/benh-an-edit/benh-an-edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/benh-an/benh-an-edit/benh-an-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/benh-an/benh-an-list/benh-an-list.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/benh-an/benh-an-list/benh-an-list.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/benh-an/benh-an-list/benh-an-list.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/data/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/footer/footer.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/footer/footer.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/footer/footer.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/footer/footer.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/header/header.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/header/header.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/header/header.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/home/home.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/home/home.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/home/home.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/model/benh-an.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/model/ma-benh-an.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/model/ma-benh-nhan.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/service/benh-an.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/service/ma-benh-an.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/app/service/ma-benh-nhan.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/exit-module/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/.idea/test-pre.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/browserslist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/e2e/protractor.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/e2e/src/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/e2e/src/app.po.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/e2e/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/book-create/book-create.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/book-create/book-create.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/book-create/book-create.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/book-edit/book-edit.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/book-edit/book-edit.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/book-edit/book-edit.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/data/db.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/model/book.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/model/category.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/service/book.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/app/service/category.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/tsconfig.spec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/angular-book-management/tslint.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test-pre/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../case-study-module-5/static.assets/image/banner/pexels-photo-1268871.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-create/customer-create.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-create/customer-create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-create/customer-create.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-create/customer-create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-edit/customer-edit.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-edit/customer-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-edit/customer-edit.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-edit/customer-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-list/customer-list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-list/customer-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-list/customer-list.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/customer/customer-list/customer-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-create/facility-create.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-create/facility-create.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-create/facility-create.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-create/facility-create.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-edit/facility-edit.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-edit/facility-edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-edit/facility-edit.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-edit/facility-edit.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-list/facility-list.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-list/facility-list.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-list/facility-list.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/facility/facility-list/facility-list.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/footer/footer.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/footer/footer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/footer/footer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/header/header.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/header/header.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/home/home.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/home/home.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/home/home.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../new-case-study/src/app/home/home.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/article/article.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/article/article.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/article/article.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/footer/footer.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/footer/footer.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/footer/footer.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/footer/footer.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/like/like.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/like/like.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/like/like.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/model/article.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/navbar/navbar.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/navbar/navbar.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/navbar/navbar.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss4-angular-component/practice/angular-hackernews-app/src/app/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../New Text Document.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../New Text Document.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module3/furama_resort/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/furama_resort/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module3/furama_resort/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/furama_resort/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module3/furama_resort/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/furama_resort/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
@@ -143,23 +79,323 @@
       <change beforePath="$PROJECT_DIR$/../../module3/furama_resort/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/furama_resort/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/ss1_tong_quan_spring_mvc/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss1_tong_quan_spring_mvc/practice/customer-management" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../module4/ss2_spring_controller/practice/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/ss2_spring_controller/practice/customer-management" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/customer/create-customer/create-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/customer/create-customer/create-customer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/customer/create-customer/create-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/customer/create-customer/create-customer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/customer/edit-customer/edit-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/customer/edit-customer/edit-customer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/customer/edit-customer/edit-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/customer/edit-customer/edit-customer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/customer/list-customer/list-customer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/customer/list-customer/list-customer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/customer/list-customer/list-customer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/customer/list-customer/list-customer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/data/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/facility/create-facility/create-facility.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/facility/create-facility/create-facility.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/facility/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/exit-module/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/facility/list-facility/list-facility.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/facility/list-facility/list-facility.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/facility/list-facility/list-facility.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/facility/list-facility/list-facility.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/app/service/customer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/app/service/customer.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../case-study/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss8-module-dependence-injection/bai-tap/angular-image-slide/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8-module-dependence-injection/bai-tap/angular-image-slide/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss8-module-dependence-injection/bai-tap/angular-image-slide/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8-module-dependence-injection/bai-tap/angular-image-slide/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss8-module-dependence-injection/bai-tap/angular-image-slide/src/app/image-gallery/image-gallery.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8-module-dependence-injection/bai-tap/angular-image-slide/src/app/image-gallery/image-gallery.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss8-module-dependence-injection/bai-tap/angular-image-slide/src/app/image-gallery/image-gallery.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8-module-dependence-injection/bai-tap/angular-image-slide/src/app/image-gallery/image-gallery.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case-study-module-5/customer/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-module-5/customer/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case-study-module-5/customer/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-module-5/customer/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case-study-module-5/customer/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-module-5/customer/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case-study-module-5/facility/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-module-5/facility/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case-study-module-5/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../case-study-module-5/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../case-study/src/app/footer/footer.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../new-case-study/src/app/footer/footer.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/.idea/new-case-study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../new-case-study/.idea/new-case-study.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/angular.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/browserslist" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/e2e/protractor.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/e2e/src/app.e2e-spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/e2e/src/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/e2e/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/app-routing.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/app.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/app.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/app.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/app.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/contract/create-contract/create-contract.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/contract/create-contract/create-contract.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/contract/create-contract/create-contract.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/contract/edit-contract/edit-contract.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/contract/edit-contract/edit-contract.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/contract/edit-contract/edit-contract.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/contract/list-contract/list-contract.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/contract/list-contract/list-contract.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/contract/list-contract/list-contract.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/customer/create-customer/create-customer.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/customer/create-customer/create-customer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/customer/create-customer/create-customer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/customer/edit-customer/edit-customer.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/customer/edit-customer/edit-customer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/customer/edit-customer/edit-customer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/customer/list-customer/list-customer.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/customer/list-customer/list-customer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/customer/list-customer/list-customer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/create-facility/create-facility.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/create-facility/create-facility.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/create-facility/create-facility.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/edit-facility.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/edit-facility.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/edit-facility.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/house-input/house-input.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/house-input/house-input.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/house-input/house-input.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/room-input/room-input.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/room-input/room-input.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/room-input/room-input.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/villa-input/villa-input.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/villa-input/villa-input.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/edit-facility/villa-input/villa-input.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/list-facility/list-facility.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/list-facility/list-facility.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/ficility/list-facility/list-facility.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/footer/footer.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/footer/footer.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/footer/footer.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/footer/footer.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/header/header.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/header/header.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/header/header.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/home/home.component.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/home/home.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/home/home.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/model/contract.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/model/customer-type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/model/customer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/model/facility-type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/model/facility.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/model/rent-type.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/service/customer-type.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/service/customer.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/service/facility-type.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/service/facility.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/app/service/rent-type.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/_elements.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/_footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/_testimonial.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/_variables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/style (Mohammad Rocky's conflicted copy 2018-05-08).css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/style.css (Mohammad Rocky's conflicted copy 2018-05-08).map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/about_banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/about_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/banner/banner-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/banner/banner-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/banner/banner-2_tmp18321" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/banner_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/add.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/author.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/c4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/c6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/cat-post/cat-post-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/cat-post/cat-post-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/cat-post/cat-post-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/feature-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/main-blog/m-blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/main-blog/m-blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/main-blog/m-blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/main-blog/m-blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/main-blog/m-blog-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/next.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/post-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/post-img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/post1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/post2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/post3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/post4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/prev.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/blog/s-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/a.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/a2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/disabled-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/disabled-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/f1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/f2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/f3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/f4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/f5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/f6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/f7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/f8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/g1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/g2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/g3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/g4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/g5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/g6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/g7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/g8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/primary-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/primary-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/success-check.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/success-radio.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/user1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/elements/user2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/facilites_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/favicon_tmp18091" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/gallery/01-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/gallery/01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/gallery/02-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/gallery/02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/gallery/03-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/gallery/03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/gallery/04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/gallery/05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/gallery/06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/instagram/Image-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/instagram/Image-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/instagram/Image-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/instagram/Image-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/instagram/Image-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/instagram/Image-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/instagram/Image-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/instagram/Image-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/logo-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/room1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/room2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/room3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/room4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/testtimonial-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/image/testtimonial-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/gmaps.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/jquery-3.2.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/jquery.ajaxchimp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/jquery.form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/jquery.validate.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/mail-script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/js/stellar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/css/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/css/normalize.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/fonts/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/img/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/js/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/js/custom.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/js/jquery-1.11.0.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/js/jquery.nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/_DS_Store" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shAutoloader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushAS3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushAppleScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushBash.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushCSharp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushColdFusion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushCpp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushCss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushDelphi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushDiff.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushErlang.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushGroovy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushJScript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushJava.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushJavaFX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushPerl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushPhp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushPlain.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushPowerShell.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushPython.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushRuby.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushSass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushScala.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushSql.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushVb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shBrushXml.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shCore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/scripts/shLegacy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shCore.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shCoreDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shCoreDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shCoreEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shCoreEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shCoreFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shCoreMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shCoreMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shCoreRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shThemeDefault.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shThemeDjango.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shThemeEclipse.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shThemeEmacs.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shThemeFadeToGrey.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shThemeMDUltra.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shThemeMidnight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/royal-Doc/syntax-highlighter/styles/shThemeRDark.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_accomodation.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_banner.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_blog.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_button.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_contact.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_elements.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_predefine.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_testimonial.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/bootstrap-datepicker/bootstrap-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/bootstrap-datepicker/bootstrap-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/imagesloaded/imagesloaded.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/isotope/isotope-min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/lightbox/simpleLightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/lightbox/simpleLightbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/linericon/fonts/Linearicons-Free.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/linericon/fonts/Linearicons-Free.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/linericon/fonts/Linearicons-Free.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/linericon/fonts/Linearicons-Free.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/linericon/fonts/Linearicons-Free.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/linericon/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/nice-select/css/nice-select.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/nice-select/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/nice-select/js/jquery.nice-select.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/nice-select/js/jquery.nice-select.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/owl-carousel/assets/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/owl-carousel/assets/animated.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/owl-carousel/assets/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/owl-carousel/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/assets/vendors/owl-carousel/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/environments/environment.prod.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/environments/environment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/main.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/polyfills.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/src/test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/tsconfig.app.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/tsconfig.spec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../new-case-study/angular-new-case-study/tslint.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,13 +415,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../case-study-module-5" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="D:\[C0222G2]-Tri-tran-thanh\module5\exit-module-5\exit-module\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
@@ -193,7 +430,7 @@
       <recent name="D:\[C0222G2]-Tri-tran-thanh\module5\exit-module-5\exit-module\src\app" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -210,11 +447,13 @@
       <workItem from="1661479232549" duration="1833000" />
       <workItem from="1661502296250" duration="378000" />
       <workItem from="1661507259271" duration="132000" />
+      <workItem from="1663833519441" duration="98000" />
+      <workItem from="1663906229431" duration="174000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -227,5 +466,11 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1663906402543">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1663906402543" />
   </component>
 </project>
