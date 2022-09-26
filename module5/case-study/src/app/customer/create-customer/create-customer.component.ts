@@ -19,10 +19,10 @@ export class CreateCustomerComponent implements OnInit {
               private router: Router,
               private customerType: CustomerTypeService,
               private toastr: ToastrService
-              ) {
-    this.customerType.getAll().subscribe(data=>{
-      this.customerTypeList=data;
-    })
+  ) {
+    this.customerType.getAll().subscribe(data => {
+      this.customerTypeList = data;
+    });
   }
 
   ngOnInit(): void {
@@ -31,16 +31,12 @@ export class CreateCustomerComponent implements OnInit {
       name: new FormControl('', [Validators.required, Validators.pattern('^([A-Z][^A-Z0-9\\\\s]+)(\\\\s[A-Z][^A-Z0-9\\\\s]+)*$')]),
       dateOfBirth: new FormControl('', [Validators.required]),
       gender: new FormControl('', [Validators.required]),
-      idCard: new FormControl('', [Validators.required,Validators.pattern('[0-9]{9,11}')]),
+      idCard: new FormControl('', [Validators.required, Validators.pattern('[0-9]{9,11}')]),
       phoneNumber: new FormControl('', [Validators.required, Validators.pattern(/^([\+84]|[\+091]|[\+090])[0-9]{9,11}$/)]),
       email: new FormControl('', [Validators.required, Validators.email]),
       address: new FormControl('', [Validators.required]),
       customerType: new FormControl(1)
     });
-
-  }
-  checkAge() {
-
   }
 
   createCustomer() {

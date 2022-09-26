@@ -94,6 +94,152 @@
         "id": 2,
         "name": "Villa"
       }
+    },
+    {
+      "id": 4,
+      "name": "Room Twin",
+      "area": "200",
+      "cost": "22323",
+      "maxPeople": "12",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "",
+      "descriptionOther": "",
+      "poolArea": "",
+      "numberFloor": "",
+      "facilityFree": "sadsa",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": {
+        "id": 3,
+        "name": "Room"
+      }
+    },
+    {
+      "id": 5,
+      "name": "asdsa",
+      "area": "sad",
+      "cost": "sad",
+      "maxPeople": "sadsa",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "asd",
+      "descriptionOther": "sad",
+      "poolArea": "asd",
+      "numberFloor": "asd",
+      "facilityFree": "",
+      "rentType": {
+        "id": 1,
+        "name": "Year"
+      },
+      "facilityType": {
+        "id": 1,
+        "name": "Villa"
+      }
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "nameCustomerType": "Diamond"
+    },
+    {
+      "id": 2,
+      "nameCustomerType": "Gold"
+    },
+    {
+      "id": 3,
+      "nameCustomerType": "Silver"
+    },
+    {
+      "id": 4,
+      "nameCustomerType": "Member"
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "Phúc",
+      "dateOfBirth": "2022-08-08",
+      "gender": "Nam",
+      "idCard": "2272727277",
+      "phoneNumber": 84171772122,
+      "email": "wewq@d.com",
+      "address": "ABC",
+      "customerType": {
+        "id": 1,
+        "nameCustomerType": "Diamond"
+      }
+    },
+    {
+      "id": 2,
+      "name": "Phuc",
+      "dateOfBirth": "2022-08-02",
+      "gender": "Nữ",
+      "idCard": "123456789",
+      "phoneNumber": 84940843834,
+      "email": "dsad@asds",
+      "address": "asdas",
+      "customerType": {
+        "id": 1,
+        "nameCustomerType": "Diamond"
+      }
+    },
+    {
+      "id": 3,
+      "name": "Tài",
+      "dateOfBirth": "2022-08-03",
+      "gender": "Nam",
+      "idCard": "123456789",
+      "phoneNumber": 84912333849,
+      "email": "ád@ámdsa",
+      "address": "ád",
+      "customerType": {
+        "id": 4,
+        "nameCustomerType": "Member"
+      }
+    },
+    {
+      "id": 4,
+      "name": "Hoàn",
+      "dateOfBirth": "2022-08-02",
+      "gender": "Nam",
+      "idCard": "1982883212",
+      "phoneNumber": 84123123123,
+      "email": "hoanpro@gmail.com",
+      "address": "Biên Hoà",
+      "customerType": {
+        "id": 3,
+        "nameCustomerType": "Silver"
+      }
+    },
+    {
+      "id": 5,
+      "name": "Sang",
+      "dateOfBirth": "2022-08-04",
+      "gender": "Nữ",
+      "idCard": "123897234",
+      "phoneNumber": 84123123123,
+      "email": "sadsa@adsa",
+      "address": "dsa",
+      "customerType": {
+        "id": 1,
+        "nameCustomerType": "Diamond"
+      }
+    },
+    {
+      "id": 6,
+      "name": null,
+      "dateOfBirth": null,
+      "gender": "Nam",
+      "idCard": null,
+      "phoneNumber": null,
+      "email": null,
+      "address": null,
+      "customerType": {
+        "id": 2,
+        "nameCustomerType": "Gold"
+      }
     }
   ]
 }

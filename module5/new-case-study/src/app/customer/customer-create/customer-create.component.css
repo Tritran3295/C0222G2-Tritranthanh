@@ -1,0 +1,11 @@
+.title-furama{
+  margin-left: 174px;
+}
+body{
+  background-image: url("https://images.pexels.com/photos/2290738/pexels-photo-2290738.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#form{
+  background-color: rgba(0,0,20,0.6);
+}

@@ -9,27 +9,28 @@ import {FacilityCreateComponent} from "./facility/facility-create/facility-creat
 import {FacilityEditComponent} from "./facility/facility-edit/facility-edit.component";
 
 
+
 const routes: Routes = [
   {
     path: '',
     component: HomeComponent
-  },{
+  }, {
     path: 'customer/list',
     component: CustomerListComponent
-  },{
+  }, {
     path: 'customer/create',
     component: CustomerCreateComponent
-  },{
-    path: 'customer/edit',
+  }, {
+    path: 'customer/edit/:id',
     component: CustomerEditComponent
-  },{
+  }, {
     path: 'facility/list',
     component: FacilityListComponent
-  },{
+  }, {
     path: 'facility/create',
     component: FacilityCreateComponent
-  },{
-    path: 'facility/edit',
+  }, {
+    path: 'facility/edit/:id',
     component: FacilityEditComponent
   }
 ];

@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Customer} from "../../model/customer";
 import {CustomerService} from "../../service/customer.service";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-customer-list',
@@ -11,6 +10,7 @@ import {Router} from "@angular/router";
 export class CustomerListComponent implements OnInit {
   p: number = 1;
   customerList: Customer[] =[];
+  delete = [];
 
   constructor(private customerService: CustomerService) { }
 
@@ -20,4 +20,9 @@ export class CustomerListComponent implements OnInit {
     })
   }
 
+  elementDelete(id: number, name: string) {
+    this.delete.push(id);
+    this.delete.push(name);
+    return this.delete
+  }
 }

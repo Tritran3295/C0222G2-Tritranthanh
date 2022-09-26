@@ -15,4 +15,16 @@ export class CustomerService {
   getAllCustomer(): Observable<Customer[]> {
     return this.http.get<Customer[]>(this.URL_CUSTOMER)
   }
+
+  saveCustomer(customer):Observable<Customer> {
+    return this.http.post<Customer>(this.URL_CUSTOMER,customer)
+  }
+
+  findById(id: number):Observable<Customer> {
+    return this.http.get<Customer>(this.URL_CUSTOMER + '/' + id)
+  }
+
+  editCustomer(id: number,customer):Observable<Customer> {
+    return this.http.patch<Customer>(this.URL_CUSTOMER + '/' + id,customer);
+  }
 }

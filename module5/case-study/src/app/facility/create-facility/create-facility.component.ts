@@ -7,6 +7,7 @@ import {FacilityService} from '../../service/facility.service';
 import {RentTypeService} from '../../service/rent-type.service';
 import {FacilityTypeService} from '../../service/facility-type.service';
 import {ToastrService} from 'ngx-toastr';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-create-facility',

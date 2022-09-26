@@ -9,6 +9,7 @@ import {FacilityTypeService} from '../../service/facility-type.service';
 import {FacilityService} from '../../service/facility.service';
 import {ToastrService} from 'ngx-toastr';
 import {Observable, of} from 'rxjs';
+import * as $ from "jquery";
 
 @Component({
   selector: 'app-edit-facility',

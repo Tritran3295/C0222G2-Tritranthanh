@@ -56,9 +56,11 @@
           </tr>
           <tr>
             <th><label>Customer type</label></th>
-            <td><select class="form-select" formControlName="customerType">
+            <td>
+              <select class="form-select" formControlName="customerType">
               <option *ngFor="let item of customerTypeList" [ngValue]="item">{{item.nameCustomerType}}</option>
-            </select></td>
+            </select>
+            </td>
           </tr>
           <tr>
             <td>

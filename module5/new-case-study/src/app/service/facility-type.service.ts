@@ -2,7 +2,6 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 import {FacilityType} from "../model/facility-type";
-
 @Injectable({
   providedIn: 'root'
 })
@@ -15,4 +14,5 @@ export class FacilityTypeService {
   getAllFacilityType(): Observable<FacilityType[]> {
     return this.http.get<FacilityType[]>(this.URL_FACILITY_TYPE)
   }
+
 }

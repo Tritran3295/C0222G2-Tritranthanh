@@ -2,11 +2,11 @@
   <form class="d-flex " style="width: 20%" [formGroup]="searchForm" (ngSubmit)="nameSearch()">
     <input class="form-control me-2" type="search"
            placeholder="Search By Name" formControlName="nameSearch">
-    <button class="btn btn-outline-success" type="submit" >Search</button>
+    <button class="btn btn-outline-success" type="submit">Search</button>
   </form>
   <div class="container-fluid mt-3" style="overflow: auto">
     <a routerLink="/create/customer">Create</a>
-    <table id="tableCustomer" class="table table-warning table-bordered" style="font-size: 12px; width: 100%">
+    <table>
       <thead>
       <tr>
         <th>Id</th>

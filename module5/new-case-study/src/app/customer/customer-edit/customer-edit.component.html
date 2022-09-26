@@ -1,1 +1,66 @@
-<p>customer-edit works!</p>
+<div class="container mt-3">
+  <div class="row">
+  </div>
+  <br>
+  <br>
+  <div class="row" id="form">
+    <h2 class="text-center my-5" style="color: whitesmoke">Create Customer</h2>
+    <form [formGroup]="customerForm" (ngSubmit)="editCustomer()">
+      <div class="container">
+        <table class="table table-striped">
+          <tr>
+            <td><label class="text-light font-weight-bold" >Name</label></td>
+            <td><input class="form-control " type="text" formControlName="name"></td>
+          </tr>
+          <tr>
+            <td><label class="text-light font-weight-bold" >Day of birth</label></td>
+            <td><input class="form-control" type="date"formControlName="dateOfBirth"></td>
+          </tr>
+          <tr>
+            <td><label class="text-light font-weight-bold">Gender</label></td>
+            <td><select class="form-select" formControlName="gender" name="gender">
+              <option [value]="'Nam'">Nam</option>
+              <option [value]="'Nữ'">Nữ</option>
+              <option [value]="'Other'">Other</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td><label class="text-light font-weight-bold" >Id card</label></td>
+            <td><input class="form-control" type="text" formControlName="idCard"></td>
+          </tr>
+          <tr>
+            <td><label class="text-light font-weight-bold" >Number phone</label></td>
+            <td><input class="form-control" type="text" formControlName="phoneNumber"></td>
+          </tr>
+          <tr>
+            <td><label class="text-light font-weight-bold" >Email</label></td>
+            <td><input class="form-control" type="text" formControlName="email"></td>
+          </tr>
+          <tr>
+            <td><label class="text-light font-weight-bold" >Address</label></td>
+            <td><input class="form-control" type="text" formControlName="address"></td>
+          </tr>
+          <tr>
+            <td><label class="text-light font-weight-bold">Customer type</label></td>
+            <td>
+              <select class="form-select" formControlName="customerType">
+                <option *ngFor="let temp of customerTypeList" [ngValue]="temp">{{temp.nameCustomerType}}</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input class="btn btn-success" type="submit" value="Save">
+              <a class="btn btn-secondary" routerLink="/customer/list">Back</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+  </div>
+</div>
+

@@ -23,4 +23,12 @@ export class FacilityService {
   deleteFacility(id: any): Observable<Facility> {
     return this.http.delete<Facility>(this.URL_FACILITY + '/' + id)
   }
+
+  saveFacility(facility: Facility): Observable<Facility> {
+    return this.http.post<Facility>(this.URL_FACILITY, facility)
+  }
+
+  editFacility(id: number, facility): Observable<Facility> {
+    return this.http.patch<Facility>(this.URL_FACILITY + '/' + id, facility)
+  }
 }
