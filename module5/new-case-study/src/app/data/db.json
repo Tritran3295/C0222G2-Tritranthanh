@@ -193,10 +193,10 @@
       "idCard": "123456789",
       "phoneNumber": 84912333849,
       "email": "ád@ámdsa",
-      "address": "ád",
+      "address": "dew213",
       "customerType": {
-        "id": 4,
-        "nameCustomerType": "Member"
+        "id": 3,
+        "nameCustomerType": "Silver"
       }
     },
     {

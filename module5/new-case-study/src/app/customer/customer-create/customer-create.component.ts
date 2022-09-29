@@ -43,7 +43,7 @@ export class CustomerCreateComponent implements OnInit {
       phoneNumber: new FormControl(),
       email: new FormControl(),
       address: new FormControl(),
-      customerType: new FormControl()
+      customerType: new FormControl(1)
     })
   }
 

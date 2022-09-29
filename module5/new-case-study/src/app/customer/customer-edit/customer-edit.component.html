@@ -1,3 +1,4 @@
+<body>
 <div class="container mt-3">
   <div class="row">
   </div>
@@ -9,12 +10,12 @@
       <div class="container">
         <table class="table table-striped">
           <tr>
-            <td><label class="text-light font-weight-bold" >Name</label></td>
+            <td><label class="text-light font-weight-bold">Name</label></td>
             <td><input class="form-control " type="text" formControlName="name"></td>
           </tr>
           <tr>
-            <td><label class="text-light font-weight-bold" >Day of birth</label></td>
-            <td><input class="form-control" type="date"formControlName="dateOfBirth"></td>
+            <td><label class="text-light font-weight-bold">Day of birth</label></td>
+            <td><input class="form-control" type="date" formControlName="dateOfBirth"></td>
           </tr>
           <tr>
             <td><label class="text-light font-weight-bold">Gender</label></td>
@@ -25,25 +26,25 @@
             </select></td>
           </tr>
           <tr>
-            <td><label class="text-light font-weight-bold" >Id card</label></td>
+            <td><label class="text-light font-weight-bold">Id card</label></td>
             <td><input class="form-control" type="text" formControlName="idCard"></td>
           </tr>
           <tr>
-            <td><label class="text-light font-weight-bold" >Number phone</label></td>
+            <td><label class="text-light font-weight-bold">Number phone</label></td>
             <td><input class="form-control" type="text" formControlName="phoneNumber"></td>
           </tr>
           <tr>
-            <td><label class="text-light font-weight-bold" >Email</label></td>
+            <td><label class="text-light font-weight-bold">Email</label></td>
             <td><input class="form-control" type="text" formControlName="email"></td>
           </tr>
           <tr>
-            <td><label class="text-light font-weight-bold" >Address</label></td>
+            <td><label class="text-light font-weight-bold">Address</label></td>
             <td><input class="form-control" type="text" formControlName="address"></td>
           </tr>
           <tr>
             <td><label class="text-light font-weight-bold">Customer type</label></td>
             <td>
-              <select class="form-select" formControlName="customerType">
+              <select class="form-select" formControlName="customerType" name="customerType" [compareWith]="compareCustomerType">
                 <option *ngFor="let temp of customerTypeList" [ngValue]="temp">{{temp.nameCustomerType}}</option>
               </select>
             </td>
@@ -63,4 +64,4 @@
   <div class="row">
   </div>
 </div>
-
+</body>

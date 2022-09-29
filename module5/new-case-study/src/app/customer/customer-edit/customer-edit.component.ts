@@ -47,15 +47,18 @@ export class CustomerEditComponent implements OnInit {
       phoneNumber: new FormControl(),
       email: new FormControl(),
       address: new FormControl(),
-      customerType: new FormControl()
+      customerType: new FormControl(1)
     })
 
   }
 
   editCustomer() {
     const customer = this.customerForm.value;
+    console.log(customer)
     this.customerService.editCustomer(this.id, customer).subscribe();
     this.router.navigateByUrl('/customer/list')
-
+  }
+  compareCustomerType(type1: CustomerType, type2: CustomerType): boolean {
+    return type1.id === type2.id;
   }
 }

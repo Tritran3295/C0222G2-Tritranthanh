@@ -36,7 +36,8 @@
 
     <div>
       <h2 class="name">Facility Type</h2>
-      <select id="choiceFacilityType" class="option" (change)="selectFacility()" formControlName="facilityType">
+      <select id="choiceFacilityType" class="option" (change)="selectFacility()" formControlName="facilityType"
+      name="facilityType" [compareWith]="compareFacilityType">
         <option *ngFor="let fac of facilityTypeList" [ngValue]="fac">{{fac.name}}</option>
       </select>
     </div>

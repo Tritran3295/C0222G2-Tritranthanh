@@ -43,6 +43,7 @@
           </tr>
           <div *ngIf="customerForm.controls.phoneNumber.hasError('required') &&
           customerForm.controls.phoneNumber.touched" class="text-danger">Số điện thoại không được để trống</div>
+
           <div *ngIf="customerForm.controls.phoneNumber.hasError('pattern') &&
           customerForm.controls.phoneNumber.touched" class="text-danger">SĐT bắt đầu bằng +84</div>
           <tr>

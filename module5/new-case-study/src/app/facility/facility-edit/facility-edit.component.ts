@@ -7,6 +7,8 @@ import {FacilityService} from "../../service/facility.service";
 import {FacilityTypeService} from "../../service/facility-type.service";
 import {RentTypeService} from "../../service/rent-type.service";
 import * as $ from "jquery";
+import {CustomerType} from "../../model/customer-type";
+import {Facility} from "../../model/facility";
 
 @Component({
   selector: 'app-facility-edit',
@@ -32,16 +34,18 @@ export class FacilityEditComponent implements OnInit {
   rentTypeList: RentType[] = [];
   facilityTypeList: FacilityType[] = [];
   id: number;
+  facility: Facility;
 
   constructor(private router: Router,
               private facilityService: FacilityService,
               private facilityTypeService: FacilityTypeService,
               private rentTypeService: RentTypeService,
               private activatedRoute: ActivatedRoute) {
+    this.getFacility()
   }
 
   ngOnInit(): void {
-    this.getFacility();
+    this.compareFacilityType(this.facility.facilityType, this.facility.facilityType)
   }
 
   getFacility() {
@@ -82,21 +86,21 @@ export class FacilityEditComponent implements OnInit {
     const getValue = $('#choiceFacilityType').val();
     console.log(getValue)
     switch (getValue) {
-      case '1':
+      case '0: Object':
         $('#standardRoom').show();
         $('#descriptionConvenience').show();
         $('#poolArea').show();
         $('#numberOfFloor').show();
         $('#facilityFree').hide();
         break;
-      case '2':
+      case '1: Object':
         $('#standardRoom').show();
         $('#descriptionConvenience').show();
         $('#poolArea').hide();
         $('#numberOfFloor').show();
         $('#facilityFree').hide();
         break;
-      case '3':
+      case '2: Object':
         $('#standardRoom').hide();
         $('#descriptionConvenience').hide();
         $('#poolArea').hide();
@@ -104,5 +108,8 @@ export class FacilityEditComponent implements OnInit {
         $('#facilityFree').show();
         break;
     }
+  }
+  compareFacilityType(type1: FacilityType, type2: FacilityType): boolean {
+    return type1.id === type2.id;
   }
 }

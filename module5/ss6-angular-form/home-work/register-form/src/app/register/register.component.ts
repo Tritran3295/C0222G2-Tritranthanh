@@ -16,7 +16,7 @@ export class RegisterComponent implements OnInit {
       pass: new FormGroup({
         password: new FormControl('', [Validators.required, Validators.minLength(6)]),
         confirmPassword: new FormControl('', [Validators.required, Validators.minLength(6)]),
-      },this.checkPasswords),
+      }, this.checkPasswords),
       country: new FormControl('', [Validators.required]),
       age: new FormControl('', [Validators.min(18)]),
       gender: new FormControl(),
@@ -56,9 +56,9 @@ export class RegisterComponent implements OnInit {
   }
 
   countryList: country[] = [
-    new country('1', 'Việt Nam'),
-    new country('2', 'Singapore'),
-    new country('3', 'Malaysia'),
+    new country(1, 'Việt Nam'),
+    new country(2, 'Singapore'),
+    new country(3, 'Malaysia'),
   ];
 
 
@@ -70,6 +70,7 @@ export class RegisterComponent implements OnInit {
   get pass() {
     return this.registerFormReactive.get('pass');
   }
+
   registerWithReactive() {
     if (this.registerFormReactive.valid) {
       this.message = 'Success';
@@ -77,6 +78,7 @@ export class RegisterComponent implements OnInit {
       this.message = 'Fail';
     }
   }
+
   checkPasswords(check: AbstractControl) {
     const confirmPassword = check.value.confirmPassword;
     const password = check.value.password;
@@ -88,10 +90,10 @@ export class RegisterComponent implements OnInit {
 }
 
 export class country {
-  id: string;
+  id: number;
   name: string;
 
-  constructor(id: string, name: string) {
+  constructor(id: number, name: string) {
     this.id = id;
     this.name = name;
   }
