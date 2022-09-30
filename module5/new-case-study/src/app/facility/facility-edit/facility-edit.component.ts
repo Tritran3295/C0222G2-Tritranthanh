@@ -7,7 +7,6 @@ import {FacilityService} from "../../service/facility.service";
 import {FacilityTypeService} from "../../service/facility-type.service";
 import {RentTypeService} from "../../service/rent-type.service";
 import * as $ from "jquery";
-import {CustomerType} from "../../model/customer-type";
 import {Facility} from "../../model/facility";
 
 @Component({
@@ -45,7 +44,6 @@ export class FacilityEditComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.compareFacilityType(this.facility.facilityType, this.facility.facilityType)
   }
 
   getFacility() {
@@ -108,8 +106,5 @@ export class FacilityEditComponent implements OnInit {
         $('#facilityFree').show();
         break;
     }
-  }
-  compareFacilityType(type1: FacilityType, type2: FacilityType): boolean {
-    return type1.id === type2.id;
   }
 }

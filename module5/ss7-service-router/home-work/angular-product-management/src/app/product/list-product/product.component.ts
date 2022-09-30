@@ -10,6 +10,7 @@ import {ProductService} from '../../service/product.service';
 export class ProductComponent implements OnInit {
   delete = [];
   productList: Product[] = [];
+  productDetail: Product;
 
   constructor(private productService: ProductService) {
     this.productList = this.productService.getAll();
@@ -28,4 +29,7 @@ export class ProductComponent implements OnInit {
     this.productService.delete(id);
   }
 
+  detailService(id: number) {
+    this.productDetail = this.productService.findById(id);
+  }
 }

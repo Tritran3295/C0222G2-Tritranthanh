@@ -11,12 +11,10 @@
 <table border="1">
   <tr>
     <th>English</th>
-    <th>VietNam</th>
     <th>Option</th>
   </tr>
   <tr *ngFor="let temp of dictionaryList">
     <td>{{temp.english}}</td>
-    <td>{{temp.vietnamese}}</td>
     <td>
       <a href="" [routerLink]="['/detail',temp.english]">Detail</a>
     </td>

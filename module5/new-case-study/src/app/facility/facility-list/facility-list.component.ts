@@ -40,8 +40,13 @@ export class FacilityListComponent implements OnInit {
   }
 
   deleteFacility(id: any) {
-    this.facilityService.deleteFacility(id).subscribe(data => {
+    this.facilityService.deleteFacility(id).subscribe(() => {
       this.delete = []
+    }, error => {
+      console.log(error)
+    }, () => {
+      this.ngOnInit();
     })
   }
+
 }

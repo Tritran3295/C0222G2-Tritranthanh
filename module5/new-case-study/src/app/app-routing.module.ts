@@ -9,8 +9,6 @@ import {FacilityCreateComponent} from "./facility/facility-create/facility-creat
 import {FacilityEditComponent} from "./facility/facility-edit/facility-edit.component";
 import {ContractListComponent} from "./contract/contract-list/contract-list.component";
 
-
-
 const routes: Routes = [
   {
     path: '',
@@ -33,8 +31,8 @@ const routes: Routes = [
   }, {
     path: 'facility/edit/:id',
     component: FacilityEditComponent
-  },{
-  path:'contract/list',
+  }, {
+    path: 'contract/list',
     component: ContractListComponent
   }
 ];

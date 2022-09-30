@@ -16,6 +16,10 @@ import {HttpClientModule} from "@angular/common/http";
 import {NgxPaginationModule} from "ngx-pagination";
 import {ReactiveFormsModule} from "@angular/forms";
 import { ContractListComponent } from './contract/contract-list/contract-list.component';
+// import { FacilityEditNewComponent } from './facility/facility-edit-new/facility-edit-new.component';
+import { HouseInputEditComponent } from './facility/facility-edit-new/house-input-edit/house-input-edit.component';
+import { VillaInputEditComponent } from './facility/facility-edit-new/villa-input-edit/villa-input-edit.component';
+import { RoomInputEditComponent } from './facility/facility-edit-new/room-input-edit/room-input-edit.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +33,11 @@ import { ContractListComponent } from './contract/contract-list/contract-list.co
     CustomerCreateComponent,
     CustomerEditComponent,
     FacilityCreateComponent,
-    ContractListComponent
+    ContractListComponent,
+    // FacilityEditNewComponent,
+    HouseInputEditComponent,
+    VillaInputEditComponent,
+    RoomInputEditComponent
   ],
     imports: [
         BrowserModule,

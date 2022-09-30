@@ -33,90 +33,6 @@
   ],
   "facility": [
     {
-      "id": 1,
-      "name": "PHÒNG SUITE HƯỚNG",
-      "area": 50.7,
-      "cost": 5000000,
-      "maxPeople": 20,
-      "standardRoom": "Vip",
-      "descriptionOther": "Chạy bộ buổi sáng",
-      "poolArea": 50,
-      "numberFloor": 3,
-      "facilityFree": "Ăn sáng miễn phí",
-      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
-      "rentType": {
-        "id": 3,
-        "name": "Days"
-      },
-      "facilityType": {
-        "id": 2,
-        "name": "House"
-      }
-    },
-    {
-      "id": 2,
-      "name": "PHÒNG SUITE HƯỚNG",
-      "area": 70.7,
-      "cost": 8000000,
-      "maxPeople": 15,
-      "standardRoom": "Vip",
-      "descriptionOther": "Chạy bộ buổi sáng",
-      "poolArea": 50,
-      "numberFloor": 5,
-      "facilityFree": "Nghe nhạc miễn phí",
-      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
-      "rentType": {
-        "id": 3,
-        "name": "Days"
-      },
-      "facilityType": {
-        "id": 3,
-        "name": "Room"
-      }
-    },
-    {
-      "id": 3,
-      "name": "OCEAN LUXURY",
-      "area": 60.7,
-      "cost": 9000000,
-      "maxPeople": 9,
-      "standardRoom": "Vip",
-      "descriptionOther": "Hồ bơi miễn phí",
-      "poolArea": 50,
-      "numberFloor": 5,
-      "facilityFree": "Ban công thoáng mát",
-      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
-      "rentType": {
-        "id": 3,
-        "name": "Hour"
-      },
-      "facilityType": {
-        "id": 2,
-        "name": "Villa"
-      }
-    },
-    {
-      "id": 4,
-      "name": "Room Twin",
-      "area": "200",
-      "cost": "22323",
-      "maxPeople": "12",
-      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
-      "standardRoom": "",
-      "descriptionOther": "",
-      "poolArea": "",
-      "numberFloor": "",
-      "facilityFree": "sadsa",
-      "rentType": {
-        "id": 2,
-        "name": "Month"
-      },
-      "facilityType": {
-        "id": 3,
-        "name": "Room"
-      }
-    },
-    {
       "id": 5,
       "name": "asdsa",
       "area": "sad",
@@ -135,6 +51,48 @@
       "facilityType": {
         "id": 1,
         "name": "Villa"
+      }
+    },
+    {
+      "id": 6,
+      "name": "Phòng tầng 10",
+      "area": "100",
+      "cost": "1500000",
+      "maxPeople": "12",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "11",
+      "descriptionOther": "33",
+      "poolArea": "",
+      "numberFloor": "33",
+      "facilityFree": "Ăn sáng 111",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": {
+        "id": 2,
+        "name": "House"
+      }
+    },
+    {
+      "id": 7,
+      "name": "View Biển",
+      "area": "123",
+      "cost": "12321",
+      "maxPeople": "123",
+      "image": "https://furamavietnam.com/wp-content/uploads/2018/03/Vietnam_Danang_Furama_Ocean-Suite-Feature-370x239.jpg",
+      "standardRoom": "12",
+      "descriptionOther": "12",
+      "poolArea": "12",
+      "numberFloor": "12",
+      "facilityFree": "121212",
+      "rentType": {
+        "id": 2,
+        "name": "Month"
+      },
+      "facilityType": {
+        "id": 3,
+        "name": "Room"
       }
     }
   ],
@@ -172,42 +130,28 @@
       }
     },
     {
-      "id": 2,
-      "name": "Phuc",
-      "dateOfBirth": "2022-08-02",
-      "gender": "Nữ",
-      "idCard": "123456789",
-      "phoneNumber": 84940843834,
-      "email": "dsad@asds",
-      "address": "asdas",
-      "customerType": {
-        "id": 1,
-        "nameCustomerType": "Diamond"
-      }
-    },
-    {
       "id": 3,
-      "name": "Tài",
-      "dateOfBirth": "2022-08-03",
-      "gender": "Nam",
-      "idCard": "123456789",
-      "phoneNumber": 84912333849,
-      "email": "ád@ámdsa",
-      "address": "dew213",
+      "name": "Sang",
+      "dateOfBirth": "2022-09-01",
+      "gender": "Nữ",
+      "idCard": "123213213",
+      "phoneNumber": "12321321",
+      "email": "123213",
+      "address": "123213",
       "customerType": {
-        "id": 3,
-        "nameCustomerType": "Silver"
+        "id": 2,
+        "nameCustomerType": "Gold"
       }
     },
     {
       "id": 4,
-      "name": "Hoàn",
-      "dateOfBirth": "2022-08-02",
+      "name": "Tài",
+      "dateOfBirth": "2022-08-30",
       "gender": "Nam",
-      "idCard": "1982883212",
-      "phoneNumber": 84123123123,
-      "email": "hoanpro@gmail.com",
-      "address": "Biên Hoà",
+      "idCard": "1212",
+      "phoneNumber": "2121",
+      "email": "2121",
+      "address": "2121",
       "customerType": {
         "id": 3,
         "nameCustomerType": "Silver"
@@ -215,30 +159,30 @@
     },
     {
       "id": 5,
-      "name": "Sang",
-      "dateOfBirth": "2022-08-04",
+      "name": "ádsa",
+      "dateOfBirth": "2022-09-02",
       "gender": "Nữ",
-      "idCard": "123897234",
-      "phoneNumber": 84123123123,
-      "email": "sadsa@adsa",
-      "address": "dsa",
+      "idCard": "ádsa",
+      "phoneNumber": "sad",
+      "email": "ád",
+      "address": "ád",
       "customerType": {
-        "id": 1,
-        "nameCustomerType": "Diamond"
+        "id": 2,
+        "nameCustomerType": "Gold"
       }
     },
     {
       "id": 6,
-      "name": null,
-      "dateOfBirth": null,
-      "gender": "Nam",
-      "idCard": null,
-      "phoneNumber": null,
-      "email": null,
-      "address": null,
+      "name": "Hoanf",
+      "dateOfBirth": "2022-09-07",
+      "gender": "Nữ",
+      "idCard": "12321",
+      "phoneNumber": "21321",
+      "email": "2131",
+      "address": "21331",
       "customerType": {
-        "id": 2,
-        "nameCustomerType": "Gold"
+        "id": 1,
+        "nameCustomerType": "Diamond"
       }
     }
   ]

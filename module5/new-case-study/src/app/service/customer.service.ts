@@ -27,4 +27,9 @@ export class CustomerService {
   editCustomer(id: number,customer):Observable<Customer> {
     return this.http.patch<Customer>(this.URL_CUSTOMER + '/' + id,customer);
   }
+
+  removeCustomer(id: any):Observable<Customer> {
+    return this.http.delete<Customer>(this.URL_CUSTOMER + '/' + id);
+  }
+
 }

@@ -1,7 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Customer} from "../../model/customer";
 import {CustomerService} from "../../service/customer.service";
-
 @Component({
   selector: 'app-customer-list',
   templateUrl: './customer-list.component.html',
@@ -9,10 +8,13 @@ import {CustomerService} from "../../service/customer.service";
 })
 export class CustomerListComponent implements OnInit {
   p: number = 1;
-  customerList: Customer[] =[];
+  customerList: Customer[] = [];
   delete = [];
+  idModal: number;
+  nameModal: string;
 
-  constructor(private customerService: CustomerService) { }
+  constructor(private customerService: CustomerService) {
+  }
 
   ngOnInit(): void {
     this.customerService.getAllCustomer().subscribe(data => {
@@ -21,8 +23,21 @@ export class CustomerListComponent implements OnInit {
   }
 
   elementDelete(id: number, name: string) {
-    this.delete.push(id);
-    this.delete.push(name);
-    return this.delete
+    this.idModal = id;
+    this.nameModal = name;
+  }
+
+
+  resetModal() {
+    this.delete = [];
+  }
+
+  deleteCustomer() {
+    this.customerService.removeCustomer(this.idModal).subscribe(() => {
+    },error => {
+      console.log(error)
+    },() => {
+      this.ngOnInit();
+    })
   }
 }

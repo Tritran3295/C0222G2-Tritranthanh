@@ -56,6 +56,28 @@
       </tr>
       </tbody>
     </table>
+    <div class="modal fade" id="modelId" data-bs-backdrop="static"
+         data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabelAddNew">Delete</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div>
+              Do you want delete customer <strong>{{nameModal}}</strong> ?
+            </div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="resetModal()">Close
+            </button>
+            <button (click)="deleteCustomer()" class="btn btn-danger" data-bs-dismiss="modal">delete</button>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <pagination-controls (pageChange)="p = $event"></pagination-controls>
 </div>
