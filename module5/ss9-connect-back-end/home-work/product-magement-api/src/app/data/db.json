@@ -1,0 +1,54 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "nameCategory": "Iphone"
+    },
+    {
+      "id": 2,
+      "nameCategory": "SamSung"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "IPhone 12",
+      "price": 2400000,
+      "description": "New",
+      "category": {
+        "id": 2,
+        "nameCategory": "SamSung"
+      }
+    },
+    {
+      "id": 2,
+      "name": "IPhone 11",
+      "price": 1560000,
+      "description": "Like new",
+      "category": {
+        "id": 1,
+        "nameCategory": "SamSung"
+      }
+    },
+    {
+      "id": 3,
+      "name": "12",
+      "price": "12",
+      "description": "12",
+      "category": {
+        "id": 2,
+        "nameCategory": "SamSung"
+      }
+    },
+    {
+      "id": 4,
+      "name": "12",
+      "price": "12",
+      "description": "111",
+      "category": {
+        "id": 2,
+        "nameCategory": "SamSung"
+      }
+    }
+  ]
+}

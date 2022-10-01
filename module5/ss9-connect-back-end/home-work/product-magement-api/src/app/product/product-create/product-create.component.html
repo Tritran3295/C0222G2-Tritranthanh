@@ -1,0 +1,36 @@
+<h1>Create Product</h1>
+<form [formGroup]="createForm" (ngSubmit)="createProduct()">
+  <table>
+    <tr>
+      <td>Name Product</td>
+      <td>
+        <input type="text" formControlName="name">
+      </td>
+    </tr>
+    <tr>
+      <td>Price Product</td>
+      <td>
+        <input type="text" formControlName="price">
+      </td>
+    </tr>
+    <tr>
+      <td>Description Product</td>
+      <td>
+        <input type="text" formControlName="description">
+      </td>
+    </tr>
+    <tr>
+      <td><label class="text-light font-weight-bold">Category</label></td>
+      <td>
+        <select class="form-select" formControlName="category">
+          <option *ngFor="let temp of categoryList" [ngValue]="temp">{{temp.nameCategory}}</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button>Create</button>
+      </td>
+    </tr>
+  </table>
+</form>
